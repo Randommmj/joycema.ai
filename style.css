@@ -43,16 +43,16 @@ img { max-width: 100%; height: auto; display: block; }
 main { max-width: var(--wide); margin: 0 auto; padding: 0 24px; }
 
 /* 首页 */
-.intro { max-width: var(--measure); margin: 56px 0 40px; color: var(--graphite); font-size: 1.05rem; }
+.intro { max-width: var(--measure); margin: 56px 0 36px; color: var(--graphite); font-size: 1.05rem; }
 .intro p { margin: 0; }
 .lead { display: block; text-decoration: none; margin-bottom: 72px; }
 .lead figure { margin: 0; border-bottom: 1px solid var(--rule); }
 .lead img { width: 100%; aspect-ratio: 2.35 / 1; object-fit: cover; }
 .lead-text { max-width: 44rem; padding-top: 28px; }
-.lead h1 { font-size: clamp(2rem, 4.6vw, 3.4rem); line-height: 1.25; margin: 6px 0 8px; font-weight: 700; letter-spacing: -.01em; }
+.lead h1, .lead-title { font-size: clamp(2rem, 4.6vw, 3.4rem); line-height: 1.25; margin: 6px 0 8px; font-weight: 700; letter-spacing: -.01em; }
 .lead .subtitle { font-size: clamp(1.2rem, 2.4vw, 1.6rem); margin: 0 0 14px; color: var(--graphite); line-height: 1.5; }
 .lead .ex { color: var(--graphite); margin: 0; max-width: var(--measure); }
-.lead:hover h1 { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 8px; }
+.lead:hover .lead-title { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 8px; }
 
 .kicker { font: 14px/1.4 var(--sans); color: var(--pencil); margin: 0; }
 
@@ -142,3 +142,32 @@ main { max-width: var(--wide); margin: 0 auto; padding: 0 24px; }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
 @media print { .top, .foot, .pager { display: none; } }
 .post .hero { margin: 0 0 40px; }
+
+/* 文章 / Skills 横向切换 */
+.tabs { display: flex; gap: 36px; border-bottom: 1px solid var(--rule); margin: 0 0 20px; }
+.tabs a { font: 700 1.5rem/1 var(--serif); color: var(--pencil); text-decoration: none; padding: 0 0 14px; margin-bottom: -1px; border-bottom: 2px solid transparent; }
+.tabs a:hover { color: var(--graphite); }
+.tabs a[aria-current] { color: var(--ink); border-bottom-color: var(--ink); }
+
+/* 合集筛选 */
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 16px; }
+.chips a { font: 15px/1 var(--sans); color: var(--graphite); text-decoration: none; padding: 9px 14px; border: 1px solid var(--rule); border-radius: 999px; white-space: nowrap; }
+.chips a:hover { border-color: var(--pencil); color: var(--ink); }
+.chips a[aria-current] { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.chips span { margin-left: 6px; font-size: 12px; color: var(--pencil); font-variant-numeric: tabular-nums; }
+.chips a[aria-current] span { color: #c9c9c9; }
+.tabs-lede { font: 14px/1.7 var(--sans); color: var(--pencil); margin: 0 0 40px; max-width: var(--measure); }
+.kicker a { color: inherit; text-decoration: none; }
+.kicker a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 3px; }
+.group h2 { font-variant-numeric: tabular-nums; }
+.list .kind { white-space: nowrap; }
+
+@media (max-width: 760px) {
+  .tabs { gap: 28px; }
+  .tabs a { font-size: 1.3rem; }
+  .chips { flex-wrap: nowrap; overflow-x: auto; margin: 0 -16px 16px; padding: 0 16px 4px; scrollbar-width: none; }
+  .chips::-webkit-scrollbar { display: none; }
+  .tabs-lede { margin-bottom: 28px; }
+}
+
+.group { margin-bottom: 36px; }
