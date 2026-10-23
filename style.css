@@ -171,3 +171,6 @@ main { max-width: var(--wide); margin: 0 auto; padding: 0 24px; }
 }
 
 .group { margin-bottom: 36px; }
+
+.intro p + p { margin-top: .2em; }
+.intro .note { margin-top: 14px; font: 14px/1.7 var(--sans); color: var(--pencil); }
