@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>创业手记｜超越实习期的实习项目 – Joyce Ma</title>
+<meta name="description" content="哈佛同学Dan的一篇博客启发了我：">
+<meta property="og:title" content="创业手记｜超越实习期的实习项目">
+<meta property="og:description" content="哈佛同学Dan的一篇博客启发了我：">
+<meta property="og:url" content="https://joycema.ai/p/20250916-0f3b81/">
+<link rel="canonical" href="https://joycema.ai/p/20250916-0f3b81/">
+<link rel="alternate" type="application/rss+xml" title="Joyce Ma" href="/feed.xml">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body class="is-post">
+<header class="top">
+  <a class="name" href="/">Joyce Ma</a>
+  <nav><a href="/harvard/">哈佛笔记</a><a href="/archive/">全部文章</a><a href="/skills/">技能</a></nav>
+</header>
+<main>
+<article class="post">
+<header>
+<h1>创业手记｜超越实习期的实习项目</h1>
+<p class="meta"><time datetime="2025-09-16">2025年9月16日</time></p>
+</header>
+
+<div class="prose">
+<p>哈佛同学Dan的一篇博客启发了我： </p>
+<p>Internship可以非常酷！可以非常有产出，尤其在他们擅长的地方！</p>
+<p>我需要年轻人，需要有激情且愿意做出一点cool stuff年轻人！</p>
+<p>Lesson Learnt：</p>
+<p>实习生 = Project-based contributor</p>
+<p>短期聚焦，快速出成果</p>
+<p>实习生不需要承担复杂的长期战略任务，只要在 2–3 个月内解决一个明确的功能性问题，就能留下实际成果。</p>
+<p>作者的两个项目（播客工作流、Slack 导出器）都是这样：功能聚焦 → 痛点解决 → 立刻见效。</p>
+<p>成就感驱动</p>
+<p>实习生往往缺乏组织影响力，但如果项目可以“被全公司使用”，他们能获得极大的心理满足感与归属感。</p>
+<p>这种体验远比“做调研、写备忘录”更能留住人才，甚至让实习生成为长期拥护者。</p>
+<p>双赢模式</p>
+<p>对公司：以很低的成本解决了一个被忽视但耗时耗力的痛点。</p>
+<p>对实习生：在短期内看到真实落地的成果，甚至能写进履历或博客，长期增值。</p>
+<p>可以在Arcus42实践的内容：- 把实习设计成“解一个功能问题”：比如 Arcus42 可以让实习生负责一个“客户资料自动整理器”或“家办知识问答小工具”。- 范围要小但要能落地：目标不是“战略大方案”，而是一个有清晰交付物的 project。</p>
+<ul>
+<li>
+<p>给舞台和曝光：一旦做成，就让团队使用并给予认可，让实习生获得成就感，形成正向循环。</p>
+</li>
+<li>
+<p>潜在的人才筛选机制：能在短时间内交付有价值工具的实习生，未来更可能成为核心成员。</p>
+</li>
+</ul>
+<p>下一篇文章就要招实习生！</p>
+<p>以下为博客原文：</p>
+<h2>实习项目、##机器学习、##TrailofBits工作体验</h2>
+<p>大多数时候，你的暑期实习一结束，你的项目也就被遗弃了。我以前也有过这样的经历。但 Trail of Bits 不一样。作为今夏 Dan Guido 和 Sam Sharps 手下的一名业务运营实习生，我用 Claude（Anthropic 的 AI 模型）构建了两个自动化工具：一个是能每年节省 1,250 小时的播客工作流（podcast workflow），另一个是让员工能用一次查询就找到关键公司知识的 Slack 导出器（Slack Exporter）。这两个工具在我实习结束后，依然会在公司范围内被持续使用。</p>
+<p>播客工作流（Podcast workflow）</p>
+<p>Trail of Bits 拥有多个领域的专家团队，很多成员都有博士背景，涵盖 AppSec（应用安全）、AI/ML、区块链和密码学。他们希望能更多参与相关播客节目，向外界分享我们在推动网络安全边界上的探索（同时也鼓励其他人效仿）。为了对社区作出贡献，他们专注于填补一些极度细分、几乎只有他们才能解答的知识空白。但如果要靠人工逐一筛选这些关键词播客，每周要花上几百小时的收听与研究。</p>
+<p>为了确保能在海量信息中找到“针”，而且能规模化做到，我们需要一个自动化工作流。它的运行方式是这样的：</p>
+<p>用户可以手动运行，或设定在某天某时自动执行。</p>
+<p>系统会检测某集是否包含合适的关键词，Claude 随即生成各种关键信息：节目的总结、嘉宾观点、带时间戳的引述、外发邮件草稿等等。</p>
+<p>所有输出会通过 Replit 前端展示。</p>
+<p>在构建过程中，我发现 Claude 有一些局限性。例如，它会虚构不存在的员工来匹配某个播客嘉宾。为解决这个问题，用户可以上传一份 Excel 文件到 Replit 前端，将 Trail of Bits 员工与其擅长的关键词对应起来。Claude 也无法直接找到主持人的联系方式。不过它能提取主持人的姓名和网站，再通过外部 API 获取联系方式。以下是 Claude 及其他辅助工具（比如 Excel 文件）生成的洞察示例。</p>
+<p>这个工具每周能监测 50 个以上的播客，一年就是 2,500 集！即便低估，每集 30 分钟，这套流程一年就能节省 1,250 小时的收听时间。更不用说额外节省的查找主持人联系方式、匹配合适员工、撰写外发邮件的时间。</p>
+<p>Slack 导出器（Slack exporter）</p>
+<p>Trail of Bits 的 Slack 有数百个频道，每个频道可能包含数百甚至上千条消息，搜索和分析历史信息非常耗时。为此，公司之前实现过一个基于终端（terminal）的 Slack 导出工具，可以把频道导出为 JSON 或 Markdown 文件，再上传到 Claude 获取总结与洞察。</p>
+<p>然而，这个方案有两大局限：</p>
+<p>所有员工都需要用 Slack 导出器，但由于它只能在终端运行，只有工程师能用。</p>
+<p>用户必须提前知道哪个 Slack 频道包含所需信息，因为 Claude 只能理解被导出的频道内容。</p>
+<p>为解决第一个问题，我发布了 Slack 导出器的 Electron 桌面应用。用户只需启动应用，就能导出频道，无需输入任何终端命令，人人可用。</p>
+<p>此外，UI 也更高效：用户可以搜索频道，甚至一次性选择所有频道：</p>
+<p>一旦选择了一个或多个频道，用户会看到多种导出选项（JSON、Markdown 等）。</p>
+<p>为解决第二个问题，我使用 Claude 的 MCP（model context protocol，模型上下文协议），直接把我们的 Slack 工作区暴露给 Claude。这样，通过 Claude 的桌面应用或代码接口，用户可以跨所有公共频道以及他们加入的私有频道进行搜索，无需再导出。想知道公司每个项目的进展？只需一次查询。要为新员工做入职培训，但团队成员都太忙？还是一次查询。</p>
+<p>凭借这个工具的广泛应用，我们团队能把精力放在推动网络安全前沿，而不是在 Slack 频道里翻找信息。</p>
+<p>激发兴奋感（Generating excitement）</p>
+<p>人人都在谈 AI 应用，但简单地复制粘贴进聊天机器人只是冰山一角。这些项目展示了 AI 应用可以走得多远。要构建这样的应用，你必须理解用户的问题，并持续让他们参与进来。我的测试过程大概是这样的：发现 bug → 紧急现场修复 → 收到新功能需求 → 当天测试新功能。</p>
+<p>与大多数实习项目一结束就“夭折”不同，我的工具之所以存活下来，是因为通过测试，员工把这些工具应用到自己的挑战中，真实体验到效率提升，然后将其融入日常工作。同样重要的是，他们把这种兴奋感分享给其他员工，从而让这些工具成为公司范围的基础设施。</p>
+<p>通过这些项目，Dan、Sam 和我希望让大家看到，AI 并不是取代员工，而是增强他们的能力。每个团队都有等待被发现的 AI 使用场景。在 Trail of Bits，我们正努力去发现并落实它们，而每个人都能贡献力量，哪怕是实习生。</p>
+<p>编译：ChatGPT</p>
+<p>内容来源：https://blog.trailofbits.com/2025/08/28/intern-projects-that-outlived-the-internship</p>
+</div>
+<footer><p class="src">本文首发于微信公众号「Joyce Ma」 · <a href="https://mp.weixin.qq.com/s/zSXSmemzcItkwoz2_kFp_A">阅读原文</a></p></footer>
+</article>
+<nav class="pager"><a class="newer" href="/p/20250917-0c2c37/"><small>较新</small>Long-Arc Explorer｜实习计划</a><a class="older" href="/p/20250915-acf8e7/"><small>较早</small>Opening of the Labubu Party</a></nav>
+</main>
+<footer class="foot">
+  <p>© Joyce Ma · 文章同步自微信公众号「Joyce Ma」，转载请注明出处</p>
+  <p><a href="/feed.xml">RSS 订阅</a></p>
+</footer>
+</body>
+</html>

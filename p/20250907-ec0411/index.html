@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>哈佛笔记｜危机管理 Operational Leadership - FedEx Cyberattack – Joyce Ma</title>
+<meta name="description" content="这堂课我最大的take away是，要有很多专业人士做供应商，要有预案。">
+<meta property="og:title" content="哈佛笔记｜危机管理 Operational Leadership - FedEx Cyberattack">
+<meta property="og:description" content="这堂课我最大的take away是，要有很多专业人士做供应商，要有预案。">
+<meta property="og:url" content="https://joycema.ai/p/20250907-ec0411/">
+<link rel="canonical" href="https://joycema.ai/p/20250907-ec0411/">
+<link rel="alternate" type="application/rss+xml" title="Joyce Ma" href="/feed.xml">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body class="is-post">
+<header class="top">
+  <a class="name" href="/">Joyce Ma</a>
+  <nav><a href="/harvard/">哈佛笔记</a><a href="/archive/">全部文章</a><a href="/skills/">技能</a></nav>
+</header>
+<main>
+<article class="post">
+<header>
+<p class="kicker">哈佛笔记</p><h1>危机管理 Operational Leadership</h1><p class="subtitle">FedEx Cyberattack</p>
+<p class="meta"><time datetime="2025-09-07">2025年9月7日</time></p>
+</header>
+
+<div class="prose">
+<p>这堂课我最大的take away是，要有很多专业人士做供应商，要有预案。</p>
+<p>故事梗概</p>
+<p>2017 年 6 月 27 日，破坏型蠕虫（自我传播的病毒，worm）NotPetya把 FedEx 刚收购的 TNT Express 的数字系统几乎全灭。FedEx 立即启动危机手册（BCDR），一边“切断+自保”，一边“手工接力+逐步重建”，把“技术灾难”变成“运营韧性”的一次实战。</p>
+<p>早上，美洲总部收到欧洲告警。TNT 的电脑与服务器像多米诺一样“黑屏+赎金界面”。最初像勒索软件，但很快确认是抹盘型恶意软件（wiper malware），目的是“破坏”，不是“要钱”。传播极快，几分钟“瘫一馆”，几十分钟“瘫全球客户端”。TNT 约 4 万台电脑 + 1 万台服务器报废。</p>
+<p>FedEx 迅速成立网络事件应对小组（CIRT），切断 TNT 与 FedEx 的连接（“按下大红钮”），保护“母舰”。当晚决定向 SEC 报告重大事件（8-K），并短暂停牌说明。股价基本稳。次日发布新闻稿：其他业务正常，TNT 受影响，财务影响“可能重大”。</p>
+<p>技术上，在英国 Atherstone 建立战情室（war room）。TNT 只剩零星纸质网络图与少量未联网笔记本文件。电话系统挂了，靠 WhatsApp 通讯。团队先重建<strong>账号/目录服务（Active Directory）</strong>与“能活下去的五件事”（通讯、应付/应收等）。</p>
+<p>运营上，不关门。沿用主备三层（P-S-T）：能切到 FedEx 的系统就切，切不了就“全手工”。车照发、路由靠“肌肉记忆”。同时由“FedEx 银行”注入营运资金，先保证 TNT 活着。</p>
+<p>备份体系是痛点。TNT 主要用磁带冷备，无法并行快速恢复。FedEx 紧急采购硬盘，把磁带拷到盘上并行恢复，上云、盘、离线“三份”新备份；特权账号从“几千人有权”降到“像 FedEx 一样仅 8 人”。同时把应用减负 900 个。</p>
+<p>客户侧，CIO 团队“一对一”安抚 40 家大客户。仍出现周级延误，媒体报道仓库“包裹堆到天花板”，竞争者趁机挖客。FedEx 当时没有网络险（cyber insurance），损失以业务流失为主。</p>
+<p>溯源后确认：这是一场供应链攻击（supply-chain attack），从乌克兰财务软件的合法更新入口渗透，全球多家巨头中招，总损失估 ≥100 亿美元。股价并没有受到太大冲击。</p>
+<p>课堂笔记</p>
+<ol>
+<li>
+<p>当危机来临时， 你在Plan模式还是Responding模式？</p>
+</li>
+<li>
+<p>Crisis management company可以先成为供应商，并且给公司做危机预演。让风险管理方去「钓鱼执法」， check who is the weak point如果发现了，那需要接受一个周末2天的额外培训。</p>
+</li>
+<li>
+<p>Take Blame and Failure out of the discussion — Focus on MissionCEO NOT emotional很重要</p>
+</li>
+<li>
+<p>Before bring a new company to your car, you need to understand the materials of this new company.</p>
+</li>
+<li>
+<p>What is the last time you ask your people to put the company above them.</p>
+</li>
+<li>
+<p>Are your people BURN OUT？</p>
+</li>
+</ol>
+<p>所有危机应对建议</p>
+<p>先稳住局面</p>
+<p>确认危机的真实范围和影响，避免过度恐慌或小题大做。</p>
+<p>立即设立一个临时危机小组，集中沟通与决策。</p>
+<p>保护核心</p>
+<p>先确保现金流、关键客户、核心员工和品牌声誉。</p>
+<p>如果是公关危机，迅速统一口径，避免信息混乱。</p>
+<p>透明沟通</p>
+<p>对内：让员工知道情况，避免谣言和恐慌。</p>
+<p>对外：与客户、合作伙伴和媒体保持适度透明，承认问题、传递解决方案。</p>
+<p>制定短期行动计划</p>
+<p>72小时内明确优先事项（如止损、稳定关系、合规应对）。</p>
+<p>把问题拆解成几个可执行的小步骤，逐一落实。</p>
+<p>长期修复与预防</p>
+<p>危机过后进行复盘：为什么会发生、内部哪些机制失效了？</p>
+<p>建立“预警系统”和演练机制，把危机转化为组织升级的机会。</p>
+</div>
+<footer><p class="src">本文首发于微信公众号「Joyce Ma」 · <a href="https://mp.weixin.qq.com/s/JxwmFzinUWnyywZuE7SVIw">阅读原文</a></p></footer>
+</article>
+<nav class="pager"><a class="newer" href="/p/20250907-9e6cf3/"><small>较新</small>战略入门</a><a class="older" href="/p/20250907-d15403/"><small>较早</small>Operational Leadership 从创始人→扩张→职业经理人</a></nav>
+</main>
+<footer class="foot">
+  <p>© Joyce Ma · 文章同步自微信公众号「Joyce Ma」，转载请注明出处</p>
+  <p><a href="/feed.xml">RSS 订阅</a></p>
+</footer>
+</body>
+</html>
