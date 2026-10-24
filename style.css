@@ -174,3 +174,59 @@ main { max-width: var(--wide); margin: 0 auto; padding: 0 24px; }
 
 .intro p + p { margin-top: .2em; }
 .intro .note { margin-top: 14px; font: 14px/1.7 var(--sans); color: var(--pencil); }
+
+/* 哈佛案例预习：日历 */
+.calnote { font: 14px/1.7 var(--sans); color: var(--pencil); margin: 6px 0 28px; }
+.cal { border-top: 1px solid var(--ink); }
+.cal-head, .week { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); }
+.cal-head span { font: 13px/1 var(--sans); color: var(--pencil); padding: 12px 8px; }
+.week { border-top: 1px solid var(--rule); }
+.day { padding: 10px 8px 16px; border-left: 1px solid var(--rule); min-height: 9rem; scroll-margin-top: 24px; }
+.day:first-child { border-left: 0; }
+.day h3 { display: flex; align-items: baseline; gap: 6px; margin: 0 0 8px; font: 600 1.05rem/1.2 var(--serif); }
+.day .wd { display: none; font: 13px/1 var(--sans); color: var(--pencil); font-weight: 400; }
+.day .cnt { margin-left: auto; font: 12px/1 var(--sans); color: var(--gold); font-weight: 400; }
+.day .now { font: 600 12px/1 var(--sans); color: var(--paper); background: var(--gold); padding: 3px 6px; border-radius: 2px; }
+.day.today { background: #faf7f1; }
+.day.empty .dn { color: var(--pencil); font-weight: 400; }
+.day .off { font: 13px/1.4 var(--sans); color: var(--pencil); margin: 0; }
+.slots { list-style: none; margin: 0; padding: 0; }
+.slot { font: 12.5px/1.45 var(--sans); color: var(--pencil); padding: 6px 0; border-top: 1px dotted var(--rule); }
+.slot:first-child { border-top: 0; padding-top: 0; }
+.slot time { display: block; font-variant-numeric: tabular-nums; }
+.slot .c { display: block; font-size: 11.5px; letter-spacing: .02em; }
+.slot .n { display: block; color: var(--graphite); }
+.slot .h, .slot .tag { display: none; }
+.slot.has .go { display: block; text-decoration: none; color: var(--ink); margin: 0 -4px; padding: 4px; border-radius: 2px; }
+.slot.has .go:hover { background: #f6f2ea; }
+.slot.has time, .slot.has .c { color: var(--gold); }
+.slot.has .n { color: var(--ink); font-weight: 600; font-family: var(--serif); font-size: 13.5px; line-height: 1.4; }
+.slot.has .tag { display: block; font-size: 11.5px; color: var(--gold); margin-top: 2px; }
+.slot .also { display: inline-block; font-size: 11.5px; color: var(--graphite); margin: 2px 0 0 0; }
+.undated { margin: 48px 0 0; }
+.undated h2 { font: 600 1rem/1.9 var(--serif); margin: 0 0 8px; }
+.undated .list a { grid-template-columns: 1fr; }
+.classtime { font: 14px/1.8 var(--sans); color: var(--graphite); margin: 14px 0 0; padding: 10px 14px; background: #faf7f1; border-left: 2px solid var(--gold); }
+.classtime span { color: var(--gold); margin-right: 10px; }
+.classtime a { color: var(--ink); text-underline-offset: 3px; }
+
+@media (max-width: 900px) {
+  .cal { border-top: 0; }
+  .cal-head { display: none; }
+  .week { display: block; border-top: 0; }
+  .day { border-left: 0; border-top: 1px solid var(--rule); min-height: 0; padding: 16px 0 18px; }
+  .day.empty { display: none; }
+  .day.today { background: none; }
+  .day h3 { font-size: 1.15rem; margin-bottom: 10px; }
+  .day .wd { display: inline; }
+  .slot { display: grid; grid-template-columns: 3.4em 1fr; gap: 2px 12px; font-size: 14px; padding: 10px 0; }
+  .slot time { grid-row: span 3; }
+  .slot .c, .slot .n, .slot .also { grid-column: 2; }
+  .slot.has { display: block; }
+  .slot.has .also { margin-left: 60px; }
+  .slot.has .go { display: grid; grid-template-columns: 3.4em 1fr; gap: 2px 12px; margin: 0; padding: 0; }
+  .slot.has .go:hover { background: none; }
+  .slot.has .n { font-size: 1rem; }
+  .slot.has .h { display: block; grid-column: 2; color: var(--graphite); font-family: var(--serif); font-size: .95rem; }
+  .slot.has .tag { grid-column: 2; }
+}
