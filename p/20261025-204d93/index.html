@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>哈佛笔记｜属性地图 —— 画出你愿意在哪里变差 – Joyce Ma</title>
+<meta name="description" content="Frances Frei 的运营课上，我最常想起的不是哪一个案例，而是一张很朴素的图。">
+<meta property="og:title" content="哈佛笔记｜属性地图 —— 画出你愿意在哪里变差">
+<meta property="og:description" content="Frances Frei 的运营课上，我最常想起的不是哪一个案例，而是一张很朴素的图。">
+<meta property="og:url" content="https://joycema.ai/p/20261025-204d93/"><meta property="og:image" content="https://joycema.ai/og.jpg"><meta property="og:type" content="article"><meta property="og:site_name" content="Joyce Ma"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://joycema.ai/og.jpg">
+<link rel="canonical" href="https://joycema.ai/p/20261025-204d93/"><link rel="alternate" hreflang="zh-CN" href="https://joycema.ai/p/20261025-204d93/"><link rel="alternate" hreflang="en" href="https://joycema.ai/en/p/20261025-204d93/">
+<link rel="alternate" type="application/rss+xml" title="Joyce Ma" href="/feed.xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/icon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body class="is-post">
+<div hidden><img src="/icon-512.png" alt="Joyce" width="512" height="512"></div>
+<header class="top">
+  <a class="name" href="/">Joyce Ma</a>
+  <nav><a href="/" aria-current=page>文章</a><a href="/skills/">Skills</a><a class="lang" href="/en/p/20261025-204d93/" hreflang="en" lang="en">EN</a></nav>
+</header>
+<main>
+<article class="post">
+<header>
+<p class="kicker"><a href="/harvard/">哈佛笔记</a></p><h1>属性地图</h1><p class="subtitle">画出你愿意在哪里变差</p>
+<p class="meta"><time datetime="2026-10-25">2026年10月25日</time></p>
+</header>
+
+<div class="prose">
+<p>Frances Frei 的运营课上，我最常想起的不是哪一个案例，而是一张很朴素的图。</p>
+<p>左边一列，是客户在乎的东西，按重要程度从上往下排；上面一行，是五个刻度，从「同类最差」到「同类最好」。你在每一项上做得怎么样，就点一个点，再把点连起来。</p>
+<p>这张图难画，不在画法，在诚实。</p>
+<p>大多数公司画出来的线，都想贴着右边走：每一项都不差，每一项都想再好一点。可是一条处处「还不错」的线，往往就是没有定位。客户说不出非选你不可的理由。</p>
+<p>真正好看的那条线是斜的：在客户最在乎的地方，冲到最右；在客户不太在乎的地方，心甘情愿地退到左边。省下来的钱和精力，全部押在上面几行。</p>
+<p>变差不是失误，是选择。前提是你清楚自己为什么在那里变差，而且那恰好是客户最不在意的地方。</p>
+<p>所以我做了下面这个小工具。填上你的公司、你的目标客户，列出他们在乎的东西，排好顺序，打分。地图会自己画出来，下面还有几句提醒：哪里取舍做对了，哪里可能在错的地方用力。</p>
+<p>可以拿自己的公司试，也可以拿课上的案例试。画完可以下载成图片，或者复制一个链接发给同学。</p>
+<div id="amap" class="amap"><noscript><p>这个工具需要开启 JavaScript。 / This tool needs JavaScript.</p></noscript></div>
+
+<style>
+.amap { --am-gold: #a6834e; --am-soft: #faf7f1; margin: 2.2em 0 2.6em; font: 15px/1.6 var(--sans); color: var(--ink); }
+.amap * { box-sizing: border-box; }
+.amap .am-card { border-top: 1px solid var(--ink); padding-top: 18px; }
+.amap .am-step { font: 600 13px/1 var(--sans); letter-spacing: .06em; color: var(--am-gold); margin: 0 0 10px; }
+.amap .am-hint { font-size: 13.5px; color: var(--pencil); margin: 0 0 14px; line-height: 1.7; }
+.amap .am-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 16px; margin: 0 0 28px; }
+.amap .am-fields label { display: block; font-size: 13px; color: var(--graphite); }
+.amap .am-fields .am-wide { grid-column: 1 / -1; }
+.amap input[type=text] { width: 100%; font: 15px/1.4 var(--sans); color: var(--ink); background: var(--paper); border: 0; border-bottom: 1px solid var(--rule); padding: 8px 0 7px; border-radius: 0; margin-top: 2px; }
+.amap input[type=text]:focus { outline: none; border-bottom-color: var(--am-gold); }
+.amap input[type=text]::placeholder { color: #c4c4c4; }
+.amap .am-legend { display: flex; gap: 18px; flex-wrap: wrap; font-size: 13px; color: var(--graphite); margin: 0 0 6px; }
+.amap .am-legend i { display: inline-block; width: 18px; height: 0; border-top: 2px solid var(--am-gold); vertical-align: middle; margin-right: 6px; }
+.amap .am-legend i.c { border-top: 2px dashed var(--graphite); }
+.amap .am-rows { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule); }
+.amap .am-row { border-bottom: 1px solid var(--rule); padding: 12px 0; display: grid; grid-template-columns: 1.8em 1fr auto; gap: 6px 10px; align-items: center; }
+.amap .am-row .am-n { font: 600 14px/1 var(--serif); color: var(--pencil); font-variant-numeric: tabular-nums; }
+.amap .am-row input[type=text] { border-bottom-color: transparent; padding: 4px 0; font-weight: 600; }
+.amap .am-row input[type=text]:hover { border-bottom-color: var(--rule); }
+.amap .am-tools { display: flex; gap: 2px; }
+.amap .am-tools button { width: 30px; height: 30px; border: 0; background: none; color: var(--pencil); font: 15px/1 var(--sans); cursor: pointer; border-radius: 2px; padding: 0; }
+.amap .am-tools button:hover:not(:disabled) { background: #f3f3f1; color: var(--ink); }
+.amap .am-tools button:disabled { opacity: .3; cursor: default; }
+.amap .am-scales { grid-column: 2 / -1; display: grid; gap: 6px; }
+.amap .am-scale { display: grid; grid-template-columns: 4.2em repeat(5, minmax(0, 1fr)); gap: 4px; align-items: center; }
+.amap .am-scale > span { font-size: 12px; color: var(--pencil); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.amap .am-scale button { font: 12.5px/1 var(--sans); color: var(--graphite); background: var(--paper); border: 1px solid var(--rule); border-radius: 2px; padding: 8px 0; cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.amap .am-scale button:hover { border-color: var(--pencil); color: var(--ink); }
+.amap .am-scale.you button[aria-pressed=true] { background: var(--am-gold); border-color: var(--am-gold); color: #fff; }
+.amap .am-scale.rival button[aria-pressed=true] { background: var(--ink); border-color: var(--ink); color: #fff; }
+.amap .am-scale.rival[hidden] { display: none; }
+.amap .am-add { margin: 14px 0 0; display: flex; gap: 10px; flex-wrap: wrap; }
+.amap .am-btn { font: 600 14px/1 var(--sans); color: var(--ink); background: var(--paper); border: 1px solid var(--ink); border-radius: 2px; padding: 11px 16px; cursor: pointer; }
+.amap .am-btn:hover { background: var(--ink); color: var(--paper); }
+.amap .am-btn.ghost { border-color: var(--rule); color: var(--graphite); font-weight: 400; }
+.amap .am-btn.ghost:hover { border-color: var(--ink); background: var(--paper); color: var(--ink); }
+.amap .am-out { margin-top: 40px; }
+.amap .am-map { border: 1px solid var(--rule); background: var(--paper); padding: 8px 6px 4px; overflow-x: auto; }
+.amap .am-map svg { display: block; width: 100%; height: auto; }
+.amap .am-empty { padding: 48px 16px; text-align: center; color: var(--pencil); font-size: 14px; }
+.amap .am-read { margin: 22px 0 0; padding: 0; list-style: none; }
+.amap .am-read li { position: relative; padding: 10px 0 10px 18px; border-bottom: 1px dotted var(--rule); font: 15.5px/1.85 var(--serif); color: var(--ink); }
+.amap .am-read li::before { content: ""; position: absolute; left: 2px; top: 1.15em; width: 6px; height: 6px; border-radius: 50%; background: var(--am-gold); }
+.amap .am-read li.warn::before { background: var(--ink); }
+.amap .am-read b { font-weight: 700; }
+.amap .am-foot { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 22px; align-items: center; }
+.amap .am-toast { font-size: 13px; color: var(--am-gold); }
+.amap .am-private { font-size: 12.5px; color: var(--pencil); margin: 14px 0 0; }
+@media (max-width: 760px) {
+  .amap .am-fields { grid-template-columns: 1fr; }
+  .amap .am-row { grid-template-columns: 1.4em 1fr auto; }
+  .amap .am-scales { grid-column: 1 / -1; }
+  .amap .am-scale { grid-template-columns: 3.4em repeat(5, minmax(0, 1fr)); gap: 3px; }
+  .amap .am-scale button { font-size: 11.5px; padding: 9px 0; }
+}
+@media print { .amap .am-card, .amap .am-foot, .amap .am-private { display: none; } }
+</style>
+
+<script>
+(function () {
+  "use strict";
+  var root = document.getElementById("amap");
+  if (!root) return;
+  var EN = (document.documentElement.lang || "").toLowerCase().indexOf("en") === 0;
+  var KEY = "joycema-attribute-map-v1";
+  var L = EN ? {
+    s1: "STEP 1 · WHO IS THIS FOR",
+    you: "You", youPh: "e.g. A corner takeaway coffee bar",
+    rival: "Compared with (optional)", rivalPh: "e.g. The chain café next door",
+    cust: "Target customer", custPh: "e.g. Office workers rushing in at 8:30",
+    s2: "STEP 2 · WHAT THEY CARE ABOUT, MOST IMPORTANT FIRST",
+    h2: "List what this customer cares about, top to bottom by how much it matters to them. Then rate how you perform on each one, relative to the alternatives they have.",
+    attrPh: "An attribute, e.g. speed", add: "+ Add attribute", ex: "Load an example", clear: "Start over",
+    up: "Move up", down: "Move down", del: "Remove",
+    lv: ["Worst", "Below", "Par", "Above", "Best"],
+    lvLong: ["Worst in class", "Below average", "On par", "Above average", "Best in class"],
+    s3: "STEP 3 · THE MAP", imp: "↑ matters more", empty: "Add an attribute above and the map will draw itself.",
+    png: "Download image", link: "Copy share link", print: "Print", copied: "Link copied", saved: "Image saved",
+    priv: "Everything stays in your own browser. Nothing is sent to joycema.ai.",
+    youDef: "You", rivalDef: "Alternative",
+    ex1: { you: "Corner takeaway coffee bar", rival: "Chain café next door", cust: "Office workers rushing in at 8:30",
+      rows: [["Ready in under two minutes", 5, 3], ["Coffee tastes reliably good", 4, 3], ["Price", 4, 3], ["Remembers my usual order", 5, 1], ["Menu variety", 2, 5], ["A place to sit and work", 1, 5]] },
+    r: {
+      none: "Rate a few attributes and a reading will appear here.",
+      flat: "Everything is rated <b>on par</b>. A map with no peaks and no valleys usually means there is no position yet: the customer has no reason to pick you over anyone else.",
+      noBad: "There is nowhere you are weak. Being great somewhere usually costs something elsewhere. Ask what you are <b>willing to be bad at</b>, so the money and attention can go to what matters most.",
+      noGood: "There is nothing you are best at. Without a peak, the customer has nothing to remember you by.",
+      aligned: "The shape slopes the right way: your strengths sit on what this customer cares about most, and your weaknesses sit on what they care about least. That is a trade-off made on purpose.",
+      topWeak: "<b>{a}</b> is near the top of what this customer cares about, yet you are weak there. Either fix it, or check whether this is really your target customer.",
+      lowStrong: "You are strong on <b>{a}</b>, which this customer ranks low. That effort might be worth moving up the list.",
+      gap: "The clearest difference from {r}: {d}.",
+      better: "<b>{a}</b> (you’re ahead)", worse: "<b>{a}</b> (they’re ahead)",
+      sep: "; "
+    }
+  } : {
+    s1: "第一步 · 为谁画这张图",
+    you: "你的公司或方案", youPh: "比如：一家只做外带的街角咖啡",
+    rival: "对照对象（可不填）", rivalPh: "比如：隔壁的连锁咖啡馆",
+    cust: "目标客户", custPh: "比如：早上八点半赶着上班的人",
+    s2: "第二步 · 客户在乎什么，最重要的放最上面",
+    h2: "把这群客户在乎的属性列出来，按重要程度从上往下排；再给每一项打分：和客户手上的其他选择相比，你做得怎么样。",
+    attrPh: "一个属性，比如：出杯速度", add: "+ 添加属性", ex: "载入示例", clear: "清空重来",
+    up: "上移", down: "下移", del: "删除",
+    lv: ["最差", "偏弱", "持平", "偏强", "最好"],
+    lvLong: ["同类最差", "低于平均", "和别人持平", "高于平均", "同类最好"],
+    s3: "第三步 · 属性地图", imp: "↑ 越上越重要", empty: "在上面添加属性，地图会自动画出来。",
+    png: "下载图片", link: "复制分享链接", print: "打印", copied: "链接已复制", saved: "图片已保存",
+    priv: "所有内容只存在你自己的浏览器里，不会上传到 joycema.ai。",
+    youDef: "你", rivalDef: "对照",
+    ex1: { you: "街角外带咖啡", rival: "隔壁连锁咖啡馆", cust: "早上八点半赶着上班的人",
+      rows: [["两分钟内拿到咖啡", 5, 3], ["每杯味道稳定", 4, 3], ["价格", 4, 3], ["记得我常点什么", 5, 1], ["菜单丰富", 2, 5], ["能坐下来办公", 1, 5]] },
+    r: {
+      none: "给几项属性打完分，这里会出现解读。",
+      flat: "每一项都是<b>持平</b>。一张没有高峰、也没有低谷的图，通常说明还没有定位：客户找不到非选你不可的理由。",
+      noBad: "没有一项是弱的。想在某处做到最好，往往要在别处付出代价。不妨问问自己：<b>愿意在哪里变差</b>，好把钱和精力省下来，投到客户最在乎的地方。",
+      noGood: "没有一项做到最好。没有高峰，客户就记不住你。",
+      aligned: "这张图的形状是对的：强项落在客户最在乎的地方，弱项落在客户最不在乎的地方。这是有意识做出的取舍。",
+      topWeak: "<b>{a}</b>排在客户最在乎的前几位，你却偏弱。要么补上，要么想一想：这真的是你的目标客户吗？",
+      lowStrong: "你在<b>{a}</b>上很强，但这群客户并不太在乎。这份力气，也许可以挪到更靠前的属性上。",
+      gap: "和{r}拉开差距最大的地方：{d}。",
+      better: "<b>{a}</b>（你领先）", worse: "<b>{a}</b>（对方领先）",
+      sep: "；"
+    }
+  };
+  var C = { gold: "#a6834e", ink: "#262626", graphite: "#5f5f5f", pencil: "#9b9b9b", rule: "#e8e8e6", soft: "#faf7f1" };
+  function blank() { return { you: "", rival: "", cust: "", rows: [{ a: "", y: 0, c: 0 }, { a: "", y: 0, c: 0 }, { a: "", y: 0, c: 0 }] }; }
+  function fromEx(e) { return { you: e.you, rival: e.rival, cust: e.cust, rows: e.rows.map(function (r) { return { a: r[0], y: r[1], c: r[2] }; }) }; }
+  function clean(s) {
+    if (!s || typeof s !== "object" || !Array.isArray(s.rows)) return null;
+    var str = function (v, n) { return typeof v === "string" ? v.slice(0, n) : ""; };
+    var lvl = function (v) { v = +v; return v >= 1 && v <= 5 ? Math.round(v) : 0; };
+    return { you: str(s.you, 60), rival: str(s.rival, 60), cust: str(s.cust, 80),
+      rows: s.rows.slice(0, 16).map(function (r) { return { a: str(r && r.a, 40), y: lvl(r && r.y), c: lvl(r && r.c) }; }) };
+  }
+  function enc(s) { return btoa(unescape(encodeURIComponent(JSON.stringify(s)))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, ""); }
+  function dec(t) { try { t = t.replace(/-/g, "+").replace(/_/g, "/"); return clean(JSON.parse(decodeURIComponent(escape(atob(t))))); } catch (e) { return null; } }
+  var state = null;
+  var m = /(?:^|[#&])map=([A-Za-z0-9_-]+)/.exec(location.hash || "");
+  if (m) state = dec(m[1]);
+  if (!state) { try { state = clean(JSON.parse(localStorage.getItem(KEY))); } catch (e) { state = null; } }
+  if (!state) state = fromEx(L.ex1);
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  function el(tag, attrs, html) { var e = document.createElement(tag); for (var k in attrs || {}) e.setAttribute(k, attrs[k]); if (html != null) e.innerHTML = html; return e; }
+  root.innerHTML = "";
+  var card = el("div", { "class": "am-card" });
+  card.innerHTML =
+    '<p class="am-step">' + L.s1 + '</p>' +
+    '<div class="am-fields">' +
+    '<label>' + L.you + '<input type="text" data-k="you" maxlength="60" placeholder="' + esc(L.youPh) + '"></label>' +
+    '<label>' + L.rival + '<input type="text" data-k="rival" maxlength="60" placeholder="' + esc(L.rivalPh) + '"></label>' +
+    '<label class="am-wide">' + L.cust + '<input type="text" data-k="cust" maxlength="80" placeholder="' + esc(L.custPh) + '"></label>' +
+    '</div>' +
+    '<p class="am-step">' + L.s2 + '</p><p class="am-hint">' + L.h2 + '</p>' +
+    '<ol class="am-rows"></ol>' +
+    '<div class="am-add"><button type="button" class="am-btn" data-act="add">' + L.add + '</button>' +
+    '<button type="button" class="am-btn ghost" data-act="ex">' + L.ex + '</button>' +
+    '<button type="button" class="am-btn ghost" data-act="clear">' + L.clear + '</button></div>';
+  root.appendChild(card);
+  var out = el("div", { "class": "am-out" });
+  out.innerHTML = '<p class="am-step">' + L.s3 + '</p><div class="am-map" aria-live="polite"></div><ul class="am-read"></ul>' +
+    '<div class="am-foot"><button type="button" class="am-btn" data-act="png">' + L.png + '</button>' +
+    '<button type="button" class="am-btn ghost" data-act="link">' + L.link + '</button>' +
+    '<button type="button" class="am-btn ghost" data-act="print">' + L.print + '</button><span class="am-toast" role="status"></span></div>' +
+    '<p class="am-private">' + L.priv + '</p>';
+  root.appendChild(out);
+  var list = card.querySelector(".am-rows"), mapBox = out.querySelector(".am-map"), readBox = out.querySelector(".am-read"), toast = out.querySelector(".am-toast");
+  function names() { return { you: state.you.trim() || L.youDef, rival: state.rival.trim() || L.rivalDef, hasRival: !!state.rival.trim() || state.rows.some(function (r) { return r.c; }) }; }
+  function scaleHTML(cls, who, label, v) {
+    var h = '<div class="am-scale ' + cls + '" role="group" aria-label="' + esc(label) + '"><span title="' + esc(label) + '">' + esc(label) + '</span>';
+    for (var i = 1; i <= 5; i++) h += '<button type="button" data-who="' + who + '" data-v="' + i + '" aria-pressed="' + (v === i) + '" title="' + esc(L.lvLong[i - 1]) + '">' + L.lv[i - 1] + '</button>';
+    return h + '</div>';
+  }
+  function drawRows() {
+    var n = names();
+    list.innerHTML = "";
+    state.rows.forEach(function (r, i) {
+      var li = el("li", { "class": "am-row", "data-i": i });
+      li.innerHTML = '<span class="am-n">' + (i + 1) + '</span>' +
+        '<input type="text" data-k="a" maxlength="40" placeholder="' + esc(L.attrPh) + '" value="' + esc(r.a) + '">' +
+        '<span class="am-tools"><button type="button" data-act="up" aria-label="' + L.up + '"' + (i === 0 ? " disabled" : "") + '>↑</button>' +
+        '<button type="button" data-act="down" aria-label="' + L.down + '"' + (i === state.rows.length - 1 ? " disabled" : "") + '>↓</button>' +
+        '<button type="button" data-act="del" aria-label="' + L.del + '">×</button></span>' +
+        '<div class="am-scales">' + scaleHTML("you", "y", n.you, r.y) + scaleHTML("rival", "c", n.rival, r.c) + '</div>';
+      list.appendChild(li);
+    });
+  }
+  function fields() { card.querySelectorAll(".am-fields input").forEach(function (inp) { inp.value = state[inp.getAttribute("data-k")]; }); }
+  function syncScaleLabels() {
+    var n = names();
+    list.querySelectorAll(".am-scale.you > span").forEach(function (s) { s.textContent = n.you; s.title = n.you; });
+    list.querySelectorAll(".am-scale.rival > span").forEach(function (s) { s.textContent = n.rival; s.title = n.rival; });
+  }
+  function clip(s, n) { s = s.trim(); var w = 0, o = ""; for (var i = 0; i < s.length; i++) { var cw = /[⺀-￿]/.test(s[i]) ? 2 : 1.1; if (w + cw > n) return o + "…"; w += cw; o += s[i]; } return o; }
+  function svg(Wt) {
+    var rows = state.rows.filter(function (r) { return r.a.trim() || r.y || r.c; });
+    var n = names();
+    if (!rows.length) return "";
+    var W = Wt || 680, nar = W < 520, labelW = nar ? 132 : 200, top = 92, rowH = nar ? 42 : 46, padR = nar ? 12 : 28, bottom = 54, fsL = nar ? 13.5 : 15, lvF = nar ? 11.5 : 12.5;
+    var colW = (W - labelW - padR) / 5, H = top + rows.length * rowH + bottom;
+    var font = "-apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif";
+    var serif = "'Noto Serif SC', 'Songti SC', 'STSong', Georgia, serif";
+    var x = function (v) { return labelW + colW * (v - 0.5); }, y = function (i) { return top + rowH * (i + 0.5); };
+    var s = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + W + ' ' + H + '" width="' + W + '" height="' + H + '" role="img" aria-label="' + esc(L.s3) + '">';
+    s += '<rect width="' + W + '" height="' + H + '" fill="#ffffff"/>';
+    var title = n.you + (state.cust.trim() ? (EN ? " · for " : " · 面向") + state.cust.trim() : "");
+    s += '<text x="' + (nar ? 10 : 20) + '" y="34" font-family="' + serif + '" font-size="' + (nar ? 16 : 19) + '" font-weight="700" fill="' + C.ink + '">' + esc(clip(title, nar ? 40 : 64)) + '</text>';
+    s += '<rect x="' + (labelW + colW * 2) + '" y="' + (top - 28) + '" width="' + colW + '" height="' + (rows.length * rowH + 28) + '" fill="' + C.soft + '"/>';
+    for (var k = 1; k <= 5; k++) {
+      s += '<text x="' + x(k) + '" y="' + (top - 10) + '" text-anchor="middle" font-family="' + font + '" font-size="' + lvF + '" fill="' + (k === 3 ? C.graphite : C.pencil) + '">' + L.lv[k - 1] + '</text>';
+      s += '<line x1="' + x(k) + '" y1="' + top + '" x2="' + x(k) + '" y2="' + (top + rows.length * rowH) + '" stroke="' + C.rule + '" stroke-width="1"/>';
+    }
+    s += '<line x1="' + (nar ? 6 : 20) + '" y1="' + top + '" x2="' + (W - padR + 10) + '" y2="' + top + '" stroke="' + C.ink + '" stroke-width="1"/>';
+    rows.forEach(function (r, i) {
+      s += '<line x1="' + (nar ? 6 : 20) + '" y1="' + (top + rowH * (i + 1)) + '" x2="' + (W - padR + 10) + '" y2="' + (top + rowH * (i + 1)) + '" stroke="' + C.rule + '" stroke-width="1"/>';
+      s += '<text x="' + (nar ? 8 : 20) + '" y="' + (y(i) + 5) + '" font-family="' + font + '" font-size="12" fill="' + C.pencil + '">' + (i + 1) + '</text>';
+      s += '<text x="' + (nar ? 24 : 40) + '" y="' + (y(i) + 5) + '" font-family="' + serif + '" font-size="' + fsL + '" font-weight="600" fill="' + C.ink + '">' + esc(clip(r.a || "—", nar ? 13 : 21)) + '</text>';
+    });
+    function line(key, color, dash, hollow) {
+      var pts = [];
+      rows.forEach(function (r, i) { if (r[key]) pts.push([x(r[key]), y(i)]); });
+      if (!pts.length) return "";
+      var o = "";
+      if (pts.length > 1) o += '<polyline points="' + pts.map(function (p) { return p[0].toFixed(1) + "," + p[1]; }).join(" ") + '" fill="none" stroke="' + color + '" stroke-width="' + (hollow ? 1.6 : 2.4) + '"' + (dash ? ' stroke-dasharray="5 5"' : "") + ' stroke-linejoin="round" stroke-linecap="round"/>';
+      pts.forEach(function (p) { o += '<circle cx="' + p[0].toFixed(1) + '" cy="' + p[1] + '" r="' + (hollow ? 5 : 6.5) + '" fill="' + (hollow ? "#ffffff" : color) + '" stroke="' + color + '" stroke-width="' + (hollow ? 1.6 : 2) + '"/>'; });
+      return o;
+    }
+    if (n.hasRival) s += line("c", C.graphite, true, true);
+    s += line("y", C.gold, false, false);
+    var by = top + rows.length * rowH + 30;
+    s += '<text x="' + (nar ? 8 : 20) + '" y="' + by + '" font-family="' + font + '" font-size="12" fill="' + C.pencil + '">' + L.imp + '</text>';
+    var lx = W - padR - (nar ? 2 : 10), items = [[n.you, C.gold, false]];
+    if (n.hasRival) items.push([n.rival, C.graphite, true]);
+    items.reverse().forEach(function (it) {
+      var label = clip(it[0], nar ? 12 : 18), tw = label.replace(/[⺀-￿]/g, "xx").length * 6.4;
+      s += '<text x="' + lx + '" y="' + by + '" text-anchor="end" font-family="' + font + '" font-size="12.5" fill="' + C.graphite + '">' + esc(label) + '</text>';
+      lx -= tw + 8;
+      s += '<line x1="' + (lx - 22) + '" y1="' + (by - 4) + '" x2="' + lx + '" y2="' + (by - 4) + '" stroke="' + it[1] + '" stroke-width="2"' + (it[2] ? ' stroke-dasharray="4 4"' : "") + '/>';
+      lx -= 40;
+    });
+    s += '<text x="' + (nar ? 8 : 20) + '" y="' + (H - 8) + '" font-family="' + font + '" font-size="10.5" fill="#c4c4c4">joycema.ai</text>';
+    return s + "</svg>";
+  }
+  function reading() {
+    var rows = state.rows.filter(function (r) { return r.a.trim() && r.y; });
+    var n = names(), R = L.r, out = [];
+    if (rows.length < 2) return [[R.none, ""]];
+    var ys = rows.map(function (r) { return r.y; });
+    if (ys.every(function (v) { return v === 3; })) return [[R.flat, "warn"]];
+    var half = Math.ceil(rows.length / 2), topRows = rows.slice(0, half), lowRows = rows.slice(half);
+    var topCut = Math.max(1, Math.min(2, Math.floor(rows.length / 3) || 1));
+    var tw = rows.slice(0, topCut).filter(function (r) { return r.y <= 2; });
+    var ls = rows.slice(rows.length - topCut).filter(function (r) { return r.y >= 4; });
+    var avg = function (a) { return a.reduce(function (s, r) { return s + r.y; }, 0) / a.length; };
+    if (!ys.some(function (v) { return v <= 2; })) out.push([R.noBad, "warn"]);
+    if (!ys.some(function (v) { return v === 5; })) out.push([R.noGood, "warn"]);
+    tw.forEach(function (r) { out.push([R.topWeak.replace("{a}", esc(r.a.trim())), "warn"]); });
+    ls.forEach(function (r) { out.push([R.lowStrong.replace("{a}", esc(r.a.trim())), "warn"]); });
+    if (!tw.length && lowRows.length && avg(topRows) - avg(lowRows) >= 1 && ys.some(function (v) { return v <= 2; }) && ys.some(function (v) { return v >= 4; })) out.unshift([R.aligned, ""]);
+    if (n.hasRival) {
+      var g = rows.filter(function (r) { return r.c && Math.abs(r.y - r.c) >= 2; }).sort(function (a, b) { return Math.abs(b.y - b.c) - Math.abs(a.y - a.c); }).slice(0, 3);
+      if (g.length) out.push([R.gap.replace("{r}", esc(n.rival)).replace("{d}", g.map(function (r) { return (r.y > r.c ? R.better : R.worse).replace("{a}", esc(r.a.trim())); }).join(R.sep)), ""]);
+    }
+    return out.length ? out : [[R.none, ""]];
+  }
+  function drawMap() {
+    var cw = mapBox.clientWidth - 14, s = svg(cw > 0 && cw < 680 ? Math.max(320, Math.floor(cw)) : 680);
+    mapBox.innerHTML = s || '<div class="am-empty">' + L.empty + '</div>';
+    readBox.innerHTML = reading().map(function (p) { return '<li class="' + p[1] + '">' + p[0] + '</li>'; }).join("");
+  }
+  var tmr;
+  function changed(rows) { save(); if (rows) drawRows(); drawMap(); }
+  function flash(t) { toast.textContent = t; clearTimeout(tmr); tmr = setTimeout(function () { toast.textContent = ""; }, 2400); }
+  card.addEventListener("input", function (e) {
+    var t = e.target, k = t.getAttribute("data-k");
+    if (!k) return;
+    if (k === "a") { state.rows[+t.closest(".am-row").getAttribute("data-i")].a = t.value; }
+    else { state[k] = t.value; syncScaleLabels(); }
+    changed(false);
+  });
+  root.addEventListener("click", function (e) {
+    var b = e.target.closest("button");
+    if (!b || !root.contains(b)) return;
+    var li = b.closest(".am-row"), i = li ? +li.getAttribute("data-i") : -1, act = b.getAttribute("data-act"), rows = state.rows;
+    if (b.hasAttribute("data-v")) {
+      var who = b.getAttribute("data-who"), v = +b.getAttribute("data-v");
+      rows[i][who] = rows[i][who] === v ? 0 : v;
+      b.parentNode.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", String(+x.getAttribute("data-v") === rows[i][who])); });
+      return changed(false);
+    }
+    if (act === "up" && i > 0) { rows.splice(i - 1, 0, rows.splice(i, 1)[0]); changed(true); list.children[i - 1].querySelector('[data-act=up]').focus(); if (i - 1 === 0) list.children[0].querySelector('[data-act=down]').focus(); }
+    else if (act === "down" && i < rows.length - 1) { rows.splice(i + 1, 0, rows.splice(i, 1)[0]); changed(true); var dn = list.children[i + 1].querySelector('[data-act=down]'); (dn.disabled ? list.children[i + 1].querySelector('[data-act=up]') : dn).focus(); }
+    else if (act === "del") { rows.splice(i, 1); if (!rows.length) rows.push({ a: "", y: 0, c: 0 }); changed(true); }
+    else if (act === "add") { if (rows.length >= 16) return; rows.push({ a: "", y: 0, c: 0 }); changed(true); list.lastElementChild.querySelector("input").focus(); }
+    else if (act === "ex") { state = fromEx(L.ex1); fields(); changed(true); }
+    else if (act === "clear") { state = blank(); fields(); changed(true); }
+    else if (act === "link") {
+      var url = location.href.split("#")[0] + "#map=" + enc(state);
+      try { history.replaceState(null, "", url); } catch (err) {}
+      var done = function () { flash(L.copied); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(done, function () { window.prompt("", url); });
+      else window.prompt("", url);
+    }
+    else if (act === "print") window.print();
+    else if (act === "png") {
+      var s = svg();
+      if (!s) return;
+      var img = new Image(), sc = 2;
+      img.onload = function () {
+        var cv = document.createElement("canvas");
+        cv.width = img.width * sc; cv.height = img.height * sc;
+        var cx = cv.getContext("2d"); cx.scale(sc, sc); cx.drawImage(img, 0, 0);
+        var a = document.createElement("a");
+        a.download = (EN ? "attribute-map" : "属性地图") + (state.you.trim() ? "-" + state.you.trim().replace(/[\\\/:*?"<>|\s]+/g, "-") : "") + ".png";
+        a.href = cv.toDataURL("image/png");
+        document.body.appendChild(a); a.click(); a.remove(); flash(L.saved);
+      };
+      img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(s);
+    }
+  });
+  var rz, lastW = 0;
+  window.addEventListener("resize", function () { clearTimeout(rz); rz = setTimeout(function () { if (mapBox.clientWidth !== lastW) { lastW = mapBox.clientWidth; drawMap(); } }, 150); });
+  fields(); drawRows(); drawMap(); lastW = mapBox.clientWidth;
+})();
+</script>
+</div>
+<footer><p class="src">本文为 joycema.ai 网站原创。</p></footer>
+</article>
+<nav class="pager"><a class="older" href="/p/20261023-7d8404/"><small>较早</small>领导力：Mudo</a></nav>
+</main>
+<footer class="foot">
+  <p>© Joyce Ma · 文章同步自微信公众号「Joyce Ma」，转载请注明出处</p>
+  <p><a href="/feed.xml">RSS 订阅</a></p>
+</footer>
+</body>
+</html>
