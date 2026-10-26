@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HBS Notes | Crisis Management: Operational Leadership - FedEx Cyberattack – Joyce Ma</title>
+<meta name="description" content="My biggest takeaway from this class: have plenty of specialists on board as suppliers, and have a plan ready in advance.">
+<meta property="og:title" content="HBS Notes | Crisis Management: Operational Leadership - FedEx Cyberattack">
+<meta property="og:description" content="My biggest takeaway from this class: have plenty of specialists on board as suppliers, and have a plan ready in advance.">
+<meta property="og:url" content="https://joycema.ai/en/p/20250907-ec0411/"><meta property="og:image" content="https://joycema.ai/og.jpg"><meta property="og:type" content="article"><meta property="og:site_name" content="Joyce Ma"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://joycema.ai/og.jpg">
+<link rel="canonical" href="https://joycema.ai/en/p/20250907-ec0411/"><link rel="alternate" hreflang="zh-CN" href="https://joycema.ai/p/20250907-ec0411/"><link rel="alternate" hreflang="en" href="https://joycema.ai/en/p/20250907-ec0411/">
+<link rel="alternate" type="application/rss+xml" title="Joyce Ma" href="/en/feed.xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/icon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body class="is-post">
+<div hidden><img src="/icon-512.png" alt="Joyce" width="512" height="512"></div>
+<header class="top">
+  <a class="name" href="/en/">Joyce Ma</a>
+  <nav><a href="/en/" aria-current=page>Articles</a><a href="/en/skills/">Skills</a><a class="lang" href="/p/20250907-ec0411/" hreflang="zh-CN" lang="zh-CN">中文</a></nav>
+</header>
+<main>
+<article class="post">
+<header>
+<p class="kicker"><a href="/en/harvard/">HBS Notes</a></p><h1>Crisis Management: Operational Leadership</h1><p class="subtitle">FedEx Cyberattack</p>
+<p class="meta"><time datetime="2025-09-07">September 7, 2025</time></p>
+</header>
+
+<div class="prose">
+<p>My biggest takeaway from this class: have plenty of specialists on board as suppliers, and have a plan ready in advance.</p>
+<p>Case Summary</p>
+<p>On June 27, 2017, the destructive worm (a self-propagating virus) NotPetya wiped out almost the entire digital system of TNT Express, which FedEx had just acquired. FedEx immediately activated its crisis playbook (BCDR), "cutting off + protecting itself" on one hand and "relaying by hand + rebuilding step by step" on the other — a live exercise in turning a "technical disaster" into "operational resilience."</p>
+<p>That morning, the Americas headquarters received an alert from Europe. TNT's computers and servers went down like dominoes: "black screen + ransom screen." At first it looked like ransomware, but it was soon confirmed to be wiper malware, whose aim was "destruction," not "money." It spread extremely fast: within minutes "a whole site was down," within tens of minutes "clients worldwide were down." About 40,000 of TNT's computers + 10,000 servers were written off.</p>
+<p>FedEx quickly set up a Cyber Incident Response Team (CIRT) and cut the connection between TNT and FedEx ("hit the big red button") to protect the "mothership." That night it decided to report a material event to the SEC (8-K) and briefly halted trading to explain. The share price stayed basically steady. The next day it issued a press release: other businesses were operating normally, TNT was affected, and the financial impact "could be material."</p>
+<p>On the technical side, a war room was set up in Atherstone, UK. All TNT had left were scattered paper network diagrams and files on a few laptops that hadn't been networked. The phone system was down, so they communicated via WhatsApp. The team first rebuilt <strong>accounts/directory services (Active Directory)</strong> and "the five things needed to stay alive" (communications, payables/receivables, etc.).</p>
+<p>On the operations side, they didn't shut down. Using the primary-secondary-tertiary (P-S-T) model: whatever could be switched to FedEx systems was switched; whatever couldn't went "fully manual." Trucks kept running, with routing done by "muscle memory." Meanwhile "FedEx Bank" injected working capital to make sure TNT stayed alive first.</p>
+<p>The backup system was the pain point. TNT mainly used cold backups on tape, which couldn't be restored quickly in parallel. FedEx made an emergency purchase of hard drives, copied the tapes onto disks for parallel recovery, and created "three copies" of new backups — cloud, disk and offline; privileged accounts were cut from "thousands of people with access" to "just 8 people, like FedEx." At the same time, 900 applications were shed.</p>
+<p>On the customer side, the CIO's team reassured 40 major customers "one-on-one." There were still week-long delays, the media reported "parcels piled to the ceiling" in warehouses, and competitors seized the chance to poach customers. FedEx had no cyber insurance at the time, and the losses were mainly lost business.</p>
+<p>Tracing it back confirmed it was a supply-chain attack, infiltrating through the legitimate update channel of a Ukrainian accounting software package. Many global giants were hit, with total losses estimated at ≥ US$10 billion. The share price did not take much of a hit.</p>
+<p>Class Notes</p>
+<ol>
+<li>
+<p>When a crisis hits, are you in Plan mode or Responding mode?</p>
+</li>
+<li>
+<p>A crisis management company can first become a supplier and run crisis rehearsals for the company. Let the risk management side run "phishing stings" to check who is the weak point; anyone caught has to take an extra two-day weekend training.</p>
+</li>
+<li>
+<p>Take Blame and Failure out of the discussion — Focus on MissionCEO NOT emotional is really important</p>
+</li>
+<li>
+<p>Before bring a new company to your car, you need to understand the materials of this new company.</p>
+</li>
+<li>
+<p>What is the last time you ask your people to put the company above them.</p>
+</li>
+<li>
+<p>Are your people BURN OUT?</p>
+</li>
+</ol>
+<p>All My Crisis Response Advice</p>
+<p>Stabilise the situation first</p>
+<p>Confirm the real scope and impact of the crisis; avoid both excessive panic and overreaction.</p>
+<p>Immediately set up a temporary crisis team to centralise communication and decisions.</p>
+<p>Protect the core</p>
+<p>First secure cash flow, key customers, core employees and brand reputation.</p>
+<p>If it's a PR crisis, quickly align on one message to avoid confusion.</p>
+<p>Communicate transparently</p>
+<p>Internally: let employees know what's going on, to head off rumours and panic.</p>
+<p>Externally: stay reasonably transparent with customers, partners and the media — acknowledge the problem and communicate the solution.</p>
+<p>Draw up a short-term action plan</p>
+<p>Set clear priorities within 72 hours (e.g. stopping the losses, stabilising relationships, compliance response).</p>
+<p>Break the problem into a few actionable small steps and carry them out one by one.</p>
+<p>Long-term repair and prevention</p>
+<p>After the crisis, do a post-mortem: why did it happen, and which internal mechanisms failed?</p>
+<p>Build an "early-warning system" and drill routines, turning the crisis into an opportunity to upgrade the organisation.</p>
+</div>
+<footer><p class="src">First published in Chinese on the WeChat account “Joyce Ma” · <a href="https://mp.weixin.qq.com/s/JxwmFzinUWnyywZuE7SVIw">Original post</a> · <a href="/p/20250907-ec0411/" lang="zh-CN">中文原文</a></p><p class="src">This English version was translated from the Chinese with AI.</p></footer>
+</article>
+<nav class="pager"><a class="newer" href="/en/p/20250907-9e6cf3/"><small>Newer</small>Intro to Strategy</a><a class="older" href="/en/p/20250907-d15403/"><small>Older</small>Operational Leadership: From Founder → Scaling → Professional Managers</a></nav>
+</main>
+<footer class="foot">
+  <p>© Joyce Ma · Articles first published in Chinese on the WeChat account “Joyce Ma”; English versions translated with AI. Please credit the source when sharing.</p>
+  <p><a href="/en/feed.xml">RSS feed</a></p>
+</footer>
+</body>
+</html>

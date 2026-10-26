@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Founder&#x27;s Notes | Intern Projects That Outlived the Internship – Joyce Ma</title>
+<meta name="description" content="A blog post by my Harvard classmate Dan inspired me:">
+<meta property="og:title" content="Founder&#x27;s Notes | Intern Projects That Outlived the Internship">
+<meta property="og:description" content="A blog post by my Harvard classmate Dan inspired me:">
+<meta property="og:url" content="https://joycema.ai/en/p/20250916-0f3b81/"><meta property="og:image" content="https://joycema.ai/og.jpg"><meta property="og:type" content="article"><meta property="og:site_name" content="Joyce Ma"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://joycema.ai/og.jpg">
+<link rel="canonical" href="https://joycema.ai/en/p/20250916-0f3b81/"><link rel="alternate" hreflang="zh-CN" href="https://joycema.ai/p/20250916-0f3b81/"><link rel="alternate" hreflang="en" href="https://joycema.ai/en/p/20250916-0f3b81/">
+<link rel="alternate" type="application/rss+xml" title="Joyce Ma" href="/en/feed.xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/icon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body class="is-post">
+<div hidden><img src="/icon-512.png" alt="Joyce" width="512" height="512"></div>
+<header class="top">
+  <a class="name" href="/en/">Joyce Ma</a>
+  <nav><a href="/en/" aria-current=page>Articles</a><a href="/en/skills/">Skills</a><a class="lang" href="/p/20250916-0f3b81/" hreflang="zh-CN" lang="zh-CN">中文</a></nav>
+</header>
+<main>
+<article class="post">
+<header>
+<p class="kicker"><a href="/en/startup/">Founder Notes</a> · Founder&#x27;s Journal</p><h1>Intern Projects That Outlived the Internship</h1>
+<p class="meta"><time datetime="2025-09-16">September 16, 2025</time></p>
+</header>
+
+<div class="prose">
+<p>A blog post by my Harvard classmate Dan inspired me: </p>
+<p>Internships can be really cool! They can be hugely productive, especially in the areas interns are good at!</p>
+<p>I need young people — young people with passion who want to build some cool stuff!</p>
+<p>Lessons Learnt:</p>
+<p>Intern = project-based contributor</p>
+<p>Short-term focus, fast results</p>
+<p>Interns don't need to take on complex long-term strategic tasks; as long as they solve one clearly defined functional problem within 2–3 months, they can leave behind real results.</p>
+<p>Both of the author's projects (the podcast workflow and the Slack exporter) worked this way: focused function → pain point solved → immediate impact.</p>
+<p>Driven by a sense of achievement</p>
+<p>Interns often lack organisational influence, but if their project can be "used by the whole company," they get a huge sense of psychological satisfaction and belonging.</p>
+<p>That experience does far more to retain talent than "doing research and writing memos," and can even turn interns into long-term advocates.</p>
+<p>A win-win model</p>
+<p>For the company: a neglected but time- and energy-draining pain point gets solved at very low cost.</p>
+<p>For the intern: they see real, deployed results in a short time, which they can even put on their CV or blog — value that compounds over the long run.</p>
+<p>What we can put into practice at Arcus42: - Design the internship as "solving one functional problem": for example, Arcus42 could have an intern own a "client file auto-organiser" or a "family office knowledge Q&amp;A mini-tool." - Keep the scope small but deployable: the goal isn't a "grand strategic plan," but a project with a clear deliverable.</p>
+<ul>
+<li>
+<p>Give them a stage and visibility: once it's done, have the team use it and give recognition, so the intern gets a sense of achievement and a positive cycle forms.</p>
+</li>
+<li>
+<p>A potential talent-screening mechanism: interns who can deliver a valuable tool in a short time are more likely to become core team members in the future.</p>
+</li>
+</ul>
+<p>My next post will be recruiting interns!</p>
+<p>Below is the original blog post:</p>
+<h2>Intern projects, ##Machine learning, ##Working at Trail of Bits</h2>
+<p>Most of the time, when your summer internship ends, your project gets abandoned. I've had that experience before. But Trail of Bits is different. As a business operations intern under Dan Guido and Sam Sharps this summer, I used Claude (Anthropic's AI model) to build two automation tools: a podcast workflow that saves 1,250 hours a year, and a Slack Exporter that lets employees find key company knowledge with a single query. Both tools will continue to be used company-wide after my internship ends.</p>
+<p>Podcast workflow</p>
+<p>Trail of Bits has expert teams across multiple fields, many with PhDs, covering AppSec (application security), AI/ML, blockchain and cryptography. They wanted to take part in more relevant podcasts to share with the outside world how we're pushing the boundaries of cybersecurity (and to encourage others to do the same). To contribute to the community, they focus on filling extremely niche knowledge gaps that almost only they can answer. But screening these keyword-relevant podcasts one by one by hand would take hundreds of hours of listening and research every week.</p>
+<p>To make sure we could find the "needle" in a sea of information, and do it at scale, we needed an automated workflow. Here's how it works:</p>
+<p>Users can run it manually, or schedule it to run automatically on a given day and time.</p>
+<p>The system detects whether an episode contains the right keywords, and Claude then generates all kinds of key information: a summary of the episode, the guest's views, timestamped quotes, draft outreach emails and more.</p>
+<p>All outputs are displayed through a Replit front end.</p>
+<p>While building it, I found that Claude had some limitations. For example, it would invent employees who didn't exist to match a podcast guest. To solve this, users can upload an Excel file to the Replit front end that maps Trail of Bits employees to the keywords they specialise in. Claude also couldn't find hosts' contact details directly. But it could extract the host's name and website, and then retrieve the contact details through an external API. Below are examples of insights generated by Claude and other supporting tools (such as the Excel file).</p>
+<p>This tool can monitor more than 50 podcasts a week — that's 2,500 episodes a year! Even with a conservative estimate of 30 minutes per episode, this workflow saves 1,250 hours of listening time a year. Not to mention the additional time saved finding hosts' contact details, matching the right employees and writing outreach emails.</p>
+<p>Slack exporter</p>
+<p>Trail of Bits' Slack has hundreds of channels, each potentially containing hundreds or even thousands of messages, so searching and analysing historical information is very time-consuming. To address this, the company had previously built a terminal-based Slack export tool that could export channels as JSON or Markdown files, which could then be uploaded to Claude for summaries and insights.</p>
+<p>However, this approach had two major limitations:</p>
+<p>Every employee needed to use the Slack exporter, but because it only ran in the terminal, only engineers could use it.</p>
+<p>Users had to know in advance which Slack channel contained the information they needed, because Claude could only understand the content of the exported channels.</p>
+<p>To solve the first problem, I released an Electron desktop app for the Slack exporter. Users just launch the app to export channels — no terminal commands needed, usable by everyone.</p>
+<p>The UI is also more efficient: users can search for channels, and even select all channels at once:</p>
+<p>Once one or more channels are selected, users see a range of export options (JSON, Markdown and so on).</p>
+<p>To solve the second problem, I used Claude's MCP (Model Context Protocol) to expose our Slack workspace directly to Claude. That way, through Claude's desktop app or code interface, users can search across all public channels and the private channels they've joined, with no need to export anything. Want to know the progress of every project in the company? Just one query. Need to onboard a new hire, but everyone on the team is too busy? Again, one query.</p>
+<p>With this tool widely adopted, our team can focus its energy on pushing the frontier of cybersecurity instead of digging through Slack channels for information.</p>
+<p>Generating excitement</p>
+<p>Everyone's talking about AI applications, but simply copying and pasting into a chatbot is just the tip of the iceberg. These projects show how far AI applications can go. To build applications like these, you have to understand users' problems and keep them involved throughout. My testing process went roughly like this: find a bug → urgent on-the-spot fix → receive a new feature request → test the new feature the same day.</p>
+<p>Unlike most intern projects, which "die" as soon as the internship ends, my tools survived because, through testing, employees applied them to their own challenges, experienced real efficiency gains, and then built them into their daily work. Just as importantly, they shared that excitement with other employees, which turned these tools into company-wide infrastructure.</p>
+<p>Through these projects, Dan, Sam and I hope to show everyone that AI doesn't replace employees — it augments their abilities. Every team has AI use cases waiting to be discovered. At Trail of Bits, we're working hard to find and implement them, and everyone can contribute — even interns.</p>
+<p>Translation: ChatGPT</p>
+<p>Source: https://blog.trailofbits.com/2025/08/28/intern-projects-that-outlived-the-internship</p>
+</div>
+<footer><p class="src">First published in Chinese on the WeChat account “Joyce Ma” · <a href="https://mp.weixin.qq.com/s/zSXSmemzcItkwoz2_kFp_A">Original post</a> · <a href="/p/20250916-0f3b81/" lang="zh-CN">中文原文</a></p><p class="src">This English version was translated from the Chinese with AI.</p></footer>
+</article>
+<nav class="pager"><a class="newer" href="/en/p/20250917-0c2c37/"><small>Newer</small>Long-Arc Explorer | Internship Program</a><a class="older" href="/en/p/20250915-5c249d/"><small>Older</small>Look at Us! Harvard Business School&#x27;s First-Ever Labubu Party</a></nav>
+</main>
+<footer class="foot">
+  <p>© Joyce Ma · Articles first published in Chinese on the WeChat account “Joyce Ma”; English versions translated with AI. Please credit the source when sharing.</p>
+  <p><a href="/en/feed.xml">RSS feed</a></p>
+</footer>
+</body>
+</html>

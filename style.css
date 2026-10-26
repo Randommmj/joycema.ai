@@ -234,3 +234,8 @@ main { max-width: var(--wide); margin: 0 auto; padding: 0 24px; }
 .material .prose h2 { font-size: 1.25rem; margin-top: 2em; padding-top: .9em; border-top: 1px solid var(--rule); }
 .material .prose h2:first-child { margin-top: 0; }
 .slot .also { margin-right: 10px; }
+
+/* 中 / EN 切换 */
+.top nav a.lang { margin-left: 6px; padding: 5px 9px; border: 1px solid var(--rule); border-radius: 999px; font-size: 13px; letter-spacing: .04em; }
+.top nav a.lang:hover { color: var(--ink); border-color: var(--ink); box-shadow: none; }
+.langnote { font: 14px/1.5 var(--sans); color: var(--graphite); margin: 0 0 12px; }
