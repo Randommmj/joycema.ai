@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HBS Case Prep · Skills – Joyce Ma</title>
+<meta name="description" content="From case PDF to a publishable prep article: bilingual Q&amp;A, article and illustrations, all in one go">
+<meta property="og:title" content="HBS Case Prep · Skills">
+<meta property="og:description" content="From case PDF to a publishable prep article: bilingual Q&amp;A, article and illustrations, all in one go">
+<meta property="og:url" content="https://joycema.ai/en/skills/harvard-case-preview/"><meta property="og:image" content="https://joycema.ai/og.jpg"><meta property="og:type" content="website"><meta property="og:site_name" content="Joyce Ma"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://joycema.ai/og.jpg">
+<link rel="canonical" href="https://joycema.ai/en/skills/harvard-case-preview/"><link rel="alternate" hreflang="zh-CN" href="https://joycema.ai/skills/harvard-case-preview/"><link rel="alternate" hreflang="en" href="https://joycema.ai/en/skills/harvard-case-preview/">
+<link rel="alternate" type="application/rss+xml" title="Joyce Ma" href="/en/feed.xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/icon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body class="is-post">
+<div hidden><img src="/icon-512.png" alt="Joyce" width="512" height="512"></div>
+<header class="top">
+  <a class="name" href="/en/">Joyce Ma</a>
+  <nav><a href="/en/">Articles</a><a href="/en/skills/" aria-current=page>Skills</a><a class="lang" href="/skills/harvard-case-preview/" hreflang="zh-CN" lang="zh-CN">中文</a></nav>
+</header>
+<main>
+<article class="post skillpage">
+<header>
+<p class="kicker"><a href="/en/skills/">Skills</a> · <code>harvard-case-preview</code></p><h1>HBS Case Prep</h1><p class="subtitle">From case PDF to a publishable prep article: bilingual Q&amp;A, article and illustrations, all in one go</p>
+<p class="meta"><time datetime="2026-10-23">October 23, 2026</time></p>
+</header>
+<p class="actions"><a class="btn" href="/skills/harvard-case-preview.zip" download>Download the skill (.zip)</a></p>
+<div class="prose">
+<p>Before every class at Harvard, I prep with this skill: I hand the case text and the professor's questions to the AI. It first helps me lay out the case clearly and answers each question in both Chinese and English (the English plain enough that I can say it out loud in class), then writes it up as a prep article with a fixed structure, and finally adds hand-drawn, pencil-style illustrations. Every piece in the "HBS Prep" series on this site was written this way.</p>
+<p><strong>What it delivers</strong></p>
+<ul>
+<li>A prep Q&amp;A: a breakdown of the case, key data, the relationships between the people, the Tensions, and bilingual answers to each question — for my own use in class;</li>
+<li>An article you can publish: title, summary, "My Thinking," Takeaways and Before Class, in a fixed structure;</li>
+<li>Prompts for the header image and in-text illustrations, plus a method for choosing among them.</li>
+</ul>
+<p><strong>How to use it</strong></p>
+<ol>
+<li>Download the zip file below and unzip it to get the <code>harvard-case-preview</code> folder;</li>
+<li>Put it in your skills directory: for Claude Code, under the project's <code>.claude/skills/</code>; for Cursor, under <code>.cursor/skills/</code>; in the Claude app, you can upload the zip on the Skills page in Settings;</li>
+<li>Open <code>SKILL.md</code> and, following "Personalization" at the end, change a few placeholders (storage directory, author name, school);</li>
+<li>Send the case PDF and the professor's pre-class questions to the AI and say, "Help me prep this Harvard case."</li>
+</ol>
+<p>It works for non-Harvard classes too: just swap the title prefix and the buildings in the illustrations for your own school's.</p>
+</div>
+<p class="actions"><a class="btn" href="/skills/harvard-case-preview.zip" download>Download the skill (.zip)</a></p>
+<details class="skillmd"><summary>View the full SKILL.md (in Chinese)</summary><div class="prose"><h1>哈佛案例预习 (Harvard Case Preview)</h1>
+<p>一句话触发：<strong>"帮我做哈佛案例预习"</strong> + 案例文件 + 老师的提问。交付三样东西：</p>
+<ol>
+<li><strong>预习问答</strong>（课堂用，私人）：案例梳理 + 中英双语逐题作答</li>
+<li><strong>预习文章</strong>（可公开）：按固定结构写成的一篇 Markdown 文章</li>
+<li><strong>配图</strong>：头图 1 张 + 正文图 1–2 张，手绘铅笔风格</li>
+</ol>
+<blockquote>
+<p>作者：Joyce Ma（<a href="https://joycema.ai">joycema.ai</a>）。这是她在哈佛商学院 OPM 课程中每次课前使用的流程的公开版。
+第一次使用前，按文末「个性化设置」改几处占位符即可。</p>
+</blockquote>
+<h2>输入</h2>
+<table>
+<thead>
+<tr>
+<th>项</th>
+<th>来源</th>
+<th>缺失时</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>案例原文</td>
+<td>用户提供的 PDF / docx</td>
+<td>让用户给文件，<strong>不要凭记忆写案例</strong></td>
+</tr>
+<tr>
+<td>老师的提问</td>
+<td>用户粘贴的 Session Preparation / 课前问题</td>
+<td>若未给，问一次；仍没有就按「案例结尾的决策点 + 本课主题」自拟 3–4 问，并标注"自拟"</td>
+</tr>
+<tr>
+<td>授课老师与课程</td>
+<td>文件名或用户说明</td>
+<td>问一次；文章开头两行要用</td>
+</tr>
+</tbody>
+</table>
+<p>案例必须<strong>通读到最后一页</strong>。附表（Exhibit）里的数字常常是答题和写稿最硬的素材。读长 PDF 时分两次读（正文 + 附表），不要只读前半。</p>
+<h2>工作流</h2>
+<pre><code>- [ ] 1 通读案例全文与附表；确认老师、课程
+- [ ] 2 案例梳理（梗概、主要事实与数据、关键人物与关系、Tension），写在问答文件最前面
+- [ ] 3 双语问答（先英后中，逐题），存文件 + 回复里给出
+- [ ] 4 写预习文章（标题规则 + 结构模板见下），存文件
+- [ ] 5 配图：头图 1 张 + 正文图 1–2 张，插入 Markdown
+- [ ] 6 发布前自查（见第 4 节），给出文件路径
+</code></pre>
+<h2>1. 案例梳理 + 双语问答</h2>
+<p>格式见 <a href="references/qa_format.md">references/qa_format.md</a>。要点：</p>
+<ul>
+<li><strong>先梳理再作答</strong>：问答文件第一节是 <code>## 案例梳理</code>，四小节固定——梗概（按时间顺序讲完故事，不夹判断）、主要事实与数据（表格，带出处，推算写算式）、关键人物与关系（表格，标出谁有决策权、谁反对、谁是外部压力）、Tension（3–6 条，老师的决策题所在的那条放第一）。后面每题的数字和选边都从这一节取。这一节<strong>只进问答文件，不进文章</strong>。</li>
+<li><strong>逐题</strong>：每题先 <strong>English</strong> 再 <strong>中文</strong>，两边内容对等，不是互译缩写。</li>
+<li><strong>英文直白</strong>：短句、常用词、不堆术语；EBITDA、TAM 这类必要术语留着，其余用大白话。目标是课堂上能直接说出口。</li>
+<li><strong>数字锚定</strong>：每个判断尽量带案例里的数字，并写清推导（如"7 × 23 万 + 51 × 19 万 ≈ 1100 万"）。</li>
+<li><strong>末尾两段固定</strong>：<code>Lessons / 启示</code>（3–6 条）和 <code>Inspiration for My Work / 对我自己工作的联想</code>。联想部分可以写得很具体、引用你自己的内部材料——它<strong>只进问答文件，不进公开文章</strong>。</li>
+<li><strong>问答文件是该案例的主档</strong>：老师原题、数字速查、逐题中英答案、决策选择与代价、启示、课堂上可说的判断、课前投票——全部写入此文件，不要只留在对话里。文章是另一次对外交付，结构可不同，但判断与数字须与主档一致。</li>
+<li>存为 <code>&lt;预习目录&gt;/YYYY-MM-DD_&lt;案例简名&gt;_预习问答.md</code>，并在回复里给出完整路径。</li>
+</ul>
+<h2>2. 预习文章</h2>
+<h3>标题规则</h3>
+<p><code>哈佛预习｜&lt;课程类别&gt;：&lt;案例名&gt; —— &lt;主题短语&gt;</code></p>
+<ul>
+<li><code>&lt;课程类别&gt;</code>：中文一个词，<strong>后面不加"案例"二字</strong>：Market-Facing Functions → <code>市场营销</code>、Leadership → <code>领导力</code>、Strategy → <code>战略</code>、Finance → <code>金融</code>、Operations → <code>运营</code>、Innovation → <code>创新</code>、Negotiation → <code>谈判</code>。读者一眼知道是哪门课，同一单元的文章成系列。</li>
+<li><code>&lt;案例名&gt;</code>：保留原案例的公司 / 主体名，如 <code>Belden</code>、<code>Olay</code>、<code>Cynthia Carroll at Anglo American</code>。</li>
+<li><code>&lt;主题短语&gt;</code>：<strong>一个短语或一句短句，像书的章节名</strong>——说清这篇在讨论什么问题，一般 4–14 个字，最多一个逗号或顿号。可以是问题（"客户旅程应该如何设计"）、判断（"品牌即承诺"）、或"何时、如何 + 动作"（"何时、如何把公司卖个好价钱"）。<strong>不写成完整长句、不堆条件状语、不追求"张力词"</strong>。有力的长句留给正文的 <code>###</code> 小标题。句末不加标点。</li>
+<li>✅ <code>哈佛预习｜战略：Axel Springer —— 转型中，选择适合自己的并购标的</code></li>
+<li>✅ <code>哈佛预习｜市场营销：Bajaj Finance —— 客户旅程应该如何设计</code></li>
+<li>✅ <code>哈佛预习｜金融：Nantucket Nectars —— 何时、如何把公司卖个好价钱</code></li>
+<li>✅ <code>哈佛笔记｜市场营销：Olay —— 品牌即承诺</code></li>
+<li>❌ <code>哈佛预习｜战略案例：Axel Springer —— 大交易丢了之后，别用更贵的安慰奖疗伤，买一家还在长、能按自己打法养的公司</code>（课程后多了"案例"；后半句是一整段话，不是标题）</li>
+<li>❌ <code>哈佛预习｜Belden —— 冰山在融化</code>（悬念）</li>
+<li>❌ <code>哈佛预习｜Belden 的数字化转型</code>（丢了课程与破折号结构）</li>
+<li>标题里若用了典故，正文开头要有一句点出出处。</li>
+<li>原本想写进标题的那句"有力的长判断"，放到第一个 <code>###</code> 小标题或「写在课前」里。</li>
+</ul>
+<h3>结构模板</h3>
+<p>骨架见 <a href="references/article_template.md">references/article_template.md</a>。</p>
+<ol>
+<li>frontmatter：<code>title / date / author / status: 草稿（课前版） / case: &lt;案例全名、编号、作者；授课老师、课程&gt;</code></li>
+<li><strong>开头两行交代课程与案例</strong>。第一行：单元、老师、课程，末尾中文逗号；第二行：案例英文全名，末尾中文句号。不写"第几个"、不写出版年份或案例编号：
+   <code>Unit 3，Das Narayandas 教授 Market-Facing Functions，
+   Bajaj Finance: Building an Omnipresent Financial Services Firm。</code></li>
+<li>一两句定调（这是一个什么故事），然后 <code>以下，enjoy：</code>。</li>
+<li><code>## 案例梗概</code>：<strong>不浓缩</strong>，完整讲故事——来路、转折、动作、数字、原话引用、结尾的决策点。4–6 段是正常的。决策题用有序列表列出，每题带数字。</li>
+<li><code>## 我的思考</code>：4–6 个 <code>###</code>，<strong>每个小标题就是本节的判断句</strong>（有力的短句，不是名词、不是问句、不用"关于"）。不编号。每段至多一处 <code>**加粗**</code>，一处不超过一句。自己的延伸判断单独成段，用"我自己的理解是 / 我自己的倾向是"切换。老师提问里的决策题，在这里给出明确选择和理由。</li>
+<li><code>## 对我的借鉴</code>（可按自己的身份改名，如"对创业的借鉴"）：4–6 条，每条一句加粗的判断 + 两三句展开。<strong>文章是公开的</strong>：只谈方法与原则，不写内部收入、费率、客户、融资等信息（这些留在问答文件）。</li>
+<li><code>## 写在课前</code>：课前最认同哪一句，到此为止。安静开放，不喊口号。</li>
+</ol>
+<h3>语感</h3>
+<ul>
+<li>克制，短段落，一两处安静的诗意落点；</li>
+<li>破折号（——）可以多用，但不要用"读到这里我停顿了一下"这类表演式旁白；</li>
+<li>哲学或书籍引用须精准到人和书；</li>
+<li>少"AI 味"：排比句、总分总、"首先 / 其次 / 最后"、空洞金句都删掉；</li>
+<li>可与同一单元的前一篇做一次对照（"Olay 是……，Belden 正好相反……"）。</li>
+</ul>
+<h3>落盘</h3>
+<p><code>&lt;文章目录&gt;/YYYY-MM-DD_哈佛预习_&lt;课程类别&gt;：&lt;案例名&gt; - &lt;主题短语&gt;_草稿.md</code></p>
+<ul>
+<li>标题里的 <code>｜</code> 在文件名里换成 <code>_</code>；<code>——</code> 换成 <code>-</code>（空格短横空格）。</li>
+<li>配图目录与文章同名加后缀：<code>&lt;文章文件名去.md&gt;_配图/</code>。</li>
+<li>改标题时同步改文件名、配图目录和 Markdown 里的图片相对路径。</li>
+</ul>
+<h2>3. 配图</h2>
+<p><strong>风格固定，内容随案例变化。</strong> 不按"金融 → 天平 / 控制权 → 钥匙"套用通用意象。先提取本案的具体事实与机制，回看最近 3–5 篇配图避免重复，再写提示词。</p>
+<p>固定风格：纯白底、柔灰铅笔线稿、<strong>不画人、不画任何文字</strong>、大量留白；哈佛元素（如 Baker Library）以远景、局部或空间关系融入头图；<strong>全图只有一处</strong>压暗的哈佛红 <code>#A51C30</code> 点睛，落在对应判断的那个细节上。</p>
+<table>
+<thead>
+<tr>
+<th>图</th>
+<th>比例</th>
+<th>意象</th>
+<th>红色落点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>头图</td>
+<td>16:9</td>
+<td>本案的产品、业务对象或关键场景为主视觉，融入哈佛建筑</td>
+<td>对应该案判断的具体细节</td>
+</tr>
+<tr>
+<td>图 01</td>
+<td>4:3</td>
+<td>正文第一个重要机制，用案例物件的关系或状态表达</td>
+<td>变化发生的位置</td>
+</tr>
+<tr>
+<td>图 02（可选）</td>
+<td>4:3</td>
+<td>另一个独立判断</td>
+<td>同上</td>
+</tr>
+</tbody>
+</table>
+<p><strong>手绘感</strong>：提示词必带 <code>Hand-drawn pencil sketchbook drawing</code>、<code>visible light construction lines</code>、<code>cross-hatching in the shadows</code>、<code>varied pencil pressure</code>、<code>a few loose exploratory strokes</code>、<code>soft 2B graphite, no ink outlines</code>，并给出轻微透视（three-quarter angle）与一两个前景细节。不要正立面、全对称的矢量感。</p>
+<p>验证过的提示词与选图方法见 <a href="references/image_prompts.md">references/image_prompts.md</a>——只借用其风格措辞，主体和构图必须从新案例重新提炼。用你环境里可用的图像生成工具出图；文件名用 <code>头图_&lt;意象&gt;.png</code> / <code>图01_&lt;意象&gt;.png</code>，插在对应 <code>###</code> 小标题之后、正文之前。</p>
+<p><strong>去标题检验</strong>：遮住文章标题后，如果这张图几乎不改就能放到别的案例里，换一个更具体的方案。</p>
+<h2>4. 发布前自查</h2>
+<ul>
+<li>绝对化用语、对第三方的负面定性、数据出处是否清楚；</li>
+<li>「对我的借鉴」一节是否泄露了内部信息（收入、客户、融资、未公开合作）；</li>
+<li>案例中的引文是否与原文一致；数字是否与问答文件一致；</li>
+<li>回复里给出：问答文件路径、文章路径、配图清单、标题。<strong>不替用户对外发布。</strong></li>
+</ul>
+<h2>一次完整示例（Belden）</h2>
+<ul>
+<li>问答：Q1 融化的冰山 → Q2 工业自动化业务在集团的分量 → Q3 改了 / 没改什么 → Q4 三个决策 → Lessons → 对我的联想</li>
+<li>标题：<code>哈佛预习｜市场营销：Belden —— 从卖零件到卖方案</code></li>
+<li>小标题：最难的转型，是在报表最好看的那一年开始的 / 卖方案换的不是话术，是你见的人 / 先收钱的审计，是定价权的起点 / 没改的那一半，正在变成新的瓶颈 / 三道题其实是一道题：把例外变成规则 / 销售回本快，研发回报大，所以不是二选一</li>
+<li>配图：头图 Baker Library + 线缆卷盘爬上台阶（红：接头）；图 01 水下被掏空的冰山（红：水线）；图 02 会议桌上的一卷线缆（红：接头）</li>
+</ul>
+<h2>个性化设置</h2>
+<p>第一次用之前，在本文件里替换这几处：</p>
+<ul>
+<li><code>&lt;预习目录&gt;</code>、<code>&lt;文章目录&gt;</code>：你想把问答和文章存在哪里（如 <code>notes/预习/</code>、<code>articles/</code>）；</li>
+<li>frontmatter 里的 <code>author</code>；</li>
+<li>「对我的借鉴」一节的名字，以及问答里「对我自己工作的联想」可以参考的材料；</li>
+<li>如果不是哈佛，把标题前缀 <code>哈佛预习</code> 换成你的课程名，配图里的哈佛元素换成你学校的建筑与校色。</li>
+</ul></div></details>
+</article>
+<nav class="pager"><a class="newer" href="/en/skills/"><small>Back</small>All skills</a></nav>
+</main>
+<footer class="foot">
+  <p>© Joyce Ma · Articles first published in Chinese on the WeChat account “Joyce Ma”; English versions translated with AI. Please credit the source when sharing.</p>
+  <p><a href="/en/feed.xml">RSS feed</a></p>
+</footer>
+</body>
+</html>
