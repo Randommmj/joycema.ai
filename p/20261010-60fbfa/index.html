@@ -30,7 +30,7 @@
 <article class="post">
 <header>
 <p class="kicker"><a href="/harvard/">哈佛笔记</a> · 哈佛预习</p><h1>领导力案例：Cynthia Carroll at Anglo American</h1><p class="subtitle">话说尽了，只有付出代价的决定才会被相信，哪怕是亲手停矿</p>
-<p class="meta"><time datetime="2026-10-10">2026年10月10日</time> · 约 13 分钟读完<button class="share" type="button" data-share data-done="链接已复制"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg><span>复制链接</span></button><a class="share wx" hidden data-wx href="/p/20261010-60fbfa/wechat/" title="打开公众号排版预览，一键复制正文"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg><span>公众号版</span></a></p><p class="classtime"><span>上课</span><a href="/harvard-prep/#d2026-10-14">10月14日 周三 11:00–12:30</a>（波士顿时间）· Leadership · Jeff Polzer · <a href="/harvard-prep/cynthiacarroll/">预习材料</a></p>
+<p class="meta"><time datetime="2026-10-10">2026年10月10日</time> · 约 13 分钟读完<button class="share" type="button" data-share data-done="链接已复制"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg><span>复制链接</span></button><a class="share wx" data-wx href="/p/20261010-60fbfa/wechat/" title="公众号排版预览（需要密码）"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg><span>公众号版</span></a></p><p class="classtime"><span>上课</span><a href="/harvard-prep/#d2026-10-14">10月14日 周三 11:00–12:30</a>（波士顿时间）· Leadership · Jeff Polzer · <a href="/harvard-prep/cynthiacarroll/">预习材料</a></p>
 </header>
 <figure class="hero"><img src="/img/5a0c6475e5fc1154.jpg" alt=""></figure>
 <details class="toc"><summary>目录<span>4 节</span></summary><ol><li><a href="#案例梗概">案例梗概</a></li><li><a href="#我的思考">我的思考</a></li><li><a href="#对-arcus42-的借鉴">对 Arcus42 的借鉴</a></li><li><a href="#写在最后">写在最后</a></li></ol></details>
@@ -171,12 +171,6 @@ Carroll 要面对工会和政府，一家家办要面对家族里的其他成员
       if(navigator.clipboard && window.isSecureContext){ navigator.clipboard.writeText(u).then(done, fallback); } else fallback();
     });
   });
-  // 「公众号版」入口只给 Joyce 自己：任意页面加 ?wx 打开一次即开启，?wx=off 关闭
-  try{
-    var wq=new URLSearchParams(location.search).get('wx');
-    if(wq!==null) localStorage.setItem('jm_wx', wq==='off'?'':'1');
-    var wa=document.querySelector('[data-wx]'); if(wa && localStorage.getItem('jm_wx')) wa.hidden=false;
-  }catch(_){}
   // 按 / 键去搜索
   document.addEventListener('keydown', function(e){
     var t=e.target.tagName;

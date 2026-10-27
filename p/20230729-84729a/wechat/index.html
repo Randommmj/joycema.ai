@@ -31,7 +31,7 @@
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2023年7月29日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>SFMOMA 1900-至今 馆藏节选</h1><p>Joyce Ma<span>2023-07-29</span></p></div>
 <div class="article" id="light"></div></div>
-<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "SxJpsoOPGvWMVwZ1", "c": "2zlIhDNkphsFjV1sklNt1AC23VGS3PDhjo059otoOPX8i0DXklcSrg1TpNG55do2r1/Yvkqr0d6OyI+iJ+lY01uMv7DxFWykP1l6K5pHk3c1FiLoyyvb3w2hZixU0OrGlVGlT7cb1MM8/duZIugtu5QZ1Au+MplFKszSpB2zA19t7AqZa4KcvQ7uttUF0TP1RwcIA9gtDA3O32SipFEuF0rOZ0do4ylADCfJ97SIXxOxnn3QrrArlRQgPt8VCGC5M2poI2WHe+R2K8DufDHod45skC+pGD7YQw4CkGCzZ5HwZJtAaMvPm9PmDbuVGVPoHr5dOmZREiQf6Go2DxSZqpm1zqlIMfDWBLVULB36YeLKEjfyUCPLZmZzDetZ+kLfSjxFsAU9pKCWpaWToIjnRA17ZCc2Mjmu0pmQBBCvlFfdPSFD50L/Wa63TCjacn57mzJ09x6Ax5g/ymnTRNGViDx/4HM7vyyuxkG9ocTWh7fDtDrlRIcExCsvk49eawroKpC0dnioh5+wx/sinPymYS4BPmDCUoDuovenDkwMsTEYK57NIfKpDB6p7/Al4/h1s3ELXdwnuOCmWw=="}</script>
+<script type="application/json" id="enc">{"s": "wGhQV5I+ovXTKBWVwQzeSQ==", "n": 200000, "i": "kBLGYpEv5KVTa134", "c": "QPwgwI44vDkK9CuXXojPyJoDtf0fiRyNtWP905i3o2zoPnSvCU6iDFbAL3V8Ob8Tmq8aeImdAhxKiGN2YfIgMyUUrpSfz61lfb+8SEbEYwHQ8t6tTkD84jsbHzd4j2e58eYhwkw21rmmhWXLBtTmWtOPdcdBqaZg30LHgRW1qaM7bIWqG0J866xpledsZxbfzeAx4J4edulyHF8rlSQrD3WrE0Vm8uazkMOzupsScOqnRRDShPms5UYsQ9MRZZHLe5DVTXrcsLwa6yC95gBz8hhSnxSIZiaOInrIcYc/BO7MroJ78L2GBDhNRgV/iv1NkyQ4R8RLrHhPHadOrhaqTP3cTPfqRyinPu5J9uf+f4mBi5rVaeMCV0QYHIyxI18mvqF1KljTa01YHZIxYL2L2ED14xBQXsx8FUxF5+ZR4A7Z5f+ngcjy1mteIMO/RoB/3Zv881zFlamsUbjOKFbddhpw4JIsQ4qD1thfo8uolER52nLbbuX8FdwsRWfEzYOwaKjha/gM4mV68DoZv545RGuSqTmtJ9ENHflSYcFeL02MoBxv8QMtGLIdmv/r378Ngm3RZStwmJLVpg=="}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -117,12 +117,12 @@ function wxConvert(root, heroSrc, date, url){
     box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
   }
   async function tryPw(pw, quiet){
-    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    try{ show(await decrypt(pw)); return true; }
     catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
   }
   form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
-  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
-  if(saved) tryPw(saved, true); else form.pw.focus();
+  try{ localStorage.removeItem('jm_wx_pw'); }catch(_){}   // 每次打开都要输密码，不记住
+  form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

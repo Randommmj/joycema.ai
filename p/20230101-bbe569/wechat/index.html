@@ -31,7 +31,7 @@
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2023年1月1日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>2022年 BYE</h1><p>Joyce Ma<span>2023-01-01</span></p></div>
 <div class="article" id="light"></div></div>
-<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "92i5F/C68arwCDHy", "c": "aPF0HMQAe/dqUC8Lft6ZYG2NV8mZxzDkIMK27OF/ite6E5F4s7sS7lf14l32TqVr9VJ2VmwrQWNZdw2Uh82r8lWSvBr80RrQXikqSTCcBofPF1k2nJx3kMHfEMY/3asLgGsramVWt4aOE7FCvUniudNcvlcInpb8At0qZcc6+ub+gLAml3DkOTdVGV+gBpHYzAfrBo7k+tq8N9hbyjTKtHuPInCEq77XaUlf"}</script>
+<script type="application/json" id="enc">{"s": "wGhQV5I+ovXTKBWVwQzeSQ==", "n": 200000, "i": "8xle6wj12AzIIlrE", "c": "ZX0a4oeww2d9Q8NWp8DY/fnhXjOWImP0OtnQhLV6f7vrRB0Zyse2s2MaONmdQCf8VbHuqCprjQ9bkwxaVXeTuGVMgMDxr6a+dQ9MkNZ99JVYzubx7UHWPaIRI7KF6eJdpzjwLmHXiwcOy37Gsl3HcL2PNdIGZmMDoHSISpE/vI0dKOv4mYR9Tiyu+cbciUG810o98lBopuCHAJjL5TjXynSD+Wbpu8UuDVC7"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -117,12 +117,12 @@ function wxConvert(root, heroSrc, date, url){
     box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
   }
   async function tryPw(pw, quiet){
-    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    try{ show(await decrypt(pw)); return true; }
     catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
   }
   form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
-  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
-  if(saved) tryPw(saved, true); else form.pw.focus();
+  try{ localStorage.removeItem('jm_wx_pw'); }catch(_){}   // 每次打开都要输密码，不记住
+  form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

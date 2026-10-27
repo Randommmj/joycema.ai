@@ -30,7 +30,7 @@
 <article class="post">
 <header>
 <p class="kicker"><a href="/harvard/">哈佛笔记</a> · 哈佛预习</p><h1>金融：GeBBS</h1><p class="subtitle">卖出股权之后谁来掌舵</p>
-<p class="meta"><time datetime="2026-10-22">2026年10月22日</time> · 约 8 分钟读完<button class="share" type="button" data-share data-done="链接已复制"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg><span>复制链接</span></button><a class="share wx" hidden data-wx href="/p/20261022-650c80/wechat/" title="打开公众号排版预览，一键复制正文"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg><span>公众号版</span></a></p><p class="classtime"><span>上课</span><a href="/harvard-prep/#d2026-10-23">10月23日 周五 09:00–10:30</a>（波士顿时间）· Finance · Martin Sinozich · <a href="/harvard-prep/gebbs/">预习材料</a></p>
+<p class="meta"><time datetime="2026-10-22">2026年10月22日</time> · 约 8 分钟读完<button class="share" type="button" data-share data-done="链接已复制"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg><span>复制链接</span></button><a class="share wx" data-wx href="/p/20261022-650c80/wechat/" title="公众号排版预览（需要密码）"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg><span>公众号版</span></a></p><p class="classtime"><span>上课</span><a href="/harvard-prep/#d2026-10-23">10月23日 周五 09:00–10:30</a>（波士顿时间）· Finance · Martin Sinozich · <a href="/harvard-prep/gebbs/">预习材料</a></p>
 </header>
 <figure class="hero"><img src="/img/d62fa5bd14c30db7.jpg" alt=""></figure>
 <details class="toc"><summary>目录<span>4 节</span></summary><ol><li><a href="#案例梗概">案例梗概</a></li><li><a href="#我的思考">我的思考</a></li><li><a href="#对-arcus42-的借鉴">对 Arcus42 的借鉴</a></li><li><a href="#写在课前">写在课前</a></li></ol></details>
@@ -141,12 +141,6 @@ GeBBS Healthcare Solutions: Did You Ever Have to Make Up Your Mind?。</p>
       if(navigator.clipboard && window.isSecureContext){ navigator.clipboard.writeText(u).then(done, fallback); } else fallback();
     });
   });
-  // 「公众号版」入口只给 Joyce 自己：任意页面加 ?wx 打开一次即开启，?wx=off 关闭
-  try{
-    var wq=new URLSearchParams(location.search).get('wx');
-    if(wq!==null) localStorage.setItem('jm_wx', wq==='off'?'':'1');
-    var wa=document.querySelector('[data-wx]'); if(wa && localStorage.getItem('jm_wx')) wa.hidden=false;
-  }catch(_){}
   // 按 / 键去搜索
   document.addEventListener('keydown', function(e){
     var t=e.target.tagName;

@@ -30,7 +30,7 @@
 <article class="post">
 <header>
 <p class="kicker"><a href="/reading/">读书笔记</a></p><h1>读《长寿真相》（1）</h1>
-<p class="meta"><time datetime="2026-08-21">2026年8月21日</time> · 约 5 分钟读完<button class="share" type="button" data-share data-done="链接已复制"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg><span>复制链接</span></button><a class="share wx" hidden data-wx href="/p/20260821-f993c0/wechat/" title="打开公众号排版预览，一键复制正文"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg><span>公众号版</span></a></p>
+<p class="meta"><time datetime="2026-08-21">2026年8月21日</time> · 约 5 分钟读完<button class="share" type="button" data-share data-done="链接已复制"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg><span>复制链接</span></button><a class="share wx" data-wx href="/p/20260821-f993c0/wechat/" title="公众号排版预览（需要密码）"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg><span>公众号版</span></a></p>
 </header>
 
 <details class="toc"><summary>目录<span>8 节</span></summary><ol><li><a href="#1-测了-30-亿个碱基对没有找到长寿基因">1. 测了 30 亿个碱基对，没有找到&quot;长寿基因&quot;</a></li><li><a href="#2-基因没有共性但活法有">2. 基因没有共性，但&quot;活法&quot;有</a></li><li><a href="#3-三分天注定七分靠打拼">3. 三分天注定，七分靠打拼</a></li><li><a href="#4-healthspan-lifespan">4. Healthspan ≠ Lifespan</a></li><li><a href="#5-托波尔自己就是证据">5. 托波尔自己，就是证据</a></li><li><a href="#6-一场以身试毒的实验超加工食品">6. 一场&quot;以身试毒&quot;的实验：超加工食品</a></li><li><a href="#7-同卵双胞胎基因相同结局相差-40-斤">7. 同卵双胞胎：基因相同，结局相差 40 斤</a></li><li><a href="#写在最后">写在最后</a></li></ol></details>
@@ -179,12 +179,6 @@
       if(navigator.clipboard && window.isSecureContext){ navigator.clipboard.writeText(u).then(done, fallback); } else fallback();
     });
   });
-  // 「公众号版」入口只给 Joyce 自己：任意页面加 ?wx 打开一次即开启，?wx=off 关闭
-  try{
-    var wq=new URLSearchParams(location.search).get('wx');
-    if(wq!==null) localStorage.setItem('jm_wx', wq==='off'?'':'1');
-    var wa=document.querySelector('[data-wx]'); if(wa && localStorage.getItem('jm_wx')) wa.hidden=false;
-  }catch(_){}
   // 按 / 键去搜索
   document.addEventListener('keydown', function(e){
     var t=e.target.tagName;

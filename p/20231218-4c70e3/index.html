@@ -30,7 +30,7 @@
 <article class="post">
 <header>
 <p class="kicker"><a href="/harvard/">哈佛笔记</a></p><h1>Value Based Strategy基于价值的战略</h1>
-<p class="meta"><time datetime="2023-12-18">2023年12月18日</time> · 约 3 分钟读完<button class="share" type="button" data-share data-done="链接已复制"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg><span>复制链接</span></button><a class="share wx" hidden data-wx href="/p/20231218-4c70e3/wechat/" title="打开公众号排版预览，一键复制正文"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg><span>公众号版</span></a></p>
+<p class="meta"><time datetime="2023-12-18">2023年12月18日</time> · 约 3 分钟读完<button class="share" type="button" data-share data-done="链接已复制"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg><span>复制链接</span></button><a class="share wx" data-wx href="/p/20231218-4c70e3/wechat/" title="公众号排版预览（需要密码）"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg><span>公众号版</span></a></p>
 </header>
 
 <div class="prose">
@@ -136,12 +136,6 @@
       if(navigator.clipboard && window.isSecureContext){ navigator.clipboard.writeText(u).then(done, fallback); } else fallback();
     });
   });
-  // 「公众号版」入口只给 Joyce 自己：任意页面加 ?wx 打开一次即开启，?wx=off 关闭
-  try{
-    var wq=new URLSearchParams(location.search).get('wx');
-    if(wq!==null) localStorage.setItem('jm_wx', wq==='off'?'':'1');
-    var wa=document.querySelector('[data-wx]'); if(wa && localStorage.getItem('jm_wx')) wa.hidden=false;
-  }catch(_){}
   // 按 / 键去搜索
   document.addEventListener('keydown', function(e){
     var t=e.target.tagName;

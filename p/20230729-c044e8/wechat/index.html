@@ -31,7 +31,7 @@
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2023年7月29日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>小D摄影作品展 1 号</h1><p>Joyce Ma<span>2023-07-29</span></p></div>
 <div class="article" id="light"></div></div>
-<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "B233AquJq5jIQz+K", "c": "0sR4aXjjchr0ZqGxTX+1wJJ+SUIS9i9qwt0nm8/Fn23xTQXJZCDTuRLMUhyLbaO2k1UYyLbNWGPuPmGMnPz8wgNAQuaU7aTqApkor7xMYASSwi47sL7q/dW0t+yQ/h/upQEcbWSMGF2tqRAumhyyY98kpep3RdvQiL1HT+94xE7G+OA9L8ZW/93PoWofwR0dhW6wm2e1R28Jc9u/7KBYfTJUP1XLjs51cjqqGyyauwHHVLXSm1CjU/INBYc8w+6ansasEKcL7fTgCTRqt0aUQ6J9wQE/Gnw41wV/wPzgl4To8aX8SweWaYM3AKl0l2xLgsI6hdAE14/gR7HnQEtBikFTpwgE6kVqnsh45qmxPIA8wYVFkCCsU0MEIDGGP2p6IQPNbBQs2/IOWagOSTYsKDCR7D3+vZbctqDwE+C07mFYyOonQq7uhw=="}</script>
+<script type="application/json" id="enc">{"s": "wGhQV5I+ovXTKBWVwQzeSQ==", "n": 200000, "i": "vpRfMzzSagf4nFCR", "c": "Cx/HgounRIzllriRIp2lNPUD89I8P9LLBb063LMA0TgC9MqQi+je2awyyhBrC6iv7T4QcF4zUBuSjFEYqD6Ii0eM6jGD+Ftdcjcian/EpQfrVoU+LgM/MfSroHYWSg5VMdgEzn9LAB4hHhJEpUC5AGALicu80gYT6te7sg3cKXn66IzUwvaLh0zugiCTDxAykgxttulKBIg+wcifr726sbOVHNdbtV7/EOmmwfWKJI3iCh0NfQAx8GeMsCbY4tS4zwHkLbbD8xyYaruQvAMdZ5H9oUhs1hI3X3kcWxgH2fAmtfRN1G/kKHQj3TXVBjQOaKJweaHLz9kkCgjTtp9lIOYDqSVgpxwwjmKwurfrXoSJr4tFeoUcwC0NuP8Cww08g5Ms+BSaaM2GyzfKcPJCHtI84yJdmHSUuBEgefXsXnK8rx7vsEZeQg=="}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -117,12 +117,12 @@ function wxConvert(root, heroSrc, date, url){
     box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
   }
   async function tryPw(pw, quiet){
-    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    try{ show(await decrypt(pw)); return true; }
     catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
   }
   form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
-  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
-  if(saved) tryPw(saved, true); else form.pw.focus();
+  try{ localStorage.removeItem('jm_wx_pw'); }catch(_){}   // 每次打开都要输密码，不记住
+  form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){
