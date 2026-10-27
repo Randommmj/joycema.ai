@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta name="robots" content="noindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>搜索 – Joyce Ma</title>
+<meta name="description" content="Joyce Ma 的个人专栏：哈佛商学院 OPM 课前预习与课后笔记，以及读书、AI 与生活随笔。">
+<meta property="og:title" content="搜索">
+<meta property="og:description" content="Joyce Ma 的个人专栏：哈佛商学院 OPM 课前预习与课后笔记，以及读书、AI 与生活随笔。">
+<meta property="og:url" content="https://joycema.ai/search/"><meta property="og:image" content="https://joycema.ai/og.jpg"><meta property="og:type" content="website"><meta property="og:site_name" content="Joyce Ma"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://joycema.ai/og.jpg">
+<link rel="canonical" href="https://joycema.ai/search/"><link rel="alternate" hreflang="zh-CN" href="https://joycema.ai/search/"><link rel="alternate" hreflang="en" href="https://joycema.ai/en/search/">
+<link rel="alternate" type="application/rss+xml" title="Joyce Ma" href="/feed.xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/icon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body class="is-search">
+
+<div hidden><img src="/icon-512.png" alt="Joyce" width="512" height="512"></div>
+<header class="top">
+  <a class="name" href="/">Joyce Ma</a>
+  <nav><a href="/">文章</a><a href="/skills/">Skills</a><a class="searchlink" href="/search/" aria-label="搜索" title="搜索" aria-current=page><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.6-4.6"/></svg></a><a class="lang" href="/en/search/" hreflang="en" lang="en">EN</a></nav>
+</header>
+<main>
+<header class="pagehead"><h1>搜索</h1>
+<p class="lede">搜全部文章、哈佛预习材料和 Skills，标题和正文都能搜到。</p></header>
+<form class="searchbox" role="search" onsubmit="return false">
+<label class="vh" for="q">搜索关键词</label>
+<input id="q" type="search" autocomplete="off" placeholder="例如：Golden Goose、领导力、家族传承、攀岩" data-index="/search.json">
+</form>
+<p id="sinfo" class="sinfo" aria-live="polite"></p>
+<ul id="results" class="results"></ul>
+<script>
+(function(){
+  var box=document.getElementById('q'), out=document.getElementById('results'), info=document.getElementById('sinfo');
+  var data=null, L=document.documentElement.lang.indexOf('zh')===0;
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function mark(s,terms){
+    var h=esc(s);
+    terms.forEach(function(t){ if(!t) return;
+      h=h.replace(new RegExp(esc(t).replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi'),function(m){return '<mark>'+m+'</mark>';}); });
+    return h;
+  }
+  function snippet(text,terms){
+    var lo=text.toLowerCase(), at=-1;
+    for(var i=0;i<terms.length;i++){ var k=lo.indexOf(terms[i]); if(k>=0&&(at<0||k<at)) at=k; }
+    if(at<0) return text.slice(0,110)+(text.length>110?'…':'');
+    var s=Math.max(0,at-40), e=Math.min(text.length,at+90);
+    return (s>0?'…':'')+text.slice(s,e)+(e<text.length?'…':'');
+  }
+  function run(){
+    var q=box.value.trim();
+    try{ history.replaceState(null,'',q?('?q='+encodeURIComponent(q)):location.pathname); }catch(_){}
+    if(!q){ out.innerHTML=''; info.textContent=''; return; }
+    if(!data){ info.textContent=L?'正在载入…':'Loading…'; return; }
+    var terms=q.toLowerCase().split(/\s+/).filter(Boolean), hits=[];
+    data.forEach(function(d){
+      var t=(d[1]||'').toLowerCase(), s=(d[2]||'').toLowerCase(), c=(d[3]||'').toLowerCase(), x=(d[5]||'').toLowerCase(), sc=0;
+      for(var i=0;i<terms.length;i++){
+        var w=terms[i], a=t.indexOf(w)>=0, b=s.indexOf(w)>=0, k=c.indexOf(w)>=0, n=x.split(w).length-1;
+        if(!a&&!b&&!k&&!n) return;
+        sc+=(a?20:0)+(b?8:0)+(k?4:0)+Math.min(n,6);
+      }
+      hits.push([sc,d]);
+    });
+    hits.sort(function(a,b){ return b[0]-a[0] || (b[1][4]>a[1][4]?1:-1); });
+    info.textContent=hits.length?(L?('找到 '+hits.length+' 条结果'):(hits.length+' result'+(hits.length>1?'s':''))):(L?'没有找到相关内容，换个关键词试试。':'No results. Try another word.');
+    out.innerHTML=hits.slice(0,60).map(function(h){ var d=h[1];
+      return '<li><a href="'+d[0]+'"><span class="sk">'+esc(d[3]||'')+(d[4]?' · '+d[4].replace(/-/g,'.'):'')+'</span>'+
+        '<span class="h">'+mark(d[1],terms)+'</span>'+(d[2]?'<span class="sub">'+mark(d[2],terms)+'</span>':'')+
+        '<span class="sx">'+mark(snippet(d[5]||'',terms),terms)+'</span></a></li>'; }).join('');
+  }
+  var t0; box.addEventListener('input',function(){ clearTimeout(t0); t0=setTimeout(run,120); });
+  var q0=new URLSearchParams(location.search).get('q'); if(q0) box.value=q0;
+  fetch(box.getAttribute('data-index')).then(function(r){return r.json();}).then(function(j){ data=j; run(); })
+    .catch(function(){ info.textContent=L?'搜索暂时不可用。':'Search is unavailable right now.'; });
+  box.focus();
+})();
+</script>
+</main>
+<footer class="foot">
+  <p>© Joyce Ma · 文章同步自微信公众号「Joyce Ma」，转载请注明出处</p>
+  <p><a href="/search/">搜索</a> · <a href="/feed.xml">RSS 订阅</a></p>
+</footer>
+<button class="totop" type="button" aria-label="回到顶部" title="回到顶部">↑</button>
+<script>
+(function(){
+  var b=document.querySelector('.totop'), bar=document.querySelector('.progress i');
+  function f(){
+    var y=window.scrollY, h=document.documentElement.scrollHeight-window.innerHeight;
+    if(b) b.classList.toggle('on', y>700);
+    if(bar) bar.style.transform='scaleX('+(h>0?Math.min(1,y/h):0)+')';
+  }
+  window.addEventListener('scroll', f, {passive:true}); f();
+  if(b) b.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+  var k=document.querySelector('[data-back]');
+  if(k) k.addEventListener('click', function(e){
+    try {
+      if(document.referrer && new URL(document.referrer).origin===location.origin && history.length>1){
+        e.preventDefault(); history.back();
+      }
+    } catch(_){}
+  });
+  // 复制链接；手机上调起系统分享
+  Array.prototype.forEach.call(document.querySelectorAll('[data-share]'), function(btn){
+    btn.addEventListener('click', function(){
+      var u=location.href.split('#')[0].split('?')[0], sp=btn.querySelector('span'), old=sp.textContent;
+      function done(){ sp.textContent=btn.getAttribute('data-done'); btn.classList.add('ok');
+        setTimeout(function(){ sp.textContent=old; btn.classList.remove('ok'); }, 2200); }
+      function fallback(){ var a=document.createElement('textarea'); a.value=u; a.setAttribute('readonly','');
+        a.style.position='fixed'; a.style.opacity='0'; document.body.appendChild(a); a.select();
+        try{ document.execCommand('copy'); done(); }catch(_){} document.body.removeChild(a); }
+      if(navigator.share && window.matchMedia && matchMedia('(pointer:coarse)').matches){
+        navigator.share({title:document.title, url:u}).catch(function(){}); return; }
+      if(navigator.clipboard && window.isSecureContext){ navigator.clipboard.writeText(u).then(done, fallback); } else fallback();
+    });
+  });
+  // 按 / 键去搜索
+  document.addEventListener('keydown', function(e){
+    var t=e.target.tagName;
+    if(e.key==='/' && !e.metaKey && !e.ctrlKey && t!=='INPUT' && t!=='TEXTAREA' && !document.getElementById('q')){
+      var s=document.querySelector('.searchlink'); if(s){ e.preventDefault(); location.href=s.href; }
+    }
+  });
+})();
+</script>
+</body>
+</html>

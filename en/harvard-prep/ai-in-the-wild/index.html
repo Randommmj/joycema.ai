@@ -19,12 +19,14 @@
 <link rel="stylesheet" href="/style.css">
 </head>
 <body class="is-post">
+
 <div hidden><img src="/icon-512.png" alt="Joyce" width="512" height="512"></div>
 <header class="top">
   <a class="name" href="/en/">Joyce Ma</a>
-  <nav><a href="/en/" aria-current=page>Articles</a><a href="/en/skills/">Skills</a><a class="lang" href="/harvard-prep/ai-in-the-wild/" hreflang="zh-CN" lang="zh-CN">中文</a></nav>
+  <nav><a href="/en/" aria-current=page>Articles</a><a href="/en/skills/">Skills</a><a class="searchlink" href="/en/search/" aria-label="Search" title="Search"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.6-4.6"/></svg></a><a class="lang" href="/harvard-prep/ai-in-the-wild/" hreflang="zh-CN" lang="zh-CN">中文</a></nav>
 </header>
 <main>
+<nav class="crumbs" aria-label="Breadcrumb"><a class="back" href="/en/harvard-prep/#d2026-10-26" data-back>← Back</a><span class="trail"><a href="/en/">Home</a><i aria-hidden="true">/</i><a href="/en/harvard-prep/#d2026-10-26">HBS Prep</a></span></nav>
 <article class="post material">
 <header>
 <p class="kicker"><a href="../">HBS Prep</a> · Control</p>
@@ -37,12 +39,54 @@
 <p>Please fill out this poll by 6:00pm on Friday, October 23.</p>
 </blockquote>
 </div>
-<footer><p class="src"><a href="../#d2026-10-26">← Back to the calendar</a></p></footer>
 </article>
+<nav class="upnav" aria-label="Go back"><a href="/en/harvard-prep/#d2026-10-26">← Back to the calendar</a><a href="/en/">⌂ Home</a></nav>
 </main>
 <footer class="foot">
   <p>© Joyce Ma · Articles first published in Chinese on the WeChat account “Joyce Ma”; English versions translated with AI. Please credit the source when sharing.</p>
-  <p><a href="/en/feed.xml">RSS feed</a></p>
+  <p><a href="/en/search/">Search</a> · <a href="/en/feed.xml">RSS feed</a></p>
 </footer>
+<button class="totop" type="button" aria-label="Back to top" title="Back to top">↑</button>
+<script>
+(function(){
+  var b=document.querySelector('.totop'), bar=document.querySelector('.progress i');
+  function f(){
+    var y=window.scrollY, h=document.documentElement.scrollHeight-window.innerHeight;
+    if(b) b.classList.toggle('on', y>700);
+    if(bar) bar.style.transform='scaleX('+(h>0?Math.min(1,y/h):0)+')';
+  }
+  window.addEventListener('scroll', f, {passive:true}); f();
+  if(b) b.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+  var k=document.querySelector('[data-back]');
+  if(k) k.addEventListener('click', function(e){
+    try {
+      if(document.referrer && new URL(document.referrer).origin===location.origin && history.length>1){
+        e.preventDefault(); history.back();
+      }
+    } catch(_){}
+  });
+  // 复制链接；手机上调起系统分享
+  Array.prototype.forEach.call(document.querySelectorAll('[data-share]'), function(btn){
+    btn.addEventListener('click', function(){
+      var u=location.href.split('#')[0].split('?')[0], sp=btn.querySelector('span'), old=sp.textContent;
+      function done(){ sp.textContent=btn.getAttribute('data-done'); btn.classList.add('ok');
+        setTimeout(function(){ sp.textContent=old; btn.classList.remove('ok'); }, 2200); }
+      function fallback(){ var a=document.createElement('textarea'); a.value=u; a.setAttribute('readonly','');
+        a.style.position='fixed'; a.style.opacity='0'; document.body.appendChild(a); a.select();
+        try{ document.execCommand('copy'); done(); }catch(_){} document.body.removeChild(a); }
+      if(navigator.share && window.matchMedia && matchMedia('(pointer:coarse)').matches){
+        navigator.share({title:document.title, url:u}).catch(function(){}); return; }
+      if(navigator.clipboard && window.isSecureContext){ navigator.clipboard.writeText(u).then(done, fallback); } else fallback();
+    });
+  });
+  // 按 / 键去搜索
+  document.addEventListener('keydown', function(e){
+    var t=e.target.tagName;
+    if(e.key==='/' && !e.metaKey && !e.ctrlKey && t!=='INPUT' && t!=='TEXTAREA' && !document.getElementById('q')){
+      var s=document.querySelector('.searchlink'); if(s){ e.preventDefault(); location.href=s.href; }
+    }
+  });
+})();
+</script>
 </body>
 </html>

@@ -19,24 +19,27 @@
 <link rel="stylesheet" href="/style.css">
 </head>
 <body class="is-post">
+<div class="progress" aria-hidden="true"><i></i></div>
 <div hidden><img src="/icon-512.png" alt="Joyce" width="512" height="512"></div>
 <header class="top">
   <a class="name" href="/">Joyce Ma</a>
-  <nav><a href="/" aria-current=page>文章</a><a href="/skills/">Skills</a><a class="lang" href="/en/p/20261011-dbbfac/" hreflang="en" lang="en">EN</a></nav>
+  <nav><a href="/" aria-current=page>文章</a><a href="/skills/">Skills</a><a class="searchlink" href="/search/" aria-label="搜索" title="搜索"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.6-4.6"/></svg></a><a class="lang" href="/en/p/20261011-dbbfac/" hreflang="en" lang="en">EN</a></nav>
 </header>
 <main>
+<nav class="crumbs" aria-label="当前位置"><a class="back" href="/harvard/" data-back>← 返回</a><span class="trail"><a href="/">首页</a><i aria-hidden="true">/</i><a href="/harvard/">哈佛笔记</a></span></nav>
 <article class="post">
 <header>
 <p class="kicker"><a href="/harvard/">哈佛笔记</a> · 哈佛预习</p><h1>市场营销案例：Bajaj Finance</h1><p class="subtitle">赢下成交之后，去守两次购买之间那段危险的空窗</p>
-<p class="meta"><time datetime="2026-10-11">2026年10月11日</time></p><p class="classtime"><span>上课</span><a href="/harvard-prep/#d2026-10-14">10月14日 周三 13:30–15:00</a>（波士顿时间）· Market-Facing Functions · Das Narayandas · <a href="/harvard-prep/bajajfinance/">预习材料</a></p>
+<p class="meta"><time datetime="2026-10-11">2026年10月11日</time> · 约 18 分钟读完<button class="share" type="button" data-share data-done="链接已复制"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg><span>复制链接</span></button></p><p class="classtime"><span>上课</span><a href="/harvard-prep/#d2026-10-14">10月14日 周三 13:30–15:00</a>（波士顿时间）· Market-Facing Functions · Das Narayandas · <a href="/harvard-prep/bajajfinance/">预习材料</a></p>
 </header>
 <figure class="hero"><img src="/img/b11d291a3d36dcd8.jpg" alt=""></figure>
+<details class="toc"><summary>目录<span>4 节</span></summary><ol><li><a href="#案例梗概">案例梗概</a></li><li><a href="#我的思考">我的思考</a></li><li><a href="#对-arcus42-的借鉴">对 Arcus42 的借鉴</a></li><li><a href="#写在最后">写在最后</a></li></ol></details>
 <div class="prose">
 <p>Unit 3，还是 Das Narayandas 教授的 Market-Facing Functions，读的是 Bajaj Finance: Building an Omnipresent Financial Services Firm。</p>
 <p>Olay 是一个品牌把自己拆散。Belden 是趁利润还在涨，把零件重新装成方案。Bajaj Finance 已经装好了——五十多种产品，五千多万客户，案例称它是印度最大的消费金融公司。2021 年 8 月，它要决定的是下一步：把现有客户的钱包挖深，还是赶在亚马逊之前，把店开进那些更小的城镇。</p>
 <p>这篇是课前写的。先把判断放在这里，上完课再回来对照。</p>
 <p>以下，enjoy：</p>
-<h2>案例梗概</h2>
+<h2 id="案例梗概">案例梗概</h2>
 <p><strong>2021 年 8 月</strong>，浦那，一个暴风雨天。Sanjiv Bajaj（HBS MBA 1997）和董事总经理 Rajeev Jain 坐在会议室里。Bajaj Finance，下文称 BFL，管理资产 212 亿美元，客户 5050 万。他们想把一家靠门店卖贷款的公司，做成一家"无处不在"的公司：贷款、服务、以及嵌在里面的耐用品、保险和投资，线上线下是同一段旅程。</p>
 <p>房间里有两派。一派要深挖老客户。流程和人都在，资本开支不大。另一派要去更小的城镇。Bajaj 的担心是：那里的中产在长，品牌和消费金融都还没到。如果自己慢一步，亚马逊会用一个金融服务平台，跃过他们，接住那几亿人。亚马逊已经在印度投了 65 亿美元，有 1.4 亿用户，还计划从小镇再加 1 亿。它把自己叫作"地球上最以客户为中心的公司"。</p>
 <p><strong>来路要从 1987 年说起。</strong> 那时它叫 Bajaj Auto Finance，是 Bajaj Auto 的子公司。Bajaj 集团的旗舰做两轮车，创始人 Jamnalal Bajaj，是甘地认养的儿子。最初只给买 Bajaj 车的人贷款。</p>
@@ -80,8 +83,8 @@
 <li>分销只覆盖印度 62% 的家庭，剩下 38% 没碰过。App 可以成为小镇零售商面对电商时的伙伴。但那里缺少征信，更依赖加盟商，服务会不稳，不熟悉正规还款的客户也可能带来更高的违约。</li>
 </ol>
 <p>Bajaj 说，他们有面对逆境不断改造自己的历史。这一次对面是亚马逊。</p>
-<h2>我的思考</h2>
-<h3>能跟亚马逊竞争，前提是不去当第二个亚马逊</h3>
+<h2 id="我的思考">我的思考</h2>
+<h3 id="能跟亚马逊竞争前提是不去当第二个亚马逊">能跟亚马逊竞争，前提是不去当第二个亚马逊</h3>
 <p><img alt="" src="/img/b5c20a9e9b16883f.jpg"></p>
 <p>能竞争。竞争的那一层，是信贷决策和还贷，不是货架。</p>
 <p>2020 年，电商只占印度零售的 5.8%，亚马逊占这层电商的 36%。乘起来，大约是整个零售的 2%。BFL 站在另外那一头：店、审批、催收。它经手 30% 的电子产品和 15% 的智能手机，客户 5050 万；亚马逊 Pay Later 当时是 200 万。净息差 13.9%，银行在 4% 上下。这是护城河，也是所有人要打的靶。非银拿不到活期存款。亚马逊可以用电商的利润，去补贴"先买后付"。拿 13.9% 的息差去打价格战，会把自己打穿。</p>
@@ -93,7 +96,7 @@
 <p><strong>亚马逊买的是下一次打开。BFL 要守的是下一次还想借的时候，门还在。</strong></p>
 <p>这个选择的代价我认：有的镇会晚到一年。2021 财年拨备从上年的 5.19 亿美元升到 8.16 亿美元，净资产收益率从 20.2% 掉到 12.8%。2019 财年这个数字还是 22.5%。打穿那一年的是信用成本，不是费用。慢，好过把这一课再买一次。</p>
 <p>我自己的倾向是，课堂上如果被逼成二选一，我会选"先钱包、后小镇"，而不是"只挖老客户"。把每年 600 万新客停掉，等于把下一个镇让给先出现在手机里的那个人。</p>
-<h3>数字化真正开始的那一年，是数据收归公司的 2015</h3>
+<h3 id="数字化真正开始的那一年是数据收归公司的-2015">数字化真正开始的那一年，是数据收归公司的 2015</h3>
 <p><img alt="" src="/img/785f430425fac7cd.jpg"></p>
 <p>App 是最后一章。前面有七个决定，每个旁边都有一个坑。</p>
 <p>先洗账，再谈规模。净不良 7% 的时候去扩张，是用增长稀释坏账。他们反过来，把城市耐用品门店从 19000 家收到 2000 家，再一点点建回 26900 家。那一刀是战略，不是整顿。</p>
@@ -105,27 +108,27 @@
 <p>最后才是 2019。疫情里那 100 个人被要求按"更小的经济、10 亿美元资本"重想自己的部门。技术负责人承认，他们一直是 B2B，几乎没建过面对消费者的那一层。流程先画出来，不增值的删掉，然后才进 App。做界面的人坐在业务里。</p>
 <p><strong>他们躲开的不是技术坑，是激励坑。</strong> 数据交出来有钱拿，坏账藏不住，做不成的业务活不下去。房间里还有三种成年人：所有者、一个放了一辈子贷的人、一个操盘的人。以及一道疤。见过 15% 坏账的公司，不会把风险放在附录里。</p>
 <p>我自己的理解是，很多公司把"数字化"理解成一个上线日期。BFL 的日期如果只能记一个，应该是数据收归公司的那一年，不是客户能下载 App 的那一年。没有前面那一步，App 只是把孤岛搬到了线上。</p>
-<h3>这是一家极懂购买时刻的公司，还不是一家以客户为中心的公司</h3>
+<h3 id="这是一家极懂购买时刻的公司还不是一家以客户为中心的公司">这是一家极懂购买时刻的公司，还不是一家以客户为中心的公司</h3>
 <p>购买的那一刻，他们是认真的。父母要的是电视当天上墙。不急着用钱的人要的是好服务，所以工薪贷款可以把算法放在后台，前台照样批。1 卢比把人引进门，客单价是客户自己做高的。</p>
 <p>组织却是另一套。每个产品一个小 CEO。交叉销售由一个单独的、激励很重的团队来推，风险预先批好。<strong>老客户不能自己走进这个团队，再要一笔贷款。</strong> 公司决定客户什么时候可以多买。</p>
 <p>Jain 在疫情之后说，答案是加快数字化，"变成"一家以消费者为中心的公司。正在变成，就说明出发的时候还不是。技术负责人说得更直：B2B 做了很多年，面对消费者的那一层没有认真建过。</p>
 <p>那句"不要为一个客户付两次钱"，是获客成本的句子。客户在这里是一项资产。资产被管理得很好。</p>
 <p>我自己的理解是，客户中心不是把体验做光滑。光滑他们已经做到了。客户中心是客户能自己走进下一件产品，而不是等一个他接触不到的团队来推。亚马逊用"最以客户为中心"描述自己。BFL 用"无处不在"描述野心，用 ROE 管理自己。两句都是真的，它们不是同一句。</p>
-<h3>忠诚停在零息和那张卡上</h3>
+<h3 id="忠诚停在零息和那张卡上">忠诚停在零息和那张卡上</h3>
 <p>EMI 卡会带来真的重复购买。对办不到银行卡的人，它是唯一的门。人会回到一扇别处没有的门。这是准入上的忠诚。</p>
 <p>零息是另一回事。付得起全款的人照样拿。条件在的时候，人在。另一家柜台写出同样的零息，人就不必在。</p>
 <p>钱包把这件事说完了。这些客户持有印度按揭的 45%、信用卡的 65%、1000 亿美元的个人贷款，BFL 大约只占 10%。住房金融在它自己的贷款组合里只占 12%。那 45% 的按揭，不是它放的。客户真有选择的地方，十卢比里有九卢比在别处。</p>
 <p>再看速度。每年 600 到 700 万新客，可交叉销售的池子两年只增加大约 330 万。新增的客户里约三成是第一次办信贷的人。这是一台出色的获客机器。一门靠忠诚复利的生意，不必靠这么多陌生人来维持增长。</p>
 <p><strong>人会重复一件方便、而且别处没有的事。方便一旦别处也有，重复就停了。</strong></p>
 <p>电视当天装上墙，喜悦是真的。喜悦落下来之后，这家公司要过很久才会再被需要。缴费和旅行是用来填这段空档的。填得生硬，就变成爱好；不填，客户就在下一次想买的时候，打开别人的 App。</p>
-<h3>近处先有一本账，远处再谈无处不在</h3>
+<h3 id="近处先有一本账远处再谈无处不在">近处先有一本账，远处再谈无处不在</h3>
 <p>这个案例如果只带走一件事，我会带走顺序。</p>
 <p>近处，先把同一个客户收成一本账，并且让交出这本账的人得到计入。BFL 是先有仓库和转让费，后有 App。倒过来做，数字化只是更快地把同样的问题再问一遍。</p>
 <p>中间，先把流程画出来，删掉不改变任何决定的步骤，再写系统。速度和标准分成两份工作，两份都对损失负责。新的事情启动之前写下关停的标准，并且给一个日期。没有日期的规矩，不会发生。</p>
 <p>远处，无处不在不是一个上面挂着更多商品的 App。它是在下一次真正需要你的时候，你还在。对一家耐用品金融公司，下一次可能是几年后。对任何自然周期很长的生意，都一样：频率如果不是设计出来的，关系会自己休眠。</p>
 <p>跟平台竞争的时候，守住它还做不了的那个判断。BFL 的判断是：这个人借了，会不会还。货架、物流、谁的价格更低，那是别人已经占住的战场。</p>
 <p>我自己的倾向是，把"客户数在涨"当成一个需要被钱包份额校正的数字。5050 万是真的。10% 也是真的。<strong>只报前面那个数的公司，会以为自己已经拥有了这些客户。</strong></p>
-<h2>对 Arcus42 的借鉴</h2>
+<h2 id="对-arcus42-的借鉴">对 Arcus42 的借鉴</h2>
 <p>读到 Bajaj，想到的不是印度的贷款，是一件更普通的事：我们也很会把一个人引进门，然后默认他会留下来。</p>
 <p><strong>第一，界面是最后一步，档案是第一步。</strong>
 客户的事实如果还散在不同的人、不同的表格、不同的一次次交谈里，做一个新的入口只是把散落搬到线上。先收成一本，指定一个负责人，让第二个人不重新采集也能讲清这个家族。做不到这一点，后面的"无处不在"没有主体。</p>
@@ -137,19 +140,68 @@ BFL 不是靠讲话拆掉部门墙的。使用别人客户数据的部门要付�
 零息把人引进门。门后是一段很长的空档。家办的自然周期更长，往往是一次继承、一次流动性事件、下一代进来。如果只在这些时刻出现，我们就是那笔零息：条件好的时候在，条件不是唯一的时候就不在。频率应该来自工作本身——复盘、治理、下一代在房间里——而不是来自多挂几个与主业无关的功能。</p>
 <p><strong>第五，不要为了跟平台竞争，去抄平台的货架。</strong>
 BFL 一旦把商城做成另一家亚马逊，就同时失去息差和零售伙伴。我们该让人留下来的理由，是判断、记录和信任在这里，是产品服务于一个家族自己的配置，而不是我们碰巧也提供别人菜单上的每一项。菜单变长，不是在场。</p>
-<h2>写在最后</h2>
+<h2 id="写在最后">写在最后</h2>
 <p>课前的我，最认同的是那句"赢下的是成交的那一刻，空着的是两次成交之间"。</p>
 <p>上完课，再看哪一条被推翻了，被什么推翻的。</p>
 <hr>
 <p>这是课前读书笔记，依据哈佛案例课堂材料整理，不构成对 Bajaj Finance 或任何金融产品的投资建议。</p>
 </div>
 <footer><p class="src">本文同步自微信公众号「Joyce Ma」</p></footer>
+<aside class="subscribe"><div>
+<p class="sub-h">喜欢这篇？订阅更新</p>
+<p>微信搜索公众号「Joyce Ma」，新文章第一时间推送；也可以用 <a href="/feed.xml">RSS</a> 订阅。</p>
+<p class="sub-actions"><button class="share" type="button" data-share data-done="链接已复制"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg><span>复制链接</span></button></p>
+</div></aside>
 </article>
+<section class="related"><h2>相关文章</h2><ul class="list"><li><a href="/p/20261010-8ca10f/"><time datetime="2026-10-10">2026.10.10</time><span class="t"><span class="kind">哈佛预习</span><span class="h">市场营销案例：Belden</span><span class="sub">趁利润还在涨，完成从卖零件到卖方案的惊险一跃</span></span></a></li><li><a href="/p/20261010-d8908d/"><time datetime="2026-10-10">2026.10.10</time><span class="t"><span class="kind">哈佛笔记</span><span class="h">市场营销案例：Olay</span><span class="sub">一个 20 亿美元的品牌，是怎么腰斩的？</span></span></a></li><li><a href="/p/20261016-25c797/"><time datetime="2026-10-16">2026.10.16</time><span class="t"><span class="kind">哈佛预习</span><span class="h">市场营销：Equitable</span><span class="sub">新工作方式要不要全员采用</span></span></a></li></ul></section>
 <nav class="pager"><a class="newer" href="/p/20261012-bce359/"><small>较新</small>市场营销案例：Olay</a><a class="older" href="/p/20261010-60fbfa/"><small>较早</small>领导力案例：Cynthia Carroll at Anglo American</a></nav>
+<nav class="upnav" aria-label="返回"><a href="/harvard/">← 返回哈佛笔记</a><a href="/">⌂ 回到首页</a></nav>
 </main>
 <footer class="foot">
   <p>© Joyce Ma · 文章同步自微信公众号「Joyce Ma」，转载请注明出处</p>
-  <p><a href="/feed.xml">RSS 订阅</a></p>
+  <p><a href="/search/">搜索</a> · <a href="/feed.xml">RSS 订阅</a></p>
 </footer>
+<button class="totop" type="button" aria-label="回到顶部" title="回到顶部">↑</button>
+<script>
+(function(){
+  var b=document.querySelector('.totop'), bar=document.querySelector('.progress i');
+  function f(){
+    var y=window.scrollY, h=document.documentElement.scrollHeight-window.innerHeight;
+    if(b) b.classList.toggle('on', y>700);
+    if(bar) bar.style.transform='scaleX('+(h>0?Math.min(1,y/h):0)+')';
+  }
+  window.addEventListener('scroll', f, {passive:true}); f();
+  if(b) b.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+  var k=document.querySelector('[data-back]');
+  if(k) k.addEventListener('click', function(e){
+    try {
+      if(document.referrer && new URL(document.referrer).origin===location.origin && history.length>1){
+        e.preventDefault(); history.back();
+      }
+    } catch(_){}
+  });
+  // 复制链接；手机上调起系统分享
+  Array.prototype.forEach.call(document.querySelectorAll('[data-share]'), function(btn){
+    btn.addEventListener('click', function(){
+      var u=location.href.split('#')[0].split('?')[0], sp=btn.querySelector('span'), old=sp.textContent;
+      function done(){ sp.textContent=btn.getAttribute('data-done'); btn.classList.add('ok');
+        setTimeout(function(){ sp.textContent=old; btn.classList.remove('ok'); }, 2200); }
+      function fallback(){ var a=document.createElement('textarea'); a.value=u; a.setAttribute('readonly','');
+        a.style.position='fixed'; a.style.opacity='0'; document.body.appendChild(a); a.select();
+        try{ document.execCommand('copy'); done(); }catch(_){} document.body.removeChild(a); }
+      if(navigator.share && window.matchMedia && matchMedia('(pointer:coarse)').matches){
+        navigator.share({title:document.title, url:u}).catch(function(){}); return; }
+      if(navigator.clipboard && window.isSecureContext){ navigator.clipboard.writeText(u).then(done, fallback); } else fallback();
+    });
+  });
+  // 按 / 键去搜索
+  document.addEventListener('keydown', function(e){
+    var t=e.target.tagName;
+    if(e.key==='/' && !e.metaKey && !e.ctrlKey && t!=='INPUT' && t!=='TEXTAREA' && !document.getElementById('q')){
+      var s=document.querySelector('.searchlink'); if(s){ e.preventDefault(); location.href=s.href; }
+    }
+  });
+})();
+</script>
 </body>
 </html>

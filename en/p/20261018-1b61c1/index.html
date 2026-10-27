@@ -19,24 +19,27 @@
 <link rel="stylesheet" href="/style.css">
 </head>
 <body class="is-post">
+<div class="progress" aria-hidden="true"><i></i></div>
 <div hidden><img src="/icon-512.png" alt="Joyce" width="512" height="512"></div>
 <header class="top">
   <a class="name" href="/en/">Joyce Ma</a>
-  <nav><a href="/en/" aria-current=page>Articles</a><a href="/en/skills/">Skills</a><a class="lang" href="/p/20261018-1b61c1/" hreflang="zh-CN" lang="zh-CN">中文</a></nav>
+  <nav><a href="/en/" aria-current=page>Articles</a><a href="/en/skills/">Skills</a><a class="searchlink" href="/en/search/" aria-label="Search" title="Search"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.6-4.6"/></svg></a><a class="lang" href="/p/20261018-1b61c1/" hreflang="zh-CN" lang="zh-CN">中文</a></nav>
 </header>
 <main>
+<nav class="crumbs" aria-label="Breadcrumb"><a class="back" href="/en/harvard/" data-back>← Back</a><span class="trail"><a href="/en/">Home</a><i aria-hidden="true">/</i><a href="/en/harvard/">HBS Notes</a></span></nav>
 <article class="post">
 <header>
 <p class="kicker"><a href="/en/harvard/">HBS Notes</a> · HBS Prep</p><h1>Control: Lehman Brothers</h1><p class="subtitle">Why paper compliance couldn&#x27;t stop the window dressing</p>
-<p class="meta"><time datetime="2026-10-18">October 18, 2026</time></p><p class="classtime"><span>Class</span><a href="/en/harvard-prep/#d2026-10-19">Mon, Oct 19 11:00–12:30</a> (Boston time) · Control · Eugene Soltes · <a href="/en/harvard-prep/lehman/">Prep materials</a></p>
+<p class="meta"><time datetime="2026-10-18">October 18, 2026</time> · 17 min read<button class="share" type="button" data-share data-done="Link copied"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg><span>Copy link</span></button></p><p class="classtime"><span>Class</span><a href="/en/harvard-prep/#d2026-10-19">Mon, Oct 19 11:00–12:30</a> (Boston time) · Control · Eugene Soltes · <a href="/en/harvard-prep/lehman/">Prep materials</a></p>
 </header>
 <figure class="hero"><img src="/img/1d3a09e0bc5361bc.jpg" alt=""></figure>
+<details class="toc"><summary>Contents<span>4 sections</span></summary><ol><li><a href="#case-summary">Case Summary</a></li><li><a href="#my-thinking">My Thinking</a></li><li><a href="#takeaways-for-arcus42">Takeaways for Arcus42</a></li><li><a href="#final-thoughts">Final Thoughts</a></li></ol></details>
 <div class="prose">
 <p>Unit 3, Professor Eugene Soltes, Control:
 Lehman Brothers and Repo 105.</p>
 <p>In another class the same day, Frances Frei asks whether service is something you design. This class asks about control — the audit firm, the law firm, management: what role did each of them play? In this story, every piece of paper is in order. What's missing is the number behind the paper.</p>
 <p>Here goes — enjoy:</p>
-<h2>Case Summary</h2>
+<h2 id="case-summary">Case Summary</h2>
 <p><strong>May 2008: Matthew Lee had been at Lehman for fourteen years.</strong> He was a senior vice president in the finance division, responsible for the balance sheets of more than a thousand legal entities worldwide. He read the company's Code of Ethics over and over: if you discover a possible violation, you have a duty to report it immediately; good-faith reporting will not be met with retaliation. He hesitated for a long time. After seeing a lawyer, he decided it was his duty. On May 16, his letter reached the controller, the CFO and the chief risk officer. It made six points: at month-end there was roughly US$5 billion of net assets on the books that no one was really managing; there were billions of dollars of accounts worldwide that didn't reconcile; there were billions of dollars of inventory that, at current market prices and at the volumes they held, probably could be neither bought nor sold. The systems couldn't keep up with the expansion. The finance function in Mumbai might be efficiently distributing wrong numbers. Some senior internal audit staff were not equipped for a job that had become complicated.</p>
 <p>The words "Repo 105" did not appear anywhere in the letter.</p>
 <p>About two weeks later, his boss called him in: you've been laid off, as part of a larger downsizing. No other reason was given. He fought it, then accepted a severance agreement with a confidentiality clause. Lehman went bankrupt in September, and he never received all the money in the agreement. The audit firm said afterward that the company had investigated the letter itself and reported to the audit committee in July, concluding that the allegations were unfounded and there were no material issues. The firm's own review was never finished — the company no longer existed.</p>
@@ -66,20 +69,20 @@ Lehman Brothers and Repo 105.</p>
 <li>Why did Lehman use Repo 105?</li>
 <li>Which institutions, if any, bear responsibility for the use of Repo 105? How would you improve those institutions?</li>
 </ol>
-<h2>My Thinking</h2>
-<h3>Investors shouldn't look at net leverage, but at what keeps this company alive</h3>
+<h2 id="my-thinking">My Thinking</h2>
+<h3 id="investors-shouldnt-look-at-net-leverage-but-at-what-keeps-this-company-alive">Investors shouldn't look at net leverage, but at what keeps this company alive</h3>
 <p><img alt="" src="/img/cabef623808560a0.jpg"></p>
 <p>I wouldn't start with the 12.1x they quoted publicly. I'd first ask: how would this company die?</p>
 <p>It had no stable retail deposits. It rolled over short-term loans every day. The 1998 rumors had already shown how fast this kind of funding can collapse. Once Bear Stearns fell in March 2008, this was no longer a hypothetical enemy. Then look at what was sitting on that thin layer of equity. Over three years, US$300 billion more in assets and US$6 billion more in equity: every new dollar going in was levered 50 times. That record profit in 2007 came from high-margin mortgage-backed securities it held itself. Fuld said never put yourself where you can't fight another day. The balance sheet said the opposite.</p>
 <p>Lee put the internal version in his letter. US$5 billion extra at month-end that no one was managing. Billions in accounts that didn't reconcile. Billions in inventory that couldn't be sold at market prices. These aren't footnotes. This is the risk: a business that lives on confidence, funds itself overnight, and sits on sticky valuations.</p>
 <p>Einhorn had been short since July 2007. He might not have been able to name Repo 105. He picked the right target — the published ratio, and what lay beneath it. By June, it was the most shorted investment bank. On June 2, S&amp;P was still praising its liquidity profile; a week later the company pre-announced its first quarterly loss since going public.</p>
 <p>My own take: <strong>a ratio that's only true on the reporting date isn't a risk metric — it's a press-release metric.</strong> The investor's scorecard really has just three lines: what keeps it alive, what it holds, and the governance of that number. Repo 105 is the evidence for the third line. Even if you couldn't yet name it at the time, the first two lines were enough.</p>
-<h3>Repo 105 wasn't financing; it was a drug for the market's benefit</h3>
+<h3 id="repo-105-wasnt-financing-it-was-a-drug-for-the-markets-benefit">Repo 105 wasn't financing; it was a drug for the market's benefit</h3>
 <p>Ordinary repos could already provide funding. What they wanted wasn't cash. They wanted the net leverage number to come down, without having to sell sticky assets at their real prices.</p>
 <p>From mid-2007, the market stopped watching revenue and started watching the balance sheet. Fuld made McDade czar. The businesses were ordered to shrink the balance sheet, to avoid a downgrade. McDade wanted them to sell inventory. The traders couldn't sell, or didn't want to eat the discount. So they rented the balance sheet: move things off for a few days, use the cash to pay down debt, leave equity untouched, and the printed ratio comes out lower. McDade gave it the right name — another drug. To those in power, this dose counted as shrinking the balance sheet.</p>
 <p>The accounting trick was small and specific. An extra 3 points of haircut bought a "sale." The illustrative table in the case writes the cosmetics in two figures: 17.6 becomes 15.6. Then they hid the product. The sentence American law firms refused to write, they went to London to buy. American securities took a round trip through the London affiliate and were transferred back after the reporting date. The dose rose from US$24.5 billion to US$50.4 billion. Across the last three quarter-ends, US$138 billion in total. Ramped up in the days before the reporting date. Laundered ratios taken to the rating agencies. The term nowhere in the materials.</p>
 <p>My own leaning is that the motive has to be stated plainly. This wasn't clever financing. It was window dressing under pressure. Richards wrote about the same slippery slope from prison: once you start managing the number, change the procedure even a little and you and the whole organization are exposed. Lehman's "little" was the extra 3 points, plus an opinion letter from London. After that, every quarter needed a bigger dose.</p>
-<h3>By the time the form passes, the function has already failed</h3>
+<h3 id="by-the-time-the-form-passes-the-function-has-already-failed">By the time the form passes, the function has already failed</h3>
 <p><img alt="" src="/img/b83b3a7dc9cff9a6.jpg"></p>
 <p>The headline of this class is the audit firm, the law firm, management. I won't just single out one villain. This system let the form pass and let the function fail.</p>
 <p>Management first. They designed the drug, upped the dose, never disclosed it, and took the numbers to the rating agencies. McDade at least called it a drug while in the room. The risk officer had already been shown the door.</p>
@@ -87,29 +90,78 @@ Lehman Brothers and Repo 105.</p>
 <p>The audit firm approved the policy and knew as early as 2001 that its purpose was to net down the balance sheet. In 2006 someone on the team raised reputational risk; the email stopped at a manager. The controller told the engagement partner that usage spiked at quarter-end. On June 12, the whistleblower said in person that US$50 billion had been moved off and put back a few days later. The committee chair had given the order: report every allegation. The engagement partner was silent on June 13, silent on July 8, silent on July 22. On July 10 he issued an unqualified review. What they measured was whether they were comfortable with the accounting standards. They didn't measure whether the board had heard the ugly sentence.</p>
 <p>The audit committee had every chair Sarbanes-Oxley calls for filled: independence, financial experts, executive sessions without management present. They still didn't know the three syllables of Repo 105. You can't oversee a number no one has told you is synthetic.</p>
 <p>My own take: <strong>no single institution invented this lie. Each one stamped its own small slice of the form, so no one owned the function.</strong> In class, it's enough to put two pieces of arithmetic side by side: in the audit firm's workpapers, a 0.1 move in net leverage corresponded to US$1.8 billion; US$50.4 billion was 28 times that. What was later used as a defense was 31 becoming 32 on a different ratio.</p>
-<h3>The person who can create discomfort is the control</h3>
+<h3 id="the-person-who-can-create-discomfort-is-the-control">The person who can create discomfort is the control</h3>
 <p>Soltes's preface is titled Designing Process Versus Measuring Outcomes. Measure compliance by process inputs — training completion rates, policy sign-offs, whether a hotline exists — and every box on the paper gets ticked. Lehman had all of it. A Code of Ethics that required reporting and promised no retaliation. An independent audit committee. A Big Four auditor. An opinion letter from a Magic Circle law firm. Lee did exactly what the paper said. The result: laid off, gagged, and after the bankruptcy, never fully paid.</p>
 <p>In the book he writes about a gap that matches this letter. Ask employees whether they'd report misconduct if they saw it, and more than 90% say yes. Ask whether they actually reported it in the past six months, and it usually drops below 50%. Forty percentage points. Many compliance programs pretend this gap doesn't exist. Lee was one person inside that gap.</p>
 <p>Richards, from another company and another "it's just timing" case, wrote about the gray. Computer Associates recognized contracts two or three days early. In one quarter, legitimate revenue was inflated by 53%. Announced earnings per share were US$0.60; without the accelerated recognition, only US$0.05 was left. He too had comfort letters from a Big Four firm. He too had an investigation by the in-house general counsel that found nothing. Until the board brought in a different law firm, which recovered 23 boxes of missing documents and dug up the emails. In the letter he wrote: one minute you're doing an outstanding job, the next minute you've crossed an imaginary line. The world isn't black and white. Executives spend most of their lives in the gray.</p>
 <p>My own take is that the gray isn't somewhere you visit. It's where the quarter gets closed. The person who can create what Soltes calls uncomfortable dissonance — someone outside the inner circle who can still kill the deal — is the control. Antoncic was that person, and she was shown out of the room. Lee was that person, and he was laid off. The person on the audit team who wrote down reputational risk had their email stop at a manager. If that person can't survive the quarter, the rest of the program is paper.</p>
 <p>Improving these institutions doesn't mean writing another version of the code. It means changing what they count as success. Once you take the drug away, is the number the CEO quotes on the earnings call still the same number? Is the person who says it isn't still at the table? Those two things are the outcomes.</p>
-<h2>Takeaways for Arcus42</h2>
+<h2 id="takeaways-for-arcus42">Takeaways for Arcus42</h2>
 <p>Reading this case, what comes to mind isn't one investment bank's bankruptcy. It's how any well-written set of controls can turn into window dressing on reporting day.</p>
 <p><strong>First, having a code doesn't mean anyone dares to speak.</strong> Lehman's paper required reporting and promised no retaliation. Measuring training, sign-offs and whether the hotline exists can't measure Lee being laid off two weeks later. There are only two outcome metrics for speak-up: the person is still here, and the facts reached the table they should have reached.</p>
 <p><strong>Second, a number that's only true on reporting day isn't risk control.</strong> Portfolios, proposals, progress — anything that only gets tidied up in the three days before a report, first ask McDade's question: are we selling inventory, or are we on drugs? The story we tell externally should still be the same story once you strip out the last three days' maneuvers.</p>
 <p><strong>Third, legal opinions should state the purpose, not just whether something can be done.</strong> The sentence American lawyers refused to write was the most useful risk-control opinion of the day. Go buy one in another jurisdiction that will write it, and the form will stand. The question for the buyer is: if the only purpose of this move is to make some statement look good, do we still do it?</p>
 <p><strong>Fourth, the committee needs to hear the ugly sentence.</strong> Setting out the right chairs — independence, expertise, executive sessions — isn't enough. When information is being filtered, oversight is already over. The standard materials should include a mid-quarter versus quarter-end comparison, and every "the form passes" opinion currently in use. If an auditor says a letter looks bad on its face but shouldn't lead to material issues, that sentence is itself the problem.</p>
 <p><strong>Fifth, once the gray becomes well-trodden, you need an outsider.</strong> Richards wrote that it is a dangerous place. Don't pretend the world is black and white. There has to be someone who doesn't get shown out of the room, who is allowed to say "legalistic, form-driven" out loud. If control serves only the form, it becomes part of the window dressing.</p>
-<h2>Final Thoughts</h2>
+<h2 id="final-thoughts">Final Thoughts</h2>
 <p>Before class, the line I identified with most was "another drug."</p>
 </div>
 <footer><p class="src">Also published in Chinese on the WeChat account “Joyce Ma” · <a href="/p/20261018-1b61c1/" lang="zh-CN">中文原文</a></p><p class="src">This English version was translated from the Chinese with AI.</p></footer>
+<aside class="subscribe"><div>
+<p class="sub-h">Enjoyed this? Follow along</p>
+<p>New pieces go out first on the WeChat account “Joyce Ma”. You can also subscribe via <a href="/en/feed.xml">RSS</a>.</p>
+<p class="sub-actions"><button class="share" type="button" data-share data-done="Link copied"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg><span>Copy link</span></button></p>
+</div></aside>
 </article>
+<section class="related"><h2>Related reading</h2><ul class="list"><li><a href="/en/p/20261023-d2fac9/"><time datetime="2026-10-23">2026.10.23</time><span class="t"><span class="kind">HBS Prep</span><span class="h">Management Control: A Letter from Prison</span><span class="sub">Time is part of the facts too</span></span></a></li><li><a href="/en/p/20261018-67ed6a/"><time datetime="2026-10-18">2026.10.18</time><span class="t"><span class="kind">HBS Prep</span><span class="h">Global Markets: The Atlantic and OpenAI</span><span class="sub">Should content be sold to the models?</span></span></a></li><li><a href="/en/p/20261018-574477/"><time datetime="2026-10-18">2026.10.18</time><span class="t"><span class="kind">HBS Prep</span><span class="h">Global Markets: Taiwan Semiconductors</span><span class="sub">Is the silicon shield a protection or a weak spot?</span></span></a></li></ul></section>
 <nav class="pager"><a class="newer" href="/en/p/20261021-e23f12/"><small>Newer</small>Global Markets: India</a><a class="older" href="/en/p/20261018-624265/"><small>Older</small>Strategy: KLog.co</a></nav>
+<nav class="upnav" aria-label="Go back"><a href="/en/harvard/">← Back to HBS Notes</a><a href="/en/">⌂ Home</a></nav>
 </main>
 <footer class="foot">
   <p>© Joyce Ma · Articles first published in Chinese on the WeChat account “Joyce Ma”; English versions translated with AI. Please credit the source when sharing.</p>
-  <p><a href="/en/feed.xml">RSS feed</a></p>
+  <p><a href="/en/search/">Search</a> · <a href="/en/feed.xml">RSS feed</a></p>
 </footer>
+<button class="totop" type="button" aria-label="Back to top" title="Back to top">↑</button>
+<script>
+(function(){
+  var b=document.querySelector('.totop'), bar=document.querySelector('.progress i');
+  function f(){
+    var y=window.scrollY, h=document.documentElement.scrollHeight-window.innerHeight;
+    if(b) b.classList.toggle('on', y>700);
+    if(bar) bar.style.transform='scaleX('+(h>0?Math.min(1,y/h):0)+')';
+  }
+  window.addEventListener('scroll', f, {passive:true}); f();
+  if(b) b.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+  var k=document.querySelector('[data-back]');
+  if(k) k.addEventListener('click', function(e){
+    try {
+      if(document.referrer && new URL(document.referrer).origin===location.origin && history.length>1){
+        e.preventDefault(); history.back();
+      }
+    } catch(_){}
+  });
+  // 复制链接；手机上调起系统分享
+  Array.prototype.forEach.call(document.querySelectorAll('[data-share]'), function(btn){
+    btn.addEventListener('click', function(){
+      var u=location.href.split('#')[0].split('?')[0], sp=btn.querySelector('span'), old=sp.textContent;
+      function done(){ sp.textContent=btn.getAttribute('data-done'); btn.classList.add('ok');
+        setTimeout(function(){ sp.textContent=old; btn.classList.remove('ok'); }, 2200); }
+      function fallback(){ var a=document.createElement('textarea'); a.value=u; a.setAttribute('readonly','');
+        a.style.position='fixed'; a.style.opacity='0'; document.body.appendChild(a); a.select();
+        try{ document.execCommand('copy'); done(); }catch(_){} document.body.removeChild(a); }
+      if(navigator.share && window.matchMedia && matchMedia('(pointer:coarse)').matches){
+        navigator.share({title:document.title, url:u}).catch(function(){}); return; }
+      if(navigator.clipboard && window.isSecureContext){ navigator.clipboard.writeText(u).then(done, fallback); } else fallback();
+    });
+  });
+  // 按 / 键去搜索
+  document.addEventListener('keydown', function(e){
+    var t=e.target.tagName;
+    if(e.key==='/' && !e.metaKey && !e.ctrlKey && t!=='INPUT' && t!=='TEXTAREA' && !document.getElementById('q')){
+      var s=document.querySelector('.searchlink'); if(s){ e.preventDefault(); location.href=s.href; }
+    }
+  });
+})();
+</script>
 </body>
 </html>

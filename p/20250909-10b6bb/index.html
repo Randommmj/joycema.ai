@@ -19,16 +19,18 @@
 <link rel="stylesheet" href="/style.css">
 </head>
 <body class="is-post">
+<div class="progress" aria-hidden="true"><i></i></div>
 <div hidden><img src="/icon-512.png" alt="Joyce" width="512" height="512"></div>
 <header class="top">
   <a class="name" href="/">Joyce Ma</a>
-  <nav><a href="/" aria-current=page>文章</a><a href="/skills/">Skills</a><a class="lang" href="/en/p/20250909-10b6bb/" hreflang="en" lang="en">EN</a></nav>
+  <nav><a href="/" aria-current=page>文章</a><a href="/skills/">Skills</a><a class="searchlink" href="/search/" aria-label="搜索" title="搜索"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.6-4.6"/></svg></a><a class="lang" href="/en/p/20250909-10b6bb/" hreflang="en" lang="en">EN</a></nav>
 </header>
 <main>
+<nav class="crumbs" aria-label="当前位置"><a class="back" href="/harvard/" data-back>← 返回</a><span class="trail"><a href="/">首页</a><i aria-hidden="true">/</i><a href="/harvard/">哈佛笔记</a></span></nav>
 <article class="post">
 <header>
 <p class="kicker"><a href="/harvard/">哈佛笔记</a></p><h1>Pinkerton：创业与算账</h1>
-<p class="meta"><time datetime="2025-09-09">2025年9月9日</time></p>
+<p class="meta"><time datetime="2025-09-09">2025年9月9日</time> · 约 5 分钟读完<button class="share" type="button" data-share data-done="链接已复制"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg><span>复制链接</span></button></p>
 </header>
 
 <div class="prose">
@@ -117,12 +119,61 @@
 <p>并购不是财务算术，而是战略押注。它考验的是定价权能否恢复、协同能否兑现、组织能否消化，以及企业家是否愿意为一次“战略跃迁”去承担财务和管理的巨大压力。</p>
 </div>
 <footer><p class="src">本文首发于微信公众号「Joyce Ma」 · <a href="https://mp.weixin.qq.com/s/KvlEzFpIBVpyn8ZgVGBjrA">阅读原文</a></p></footer>
+<aside class="subscribe"><div>
+<p class="sub-h">喜欢这篇？订阅更新</p>
+<p>微信搜索公众号「Joyce Ma」，新文章第一时间推送；也可以用 <a href="/feed.xml">RSS</a> 订阅。</p>
+<p class="sub-actions"><button class="share" type="button" data-share data-done="链接已复制"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg><span>复制链接</span></button></p>
+</div></aside>
 </article>
+<section class="related"><h2>相关文章</h2><ul class="list"><li><a href="/p/20250908-79b213/"><time datetime="2025-09-08">2025.09.08</time><span class="t"><span class="kind">哈佛笔记</span><span class="h">Lululemon：企业扩张期的心法与打法</span></span></a></li><li><a href="/p/20250908-80f706/"><time datetime="2025-09-08">2025.09.08</time><span class="t"><span class="kind">哈佛笔记</span><span class="h">Danaher：如何榨取成熟企业的价值</span></span></a></li><li><a href="/p/20250908-bb2100/"><time datetime="2025-09-08">2025.09.08</time><span class="t"><span class="kind">哈佛笔记</span><span class="h">BBBK：卓越是一条独立的赛道</span></span></a></li></ul></section>
 <nav class="pager"><a class="newer" href="/p/20250915-5a7b9f/"><small>较新</small>Labubu Party（3） 从载歌载舞到群魔乱舞</a><a class="older" href="/p/20250909-ce1a61/"><small>较早</small>Nokia：企业生命尾部的惊险一跃</a></nav>
+<nav class="upnav" aria-label="返回"><a href="/harvard/">← 返回哈佛笔记</a><a href="/">⌂ 回到首页</a></nav>
 </main>
 <footer class="foot">
   <p>© Joyce Ma · 文章同步自微信公众号「Joyce Ma」，转载请注明出处</p>
-  <p><a href="/feed.xml">RSS 订阅</a></p>
+  <p><a href="/search/">搜索</a> · <a href="/feed.xml">RSS 订阅</a></p>
 </footer>
+<button class="totop" type="button" aria-label="回到顶部" title="回到顶部">↑</button>
+<script>
+(function(){
+  var b=document.querySelector('.totop'), bar=document.querySelector('.progress i');
+  function f(){
+    var y=window.scrollY, h=document.documentElement.scrollHeight-window.innerHeight;
+    if(b) b.classList.toggle('on', y>700);
+    if(bar) bar.style.transform='scaleX('+(h>0?Math.min(1,y/h):0)+')';
+  }
+  window.addEventListener('scroll', f, {passive:true}); f();
+  if(b) b.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+  var k=document.querySelector('[data-back]');
+  if(k) k.addEventListener('click', function(e){
+    try {
+      if(document.referrer && new URL(document.referrer).origin===location.origin && history.length>1){
+        e.preventDefault(); history.back();
+      }
+    } catch(_){}
+  });
+  // 复制链接；手机上调起系统分享
+  Array.prototype.forEach.call(document.querySelectorAll('[data-share]'), function(btn){
+    btn.addEventListener('click', function(){
+      var u=location.href.split('#')[0].split('?')[0], sp=btn.querySelector('span'), old=sp.textContent;
+      function done(){ sp.textContent=btn.getAttribute('data-done'); btn.classList.add('ok');
+        setTimeout(function(){ sp.textContent=old; btn.classList.remove('ok'); }, 2200); }
+      function fallback(){ var a=document.createElement('textarea'); a.value=u; a.setAttribute('readonly','');
+        a.style.position='fixed'; a.style.opacity='0'; document.body.appendChild(a); a.select();
+        try{ document.execCommand('copy'); done(); }catch(_){} document.body.removeChild(a); }
+      if(navigator.share && window.matchMedia && matchMedia('(pointer:coarse)').matches){
+        navigator.share({title:document.title, url:u}).catch(function(){}); return; }
+      if(navigator.clipboard && window.isSecureContext){ navigator.clipboard.writeText(u).then(done, fallback); } else fallback();
+    });
+  });
+  // 按 / 键去搜索
+  document.addEventListener('keydown', function(e){
+    var t=e.target.tagName;
+    if(e.key==='/' && !e.metaKey && !e.ctrlKey && t!=='INPUT' && t!=='TEXTAREA' && !document.getElementById('q')){
+      var s=document.querySelector('.searchlink'); if(s){ e.preventDefault(); location.href=s.href; }
+    }
+  });
+})();
+</script>
 </body>
 </html>

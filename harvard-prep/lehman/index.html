@@ -19,12 +19,14 @@
 <link rel="stylesheet" href="/style.css">
 </head>
 <body class="is-post">
+
 <div hidden><img src="/icon-512.png" alt="Joyce" width="512" height="512"></div>
 <header class="top">
   <a class="name" href="/">Joyce Ma</a>
-  <nav><a href="/" aria-current=page>文章</a><a href="/skills/">Skills</a><a class="lang" href="/en/harvard-prep/lehman/" hreflang="en" lang="en">EN</a></nav>
+  <nav><a href="/" aria-current=page>文章</a><a href="/skills/">Skills</a><a class="searchlink" href="/search/" aria-label="搜索" title="搜索"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.6-4.6"/></svg></a><a class="lang" href="/en/harvard-prep/lehman/" hreflang="en" lang="en">EN</a></nav>
 </header>
 <main>
+<nav class="crumbs" aria-label="当前位置"><a class="back" href="/harvard-prep/#d2026-10-19" data-back>← 返回</a><span class="trail"><a href="/">首页</a><i aria-hidden="true">/</i><a href="/harvard-prep/#d2026-10-19">哈佛预习</a></span></nav>
 <article class="post material">
 <header>
 <p class="kicker"><a href="../">哈佛预习</a> · 管控</p>
@@ -32,16 +34,17 @@
 <p class="classtime"><span>上课</span>10月19日 周一 11:00–12:30（波士顿时间） · Control · Eugene Soltes</p>
 <p class="actions"><a class="btn" href="/p/20261018-1b61c1/">读预习文章 →</a></p>
 </header>
+<details class="toc"><summary>目录<span>6 节</span></summary><ol><li><a href="#老师的问题">老师的问题</a></li><li><a href="#我的回答">我的回答</a></li><li><a href="#故事梗概">故事梗概</a></li><li><a href="#核心数据">核心数据</a></li><li><a href="#关键人物">关键人物</a></li><li><a href="#核心矛盾">核心矛盾</a></li></ol></details>
 <div class="prose">
-<h2>老师的问题</h2>
+<h2 id="老师的问题">老师的问题</h2>
 <p>The Role of Auditors, Law Firms, and Management.</p>
 <ol>
 <li>If you were an investor in Lehman Brothers, how would you evaluate the riskiness of Lehman’s business?</li>
 <li>Why did Lehman use the repo 105 transactions?</li>
 <li>What institutions, if any, were at fault for Lehman’s use of repo 105's and how would you go about improving the institutions?</li>
 </ol>
-<h2>我的回答</h2>
-<h3>Q1. 投资人如何评估雷曼生意的风险</h3>
+<h2 id="我的回答">我的回答</h2>
+<h3 id="q1-投资人如何评估雷曼生意的风险">Q1. 投资人如何评估雷曼生意的风险</h3>
 <p>我不会从他们对外讲的净杠杆开始。我会先问：这家公司是怎么死的。</p>
 <p>雷曼没有稳定的零售存款。它每天在展期短期贷款。1998 年 LTCM 之后的谣言，已经演示过这种融资能溃得多快。2008 年 3 月贝尔斯登一倒，这不再是假想敌。这就是它的生意。</p>
 <p>然后看薄薄的股权上坐着什么。2004 到 2007，资产大约加了 3,000 亿美元，股权只加了 60 亿——新进去的每一块钱，杠杆 50 倍。2007 年那份成绩单，收入 193 亿、利润 42 亿，来自包装和交易奇异的抵押贷款证券，高利润的那种。Fuld 说，聪明的风险管理是永远不让自己落在打不了下一场的位置。资产负债表说的是反面：它已经从替客户过手，变成自己拿着。</p>
@@ -49,14 +52,14 @@
 <p>给一千多家实体资产负债表签字的 Matthew Lee，在 2008 年 5 月提供了内部版本：每个月末，账上大约多出 50 亿美元管理层并没有在管的净资产；全球有数十亿美元账户对不上；有数十亿美元存货，按当时的市值、以他们持有的体量，在那个市场里大概买不进也卖不出。这不是附注。这就是风险：一门靠信心活着的生意，隔夜融资，坐在粘的估值上。</p>
 <p>如果我当时还能看到 Exhibit 2，我会再做一道算术。E&amp;Y 底稿写，净杠杆动 0.1 就算重要，通常对应 18 亿美元。有形股权大约 180 亿。2008 年二季的 Repo 105 是 504 亿——门槛的 28 倍，大约 2.8 档净杠杆。对外的 12.1，去掉季末"销售"更接近 14.9。一季的 15.4 更接近 18。评级机构看到的是洗过的数字。6 月 2 日标普还在夸"强的融资/流动性画像"，一周后公司预告上市以来首次季度亏损。</p>
 <p>所以我作为投资人的记分卡只有三行：（1）融资模型——隔夜信心，没有存款；（2）资产质量——粘、被杠杆、在不流动的市场里标价；（3）这个数字的治理——如果一个比率只在季度最后一天好看，它就不是风险指标，是新闻稿指标。Repo 105 是第（3）行的证据。即便当时还叫不出这个名字，Einhorn 和 Lee 已经在指着它。</p>
-<h3>Q2. 为什么要用 Repo 105</h3>
+<h3 id="q2-为什么要用-repo-105">Q2. 为什么要用 Repo 105</h3>
 <p>他们用它，是因为净杠杆这个数字必须下来，而他们又不想把粘资产按真价格卖掉。</p>
 <p>2007 年中开始，市场不盯收入了，改盯资产负债表。评级机构、分析师、做空的人，读的是同一个数字：净杠杆。Fuld 让 McDade 做"资产负债表沙皇"。各业务被命令减表，免得被降级。McDade 要他们卖存货。交易员卖不动，或者不想吃那一截折价。于是他们"租用资产负债表"：Repo 105 把存货搬走几天，现金拿去还别的负债，股权不动，比率印出来就低了。King 说季末本来就有压力，2007 年中开始明显跳了一档。"对掌权的人来说，Repo 105 算减表。" McDade 自己的词：我们正在吸的另一种毒品。</p>
 <p>会计把戏又小又具体。普通回购是融资：2% 的 haircut，资产留在表内，现金和负债一起增加。SFAS 140 写得很清楚，抵押在 98%–102%，你仍保持有效控制，不能当销售。雷曼把 haircut 提到 5% 或 8%，主张自己交出了控制，按销售入账。Exhibit 4：同样 50 亿美元，当融资，还完债净杠杆还是 17.6；当销售，掉到 15.6。这两档化妆品，就是全部产品。</p>
 <p>然后他们把产品藏起来。没有公开披露。短期内有义务把数百亿美元买回来这件事，报表上看不见。交易被塞进衍生品附注。美国律所不肯管这叫销售。Linklaters 肯，条件是证券"位于"英国、按英国法做。于是美国的券被转到伦敦的 LBIE 走一遭，过了报告日再转回来。</p>
 <p>看剂量。2006 年末 245 亿美元。2007 年末 386 亿。2008 年一季——贝尔斯登那一季——491 亿，一季加了 105 亿。二季 504 亿。最后三个季末加起来 1,380 亿。他们当初告诉 E&amp;Y，上限大约 200–300 亿。他们冲破了。报告日前几天加量。2008 年 5–6 月拿着洗过的比率去见标普、穆迪、惠誉，论证不该被负面行动。材料里没有 Repo 105。联储和 SEC 也不知道。</p>
 <p>所以动机不是"我们找到了一种聪明的融资"。普通回购已经能融资。动机是压力下的窗饰：打中评级机构和电话会要读的那个数字，又不必吃 McDade 说他们该吃的那一截真损失。Richards 在监狱来信里，从另一个行业描述了同一条斜坡：一旦你开始管这个数字，程序上哪怕只改一点点，你和整个组织都会暴露。雷曼那一点点，是多出来的 3 个点的 haircut，加上伦敦的一封意见书。之后每个季度，都需要更大一剂。</p>
-<h3>Q3. 哪些机构有错，如何改进</h3>
+<h3 id="q3-哪些机构有错如何改进">Q3. 哪些机构有错，如何改进</h3>
 <p>我不会只抓一个坏人。我会说：这套系统让形式过了关，让功能失败了。管理层设计了这剂药，还加了量。律所让形式在一个肯说 yes 的法域里变得合法。审计所批准了政策，知道它是干什么用的，听吹哨人亲口说了 500 亿美元，仍然没有对审计委员会说出 "Repo 105" 这几个字。审计委员会按萨班斯该有的椅子都坐满了，却从没听到这个事实。评级机构和联储看到的是洗过的比率。Lee 按《道德守则》做了，大约两周后被裁。</p>
 <p><strong>管理层。</strong> 他们是第一位的。有人指 Goldfarb 发明了它。Fuld 定下高增长模型，把杠杆推上去，风险一紧张就把 Antoncic 请出房间。他们告诉 E&amp;Y 上限 200–300 亿，后来印出 504 亿。从未披露。拿着这个数字去见评级机构。McDade 至少把这件事叫做毒品，要求真的卖掉；交易员被奖励的是化妆品。这就是顶端的语气：比率是目标，存货不是。</p>
 <p><strong>Linklaters，以及那些拒绝的美国律所。</strong> 这正是这堂课标题里的律所。美国律师不肯管 Repo 105 叫销售。这个拒绝本身就是信息。雷曼去伦敦买答案，再把美国的券从 LBIE 走一遭，让意见书能贴上去。Kelly 自己的词：法条主义的、形式驱动的。这样的法律意见不是控制，是门票。改进律所：意见书要写这个结构是<em>干什么用的</em>，不只写 haircut 过没过某一款。如果唯一的商业目的是印出一个季末比率，信里就该写出来，或者别写这封信。为美国的券去跨法域买"真实销售"意见，这件事本身就该被披露。</p>
@@ -67,7 +70,7 @@
 <p><strong>作为制度的《道德守则》。</strong> Soltes 的序言应该放在这里。Lee 完全按纸上写的做了。结果：被裁、封口、破产后拿不全补偿。百分之九十的人说自己会报告；真报告的不到一半。雷曼把这条缝写进了一个人的职业生涯。改进 speak-up 不是再开一条热线。它是：报告的人还有工作，董事会听到了信里没有的那句事实，下一季的比率用两种口径公布。这些才是结果。培训完成率改不了任何东西。</p>
 <p><strong>Richards 是同一条斜坡的人的版本。</strong> 他也有四大的安心函。他也有内部总法律顾问的调查，什么都没查到。他也告诉自己"只是时点，两三天"。Repo 105 也是时点，两三天。他写信说，灰色是高管一生大部分时间待的地方，那是个危险的地方。办法不是假装世界非黑即白。办法是 Soltes 说的 uncomfortable dissonance：一个不在季末小圈子里的人，仍然能杀掉这笔交易。Antoncic 是这样的人，她被请出房间。Lee 是这样的人，他被裁了。Jain 是这样的人，那封邮件停在他经理那里。</p>
 <p>如果课堂上只能说一句：<strong>不是一个机构发明了这个谎；每个机构都给形式的一小片盖了章，于是没有人拥有功能。</strong> 改进它们，是改它们把什么算作成绩——不是"有没有政策、意见书、独立委员会、审计费、道德守则"，而是"CEO 在电话会上说的那个数字，去掉这剂药之后还是不是同一个数字，以及说出不是的那个人，是不是还在这里工作"。</p>
-<h2>故事梗概</h2>
+<h2 id="故事梗概">故事梗概</h2>
 <p><strong>2008 年 5 月，Matthew Lee 在雷曼做了十四年。</strong> 他是财务部高级副总裁，管全球一千多家法律实体的资产负债表。他反复读公司《道德守则》：发现可能违规，有责任立刻报告；善意举报不得报复。他犹豫了很久，见过律师之后，认定这是职责。5 月 16 日，他把信交到主计长 Martin Kelly、资本市场产品控制负责人 Gerard Reilly、CFO Erin Callan、首席风险官 Christopher O’Meara 手里。信里写了六条：月末账上大约多出 50 亿美元没人真正在管的净资产；全球实体有数十亿美元账户对不上；有数十亿美元存货按市价几乎卖不掉；系统与人手跟不上 1994 年上市以来的膨胀；孟买财务职能可能把错数高效地分发出去；部分内审高管并不具备已经变复杂的审计能力。信里没有出现 Repo 105 这个词。</p>
 <p><strong>大约两周后，上司叫他进去，告诉他：你被裁了，属于更大规模的缩编。</strong> 没有别的理由。他争过，后来接受了带保密条款的离职协议。2008 年 9 月雷曼破产，协议里的钱他没有拿全。E&amp;Y 后来说：雷曼自己查过这封信，2008 年 7 月管理层向审计委员会报告，结论是指控没有根据、没有重大问题；E&amp;Y 自己的复核没做完，因为公司已经破产。</p>
 <p><strong>雷曼 1850 年创立，是华尔街最老、也曾最赚钱的投行之一。</strong> 1984 年卖给 Shearson/American Express，1994 年 IPO 独立。交易员出身的 Richard Fuld 出任董事长兼 CEO。历史强项是固定收益承销和交易。投资者担心固收敞口太大，公司开始分散：固收收入从 1995 年的 55% 降到 2007 年的 39%，股票和顾问业务补上来。2000 年代中，它刻意追求更高增长，从低风险经纪模型改成高风险银行模型——资产负债表从"过手"变成"自己拿着"，风险留在自己账上。2004 到 2007，资产大约增加 3,000 亿美元，股权只增加 60 亿美元。《财富》的 Shawn Tully 把华尔街这套游戏说得很直：用股东那点现金撬到极大，把债拿去堆证券；只要利率往下走，组合会胀，薄薄的股权上就能刻出巨大回报。</p>
@@ -83,7 +86,7 @@
 <p><strong>Lee 的信到了 E&amp;Y。Schlich 立刻告诉审计委员会主席，并坚持管理层告知 SEC 和纽约联储。</strong> 他后来说，至少在 2008 年 6 月和 7 月三次跟委员会讨论过这封吹哨信。信本身没写 Repo 105，但提出了一系列可能的会计不规范。委员会主席 Thomas Cruikshank 要求 E&amp;Y 协助公司内审调查，见到 Lee，并把调查中出现的每一个主张——无论信里有没有——报告给委员会。Schlich 给同事写信：我们还在处理一封"表面上相当难看"的吹哨信，要花大量时间；凭他已经看到的，他有信心不会在财务报告上变成重大问题；这加上一些非常困难的表外会计问题，每个人压力都很大。</p>
 <p><strong>2008 年 6 月 12 日，Schlich 和另一位合伙人 Hillary Hansen 面谈 Lee。</strong> Lee 当场补了一条信里没有的指控：2008 年二季末，雷曼用 Repo 105 从表上拿走了价值 500 亿美元的固定收益证券，几天后再放回去。第二天 6 月 13 日，Schlich 向审计委员会汇报调查进展，没有提 Repo 105。7 月 8 日的委员会会议，以及 7 月 22 日内审向委员会汇报调查结果时，他仍然沉默。内审的结论是："未发现重大问题。"审计委员会始终不知道有 Repo 105，不知道未披露，不知道美国证券被转到英国关联方去做，也不知道规模、增长和季末时点曾被当成问题。与此同时，E&amp;Y 在 7 月 10 日为雷曼的 10-Q 出具了无保留审阅报告——距面谈 Lee 不到一个月。</p>
 <p><strong>后记里，Turley 2010 年夏说：到头来，我们对自己在雷曼做的工作感觉很好。</strong> 他争辩，合伙人"某种程度上还因为问题是 Repo 105 的披露问题而感到安慰"，因为会计处理和美国规则是对齐的。后来在电视上他把雷曼的失败放进全球金融融化、抵押贷款违约、资产价格下跌、流动性危机的语境，并说如果没有各国政府出手，会有许多金融机构申请 Chapter 11。他承认系统需要改革。</p>
-<h2>核心数据</h2>
+<h2 id="核心数据">核心数据</h2>
 <table>
 <thead>
 <tr>
@@ -158,7 +161,7 @@
 <p>&lt;凡回答里会用到的数字都先落在这里。自己推算的写出算式。&gt;</p>
 <p>去掉窗饰的净杠杆：案例写"净杠杆动 0.1 通常对应 $1.8B" → 有形股权 TE ≈ $1.8B / 0.1 = <strong>$18B</strong>。Q2 2008 用量 $50.4B 对应 50.4 / 18 = <strong>2.80</strong> 档净杠杆。报告值 12.1 + 2.80 ≈ <strong>14.9</strong>。Q1 2008：15.4 + 49.1/18 ≈ <strong>18.1</strong>。</p>
 <p>三季累计：$38.6 + $49.1 + $50.4 = <strong>$138.1B</strong>。</p>
-<h2>关键人物</h2>
+<h2 id="关键人物">关键人物</h2>
 <table>
 <thead>
 <tr>
@@ -268,7 +271,7 @@
 </tbody>
 </table>
 <p>谁有决策权：Fuld 和执委会定杠杆目标和风险胃口。谁出钱：短期债权人和股东；评级机构是闸门。谁在反对：Antoncic、McDade（反对把毒品当减表）、Lee、Einhorn、Jain。谁是外部压力源：分析师、评级机构、做空者、在 3 月之后变得极度敏感的短期资金市场。谁本该拦住却按形式放行：E&amp;Y、Linklaters、审计委员会（被蒙在鼓里）、评级机构和监管（被出示洗过的数字）。</p>
-<h2>核心矛盾</h2>
+<h2 id="核心矛盾">核心矛盾</h2>
 <ol>
 <li><strong>老师的题所在：这是管理层的窗饰，还是审计所、律所、委员会、评级机构、监管一起放行的制度失败？</strong> 一边：会计按 SFAS 140 的一种解释可以当销售，Turley 说 31 变 32，雷曼仍然会倒。另一边：$50.4B 是重要性门槛的 28 倍，季末加量、从不披露、吹哨后对委员会沉默，市场据以判断"低两位数杠杆"的那个数字是造出来的。</li>
 <li><strong>报告净杠杆 12.1 vs 去掉窗饰约 14.9：去杠杆是真的，还是给评级机构和电话会看的？</strong> Callan / Lowitt 把 16.1 → 15.4 → 12 讲成纪律；Repo 105 从 $24.5B 加到 $50.4B，粘资产没有按 McDade 的要求卖掉。</li>
@@ -278,12 +281,54 @@
 <li><strong>Richards 的灰色 vs Lee 的时点。</strong> CA 把合同提前两三天确认，Richards 说"只是时点"；雷曼把证券搬走几天再搬回来，也是时点。两条路径都从"大家都在管业绩数字"滑进无法回头的惯例。</li>
 </ol>
 </div>
-<footer><p class="src"><a href="../#d2026-10-19">← 回到课表</a></p></footer>
 </article>
+<nav class="upnav" aria-label="返回"><a href="/harvard-prep/#d2026-10-19">← 返回课表</a><a href="/">⌂ 回到首页</a></nav>
 </main>
 <footer class="foot">
   <p>© Joyce Ma · 文章同步自微信公众号「Joyce Ma」，转载请注明出处</p>
-  <p><a href="/feed.xml">RSS 订阅</a></p>
+  <p><a href="/search/">搜索</a> · <a href="/feed.xml">RSS 订阅</a></p>
 </footer>
+<button class="totop" type="button" aria-label="回到顶部" title="回到顶部">↑</button>
+<script>
+(function(){
+  var b=document.querySelector('.totop'), bar=document.querySelector('.progress i');
+  function f(){
+    var y=window.scrollY, h=document.documentElement.scrollHeight-window.innerHeight;
+    if(b) b.classList.toggle('on', y>700);
+    if(bar) bar.style.transform='scaleX('+(h>0?Math.min(1,y/h):0)+')';
+  }
+  window.addEventListener('scroll', f, {passive:true}); f();
+  if(b) b.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+  var k=document.querySelector('[data-back]');
+  if(k) k.addEventListener('click', function(e){
+    try {
+      if(document.referrer && new URL(document.referrer).origin===location.origin && history.length>1){
+        e.preventDefault(); history.back();
+      }
+    } catch(_){}
+  });
+  // 复制链接；手机上调起系统分享
+  Array.prototype.forEach.call(document.querySelectorAll('[data-share]'), function(btn){
+    btn.addEventListener('click', function(){
+      var u=location.href.split('#')[0].split('?')[0], sp=btn.querySelector('span'), old=sp.textContent;
+      function done(){ sp.textContent=btn.getAttribute('data-done'); btn.classList.add('ok');
+        setTimeout(function(){ sp.textContent=old; btn.classList.remove('ok'); }, 2200); }
+      function fallback(){ var a=document.createElement('textarea'); a.value=u; a.setAttribute('readonly','');
+        a.style.position='fixed'; a.style.opacity='0'; document.body.appendChild(a); a.select();
+        try{ document.execCommand('copy'); done(); }catch(_){} document.body.removeChild(a); }
+      if(navigator.share && window.matchMedia && matchMedia('(pointer:coarse)').matches){
+        navigator.share({title:document.title, url:u}).catch(function(){}); return; }
+      if(navigator.clipboard && window.isSecureContext){ navigator.clipboard.writeText(u).then(done, fallback); } else fallback();
+    });
+  });
+  // 按 / 键去搜索
+  document.addEventListener('keydown', function(e){
+    var t=e.target.tagName;
+    if(e.key==='/' && !e.metaKey && !e.ctrlKey && t!=='INPUT' && t!=='TEXTAREA' && !document.getElementById('q')){
+      var s=document.querySelector('.searchlink'); if(s){ e.preventDefault(); location.href=s.href; }
+    }
+  });
+})();
+</script>
 </body>
 </html>

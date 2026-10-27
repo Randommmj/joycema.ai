@@ -19,12 +19,14 @@
 <link rel="stylesheet" href="/style.css">
 </head>
 <body class="is-post">
+
 <div hidden><img src="/icon-512.png" alt="Joyce" width="512" height="512"></div>
 <header class="top">
   <a class="name" href="/en/">Joyce Ma</a>
-  <nav><a href="/en/" aria-current=page>Articles</a><a href="/en/skills/">Skills</a><a class="lang" href="/harvard-prep/cynthiacarroll/" hreflang="zh-CN" lang="zh-CN">中文</a></nav>
+  <nav><a href="/en/" aria-current=page>Articles</a><a href="/en/skills/">Skills</a><a class="searchlink" href="/en/search/" aria-label="Search" title="Search"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.6-4.6"/></svg></a><a class="lang" href="/harvard-prep/cynthiacarroll/" hreflang="zh-CN" lang="zh-CN">中文</a></nav>
 </header>
 <main>
+<nav class="crumbs" aria-label="Breadcrumb"><a class="back" href="/en/harvard-prep/#d2026-10-14" data-back>← Back</a><span class="trail"><a href="/en/">Home</a><i aria-hidden="true">/</i><a href="/en/harvard-prep/#d2026-10-14">HBS Prep</a></span></nav>
 <article class="post material">
 <header>
 <p class="kicker"><a href="../">HBS Prep</a> · Leadership</p>
@@ -33,13 +35,13 @@
 <p class="actions"><a class="btn" href="/en/p/20261010-60fbfa/">Read the prep essay →</a></p>
 </header>
 <div class="prose">
-<h2>The Professor's Questions</h2>
+<h2 id="the-professors-questions">The Professor's Questions</h2>
 <ol>
 <li>What should Cynthia Carroll do about the safety issues at Rustenburg?</li>
 <li>What should Cynthia Carroll do to achieve her goal of "Zero Harm" for all of Anglo American employees, taking into account all relevant stakeholders?</li>
 </ol>
-<h2>My Answers</h2>
-<h3>Q1. What should Carroll do about safety at Rustenburg?</h3>
+<h2 id="my-answers">My Answers</h2>
+<h3 id="q1-what-should-carroll-do-about-safety-at-rustenburg">Q1. What should Carroll do about safety at Rustenburg?</h3>
 <p><strong>Shut Rustenburg — all nine shafts — now, as her own decision, and use the stoppage to retrain every one of the 30,000 workers before anyone goes back underground.</strong> Not a speech, not a task force, not a new procedure. A stop.</p>
 <p>Why a stop and not something softer:</p>
 <ul>
@@ -60,7 +62,7 @@
 <li><strong>Publish the numbers.</strong> Fatalities and LTIFR, mine by mine, every month. Define in advance what "the shutdown worked" looks like: no fatalities in the first N months after restart, LTIFR back under 2006 levels, supervisor turnover, and whether the dialogue became two-way.</li>
 </ol>
 <p>The honest costs: lost production in a record platinum market; shareholders in Johannesburg who want dividends and institutions in London who want to know why a first-year CEO is burning cash on a problem "everyone has"; Havenstein's authority; and the risk that supervisors simply wait it out. She should name all four in her own announcement. A leader who names the costs before her critics do is harder to argue with.</p>
-<h3>Q2. How does she get to "Zero Harm" across Anglo American, with all stakeholders in view?</h3>
+<h3 id="q2-how-does-she-get-to-zero-harm-across-anglo-american-with-all-stakeholders-in-view">Q2. How does she get to "Zero Harm" across Anglo American, with all stakeholders in view?</h3>
 <p><strong>Rustenburg is the shock. Zero Harm needs a system: one standard for the whole group, personal accountability at every level, a workforce that is allowed to say no, and three parties — company, unions, government — owning the same number.</strong> The stop buys attention for perhaps six months. What she builds in those six months decides whether the deaths come back.</p>
 <p>Start with a fact about the organisation: Anglo is "a collection of mining businesses that operated independently." The business heads "don't" meet. "If they were asked to do something around safety... they would tell you to get lost." Zero Harm is impossible in a federation. So the first move is structural, not motivational.</p>
 <p><strong>1. The board — get the mandate in writing, then spend it.</strong>
@@ -92,12 +94,54 @@
 <p><strong>Sequence and timeline.</strong> Months 0–2: Rustenburg stop, retraining, tripartite talks begin. Months 2–6: group standard written and signed by every business CEO; pay changed; right-to-refuse policy issued; monthly public reporting starts. Months 6–18: tripartite agreement signed; first full-year numbers; first consequence for a non-compliant leader. The test: fatalities under 46 (the 2002–2006 average) in year one, and falling every year after, with LTIFR moving the same way.</p>
 <p><strong>Where it can fail.</strong> Supervisors wait it out; production pressure in a record platinum market pulls everyone back; the government uses the opening to tighten rather than partner; Havenstein and other unit heads treat group standards as London interference. Her mitigation for all four is the same: make the number public and make the consequences personal.</p>
 </div>
-<footer><p class="src"><a href="../#d2026-10-14">← Back to the calendar</a></p></footer>
 </article>
+<nav class="upnav" aria-label="Go back"><a href="/en/harvard-prep/#d2026-10-14">← Back to the calendar</a><a href="/en/">⌂ Home</a></nav>
 </main>
 <footer class="foot">
   <p>© Joyce Ma · Articles first published in Chinese on the WeChat account “Joyce Ma”; English versions translated with AI. Please credit the source when sharing.</p>
-  <p><a href="/en/feed.xml">RSS feed</a></p>
+  <p><a href="/en/search/">Search</a> · <a href="/en/feed.xml">RSS feed</a></p>
 </footer>
+<button class="totop" type="button" aria-label="Back to top" title="Back to top">↑</button>
+<script>
+(function(){
+  var b=document.querySelector('.totop'), bar=document.querySelector('.progress i');
+  function f(){
+    var y=window.scrollY, h=document.documentElement.scrollHeight-window.innerHeight;
+    if(b) b.classList.toggle('on', y>700);
+    if(bar) bar.style.transform='scaleX('+(h>0?Math.min(1,y/h):0)+')';
+  }
+  window.addEventListener('scroll', f, {passive:true}); f();
+  if(b) b.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+  var k=document.querySelector('[data-back]');
+  if(k) k.addEventListener('click', function(e){
+    try {
+      if(document.referrer && new URL(document.referrer).origin===location.origin && history.length>1){
+        e.preventDefault(); history.back();
+      }
+    } catch(_){}
+  });
+  // 复制链接；手机上调起系统分享
+  Array.prototype.forEach.call(document.querySelectorAll('[data-share]'), function(btn){
+    btn.addEventListener('click', function(){
+      var u=location.href.split('#')[0].split('?')[0], sp=btn.querySelector('span'), old=sp.textContent;
+      function done(){ sp.textContent=btn.getAttribute('data-done'); btn.classList.add('ok');
+        setTimeout(function(){ sp.textContent=old; btn.classList.remove('ok'); }, 2200); }
+      function fallback(){ var a=document.createElement('textarea'); a.value=u; a.setAttribute('readonly','');
+        a.style.position='fixed'; a.style.opacity='0'; document.body.appendChild(a); a.select();
+        try{ document.execCommand('copy'); done(); }catch(_){} document.body.removeChild(a); }
+      if(navigator.share && window.matchMedia && matchMedia('(pointer:coarse)').matches){
+        navigator.share({title:document.title, url:u}).catch(function(){}); return; }
+      if(navigator.clipboard && window.isSecureContext){ navigator.clipboard.writeText(u).then(done, fallback); } else fallback();
+    });
+  });
+  // 按 / 键去搜索
+  document.addEventListener('keydown', function(e){
+    var t=e.target.tagName;
+    if(e.key==='/' && !e.metaKey && !e.ctrlKey && t!=='INPUT' && t!=='TEXTAREA' && !document.getElementById('q')){
+      var s=document.querySelector('.searchlink'); if(s){ e.preventDefault(); location.href=s.href; }
+    }
+  });
+})();
+</script>
 </body>
 </html>
