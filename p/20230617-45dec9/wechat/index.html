@@ -16,26 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2023年6月17日" data-url="https://joycema.ai/p/20230617-45dec9/">复制正文到公众号编辑器</button>
 <a href="/p/20230617-45dec9/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2023年6月17日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>正念行走 在 十里芳菲的雨天</h1><p>Joyce Ma<span>2023-06-17</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>下午，从杭州「十里芳菲」赶回上海，听周海宏教授的音乐鉴赏课。</p>
-<p>从「寻梅诸」到「十里洲」码头的小路上，天空正下着淅淅沥沥的小雨，长满青苔的石板路面很滑，我担心摔倒，不敢大意，更不敢看手机。 索性就开始了「正念行走」，或者说是「正念快走」。</p>
-<p>在此之前，我只通过得到app和不是居的课程，浅浅实践过正念行走。下午再次沉浸当中，真是一种美妙的体验。</p>
-<p>好像之前随手撒下的一颗种子，被偶尔撒点的阳光雨露滋润了一下，生发出了一小节鲜嫩的芽。</p>
-<p>活到现在，越来越明确「体验」对我的重要性。之所以强调「对我」的重要性，是因为我也逐渐明白「个体之间的不同」。每个人生命都有各自的路径和方式，有人不用体验，就已经能明白很多道理，甚至有人喜欢用更少的体验，去感受生命的纯粹。</p>
-<p>我大概是笨拙的，也是贪心的，所以想要很多体验，也需要很多的体验。</p>
-<p>体验是最适合我的成长方式。在没有练习过「正念」之前， 我甚至很久很久都不知道什么是「活在当下」。 这是从小就在书上、在别人墙上、字画中看到过，也听过无数次的道理，可没有体验过，我就不会知道 —— 原来走路可以只是走路。</p>
-<p>真正的教育是「人与人之间的照亮」，是榜样的力量。 很多事情，不是做不做的问题，而是程度问题。是程度决定了效果，进而决定正反馈还是负反馈。</p>
-<p>一场好的演讲，要经过3个月的准备和200次打磨。 这在之前的认知中，是没有的。演练10次20次大概已经是极限了，自以为"准备充分"了。 所以，没经历过那样的打磨和淬炼，我就不会知道技艺纯熟之后，情绪流淌的「合我」境界多么美妙。‍</p>
-<p>同样的，我曾经也不知道什么是「仔细思考」、什么是「好好休息」、什么是「专注」、什么是「耐心倾听」……</p>
-<p>「知行合一」之于我，要先「行知合一」。 要爱过才懂得爱，跟着高手体会过一次，才知道程度在哪里。</p>
-<p>所以，要搜集多多的美好「体验」，哪怕只是一下下。‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍</p>
-<p>btw，「十里芳菲」真的是个好地方，推荐。</p>
-<p>这是一个晴朗的午后，我坐船进入十里芳菲时随手拍下的视频，很治愈。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "nDG9EPIVQb3iUVJr", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -104,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

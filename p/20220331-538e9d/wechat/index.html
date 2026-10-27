@@ -16,23 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2022年3月31日" data-url="https://joycema.ai/p/20220331-538e9d/">复制正文到公众号编辑器</button>
 <a href="/p/20220331-538e9d/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2022年3月31日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>原来，我最近的状态叫「存在主义危机」</h1><p>Joyce Ma<span>2022-03-31</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>最近的状态是：一切都很好，但还是怀疑自己的人生没有价值。 一方面每天打着鸡血，了解瑞达利欧的大国周期、研究装修一座带花园的房子、被一块花砖所蕴含的人文历史所感动；另一方面，惶恐于“此夫过举蹞步而觉跌千里者夫”、对疫情下封不封城的价值观感到迷茫、对中美关系的未来感到惶恐不安、对人生追求的方向感到动摇。</p>
-<p>但又不能停。很多问题，仅靠想，是得不出答案的。而且，那么多的幸运降临在我身上，好像不使出浑身解数的工作，就对不起这命运的馈赠；如果不能成长，就会被时代速速的抛弃。虽然知道过好这一生肯定没问题，但又怕虚度光阴如蝼蚁。可，在这浩瀚宇宙中，谁又不是蝼蚁呢？</p>
-<p>今天冥想是时候「存在主义危机」这个词儿突然蹦进脑海，搜索了一下，感觉自己的症状，大体都对得上。姑且算是吧，这个词儿听上去就很高级，至少比「中年危机」好多了。</p>
-<p>托尔斯泰曾经也陷入过存在主义危机，典型症状就是一直问「为什么」。</p>
-<p>为什么要在意？无论这一生做了什么，无论完成了什么，迟早都会被遗忘；迟早，我和我所爱的人都会死去，“只会留下臭气和虫子”。既然一切都消失了，最后被彻底遗忘，挣扎还有什么意义呢？</p>
-<p>但是，且而且，为什么在意？</p>
-<p>为什么被永远记住是重要的？难道被记住和永生，就算是有意义了吗？为什么需要存在的意义？</p>
-<p>哲学家爱比克泰德所说：“你必须提醒自己，你所爱的只是一个凡人，你所爱的没有任何东西是属于你自己的，它是暂时赐给你的，不是永远赐给你的，也不是分开赐给你的，乃是像无花果，或者一串葡萄，按一年的时间赐给你的。你若在冬天盼望，就是愚昧人。所以你们若想念儿子，或者朋友，既没有人给你们，你们就当知道是想念冬天的无花果。”</p>
-<p>最近该认真读读哲学了。大学毕业后，研究生一直想读个哲学。因为我知道，那些超越生活，有关生死的问题，始终困扰着我。相信这个问题，哲学先贤们都思考过了。</p>
-<p>话说回来，最近对意义感到迷茫，但乐趣倒是很多——来自设计装修的乐趣。</p>
-<p>下一篇文章准备说说。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "f25/Y+vogt7D6JrO", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -101,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

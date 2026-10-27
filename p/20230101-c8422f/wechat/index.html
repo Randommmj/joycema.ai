@@ -16,18 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2023年1月1日" data-url="https://joycema.ai/p/20230101-c8422f/">复制正文到公众号编辑器</button>
 <a href="/p/20230101-c8422f/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2023年1月1日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>美国游记｜漫步三藩</h1><p>Joyce Ma<span>2023-01-01</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>从Meta回到市内时，去走回忆里的那条路——Sunset blvd, Noriega St 交界，顺着Noriega从东向西开，是个下坡路，迎着夕阳，对面就是波光粼粼的大海。</p>
-<p>然而，这天，一直下着淅淅沥沥的小雨，海滩上两个婴儿车排排坐，海浪冲刷着阴冷的海滩，太平洋略显无情。</p>
-<p>也有些小收获，在路边看到某个人放置的「共享物品」。通常这是人们在搬家/断舍离时，收拾出来不用的东西，扔了可惜，又无人可送，就会装在纸箱里，放在路边随人拿取。</p>
-<p>竟然找到两本诗集，《whisky words &amp; a shovel 》，酒精湿巾擦一擦，装起来，带走～‍</p>
-<p>翻看这些诗，以及前任留下的阅读痕迹，想象着ta是个什么样的人，能让人开心整个下午～～陌生人，谢谢你的赠予，弥补了阴天带来的失落。</p>
-<p>海边还碰到了一群拉票的城市居民，他们在呼吁市民参与投票，以保留上图这条「海边的非机动车道」，看着这群为一条路而站出来发声的市民们，在冷风下热情的笑容，心情逐渐舒展又有些感慨。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "fdbtkZuHSC9+I3dd", "c": "X5kcxkQrD2A6FkYsWOVvWiyAL5H3esjBm4B5xSzt7taE+VNMptEqVjAPOl/OaJLvpcF/eRJWFdKOjfJi1xHnMzN3WMpRdZrbw5IxwqXSygBHSZSr5QI4nWPfHl5284gsDmoFnDzL9HWsrqCNGv1sd/BAz3xM6ef1QNglOJpC6rPpX890sosvTU6D6U6lTxrHc4HmkGBkv51RaaGqieYMPFwq3mVzIZOupHNhQzEvv8KLqYNEYN9chHGaFQRGLc29zji94GtvT50QVtAO3mATZIQ0po1fQlLA7IcfAxHGiVu+DP9g8etHLBo0jIw/jLB8iSUuwKT4yyjhBh6S3v7T2x81EMmBTekp1Bn2UZCidltAFPiVEVza9zEchQN7gYp2vNX/QtMcc7nrB8U8YMznMvb+rQxgo3SOKc8XXn3YGDkmGCHZm2uRk4lz456vVjrkrQuZfuoLc9y50U2NlHtKwjJl9/EuqCnr013VUp5DIhnsobdVEj5TolsR19diI6q62WOZq+qnusjUPgKruGBm6x2HRtQAh+GRiPRdnZDqsBrTfWPNs6eSzHOmmx6JzbwlQlUnOcRGW3ILRS3+Gnaa7fPO8ay31+KYi6pM7lHna7S4n2YC0HrgihTI61r9Px9muijctmXBLA4h9+d2NEdGOjufXZ/hUAUOPrP2FDIrrFUE6gPdPVNbDd/QpPQZwe56PuwbNfsXOLsOcfrtmv4EDTZtBQZOJsfPN2FocBLFN7I9TySMLs+yJnwE92ngpx++Ud75YQRkiF97JbOP+aT/V8F6oynhQf2LpWVg5NDvrUogyMHTI11uG6ozVqS5kWhWBF/p3Psypk44NnaPWX7dcmkgC/gWJnSKI08TVReUn0YIqY6Hq5X2TAVwm/T4JOhEQIk7lWDge+ZoUjVQegml8qO3GPaibZND8plMI683Fw9kLpUkPWIibNbCJSsmzEa8+RgmLJNFNA/Qpz7JUT3ZN/UDNavDBKZhfLaJStkW2shakvZpNkitOI7vmoM/PD8puLj4Eoh+5ny8328Fn5rk3pfo70yV7nZxA0a4sJt5IkovDIJ9OmdWmDArFfM0V1etN5cjhCmxfovpj1qON5GYaiIlSC3OCd5yJFI8ays3a3ThajNT469xgMFk+gUwsu6GmeBrk7Z8sd7zL15bQQBG1D4Gzy+y/z+mEoAYT/HvSugL/UM/EmOGH0Z4Q8vhN3Y/tQ1Ofy759Ga2OWv+aiP3dTl5JgCw0dYvI7LyTeaI7S26QH/KYJ0D7NrF25j4ytdO8u5l1JZrpOjNBib1sEJ74W3lGMEXuncsVm/IzaCC4bYb2NjHJFaDD4XrIQgnTlWoaW6s0fpHrgvccNG516khcC728TVed4jprk6rYWQgBANmbd94nllP2/0ORLny4hphhBs3u39W8pIh1DH5kop2XCu3QFlUp+rHXI+mBJe7E/2Fw6bgw7j1Xb2urg7QlI3sCnnX+6htc126eaysiLwZEodrmkA9izadSr7eFPg7J45X3T8vC97FZMQRH6LaC90SZ5+UmJ93f3Rgyx1mOHVa/vxa1ki96bx1XSt1BhNQc/oZcYxKFCIlFICvEda5G3ZFMGfrLBHNikHrCbM7NFsUechhcw=="}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -96,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

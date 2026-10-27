@@ -16,26 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2023年5月8日" data-url="https://joycema.ai/p/20230508-2604d8/">复制正文到公众号编辑器</button>
 <a href="/p/20230508-2604d8/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2023年5月8日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>纽约｜布鲁克林的日料｜Chika的甜品</h1><p>Joyce Ma<span>2023-05-08</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>从奥马哈飞到纽约，与朋友相聚，一如既往地收获热情款待和无数美好时光。 </p>
-<p>好久没有动手拍照片了，和艺术家在一起，总是会激发人的灵感。所以，把图片整理放上来，以为记。</p>
-<p>刚到机场就偶遇了Bill Murray。</p>
-<p>好热情地聊了半天。原来他也去了奥马哈，问我都逛了哪里，介绍了新的去处，还关心我吃了哪一款DQ冰淇凌😂很好奇大连是怎样的城市，约好了下次一起吃饭，对海胆水饺特别感兴趣。（对，这一段是为了凑300字原创的）‍‍‍‍‍</p>
-<p>这两天准备看一下他的《Lost In Translation》。</p>
-<p>有且只有和Vincent&amp;Stella在一起时，我会什么都不问地把自己交给他们，然后，自然而然地，把生活过成艺术。</p>
-<p>Ume，爱了。</p>
-<p>这家餐厅才真是”道道都好吃“。 </p>
-<p>鳗鱼烤得不柴不腻，用醋熏蒸出来的米饭口感饱满，味道恰到好处,衬托出刺身的鲜美，又不喧宾夺主。刺身的搭配无论是葱、柠檬、青辣酱还是鱼子，都显然经过精心设计，完美契合。</p>
-<p>坐在阳光房里，像是坐在日本庭园，比起怀石料理毫不逊色，甚至更authentic.‍‍‍‍‍‍‍‍‍‍‍‍</p>
-<p>Chikalicious</p>
-<p>Chika的甜品，不是甜品是艺术品。‍‍</p>
-<p>Chika已经年龄很大了，仍然每天认真的做着甜品，屋外常常排着队伍，她却保持着最多招待17个人的小店。</p>
-<p>看着她动作利落，带着韵律，一点一点做出甜品，本身就很治愈了。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "V+RBgW6ntHkvCxKc", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -104,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

@@ -16,23 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2024年11月15日" data-url="https://joycema.ai/p/20241115-fe5699/">复制正文到公众号编辑器</button>
 <a href="/p/20241115-fe5699/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2024年11月15日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>哈佛笔记3: 案例教学+辩论失败带来的启发</h1><p>Joyce Ma<span>2024-11-15</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>商学院案例教学的套路之一‍‍‍‍‍‍</p>
-<p>温习哈佛案例的过程中，突然意识到教授们的某种套路。</p>
-<p>其中一种，分三步走：‍</p>
-<p>第一步，课前让各小组在课前充分讨论几个问题。例如Dr.John案例中，公司的估值应该如何计算，用PE？用EBITA？‍‍‍‍‍‍‍‍</p>
-<p>第二步，课堂上花些时间让大家充分发表意见，在讨论中评估两种估值体系的优劣。让同学们彼此学习。‍‍‍‍‍‍‍‍‍‍‍</p>
-<p>第三步，话锋一转，给出一个让所有人大跌眼镜的结果。Dr.John案例中公司被并购的价格远超大家预期的10倍。 ‍‍‍‍‍‍‍</p>
-<p>借此机会，教授们会输出一个特别重要的模型或者观点 —— Dr. John案例中，并购方如果不并购Dr.John代价是把市场份额让渡给竞争很激烈的对手……主要结论是：在考虑问题时，不能只考虑内部因素，还需要考虑外部因素。</p>
-<p>结合前阵子高山上课，7:1输了辩论赛，小赛怡情，但过往有很多成功都没有留下深刻的印象，而这一次却让我从复盘中收获很多。例如：‍‍‍‍‍‍‍‍‍</p>
-<p>不能只关注局部战争，要关注整体战争。</p>
-<p>当理性胜卷在握的时候，往往会丢失掉一部分感性表达。</p>
-<p>好的辩论，不是句句在理，而是让观众有「获得感」。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "IMNyXVbCVd7pQcF6", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -101,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

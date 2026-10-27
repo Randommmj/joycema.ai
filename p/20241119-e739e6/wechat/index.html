@@ -16,14 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2024年11月19日" data-url="https://joycema.ai/p/20241119-e739e6/">复制正文到公众号编辑器</button>
 <a href="/p/20241119-e739e6/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2024年11月19日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>Junto 尤托会</h1><p>Joyce Ma<span>2024-11-19</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>耶鲁安静温和的治学氛围，激发了读书和学习的热情。</p>
-<p>因此在课程之外，我们联络了十几位耶鲁的博士，每天晚饭和晚饭后进行交流，不拘领域，横跨量子计算、AI、哲学、拉美文学、政治学、神学、神秘学、行为经济学、宏观经济等各个方向。连续几个晚上，我们在教室中、在酒店里、在餐厅中交流与辩论……从六点一直聊到十点多，四个小时不停歇的输入输出，却仍然有浅尝辄止的意犹未尽之感。 这个读书会我们想要继续下去，并且给了它一个很棒的名字 —— Junto读书会。这个词源于西班牙语和拉丁语中的“juntar”，意思是“联合”或“集合”。是为了致敬本杰明·富兰克林。 他于1727年在费城创建了一个小型读书和讨论小组，正式名称就是Junto（尤托会）。这个读书会通过定期聚会、思想交流、社交活动，探讨生活、商业、政治和道德等各种问题。它的宗旨是帮助会员们提升个人修养，增进彼此的友谊，并一起为社区发展出谋划策。尤托会的成员涵盖了不同职业背景，如手工艺人、商人、医生、律师等。它的思想理念在美国的知识分子团体中产生了广泛影响，被认为是“本土学术俱乐部”的原型之一。在不同的夜晚， 我们讨论AI的哲学问题、大饥荒对于企业年轻化的影响、电动车的补贴政策问题、东南亚的神学问题、量子计算和密码学、佛学、塔罗牌、平行宇宙观与博尔赫斯……现在回想起来，真是有趣的夜晚们。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "Tp+rz1j7LjcP/681", "c": "z73Sd9APu4LC0MeZz7Kmz6YZZTxVqPnO1HjqJOtvoB4uJ281tJdvJdKqSNaZNZn2oafS3uRUkvdDHA4voSfwO8nzHUITw2Ig62+V5kL1MWfAH6fdzk8+N6xOY6uyP5akDv8YUAwVGSXHbekXGeVWsoghlVDXPoIP7mOMl3xFtldOkIN9jEyWmUdEOKEHihucuJBeoZtmVcFqYSX1QsH3IGiJ76PmqT5Y7ur4FphrfKOtFDN+WYzQXD2l1U1DlcDjGQhFM87XrcJgKKpjyp5pcNiIP4pJpRZfoIKuhjO/9mtH4pCs0x9GggBTiqlpKlaBwCh4aTBmvKMudLOFFTjOAlccWbfOu9URBb0NNHxiDM1yq620S6LMDbeRWAuzV2lAMsS/usX2ct+xwoYinYN0KujWWT8JvgB9bWveuKgAGLFIDKlPumU77HQofZVnICh1k123YyOlcmU/d/ytDKgz7FSpdoyiuQF+l379nn3ps2twJMCed0mxhGewIc+WJvQ8rKQfA5XL/ITwKUGigNGmyG4GLlB0DPOidIY0me6M3ez7iNuuPiBjbbmj2TCGyOgN1V6m/Ep3HUdgx8yZ4QynJJgj+mXr+e4/k5JJC0r3t1UYvDI7/D7DG44/H4UECjS4xLXilNMLuPvt7hVRyQv2Mm8JkQDUYDfg1y/2uOsxbykI6E3a4jPoAoD0qZjer+gyEcmjBP32Krq4WX1YNWgsLsOnzYCId9KjgqRFUv+WZ2cLLOZ9map5cW7AotqOnPmczFPIgSLP6k3Kjpmf0HoJBELAf4YJozEfevy/lx0h3qXM5WR+zVoxQoKltGn5Um0cWLuSuvoPppURJKXn/qHMdAC7b8ZLihXWIxMVTKO3iLSygRMeHcLTes3axqrouR/9tTe4l88AuWgqCniLBPDIeUybfrol4JJ7xxUgC72JN7r4k/uIIxEay4lU1IxhjCbwuHzkoeqPcjvVgn70DChP0nbndJT1nVZaPoBGxOqsaTV2xa7Lyu0BSlAi6qaDokqdQd4I95qT17j9ejsZ6Qf/Wl/KpEuLki5x9PXYSzbsc+1864Ozb+oRJsRqpReyvSGhNHEF5iC/VvZ+2r0/diwuJE5BTVHUJph8DB8XMNle2GvBYprsqgxLfxH+fnk59DejQ3ltLvVqLKHVQENpqPxi2CN8QSzOnGGgnRmBsbG60jNJUZjSHJNZjZlaIjgfhf+O6Wclv3yI4CR/SKe/aU37BRrpDaM08hj2O6voanLwFb4hJvEUOof1Q5W3D+g49on+jtbuhF2nRJTCVgm5H65uDOYW+HKqDkd4Tfqi87BtE9K3vBKuTFFmAbJVFE1fZGJhI6y0S5Ppq+zLNybIdHFE2VARr01/lmhaTxPvZvUb1AjiIMbrSuB74lDMfb4CLt/FYWU0i19UY4ZTQRrSri+Q4PWzIUac07GkFFZMraArjrW9HbU3WILZ8It4qv/5HeW+KFbYNpP5DHQoHw6zCVyjds6vCDad+LHnzufcW6TacCUQIzWJ6nsMHzA8/iXRrsjc/DgZIeyVD10IReF4NIxcFdNS1HSq7LtUVeKDx36adN+Z/x2paeigJsEpbHWfuquLDptgqjlF8LyjatJo9fxz2MwcikQ0WGV+oH0/Tt3SAyHkjnmpg5V/MJwAwgwHNO/OnVGCSkVkyZZGviuS/9NT9gkEvQnhObkUO+ZBiWnXWG8qbB4qFGAME61RNUwLUya9denD5AGxf9AXtCHdCS8F436BYYth9uMKutH3w2w5y+1f37aCRCOP30eZLCHSsJw6dWOPIK63sclamGhNzuCpjkCj8JDpY0jrHC/fkaBb2TKV5Go9aui79RsGAdeZerPzPAFxTlcHQkYmX16wlerw9WYTj0MCky/S/FXvkzCUh1FZs1Yb/K53k3dg494aouDrxHX58mW5uatsq9K01uen1SimokFN+CY+ZMNE4B1VJncaPMdajgl5TsJaS+mdKSF+t5nJzmYAhWpicTCkhTR15QSeq5FIUBEGWPDoC7QA4EcpQ3V7pNOBYwKQJs7s9Nuz/XkJF8FDR+I2yir3XC3MBbtgwZBQL7P3DwNLIm45h0/iH1mubWZY6xWIihPkjA/Q4ZK+ussGtIbjNm+nzYZOeTDkzoYgLCC5+bSgNLkb12O0No8VvFbl8v9LeyqGICA1Ww/mjWMWlyv1nRDEPU2IEoC7TLGcBBm55TOxnfngZ8MqYtj9vDk0c+FA8hj8YpgTm6pEgQZsO6fv9zDOdxV8"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -92,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

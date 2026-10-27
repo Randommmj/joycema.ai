@@ -16,19 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2023年1月1日" data-url="https://joycema.ai/p/20230101-38678e/">复制正文到公众号编辑器</button>
 <a href="/p/20230101-38678e/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2023年1月1日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>美国游记｜漫步斯坦福</h1><p>Joyce Ma<span>2023-01-01</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>这次随「高山书院」来硅谷上课，大部分时间在斯坦福大学的校园里度过。</p>
-<p>在一位智慧、优雅、亲和、坚强的长辈引导下，我们用脚丈量了这个33平方公里的校园的许多地方。一周的时间，在教室上课，在食堂吃饭，在草坪上午休玩飞盘……</p>
-<p>以前不知来过多少次，但这一次，我真正喜欢上了这个学校，为它所折服。不是因为这里的名气和传奇，而是这里充满了叛逆与包容、激发创造的氛围与制度。‍</p>
-<p>除了创新与叛逆，还有这样一些故事：斯坦福教堂前的石板下，每年都有毕业生去埋下有意义的物件；当初蒋介石日记捐赠的时候，斯坦福图书馆的馆长认为这是属于中国的，所以没有接受捐赠，而是代为保存，这些人性光辉与创新创造交织着塑造着一批又一批想要改变世界的人们。‍‍‍‍‍‍‍‍‍‍‍‍‍</p>
-<p>我喜欢这个地方，它成为我精神世界中一块儿土壤。以后有机会想要来这里读读书。</p>
-<p>By the way, 据说斯坦福校园的罗丹雕塑作品数量仅次于法国。</p>
-<p>“加莱义民”这组群雕，是罗丹的代表性群雕之一，它背后的故事值得一搜。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "aGCoBjKvDDM5VYdf", "c": "XcBBD31DnWZ4bnry6U2Y9l/IjwHpteKKouoO7xKZvqgfngoIoQ0ibbt20LU6BsLDWggdGvU/1DA5P9gCERVKLVeKhGFzgToSXsbsiFbkfMb67csW0T2s18x3iox8jN6LW4BfDc6YXS23TkueJdJFekFWpnVxa9NYYxhx2stdMPYWn7dCSsLBaFrvEo8a4D0MN8gkj3Ll87kS9B14IXBhdI0uo2zyZ39L9QlNe5W4BXMZ9JIj/M6FIfLiv2xDuOssvoi9Dho7YALkwjblroc7UyM4iQvmu7QfDOa6FaBiF5Ay8dbZxZJKg+rYG5LrS3xdCqS2pqAGm0lXW3vNxd6+OHf7U5+cGh9uiecWvIdTggfLHAXZYXDurR7jOvu2wS/DOPKUlgirPlRA1Orfm1k2TcJLocaCJnBFaZVnxjoH+CkfDzdJYzUNvnS54RECgtrUbk6fhPqkpX8m2D9a/AdDlptywHw/inYSucKodJdEka/tq8ftZjA+Y6TAPhzDI0Rg5XxVirY/ThZT2HwVg8cIrSLTc+Sy4uFuQC0cgcrufsIiue8Eq827YMPspeJ9myOLwxsdpCfg0I5CbF5uyUZ9vJkWush/t1GMpfriM/26bBQT0F9h4v8mlKCZ559G/BrDWngjIB2TbZkpk2YjuHMjFYsR6ATGt2D8tWDexXh0EpBekhqXKyG8yBL30Fix0AKCNuzGHDGhOEf8d+7gcjYeY6hQiJswNkoRxo+cRZlGaw7zMAJav6IhEIp8dRe7EN3dJ8AwiYFuLZ8luV8NxDSY6PIxFwnIkQlcx3UJR1JBaYNW1xZYXHo9p0aZ0onjBOd89SuHA9bAeNEhcYI5+9cdDrLwvdXGFgEVGjXLjTciGrLFOnLBLmgaRO30a8pcDs+59laSPdxBxxJOuRXGvEw5SypZLJX9bQse/osZ+WpCrkvm84ct4pOs4b+b4YsKXD31G8rEne9O4x3k3UO6cZZjSj1IhGzvUOaMtLrdtJjvUPjLhD88jLhDLlYt9eCtPRjzlmDLJsHm8rOlyzEV+gQPK/QNHNWaLWb/iwxjg9NClZbkT8ypae5+ZYK6dLc7sxQ071qiEiR+V1+zaEDSvEtOvNf6n2JHxuka6biXXzYbqJDt83T39dU0CLE+rYw/oq2x0UxZfSrQowsU2m0WdjRJG7z+U42gdCr72zpI27CyVZ8L4f1Y4ayHIaAvyAGsrQ3cj8sKMNMBxGYQKE/4kf6loX5W64PBgy05fNLGr79F/HqVoNDSpPsTJqa833nC4jO6kNBl6CeWZMIqOfHd9S/SRdS2AmaW6+EOTmI4gxuj+Je7WazqsmcI1BQpcc5NeSpl+yuLMtceujGFQBNBSlkB0u1kTWeZlkssURXphiDgLsEB78ixlX0nLWasGjdiHMz2wuCJa3/YvUVfPugUmdNaTJi/ds/GXBzka3TXtHhC8EKbbh9dpxtC9dpcebYwszEG7kvzY7+0C5sSmHwyOUIeVPv+KQiFDHK/4OoWySu8lTCAJcYLygqMFGnvhooDuXMk87MQwTw5gaY+mPLZLq5We8AETkCJxa/6aQXE2yvXaIwac/U4OpDjW+vvTL5AVFh+ztNh1Ta2iVwL0ZX9p19ZOcD5pF2W776FIRHBsFm541ZMLwec6Cfkay/HekRRPUXDGXOmlCoAxzDwSmYPhUMuHKNLjSONhz7GcD46ERr1v3GHp8cfJeW9RqDHHFsiyAJyNh1dRW2cab0f9XydKGhhOxZ/rqjIpfp7S4R6HrQ9SmSnHb8="}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -97,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

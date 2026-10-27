@@ -16,47 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2025年9月9日" data-url="https://joycema.ai/p/20250909-ce1a61/">复制正文到公众号编辑器</button>
 <a href="/p/20250909-ce1a61/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2025年9月9日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>哈佛笔记｜Nokia：企业生命尾部的惊险一跃</h1><p>Joyce Ma<span>2025-09-09</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>故事梗概诺基亚最早是1865年芬兰的木材公司，后进入通信。1980年代开始做车载电话和军用通信设备，参与推动欧洲统一的GSM标准。</p>
-<p>1990年代，CEO Jorma Ollila大刀阔斧剥离化工和消费电子，专注手机和通信网络。凭借专利、设计、快速迭代和全球生产，诺基亚在1998年超过摩托罗拉，拿下全球第一，市占率23%。2000年代，诺基亚在亚洲和新兴市场大获成功，年收入超过500亿欧元，专利数以千计。</p>
-<p>然而，2007年iPhone发布后，行业由“硬件制造”转向“软件生态”。消费者需求从“硬件功能”转向“应用体验”。诺基亚坚持自有系统Symbian，反应迟缓，操作系统笨拙，开发者不愿写App。竞争对手iOS和Android生态迅速壮大，2008年App Store已有30万应用，而诺基亚Ovi只有3万。到2011年，诺基亚智能机市占率跌至25%（从2007年近50%）。CEO Elop发布“燃烧的平台”备忘录，宣布放弃Symbian，改投微软Windows Phone。但过渡期过长，销量崩塌，最终2013年以72亿美元卖给微软。</p>
-<p>课堂笔记</p>
-<ol>
-<li>必须要知道自己在生命周期在哪里 Industry lifecyles</li>
-</ol>
-<p>(生命周期的图）</p>
-<p>FermentMaturity 必须知道什么东西是新的可能没有太多ways to growDiscontinuity - very very very dangerous!Dynamic that you have no ideas</p>
-<ol start="2">
-<li>
-<p>What is changing? How to profit?Uniqueness goes down, Complementary goes up as the company takeoff</p>
-</li>
-<li>
-<p>What is changing? OrganizationOperational excellence up, entrepreneurial energy down</p>
-</li>
-<li>
-<p>The problem is wanting to be everything at the same time!</p>
-</li>
-<li>
-<p>重新学习iphone 2007年的发布Three things all in one最妙的是它呈现的方式 — 完全的讽刺。我们也要呈现它的讽刺， 本来可以多么贵、多么不方便， 但是我们如何能够得不一样！</p>
-</li>
-<li>
-<p>Change structurally in the industryOperators不同， 从打电话到Data用户：年轻人喜欢发文字，而不是打电话App里面的功能，很多后期被iphone变成了自带功能 — 这也是不断创新的来源。</p>
-</li>
-<li>
-<p>Apple虽然更成熟了， 但是app生态系统让它保持了创新Entrepreneurship does NOT have to be only youBut also someone around you</p>
-</li>
-<li>
-<p>Internal barriers to respondAlready Invested in SymbianLate — Microsoft为什么Nokia还是stick with SymbianIf you go into Android, it made itself a commodity</p>
-</li>
-<li>
-<p>How to fight the internal barriersPerception — know your industry!!Don't say “Apple is nothing to worry about.”Motivation — Willingness to changeDo not ask me to change something that’s workingInspiration — find the right solution, at least a solution!Execution — do it, and do it right!</p>
-</li>
-</ol></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "BZKSGvkAqSQWii7E", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -125,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

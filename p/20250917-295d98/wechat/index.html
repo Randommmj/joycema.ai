@@ -16,89 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2025年9月17日" data-url="https://joycema.ai/p/20250917-295d98/">复制正文到公众号编辑器</button>
 <a href="/p/20250917-295d98/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2025年9月17日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>哈佛笔记｜领导力案例：Designing the Future of Work 分布式办公</h1><p>Joyce Ma<span>2025-09-17</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>这个案例让我思考很多，太喜欢了。</p>
-<p>这里面的道理，大家都懂，难点在于执行。</p>
-<p>就像减肥就是「管住嘴、迈开腿」。</p>
-<p>没有什么武功秘籍，功在日常。</p>
-<p>我自己接下来最需要提升的，是执行落地。</p>
-<p>好的Operation System可以赋能团队，让团队更好的“赢”。</p>
-<p>让团队成功，是每一个leader的终极梦想。</p>
-<p>案例概览</p>
-<p>Atlassian 把“分布式办公（distributed work，员工不在同一地点协作）”做成了公司级系统：制度 + 工具 + 度量 + 空间。数据显著：招聘更快、满意度更高、成本更可控、连接更强。2019–2024：产品矩阵（Jira/Confluence/Trello/Bitbucket），年收入到 $4.17B，客户 250k+，覆盖 85%《财富500》。分布式政策成公司战略的一部分。2020：两位联合创始人做出“单向门（one-way door）”决定：可从 13 个法律实体所在国任意地点工作，不强制回办。2022–2024：成立 Team Anywhere Lab（工作方式实验室），围绕“信息→目标→执行”的<strong>系统化工作法（system of work）</strong>做实验：文档驱动会议（page-led meeting）、异步（asynchronous）优先、节律化线下集结 ITG 等。空间与数据：发明 <strong>Cost Per Visit（每次到访成本）</strong>与 Tidal Flows（潮汐流量），据此关楼层、改设计、开新点，匹配“少人常驻 + 团队不定期集结”的真实使用。结果：应聘量翻倍、offer 接受率 +20%、92% 认为分布式让自己做出最好工作、91% 说它是留任重要原因；一次“用 Loom 换会”两周省下 5,000 小时。</p>
-<p>课堂笔记</p>
-<p>01｜从“休假实验”看组织脆弱性</p>
-<p>让关键人“强制休一周”（Put your people on a leave）。</p>
-<p>看看哪些流程会卡壳、哪些知识只在个人脑中。</p>
-<p>两类脆弱会暴露：</p>
-<p>系统脆弱：交接无文档、会议依赖某人、审批走私聊。</p>
-<p>财务脆弱：收入集中某客户、现金流吃紧、线下固定成本过重。</p>
-<p>真正的抗压组织，随时能“少一个人也照样跑”。</p>
-<p>02｜Remote Work：好处 vs 难处好处（Benefit）</p>
-<p>服务与支持（Services/Support）覆盖更广时区。</p>
-<p>更好招人：人才池变大、人口结构（demographics）更友好。</p>
-<p>难处（Challenges）</p>
-<p>需要系统（Need System）：没有标准作业和文档，远程只会更乱。</p>
-<p>努力错位（Don’t work hard）：不是不努力，而是努力用在低杠杆的同步会上。</p>
-<p>团队疏离（Disengaged）：信任会随时间衰减。</p>
-<p>会议成瘾：Zoom 霸占整天，深度工作被碎片化。</p>
-<p>03｜打法要点产品与节律</p>
-<p>无形产品（Software）决定它必须靠流程与知识沉淀来放大产出。</p>
-<p>弹性工时：每天保证至少 4 小时时区重叠，其它时间异步推进。</p>
-<p>“复制互动”：在线也要有“边走边聊”的弱联结——通过短视频、走动式 1:1、开放协作时段来替代茶水间。文化与规范（Culture &amp; Norms）</p>
-<p>把习惯写成“显性规范”：如何发起会议、怎样先文档后讨论、如何拒绝不必要会议。</p>
-<p>透明（Explicit/Transparent）：默认信息公开，降低“找人打听”的成本。文档优先（Documentation-first）</p>
-<p>文档是“AI 的原料”：写清楚目标、决策、依赖与下一步，AI 才能检索、总结、提醒。</p>
-<p>超越“远程 vs 线下”的争论：只要文档+异步到位，线下只是周期性的“增益器”。强调个体差异（Emphasize differences）</p>
-<p>远程放大个人差异：谁能自驱、能写清楚、能异步协作，会显著冒尖。</p>
-<p>管理要把“产出、贡献度”而非“在线时长”放到考核里。沟通与会议（Communication）</p>
-<p>数字化会议（Digital Meetings）配“会前 5 分钟静默共读”。</p>
-<p>追问：“大家在一起，是否真的带来净增益？”如果答案不确定，就让异步先走。AI 助手（AI recommend you what to do?）</p>
-<p>让 AI 做“日程与任务的推荐引擎”：</p>
-<p>读你的文档与会议纪要 → 提醒下一步 → 生成待办与分工。</p>
-<p>给出“用视频/文档代会”的建议与模板。把好习惯“制度化”（Formalizing good practices）</p>
-<p>政策与流程（Policies &amp; Procedures）固化：</p>
-<p>会议邀请必须含“目标与期望产出”。</p>
-<p>默认录屏与纪要归档。</p>
-<p>每季度有目的的线下集结（3–5 天），把“连接电量”充满。</p>
-<p>04｜远程是假设下的两条铁律</p>
-<p>过程透明（Transparent process）：看得到是谁在推进、卡在哪里、何时能交付。</p>
-<p>AI 更好（AI better）：前提是“写得好、结构化”，AI 才能真正当助手。</p>
-<p>05｜Hybrid 的坑（Disadvantages of location）</p>
-<p>地理偏见：靠总部的人更“可见”，远端被动。</p>
-<p>双文化撕裂：办公室形成小圈子，远端像外包。</p>
-<p>效率折损：同一团队按地点分层，决策变慢。</p>
-<p>以“远程优先”的流程治理 Hybrid。所有重要信息先在文档里完成，再拉同步确认。</p>
-<p>远程工作的人性与工作假设是什么？</p>
-<p>假设：一线员工有能力与意愿自我管理；信息下沉能提升质量与速度；归属感驱动表现。</p>
-<p>赞同：在目标清晰、激励对齐、训练到位前提下，自管理能提高响应、减少层级摩擦。</p>
-<p>风险：目标不清会失控；资深带新人不均；外部波动大时需要更强的调度中枢。</p>
-<p>自管理团队的利弊？</p>
-<p>利：现场决策更快；投入感更强；问题更早暴露。</p>
-<p>弊：标准不一；短期绩效波动；干部培养要跟上。</p>
-<p>怎么落地？</p>
-<p>三步走：</p>
-<ol>
-<li>
-<p>明确定义边界（安全/质量/财务红线列出来）。</p>
-</li>
-<li>
-<p>培训+影子机制（Shadow）：班组长轮岗、关键决策双签。</p>
-</li>
-<li>
-<p>滚动评审：4–6 周复盘，保留撤回开关与“经验模板库”。</p>
-</li>
-</ol>
-<p>总体而言，我觉得远程工作更有利于形成AI Native —— 用 AI 放大复用、用节律维持连接。</p>
-<p>如果你也在做远程/混合团队，欢迎留言：</p>
-<p>你最痛的一个远程场景？</p>
-<p>你最想让 AI 帮你自动化的 3 件小事？</p>
-<p>—— End ——</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "WUxs9OltXTfWne7Z", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -167,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

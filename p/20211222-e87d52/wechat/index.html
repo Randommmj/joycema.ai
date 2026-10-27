@@ -16,44 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2021年12月22日" data-url="https://joycema.ai/p/20211222-e87d52/">复制正文到公众号编辑器</button>
 <a href="/p/20211222-e87d52/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2021年12月22日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>打卡150次的几点感悟与分享</h1><p>Joyce Ma<span>2021-12-22</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>首先，请接受我真诚的鞠躬致谢——所有点赞和留言的朋友们！没有你们就没有这篇文章，也没有如今，变得更好的我。</p>
-<p>以下是几点随笔感悟</p>
-<p>关于自律</p>
-<p>我朋友圈立flag的历史上，有过两次失败打脸：（1）2020年练就一字马</p>
-<p>（2）2021年读完100本书</p>
-<p>究其原因，这两个目标都不易被时时监测和检验完成度，而且都是今天不做/明天再做也可以的事情。 因此我就犯了每个男人/女人都会犯的错误🤷‍♀️。</p>
-<p>人确实是短期动物，任何长远的目标，分解为小目标，并确认一步步完成是至关重要的！</p>
-<p>以“圈”谋私，效果显著，是个绝佳自律手段。 ——朋友们鼓励的力量和「维持自己人设不能塌」的虚荣与自尊，其推动力之强大，每个人都应该善加利用。 </p>
-<p>关于目标</p>
-<p>人有多大胆，地有多大产。——年初的时候，对自己下手还是轻了。怕完不成，定了150次。 从经验来看，定200次或250次，也是（可）能完成的。 中途进度超前，反而懈怠了几个月。</p>
-<p>比尔盖茨在他所写的《气候经济与人类未来》一书中，向我们完美地展现了推动世界发展与变革的人应有的「终局思维」。 关于碳中和，他说："设定一个仅仅减少而不是消除温室气体排放的目标是不够的，唯一合理的目标就是'0'。"  我无法形容读到时的震撼心情。</p>
-<p>无论目标看上去多么难以达到，不要让对失败的恐惧，束缚了我们的手脚。</p>
-<p>关于读书</p>
-<p>读书确实丰富人的灵魂。——没有读书的几天，明显感觉人是空虚的。</p>
-<p>「有用之书」的读法——光是输入没什么用，已经过了学习的年纪，读过即忘是正常的。 要结合自己在做的事情，系统性的读书，边读边思考边做事验证。 这类书就像一个领域的老前辈，你如果想了解一个行业/事物，就先找个最能听得懂的，让ta系统性的给你捋一遍，之后随便聊也有收获，有具体问题，就直接问/翻。</p>
-<p>「无用之书」的读法——无用之书最是“有用”，用来滋养灵魂、拓宽视野、发现自己的无知。</p>
-<p>关于未来</p>
-<p>好不容易形成的习惯，就不应该丢弃，我会尝试offline继续自律早起，并做好记录，每周汇报一次。另外，要对自己下手狠一点——不能只是输入，写作也该捡起来了。</p>
-<p>因此，2022年的目标是这样的：</p>
-<p>250次，七点半之前早起读书，一鼓作气，巩固好这个习惯。</p>
-<p>52篇文章，理论上每周一篇。内容不限，字数不限，不嫌丢人就行。</p>
-<p>必须挑战自己，立此🚩为证，请大家监督。</p>
-<p>最后分享日记当中的一段话，当时刚经历了阅读的心流体验，人还是懵的。但那是读了一年书之后的真实感触。</p>
-<p>突然一段画面出现在脑海中：</p>
-<p>自己仿佛像一个幼稚的孩童，毫无自保的能力，茫然行走于三体星的土地上，世界就如同荒漠，而我正赤裸地行走，不知道的东西太多太多。</p>
-<p>唯一拥有的，是一个小小的工具， 可能就是一把勺子、一块遮羞布或者一根火柴粗细的拐杖，几乎无用。它象征着我从小到大接受的教育，那一点点可怜的思辨能力，但我也只有它，只能依靠它，在这个混沌又危险的世界中，毫无方向的前行。勉强在跌倒后爬起来，偶尔在它的帮助下攀爬一座不算高的山峰，或舀起一口路边的泉水，勉强前行。 </p>
-<p>走到哪儿都是思想疆域的扩张，但最终，我什么也带不走、什么也留不下。 穷尽这一生，我也无法将思想的版图扩张到足以看清自己所立足之大陆的境界。 </p>
-<p>这是一件悲伤又开心的事情。 </p>
-<p>一个人生的真相——真相就是没有任何真相足以给人安全感，让人能够完全的把人生意义架在其上。 每一个真相都只是一块浮漂，让人暂时休憩、喘息。 当我有力气时，只能再继续向前扑腾。 终极意义的大陆，那传说中的大陆，不知何时才能窥见？ 又或者，人生的真相，就是这一片茫茫大海、一片汪洋，其上是无尽苍穹，其下有神秘海域。 </p>
-<p>无论往什么方向走，等待我的，都将是无尽的惊喜，和无尽的虚空。 </p>
-<p>那又怎么样呢？</p>
-<p>懦夫从不启程，弱者死于路中，只剩我们前行，一刻都不能停。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "+minaDiHxUHgKVtX", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -122,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

@@ -16,49 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2025年11月30日" data-url="https://joycema.ai/p/20251130-a53811/">复制正文到公众号编辑器</button>
 <a href="/p/20251130-a53811/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2025年11月30日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>Kosmos：下一代自主科研 AI Scientist</h1><p>Joyce Ma<span>2025-11-30</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>AI for Science 绝对是进展最惊人的一部分，</p>
-<p>AI加速科研的时代已来，且已徐徐展开。</p>
-<p>小伙伴Renee对AI观察，每一篇我都必读，</p>
-<p>在获得她的同意后，也分享给大家。以下，enjoy：</p>
-<p>FutureHouse 是一家专注于 AI + 科学研究 的机构，由多位在 AI、生物学、神经科学、材料科学 等领域有深厚背景的科研人员共同创立，定位是“面向科学家的 AI 研究实验室 + 科研工具平台”。</p>
-<p>FutureHouse 最早因推出 Robin（AI Scientist 原型） 而被科研圈关注。Kosmos 是 Robin 的下一代升级版，由 FutureHouse 分拆成立的新公司Edison Scientific发布，论文也同步上线：https://arxiv.org/pdf/2511.02824。相比上一代 Robin，Kosmos 在能力与规模上实现了重大跃升。AI 科学家新范式</p>
-<p>以往的 AI Scientist（包括 Robin）主要受限于： 语言模型的上下文长度有限 → 在读取、整合大量信息时容易“走不动”。因此，能够完成的推理深度与研究复杂度也相应受限。</p>
-<p>Kosmos 的核心创新在于： Structured World Models（结构化世界模型） 可高效整合跨越上百条 agent 轨迹的信息，并在上千万 token 的规模上保持连贯的研究目标。</p>
-<p>一次完整的 Kosmos run 典型包含：阅读 1500 篇科学论文执行 42,000 行数据分析代码</p>
-<p>规模远超目前任何所知的 agent 系统。Kosmos 一天，人间半年</p>
-<p>相比 Robin，Kosmos 能执行更复杂精细的分析。Beta 用户估计： Kosmos 一天的工作量 ≈ 人类科研人员 6 个月。 其结论准确率为 79.4%。</p>
-<p>Kosmos 已完成的 七项科学发现，涵盖神经科学、材料科学、代谢组学及统计遗传学等多个领域，多项由外部学者验证。AI 加速科研的时代正在真正到来。</p>
-<p>使用者反馈： 单次 Kosmos run ≈ 6 个月博士/博后科研时间。 并出现了稀有的 科研推理深度的推理时长 scaling law。</p>
-<p>该估计来自对 7 位 Beta 用户的调查。20-step 深度的 Kosmos run 平均得到 6.14 个月 的人类等效科研时间。</p>
-<p>更客观的指标也支持这一点： 在人类先前花 4 个月完成的三项研究中，Kosmos 均能在单次运行中复现核心发现。</p>
-<p>另一份独立估算：阅读 1500 篇论文（15 分钟/篇）执行若干分析轨迹（2 小时/条） 合计约 4.1 个月 的人类工作量。可审计 可复现</p>
-<p>Kosmos 的设计遵循科学规范—— 每一项结论都可追溯到：具体使用的代码科学文献中的具体段落</p>
-<p>科研必须可审计、可复现，而 Kosmos 从系统层面保证这一点。</p>
-<p>此外，研究人员利用 Kosmos：复现未发表成果产出真实的新发现</p>
-<p>并全部纳入技术报告中。</p>
-<p>技术报告中展示了 Kosmos 的七项发现。其中 三项成功独立复现人类研究者的此前发现：1. 代谢组学：低温小鼠大脑</p>
-<p>Kosmos 利用代谢组数据再现了当时尚未发表的一项研究： 核苷酸代谢是低温状态下小鼠脑内最显著的改变通路。 原研究 preprint 在 Kosmos 运行后才上传至 BioRxiv。2. 材料科学：钙钛矿太阳能电池</p>
-<p>Kosmos 复现了另一篇 preprint（发布时间晚于模型训练数据截止），研究显示： 热退火过程中的绝对湿度决定电池效率，并找出关键阈值（约 60 g/m³ 以上会导致器件失效）。3. 神经科学：跨物种神经连通性规则</p>
-<p>Kosmos 识别出了 Piazza 等人报告的跨物种神经元连接数学规律。 该 preprint 虽未在运行时被访问，但早于模型训练数据截止时间。四项新贡献</p>
-<p>在另外 四项研究中，Kosmos 产生了全新贡献：4. 心肌纤维化：SOD2 的因果作用</p>
-<p>使用公开 GWAS 与 pQTL 数据，Kosmos 提供证据显示： 高水平 SOD2 可能因果性降低心肌 T1 时间与心肌纤维化风险。 该机制此前主要在小鼠中验证。5. 2 型糖尿病：新的分子机制</p>
-<p>Kosmos 结合多组学与统计遗传学数据，提出一个 特定 SNP 降低 T2D 风险的潜在分子途径。6. 阿尔茨海默病：tau 蛋白累积机制</p>
-<p>Kosmos 开发新的分析方法，从 AD 患者蛋白质组数据中 重构 tau 在神经元中积累的分子事件顺序。7. 神经退行与衰老：新机制（临床相关）</p>
-<p>任务：理解衰老中的神经元脆弱性。 Kosmos 对年轻/老年的单核转录组进行大规模无偏分析，发现：</p>
-<p>内嗅皮层神经元随年龄下降 flippase 基因表达 → 增加膜外暴露 PS “eat-me” 信号 → 触发小胶质细胞吞噬。</p>
-<p>研究人员在独立的人类 AD 数据集中验证了这一点： 在 Braak II 期的内嗅皮层神经元中，flippase 表达确实下降，并与 tau 病理出现相吻合。</p>
-<p>目前这些发现正在湿实验室进一步验证中。使用</p>
-<p>Kosmos 已上线，但它与普通 chatbot 完全不同，更接近“深度科研工具（Deep Research Tool）”。https://platform.edisonscientific.com/需要学习 prompt 技巧单次运行定价 $200/run（200 credits）学术用户有一定免费额度</p>
-<p>Kosmos 更像高价值科研试剂盒，而不是聊天模型。意义和未来发展方向</p>
-<p>这说明 METR 等机构当前以“人类等效任务时长”评估 AI 的方式可能过于简单： 不同任务类型的“可持续推理时间”差异巨大。 例如：PaperQA2 可写高质量 Wikipedia 文章（远超 4–15 分钟）GPT-5 单次生成的数学证明也明显超过 4 小时的人类等效时长</p>
-<p>因此，真实世界中 AI 加速科研的能力要复杂得多。</p>
-<p>此外，Kosmos 运行越深，越可能走偏方向（如追逐伪相关）。深度并非无限制正向提升。未来仍需更强模型来解决这一问题。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "TC1t30nFEdPtc+mp", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -127,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

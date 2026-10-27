@@ -16,55 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2026年10月23日" data-url="https://joycema.ai/p/20261023-1eee13/">复制正文到公众号编辑器</button>
 <a href="/p/20261023-1eee13/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2026年10月23日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>哈佛预习｜营销：Starbucks Korea —— 谁真正看过那条文案</h1><p>Joyce Ma<span>2026-10-23</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><figure class="hero"><img src="/img/6405dd5ef0c6b6e5.jpg" alt=""></figure><div class="prose"><p>Unit 3，Das Narayandas 教授 Market-Facing Functions，
-Starbucks Korea’s Tank Day: When the Machines Forgot。</p>
-<p>这是一篇选读。老师没有要求正式准备，也没有给出案例问题，而是请我们有时间看看正文和第一张附表。</p>
-<p>读完后，我记住的不是AI写出了一条不合适的文案，而是案例提到的一个组织现象：内容经过多人审批，却没有被及时拦住。流程似乎走完了，判断却没有发生。</p>
-<p>以下，enjoy：</p>
-<h2 id="案例梗概">案例梗概</h2>
-<p><strong>按这份案例的叙述，韩国星巴克在2026年5月18日，为一款大容量不锈钢杯推出“Tank Day”促销。</strong>团队使用AI辅助构思语言，希望表达杯子的容量、坚固与记忆点，却没有充分考虑日期与用词在韩国社会中的历史含义。</p>
-<p>5月18日与光州民主化运动纪念相连；宣传语中的拟声表达，又使一些人想起另一宗历史事件中的官方掩饰说辞。对创作者而言或许是产品语言，对接收者而言却不是一个可以脱离历史来理解的组合。</p>
-<p>案例引述的报道与公司表态称，审批链涉及七名管理人员，部分审批者据报没有打开附件。材料没有完整提示词和操作记录，因此不能断定工具独立创造了全部内容，更不能把每个人的责任简单等分。可以看到的是，这套组织流程没有有效识别问题。</p>
-<p>活动很快停止，截图却已传播。案例随后描述道歉、人事变化、公众反应与调查，以及全国门店提前关门开展历史和社会敏感度培训。总部的营销决定，最终也影响了面对顾客的门店员工。</p>
-<p>第一张附表把AI应用放到更广的营销体系：从发现需求、设计产品、制定价格，到触达、销售、服务与履约。这个视角使问题扩大了。企业需要判断的，不只是文案好不好，还包括AI参与的每一个决定最终会向客户承诺什么。</p>
-<h2 id="我的思考">我的思考</h2>
-<h3 id="意义出现在词语与情境相遇的地方">意义出现在词语与情境相遇的地方</h3>
-<p><strong>单看一个词，它可以表示强壮；放进某个日期、某种语言和某段共同记忆里，它可能唤起完全不同的感受。</strong></p>
-<p>这种变化，很难只靠一张“禁用词表”穷尽。审查者需要知道内容会在哪里、何时、对谁出现。脱离发布场景看素材，相当于只检查句子的零件，却没有看人们最终会读到什么。</p>
-<p>AI可以辅助找关联、列疑点，但把同一段话再问一个模型，并不自动构成独立判断。负责的人仍需理解受众，并有能力承认自己不知道。</p>
-<h3 id="审批人数不能替代审查内容">审批人数不能替代审查内容</h3>
-<p><img alt="" src="/img/09ee60fd5a63fdda.jpg"></p>
-<p>七个名字听起来很稳妥。但如果每个人都以为前面的人已经检查，签名就可能变成信息传递的动作。</p>
-<p>我会先问：每个审批者到底负责判断什么？是否看到最终版本？是否有足够时间？发现不确定时，能否暂停发布？</p>
-<p>答案不一定是增加更多层。更有效的安排，也许是让一个明确负责人检查完整活动，并在触发本地文化、事实主张或其他敏感条件时，找到真正有知识与权限的人。</p>
-<h3 id="生成速度提高后注意力可能成为约束">生成速度提高后，注意力可能成为约束</h3>
-<p>从几条文案变成几十条候选，可以帮助团队探索，也会增加筛选工作。如果发布数量随之增长，审查时间却没有变化，人的注意力会被摊薄。</p>
-<p>这不是案例提供的量化因果结论，而是它让我看到的一种管理风险：工具节约的起草时间，未必就是流程节约的净时间。核查、返工、协调与事后修复也要计入。</p>
-<p>我更愿意问，团队能否在更短时间内交付同样可靠或更可靠的结果。只有产量提高，不能证明工作已经改善。</p>
-<h3 id="培训要进入下一次真实决定">培训要进入下一次真实决定</h3>
-<p>历史与社会敏感度培训有意义。但培训结束后，如果审批仍然只需点击同意，发布压力仍然高于提出疑问的空间，同样的结构可能留下。</p>
-<p>知识需要有使用的位置。比如，活动资料明确列出日期、地区、受众、最终文案与视觉；有人对这些组合做检查；遇到疑问有快速入口；记录改了什么、为什么改。</p>
-<p>修复也不能只由一线承担。谁决定了活动，谁就应参与解释和改变。门店员工需要支持，而不是在顾客面前独自承受总部错误。</p>
-<h3 id="客户旅程比一条广告更长">客户旅程比一条广告更长</h3>
-<p>Exhibit 1提醒我，AI也可能影响价格、优惠、服务回复、库存安排与交付承诺。顾客不一定区分这些输出来自哪个团队或工具，他们接触的是同一个品牌。</p>
-<p>因此，评价不能只停在点击和转化。有没有兑现承诺？退货和投诉是否增加？例外是否被妥善处理？客户再次接触时，体验是否一致？</p>
-<p>一条回复可以很流畅，一个促销可以很吸引人，但如果后面没有相应的能力和责任，前面的效率可能转化为后面的失望。</p>
-<h2 id="对-arcus42-的借鉴">对 Arcus42 的借鉴</h2>
-<p><strong>让事实依据跟随表达。</strong> 重要主张旁边要能找到来源和适用条件，避免流畅文字让不确定性消失。</p>
-<p><strong>用接收者的场景检查最终稿。</strong> 不只看文字是否准确，还看它在具体时间、关系和场景中会被怎样理解。</p>
-<p><strong>让审核对应真实责任。</strong> 每个人知道自己在判断什么，也知道发现疑问时可以找谁。增加签名不能替代这件事。</p>
-<p><strong>保留人工处理例外的能力。</strong> 标准流程可以提高效率，遇到矛盾、情绪或重要承诺时，需要能接住问题的人。</p>
-<p><strong>把质量与返工一起计入效率。</strong> 少用了多少时间，要和多做了多少核查、修正与沟通放在一起看，才能判断真正收益。</p>
-<h2 id="写在课前">写在课前</h2>
-<p><strong>我想继续讨论的是，当AI让产出变得更快、更便宜时，我们准备把人的注意力放在哪里？</strong></p>
-<p>我的初步选择，是放在意义、证据、例外和承诺上。工具可以帮助起草，组织仍需要有人真正看过，并愿意为最后的决定负责。</p>
-<p><em>本文依据HBS指定选读案例作学习性归纳，相关事件与报道均按案例叙述，未对后续调查作判断；治理建议为个人课前思考，不代表课堂结论或任何机构内部实践。</em></p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "R5T4SyFhGCw19cbX", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -133,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

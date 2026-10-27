@@ -16,44 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2022年2月2日" data-url="https://joycema.ai/p/20220202-1c3d11/">复制正文到公众号编辑器</button>
 <a href="/p/20220202-1c3d11/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2022年2月2日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>人的悲欢，与时代并不相通</h1><p>Joyce Ma<span>2022-02-02</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>说好每周写一篇文章，第五周了，才开始第二篇。实在是不知要写什么，没有编辑催稿、没有目的、没有受众感，光是选题就让人头疼。想写写看了半年的「碳中和」赛道，没有框架，不知从何讲起。</p>
-<p>大脑每天都有一根神经，因这件事而感到焦虑。除非GTD并清空，否则压力积压对身体不好。索性随便写写，当作热身吧！ </p>
-<p>以下，进入正题：</p>
-<p>鲁迅说："人类的悲欢并不相通。" </p>
-<p>非但如此，私以为，人的悲欢与时代亦不相通。</p>
-<p>这个判断有些反直觉。如今，新闻传播速度之快、范围之广，史无前例。 因为每个人都对时代大事/大势无比敏感，我们认为个体的命运和时代息息相关。</p>
-<p>这句话没有错，也不全对。</p>
-<p>首先，每个时代都是好坏参半。</p>
-<p>2021年世界遭遇了30年未遇的通胀、芯片荒席卷全球、互联网经历前所未有的平台整顿、而年轻人则生活在"撕裂"中：一方面，是国家民族崛起的与有荣焉；另一方面，个人却看到了生存和发展的天花板：小城市在衰落，大城市房价高企，教育和学历“内卷”，竞争激烈，上升的路似乎越来越长、越来越难。</p>
-<p>这一年，被评为"过去十年中最差的一年暨未来十年中最好的一年"。</p>
-<p>然而，这样的评语，我已经连续看到5年了。让我们随机，再看看历史当中的其他年份。</p>
-<p>1900年</p>
-<p>罢工浪潮席卷欧洲；</p>
-<p>印度发生饥荒有数百万人濒临死亡；</p>
-<p>义和团起义，数百人将直隶清河大寨庄教堂焚毁后返回山东；</p>
-<p>清政府悬赏10万白银缉拿康有为、梁启超，并严禁民众购阅其所办报章；</p>
-<p>海兰泡大屠杀，沙皇俄国对居住于海兰泡的清朝居民进行屠杀，5000多人遇难。</p>
-<p>1988年</p>
-<p>中越两军在南沙群岛之赤瓜礁海战；</p>
-<p>第七届全国人大会确认，赵紫阳辞去国务院总理职务的请求的决定；</p>
-<p>全世界最长的超级油轮诺克·耐维斯号，遭伊拉克战机的导弹击沉；</p>
-<p>伊朗航空655号班机，在波斯湾上空的国际航道被美国海军军舰误当成伊朗的战斗机而遭导弹击落，机上的274名旅客及16名机组员全数罹难。</p>
-<p>任何一年，都有人感叹"人心不古"、"前途渺茫"。有些年头儿好事儿多一些有些坏事儿多一些。 但即使在最坏的年份中，生命的甜美仍然有机会降临。</p>
-<p>有这个感悟，是《平如美棠》这本书带给我的。作者饶平如生于1922年，经历过抗日战争也遭遇过文化大革命，一生坎坷，颠沛流离。但即使在战乱中，他人生的甜蜜与悲苦，也不是随着国家大事起伏，而是源自生活。（推荐这本书，后续可以再写写它，凑个选题。）</p>
-<p>当生命和历史的图景，随着年龄和阅读量的增加而缓缓展开时，我也越来越清晰的感觉到：个体的悲欢与时代并不相通 —— 也许这一年战火纷飞，但有人喜得佳偶；也许这一年经济繁荣，但有人痛失双亲。 </p>
-<p>我相信：命运与幸福，相关，却不相等。</p>
-<p>如何在越来越不确定的大时代下，创造自己的意义与确幸，我也同样迷茫。但这里有三句话，可以指导我们：</p>
-<p>（1）悲观者正确，乐观者成功；</p>
-<p>（2）财富的积累，不取决于决策正确的次数，而在于正确时敢于下多大的注；</p>
-<p>（3）幸福的积累，不取决于单次幸福的强度，而在于快乐体验的频次与数量。</p>
-<p>第三句话来自《哈佛幸福课》。 研究证明，很少有经历对我们的影响能超过3个月，每天经历十几个小开心的人，比只遇到一件大喜事的人更幸福。</p>
-<p>因此，穿一双舒适的鞋子、给爱人一个大大的吻、犒劳自己一顿美食吧，这些事听上去很小，也确实是小事，但作用却很大。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "RDXXX/glJA2o/n2M", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -122,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

@@ -16,35 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2024年1月9日" data-url="https://joycema.ai/p/20240109-054a8f/">复制正文到公众号编辑器</button>
 <a href="/p/20240109-054a8f/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2024年1月9日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>我从墙上掉下来了</h1><p>Joyce Ma<span>2024-01-09</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>2024年1月7日8:10PM，在攀岩馆闭店之前，一心想要把当天磕下的线路从头爬一遍的我，由于自己愚蠢的失误，从墙上掉下来了。</p>
-<p>后来馆长说有人因此直接脏器破裂，也有朋友说自己身边朋友摔到头就过去了……如此想来，真是让人后怕。</p>
-<p>在千千万万个可能性中，我只是腰三骨折，真是万幸了。可以选择不手术，在床上静养数月即可。</p>
-<p>在这个过程中，我有几点反思和经验，趁心惊胆战的心情还在，写下来提醒身边的伙伴们：</p>
-<p>攀岩是一项危险的运动，不能因为自己熟悉而有任何掉以轻心，要时刻有敬畏之心。当你爱好一项运动，玩得频率高，那么小概率事件发生的几率就会大大提升。</p>
-<p>时刻保持警惕是非常难的。安全需要有机制来保护，机制是必须遵守的。当时的我不是由于大意或轻狂，而是全身心都在技术动作上面，完全忘记了安全守则。  攀岩中，必须有安全员在身边，或者有经验丰富的同伴。</p>
-<p>受伤后，不要移动自己！不要移动自己！不要移动自己！立刻拨打120。</p>
-<p>受伤后，不要吃东西，也不要喝水。 因为你并不知道自己内脏是否有损伤。</p>
-<p>要冷静，照顾好自己。在等120的时候，我请人帮着换掉了攀岩鞋、盖好了羽绒服、用上了暖宝宝，还戴好了口罩。 这几点后来被证明很有用，在急诊要等候，衣服不足是很冷的；送我去医院的朋友没戴口罩，反而感冒了。</p>
-<p>如果头脑清醒，提前想好自己哪里受伤了，哪里需要检查。急诊里面忙忙乱乱，医生都忘记给我的手上的伤口消毒，这些要求都需要自己提。</p>
-<p>‍</p>
-<p>‍还有一点……是我本次深刻反思的事情：</p>
-<p>要第一时间告诉爱你的人。 在出事的当下，我没有告诉家里人。 妈妈是第二天才知道的。这件事情让她很是伤心。</p>
-<p>‍</p>
-<p>为什么没有告诉她呢？</p>
-<p>‍</p>
-<p>‍第一，怕她担心，诊断结果没有出，不想她担惊受怕；第二，我认为自己能够处理这些问题，她从外地赶回来处理的方式和结果也一样，就不要在晚上折腾她；第三，也很怕挨骂。</p>
-<p>‍</p>
-<p>但是回想起来，如果我情况更危机，失去自主决策的意识呢？到时候谁来通知她？当时我的情况，其实应该留院观察，以免夜间发生内出血。但是急诊医生并不支持，所以我当天就回家了。如果家人在，也许能够争取到更好的住院方案。</p>
-<p>‍</p>
-<p>为什么要特别强调这一点作为经验呢？ 回想当时，我的大脑已经没有能力去思考这些可能性了，我是本能做出的决策，因为本能的不想她担心。仔细想想，这于她于我，都不好。因为爱而造成的相互伤害，是这个世界上最狗血的事情。 </p>
-<p>所以下次要把第一时间告诉家人作为默认操作。要相信自己所爱之人，况且一起面对，本来就是一家人的意义。 把他们第一时间排除在外，也是一种感情上的伤害。</p>
-<p>‍‍当然，我希望没有下次了。‍‍‍‍‍‍‍‍‍‍‍</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "pleO8cm0V7eF8yOJ", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -113,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

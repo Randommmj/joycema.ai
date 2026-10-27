@@ -16,55 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2026年10月23日" data-url="https://joycema.ai/p/20261023-26aa56/">复制正文到公众号编辑器</button>
 <a href="/p/20261023-26aa56/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2026年10月23日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>哈佛预习｜运营：AI-First Snack —— 把核查算进效率</h1><p>Joyce Ma<span>2026-10-23</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><figure class="hero"><img src="/img/345eb4f95b2788c8.jpg" alt=""></figure><div class="prose"><p>Unit 3，Frances Frei 教授 Operations &amp; Technology，
-AI-First Snack。</p>
-<p>这一次，准备材料不是一家公司的长案例。老师给了三个问题：我喜欢怎样使用AI，未来6—18个月它会怎样改变业务，以及我希望员工怎样使用它。</p>
-<p>我最近正在做的一件事，刚好可以作为起点：用AI把哈佛阅读、老师问题、双语问答、个人思考、文章和配图连起来。流程变得更完整，也让我越来越清楚，哪些环节不能因为答案出现得很快就省略。</p>
-<p>以下，enjoy：</p>
-<h2 id="案例梗概">案例梗概</h2>
-<p><strong>这是一节课堂练习。</strong>老师要求我们课前将课程期间发放的数据文件下载到电脑，课堂上与偏好的LLM一起使用。文件尚未取得，因此此时没有可以报告的数据结论，准备应从问题、使用经验和检验方法开始。</p>
-<p>第一道问题关注个人和职业用途。它要求的并非一串工具名字，而是说明AI在真实任务中帮助了什么。对我而言，学习与写作已经形成相连的流程：理解原文，回应问题，再把判断表达出来。</p>
-<p>第二道问题把时间拉到未来6—18个月。技术变化很快，但业务变化需要通过具体工作才能被看见。初稿更快、检索更方便，是否真的改善交付，还取决于核查、返工和人与人之间的交接。</p>
-<p>第三道问题转向团队。个人偶尔得到一个好结果，和多人稳定完成同类任务，是两种能力。领导者需要提供适合的任务、练习时间、质量标准和遇到例外时的支持。</p>
-<p>我的课前准备因此分成两部分：整理已经发生的个人使用经验，以及提出可检验的未来设想。后者尚不是实际经营结果，也不该因为写成第一人称，就被当作已经执行的计划。</p>
-<h2 id="我的思考">我的思考</h2>
-<h3 id="完整流程比一次漂亮回答更有价值">完整流程比一次漂亮回答更有价值</h3>
-<p><strong>把一篇阅读变成摘要，很方便；把它与老师的问题结合，发现证据不足，再练习用另一种语言解释，价值会更具体。</strong></p>
-<p>在这条流程里，AI可以提供候选结构、比较解释、辅助表达，也能帮助生成配图和预览。不同步骤连接起来后，产物更容易被继续使用。</p>
-<p>但连接并不意味着自动正确。前面若把数字分母读错，后面可能把错误写得更清楚、更漂亮。流程越长，越需要让关键事实可以回到原始材料。</p>
-<h3 id="核查时间也是效率的一部分">核查时间也是效率的一部分</h3>
-<p><img alt="" src="/img/aa34555efbfc7cf5.jpg"></p>
-<p>如果初稿从一小时变成十分钟，却多花了一小时寻找出处与修正错误，整体改善就不能只看那十分钟。</p>
-<p>这里的时间只是说明计算方式的例子，不是我的实测结果。我想衡量的是完整周期：起草、检查、修改、沟通，直到接收者能够使用。</p>
-<p>质量门槛也要相同。不能拿未经复核的输出，与原来完整交付的工作比较速度。真正有意义的提高，是在可靠程度没有下降的情况下，让整件事更快完成，或在相近投入下做得更好。</p>
-<h3 id="最流畅的答案也不能替我决定相信什么">最流畅的答案，也不能替我决定相信什么</h3>
-<p>准备案例时，AI可以同时为几个选择提供理由。看起来都说得通，反而使个人判断更重要。</p>
-<p>我仍需问自己：哪些理由来自原文，哪些是推论？如果换一个假设，结论会不会变？我愿意承担哪一种代价？课堂上遇到反问，是否能解释而不是复述？</p>
-<p>学习的成果不能只由文档厚度来判断。若文章已经完成，而我说不清最重要的分歧，理解仍然没有完成。</p>
-<h3 id="员工采用需要练习与反馈的位置">员工采用，需要练习与反馈的位置</h3>
-<p>我希望的变化，是让人能够围绕真实任务使用AI：先说明目标，提供合适背景，检查输出，并在不确定时知道怎样继续。</p>
-<p>这需要安排，而非只发出“大家都要用”的要求。可以从一个重复任务开始，提供样例，让熟悉业务的人与愿意尝试的人一起练习，再比较相近任务中的质量与总耗时。</p>
-<p>失败案例同样值得展示。一个错误怎样被发现，比一张漂亮截图更能帮助团队建立判断。若员工担心承认问题就会被认为不会用工具，学习反而可能停在表面。</p>
-<h3 id="未来六到十八个月先形成可检验的假设">未来六到十八个月，先形成可检验的假设</h3>
-<p>我不想把对AI的期待写成确定预测。更合适的是选择几个工作假设：哪些重复处理可以减少，哪些解释会更及时，哪些例外仍需人接住。</p>
-<p>从一条边界清楚的流程试起，先测基线，再看辅助后的结果。把有效的指示、样例和检查留下来，效果不足就调整或停止。</p>
-<p>规模化应发生在方法被证明有用之后。工具使用次数可以很快增加，服务能力却需要在一次次交付中建立。</p>
-<h2 id="对-arcus42-的借鉴">对 Arcus42 的借鉴</h2>
-<p><strong>从具体任务定义价值。</strong> 先说要解决谁的什么问题，再决定工具参与哪一段。范围清楚，才容易评价结果。</p>
-<p><strong>让证据与判断能够分开。</strong> 输出中注明事实依据、推论与尚未验证的部分，方便接收者理解结论的强度。</p>
-<p><strong>把核查与例外处理留在流程里。</strong> 速度提升后，仍需清楚哪些结果由谁确认，什么情况需要升级。</p>
-<p><strong>用小范围试验形成共同方法。</strong> 记录有用的做法、失败条件与修正，让经验能被其他人复用，而不只存在于一个人的对话里。</p>
-<p><strong>把人的时间投向更有价值的判断。</strong> 减少重复劳动的目的，是给理解、关系、解释和负责留下更多注意力。这需要经过实际结果验证。</p>
-<h2 id="写在课前">写在课前</h2>
-<p><strong>带着数据文件进课堂时，我想先确认每行代表什么、指标怎样计算，再看工具给出什么结论。</strong></p>
-<p>这也对应我对AI使用的一种期待：更快形成候选，更清楚检查依据，更认真决定自己最终要说什么、做什么。</p>
-<p><em>本文为课堂练习的课前思考，数据文件尚未取得，未包含实际课堂分析结果。关于业务与员工的内容均为一般方法和未来设想，不代表任何机构已实施的流程或成效。</em></p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "N3wuKn33EjctfhKM", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -133,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

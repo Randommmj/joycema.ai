@@ -16,81 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2025年10月7日" data-url="https://joycema.ai/p/20251007-b4a2fb/">复制正文到公众号编辑器</button>
 <a href="/p/20251007-b4a2fb/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2025年10月7日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>高山笔记｜在他获诺奖之前，我们已经在聆听未来</h1><p>Joyce Ma<span>2025-10-07</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>2025年诺贝尔生理学或医学奖授予日本免疫学家坂口志文教授。</p>
-<p>两年前，他在高山书院为我们授课。那堂课之后，我重新理解了“免疫的真正智慧”。</p>
-<p>这篇文章既是知识笔记，也是对高山书院的感谢。</p>
-<p>免疫的方式</p>
-<p>很多人知道免疫是“打击外敌”，却少有人想到——免疫也要学会“刹车”。</p>
-<p>坂口志文教授发现并命名了调节性T细胞（Treg），证明它能抑制过度免疫反应，维持自我宽容；该方向随后成为免疫学三大主题之一，并与多种疾病密切相关。 </p>
-<p>里程碑</p>
-<p>1995：Treg的表面标记CD25被锁定；</p>
-<p>2000：在《Cell》上正式命名“Regulatory T cells”；</p>
-<p>2003：发现主控基因Foxp3；Foxp3突变会导致致命的IPEX综合征，提示Treg是免疫稳态枢纽。 </p>
-<p>坂口教授常强调：免疫系统的目标不是“永远兴奋”，而是形成一种“强大的平衡”——既能响应挑战，又不误伤自己。其应用横跨过敏、自身免疫、器官移植、癌症等领域。</p>
-<p>从科学史的角度看，这是一场范式转换：免疫不只是进攻学，更是调控学。</p>
-<ol>
-<li>免疫为何“既要出拳，也要刹车”</li>
-</ol>
-<p>记忆与特异性：疫苗之所以有效，是因为首次暴露建立抗原特异性记忆；再遇同一抗原，二次应答更快更强。</p>
-<p>两难的十字坐标（通俗理解）：</p>
-<p>过激×自身 → 自身免疫/过敏</p>
-<p>低反应×非自身 → 感染/肿瘤</p>
-<p>解决办法就是让Treg像“警察”一样制衡“爱冲动的效应T细胞（Teff）”。</p>
-<ol start="2">
-<li>Treg 的“证据链”</li>
-</ol>
-<p>去除小鼠CD25⁺CD4 T细胞（Treg的经典群体）会出现多器官自身免疫；补回后炎症缓解——这是“刹车存在且有效”的动物证据。</p>
-<p>IPEX综合征与Foxp3：婴幼儿全身免疫“过冲”，几乎难以存活；确定病因为Foxp3突变后，Treg—疾病—基因的链条被补齐。</p>
-<ol start="3">
-<li>为什么现代社会“自身免疫病”更常见？</li>
-</ol>
-<p>卫生/富裕相关性”：传染病下降，但自身免疫病上升；GNP高、环境更“干净”的地区发病率更高——刺激少，训练少，系统更容易失衡。</p>
-<ol start="4">
-<li>癌症免疫的攻守：何时“松刹车”</li>
-</ol>
-<p>肿瘤微环境中Treg常增多，抑制Teff；因此会通过Anti-CTLA-4、Anti-GITR、Anti-CCR4等路径“削Treg、扶Teff”。</p>
-<p>课上也坦诚：总体疗效仍有限，“约30%见效”，但组合策略与新技术在20年框架内可显著扩展能治谱系。 </p>
-<p>TCR-T vs. CAR-T：血液瘤CAR-T成熟，但在实体瘤受限；TCR-T对实体瘤更有潜力（靶向更精细）。</p>
-<ol start="5">
-<li>器官移植：从“猛压免疫”到“工程化耐受”</li>
-</ol>
-<p>传统全身免疫抑制会带来感染/肿瘤等风险；课堂提出更精细的四条路：</p>
-<p>只抑制Teff；</p>
-<p>体外扩增Treg回输（儿童1型糖尿病已有探索）；</p>
-<p>用药让Teff→Treg；</p>
-<p>把Teff取出体外改造成Treg后回输。</p>
-<p>小鼠模型显示Treg回输可提升移植耐受，组织学上FOXP3标记上升。这是“既保器官、又保免疫”的工程化路径。</p>
-<ol start="6">
-<li>转化与创业：从“普适Treg”到“特异性Treg”</li>
-</ol>
-<p>临床落地的关键矛盾：功能稳定与给药可及性。课上介绍了RegCell的做法：从患者血液获取淋巴细胞，定向培养“抗原特异性Treg”，可冷冻保存，计划进入人体试验；长期目标是提高批量、降低成本。</p>
-<ol start="7">
-<li>Q&amp;A</li>
-</ol>
-<p>只清除“肿瘤里的Treg”可行吗？——寻找肿瘤特异分子/受体，正在开展临床尝试。</p>
-<p>NK细胞疗法：作为第一道防线有逻辑，但持久性/真实获益仍需更强证据。</p>
-<p>过敏与新冠：论文很多，但尚无一致结论；从机理推演，适度提升Treg或可缓解免疫“过冲”。</p>
-<p>Take Away</p>
-<p>理解免疫：不是越强越好，而是会打也会停；</p>
-<p>关注赛道：围绕Treg的特异化、局部化与组合疗法会是未来十年的主线之一（肿瘤/自身免疫/移植/妊娠等）； </p>
-<p>产业落地看两点：差异化靶点 + 可及性（给药便利、成本可控、试验组织能力）；</p>
-<p>个体层面：</p>
-<p>饮食适度、规律运动、作息与压力管理、肠道微生态 = “日常版免疫工程”。</p>
-<p>“过犹不及”不如平衡！</p>
-<p>感谢高山书院</p>
-<p>在他获奖前……</p>
-<p>就把这位后来获得诺奖的学者请到了课堂。那天，他讲“免疫的平衡”，讲“什么时候不动手反而更聪明”。那一刻我想：高山真正珍视的，是“未被广泛证明、却自洽深刻”的新方向。</p>
-<p>这是一种“学术直觉与耐心”。</p>
-<p>能在获奖前向教授同堂学习，是一种荣幸，也是一种提醒：真正的远见，是在“还未被证实”的时候，就能看见价值。</p>
-<p>感谢高山把“未来”提前带进我们的课堂；</p>
-<p>也感谢那些愿意在寂静里走路的科学家。</p>
-<p>愿我们在知识与常识之间，始终留一条“未被铺好的小径”给自己。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "pr/PsRQl+OecStjI", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -159,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

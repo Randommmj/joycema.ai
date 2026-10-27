@@ -16,33 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2024年3月15日" data-url="https://joycema.ai/p/20240315-aa97cb/">复制正文到公众号编辑器</button>
 <a href="/p/20240315-aa97cb/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2024年3月15日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>《沉思录》2</h1><p>Joyce Ma<span>2024-03-15</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><ol>
-<li>世间的每件事情，都不会影响我们的灵魂，灵魂对于一切事物的判断，才是改变它的原因。</li>
-</ol>
-<p>5-19 事物本身不接触灵魂，甚至在最低程度上也不；它们也没有容纳灵魂之处，不能扭转或推动灵魂，灵魂仅仅转向和推动自身，做出一切它认为适合的判断，这些判断是它为自己做出的对呈现于它的事物的判断。</p>
-<p>5-21 尊重那宇宙中最好的东西，这就是利用和指引所有事物的东西。同样，也要尊重你自身中最好的东西，它具有跟上面所说的同样的性质。因为那利用别的一切事物的东西也在你自身中，你的生活受它指导。</p>
-<p>5-25 别人对你做了错事吗？让他去注意它吧。他有他自己的气质、他自己的活动。我现在有普遍的本性要我有的，我做我的本性现在要我做的。</p>
-<ol start="2">
-<li>以前的人觉得不要让皮囊影响灵魂，但我却觉得，应该学会怎么hack自己的身体和大脑，以便成为更好的灵魂。‍‍‍‍‍‍‍‍‍‍‍</li>
-</ol>
-<p>5-26 让你的灵魂中那一指导和支配的部分不受肉体活动的扰乱吧，无论那是快乐还是痛苦；让它不要与它们统一起来，而是让它自己限定自己，让那些感受局限于它们自身而不影响灵魂。</p>
-<p>5-26 让你的灵魂中那一指导和支配的部分不受肉体活动的扰乱吧，无论那是快乐还是痛苦；让它不要与它们统一起来，而是让它自己限定自己，让那些感受局限于它们自身而不影响灵魂。</p>
-<ol start="3">
-<li>蔑视快乐和痛苦，拒斥光荣的事情，对心肠不好的庸人表示和善。‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍</li>
-</ol>
-<p>5-31 要考虑是否你从此要以这样一种方式表现于所有人，使人可以这样说你：“一个在行为或语言中不犯错误的人——他从未对人们做事不义、说话不公正。”你要回忆一下你经历过多少事情，你一直能忍受多少困苦，你的生命现在告终，你的服务现在终止；你又见过多少美丽的事物，你蔑视过多少快乐和痛苦，你拒斥了多少所谓光荣的事情，你对多少心肠不好的庸人表示过和善。</p>
-<ol start="4">
-<li>心灵的支柱有时是一个人、或者是一种欲望。终极是回到自我，与内心的平静对话。 时常回去，才能保持“正常的”应对生活的波澜。‍‍‍‍‍‍‍‍‍‍</li>
-</ol>
-<p>6-11当你在某种程度上因环境所迫而烦恼时，迅速地转向你自己，一旦压力消失就不要再继续不安，因为你将通过不断地再回到自身而达到较大的和谐。</p>
-<p>6-12</p>
-<p>如果你同时有一后母和亲母，你要对后母尽责，但你还是要不断地回到你的亲母身边。现在就让宫廷和哲学是你的后母和亲母，经常地回到哲学吧，在它那里得到安宁。通过它，你在宫廷中遇到的事情，在你看来就是可忍受的了，你会在宫廷中表现出忍耐。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "PiyBvv8yynCFco5O", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -111,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

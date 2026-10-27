@@ -16,39 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2024年10月4日" data-url="https://joycema.ai/p/20241004-7d5111/">复制正文到公众号编辑器</button>
 <a href="/p/20241004-7d5111/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2024年10月4日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>哈佛笔记1: 什么是战略 - 乐高危机</h1><p>Joyce Ma<span>2024-10-04</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>Most companies don’t DIE from starvation but from digestion. </p>
-<p>Too many opportunities. -- Professor Juan</p>
-<p>战略就是全公司人都要明白，什么是大方向。 这样才不会相互矛盾。就像一块磁铁至于一堆方向不明的大头钉📍‍‍‍‍</p>
-<p>好的战略描述包括：目标、范围、路径。‍‍‍</p>
-<ol start="3">
-<li>分析一个公司的时候要把所有的stakeholders都算进来/一项战略对所有人的影响都要想清楚——客户、渠道、员工、供应商等等。</li>
-</ol>
-<p>‍‍‍</p>
-<ol start="4">
-<li>将乐高力挽狂澜的家族外职业经理人CEO的开场很有意思：</li>
-</ol>
-<p>一开始就向股东会表明：We don’t have strategy, we only have plans of actions. 我们没有计划，但是我们有一系列的行动计划。</p>
-<p>第二阶段，慢慢明确战略。Second stage, slightly we have strategy</p>
-<p>战略是——不增长，敢于说这话，就很厉害，战略不是一味的增长，而是找准方向。We plan to have no growth </p>
-<ol start="5">
-<li>
-<p>多元化必须是在自己的强项上。Diversify have to be on your strength.‍</p>
-</li>
-<li>
-<p>对目标要非常清晰明确。 Be clear about your objective.</p>
-</li>
-<li>
-<p>四大要素：价格、成本、客户的意愿、供货商的意愿需要与目标是协调一致的，不要拧巴。The four components: your price, your cost, willingness of your customers, willingness of suppliers to supply —— this four must be align to objective.</p>
-</li>
-</ol>
-<p>TODO：</p>
-<p>用好「脑图+手绘」的思考工具，有时候把内容都列出来，比用语言来理清思路要有效得多。‍‍‍‍‍‍‍‍‍‍</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "PBYG/DSceOmSb7Zv", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -117,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

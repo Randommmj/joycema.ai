@@ -16,46 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2025年9月8日" data-url="https://joycema.ai/p/20250908-466c6b/">复制正文到公众号编辑器</button>
 <a href="/p/20250908-466c6b/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2025年9月8日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>哈佛活动｜关于Longevity</h1><p>Joyce Ma<span>2025-09-08</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>周末听了黄晶生老师主持的一场关于抗衰老的对谈，非常棒。</p>
-<p>记下了几个重要的内容：</p>
-<ol>
-<li>
-<p>有些re-used drug在抗衰老方面确实好用 —— 用低剂量的「治病药品」来进行抗衰老管理。    - 例如西格列汀 + 二甲双胍    - 司美格鲁肽但是，50岁以下的年轻人，不建议用。对老年人有益的东西， 对年轻人不一定有用，反而可能有害。</p>
-</li>
-<li>
-<p>要长寿不能急于求成    - 用力过猛可能会导致癌症    - 加速衰老</p>
-</li>
-<li>
-<p>抗衰老三大要素：减重、降糖、降血脂</p>
-</li>
-<li>
-<p>妈妈老是偷偷不吃药，因为觉得是药三分毒，怎么办？    - 打针！半年一打。</p>
-</li>
-<li>
-<p>抗衰行为， 像军事一样    - 有很多养生方法是激进的、进攻型的。    - 如果城中守兵不多，应该保守；     - 如果劲兵强将，就可以进攻；    - 守兵就是免疫细胞</p>
-</li>
-<li>
-<p>肌肉也可以让大脑变得更聪明    - 挥拍运动都是对长寿非常好的运动</p>
-</li>
-<li>
-<p>最新研究！40hz的频率振动（声音或者光）都可以减少阿尔滋海默    - 1000赫兹调频到40hz</p>
-</li>
-<li>
-<p>端粒长度是不可逆的吗？    - 检测的是平均长度    - 新细胞比例高， 平均端粒比例就会长    - 新冠大量炎症 —— 要平定炎症</p>
-</li>
-<li>
-<p>延长health spend    - 75岁的最后两年花得钱， 花得比100岁的最后两年花的多得多</p>
-</li>
-<li>
-<p>不是追求不死，而是追求“好死”    - 怎么活到一百，然后关机？    - Die young at a very old age</p>
-</li>
-</ol></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "U0s1bAefrpRoKlWm", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -124,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

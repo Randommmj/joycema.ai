@@ -16,43 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2025年9月8日" data-url="https://joycema.ai/p/20250908-80f706/">复制正文到公众号编辑器</button>
 <a href="/p/20250908-80f706/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2025年9月8日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>哈佛笔记｜Danaher：如何榨取成熟企业的价值</h1><p>Joyce Ma<span>2025-09-08</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>又是一个学不会的公司，但通过它，看到了企业发展和商业世界的规则和必然性。</p>
-<p>这个公司 Danaher 从1986到2010，24年来，收入从2.96亿美元增至 132亿美元，年化增长近30%，股东回报率年化25%，优于GE、Berkshire。</p>
-<p>它有点像一个PE公司，但又在很多地方做得比PE公司极致。</p>
-<p>最重要的一点，就像人终有一死，要考虑企业的全生命周期！</p>
-<p>Corperate Stategy is about when you enter? when you expand and when you exit.</p>
-<p>故事梗概</p>
-<p>起点与成长Danaher 公司由 Rales 兄弟在1980年代创建，最初通过收购低调工业公司起家。1980年代中期便进入《财富500》，强调“第一或第二”的市场地位。文化与方法论1988年起学习丰田精益生产，逐步形成 Danaher Business System (DBS，丹纳赫业务系统)，核心是“持续改进（kaizen）”。领导与转型1990–2001年 George Sherman 领导，把公司从轮胎、工具转向更高附加值的环境检测、电子仪器等领域；2001年 Larry Culp 接任 CEO，继续强化平台战略。战略增长平台公司围绕 5 大板块：环境(Environmental)、测试测量(Test &amp; Measurement)、牙科(Dental)、生命科学与诊断(Life Sciences &amp; Diagnostics)、工业科技(Industrial Technologies)。每个平台通过“大平台收购+小型并购补充”模式扩展。DBS 细节围绕“人（People）、计划（Plan）、流程（Process）、绩效（Performance）”四个P，强调100天战略计划、Kaizen活动、政策部署（Policy Deployment，类似“战略落地灯塔”）。收购公司后，会迅速导入DBS文化和工具。案例：Radiometer血气分析仪公司，2005年收购：收购后通过DBS把生产周期从18天缩到2天，研发周期缩短33%，营业利润率提高4%，研发投入同时增加。成绩1986–2010收入从 2.96亿美元增至 132亿美元，年化增长近30%；股东回报率年化25%，优于GE、Berkshire。挑战1. 增长能否在收购放缓时保持？2. 私募基金竞争（Blackstone等）推高收购价格；3. 持续改进文化是否能长期保持；4. 进入高科技领域是否适合DBS。</p>
-<p>课堂笔记1. 收购后如何让团队“同心协力”？I can force my children to do things, or by embrace them. 连自己的孩子都勉强不了，又如何让团队心甘情愿？如何让他们明白？Asking Questions共创战略</p>
-<p>并购后 100天内，Danaher 要和目标公司的管理层一起制定一个“战略蓝图”。</p>
-<p>不是拿厚厚的PPT要求他们照做，而是 把尽调时发现的问题摆到台面，然后问：“你们觉得差距在哪？怎么补？”</p>
-<p>Radiometer CEO 说过：“Danaher不是告诉我们要怎么做，而是不断问：你们是否真的拿到了所有增长机会？”</p>
-<p>通过“共创”，让原管理层觉得自己有发言权，文化不被碾压，而是被激活。</p>
-<ol start="2">
-<li>可见的胜利（Quick Wins）</li>
-</ol>
-<p>并购后很快会组织一次 价值流图+Kaizen。比如 Radiometer 的塑料件流程：18天 → 2天。</p>
-<p>这种“看得见、摸得着”的改进，让怀疑的人立刻信服：“哦，原来这套方法真能帮我。”</p>
-<p>Danaher 称这种动作是“action learning”（边做边学）。</p>
-<p>👉 文化不是靠喊口号，而是靠一次次小胜利建立信心。</p>
-<ol start="3">
-<li>是否收购？ —— Best ownership Test</li>
-</ol>
-<p>Disney is the best for PixarPixar is the best for Disney</p>
-<ol start="4">
-<li>
-<p>企业的不同阶段Danaher出现在企业的成熟阶段，成熟阶段应该提高效率，而DPS恰巧可以提高效率，所以它不是PE仅仅购买，而是买回来“压榨利润”。 </p>
-</li>
-<li>
-<p>当企业已经到了衰退期，怎么做？SellChange, jump to another technology/industryConcentratelike Lego, they jump to provide for the adults instead of children</p>
-</li>
-</ol></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "aw9BnqWuQFEw1fwg", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -121,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

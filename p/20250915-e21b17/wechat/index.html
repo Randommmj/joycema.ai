@@ -16,75 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2025年9月15日" data-url="https://joycema.ai/p/20250915-e21b17/">复制正文到公众号编辑器</button>
 <a href="/p/20250915-e21b17/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2025年9月15日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>哈佛笔记｜宏观经济 - 从新加坡看“社会契约”</h1><p>Joyce Ma<span>2025-09-15</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>案例概览国家起点1965 年独立时，新加坡人均 GDP 只有 516 美元，没有资源，社会分裂。但通过李光耀（Lee Kuan Yew）的治理，2022 年人均 GDP 达到 82,808 美元。制度基础建立公共住房（HDB）、中央公积金（CPF）、高效公务员体系和“有形之手”的经济发展局（EDB）。大量吸引外资（MNCs），推动出口导向工业化。国家资本成立新加坡航空、DBS、港口公司等国有企业（GLCs），之后设立淡马锡（Temasek）和新加坡政府投资公司（GIC）来管理财富。经济路径先劳动密集，后高技能，再科技创新。产业从电子装配到高科技制造、生物医药（Biopolis）、航天、芯片。服务业里，新加坡成为金融中心、航运物流枢纽。社会治理重视多种族和谐，但政治高压（PAP 长期执政），新闻和集会受限。社会政策被称为“Nanny State”，比如禁口香糖、公共吸烟限制。危机管理从 1997 亚洲金融危机到 2020 新冠疫情，政府都快速应对。疫情下 migrant workers（外籍劳工）暴露出不平等问题。当前挑战增长放缓（2023 GDP 预期 3.5%）。人口老龄化、低生育率（总和生育率 ~1）。依赖外籍劳工 vs 本地人就业情绪。需要从效率驱动转向创新驱动。全球去全球化风险。交接时刻李显龙准备交棒给黄循财（Lawrence Wong）。他提出要“refresh the social compact”（更新社会契约），在保持增长的同时更平等、包容和绿色。</p>
-<p>课堂笔记</p>
-<p>历史上，总是有一些“帝国”主导世界秩序。问题是：到了 2038 年，我们会看到的是一群小国的联盟，还是一个个大帝国的圈层？</p>
-<p>👉 如果我们把世界翻转过来看，假设大国不再是主角，小国能否成为稳定与创新的“安全港”？</p>
-<p>新加坡当年的处境与选择</p>
-<p>新加坡 1965 年独立时，几乎是“无资源、无腹地、夹在冷战中的孤岛”。它必须解决三个根本问题：</p>
-<ol>
-<li>政治：</li>
-</ol>
-<p>李光耀（LKY）的首要任务是安全与秩序。</p>
-<p>社会契约：人民放弃一些自由（如新闻、集会），换取住房、就业与治安保障。</p>
-<p>强大的官僚体系（中央银行、廉洁高薪公务员、法治延续），保证国家机器高效运转。</p>
-<ol start="2">
-<li>经济：</li>
-</ol>
-<p>“自由市场 vs 社会主义”？答案是 混合体。</p>
-<p>国家主导的国有企业（GLCs），加上吸引跨国公司（MNCs）直接投资。</p>
-<p>简化行政、削减繁文缛节，让德州仪器等外企 50 天内就能投产。</p>
-<p>货币与制度信用得到保证，吸引长期资本。</p>
-<ol start="3">
-<li>战略定位：</li>
-</ol>
-<p>自我定位为“避风港”与“中立中介”。</p>
-<p>用地缘位置和贸易网络，把小国变成全球供应链中的关键节点。</p>
-<p>新加坡模式的“社会契约”</p>
-<p>旧模式：国家培养你成为高效的技术型人才，你交出部分自由，换取社会保障与稳定。</p>
-<p>结果：几十年高增长，让新加坡“从第三世界到第一世界”。</p>
-<p>但今天，这份契约正在动摇。</p>
-<p>当下面临的挑战</p>
-<ol>
-<li>创新困境</li>
-</ol>
-<p>新加坡的经济模式以“效率”为核心，但效率并不等于创新。</p>
-<p>创意、风险承担、批判性思维（critical thinking），恰恰是过去制度所压抑的。</p>
-<p>台湾、中国的经验也提醒我们：执行强 ≠ 创新强。</p>
-<ol start="2">
-<li>社会紧张</li>
-</ol>
-<p>人口 590 万，其中约 1/3 是外籍人口。</p>
-<p>疫情后外籍人数上升，引发就业与社会公平的争论。</p>
-<p>年轻人觉得“社会契约失灵”，忠诚感下降。</p>
-<ol start="3">
-<li>成本与生活</li>
-</ol>
-<p>房价与生活成本上升，让年轻人感到“努力未必有回报”。</p>
-<p>社会契约从“只要你努力 → 就能有房有保障”，变得不再稳固。</p>
-<ol start="4">
-<li>全球化退潮</li>
-</ol>
-<p>新加坡的模式高度依赖全球化：自由贸易、跨国资本、外籍人才。</p>
-<p>当全球化减速甚至倒退，“效率驱动”的模式开始触顶。</p>
-<p>转型的必然性</p>
-<p>新加坡必须思考：</p>
-<p>从效率转向创新：不只是“熟练工”，而是要培养创业者、风险承担者。</p>
-<p>从内容到语境：不只是掌握知识（content），更要具备软技能（EQ、contextual thinking）。</p>
-<p>从“增长至上”到“平衡社会契约”：公平、包容、绿色成为新的关键词。</p>
-<p>如果不再是全球化时代，这套旧模式可能行不通。</p>
-<p>新加坡的成功靠“社会契约 + 效率 + 全球化”。</p>
-<p>但当环境改变，这个契约必须更新，否则会失去忠诚与信任。</p>
-<p>“过去是国家喂养家庭（EAT your FAMILY），未来则必须靠家庭和个人的创新力去反哺国家。”</p>
-<p>🤔那么...</p>
-<p>如果未来真的是“小国群落”的世界，新加坡模式能否被复制？</p>
-<p>“社会契约 2.0” 应该写下什么条款，才能在后全球化时代依然成立？</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "nrJ4hzKGWs/jZFEF", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -153,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

@@ -16,50 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2026年10月23日" data-url="https://joycema.ai/p/20261023-d2fac9/">复制正文到公众号编辑器</button>
 <a href="/p/20261023-d2fac9/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2026年10月23日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>哈佛预习｜管理控制：A Letter from Prison —— 时间也是事实的一部分</h1><p>Joyce Ma<span>2026-10-23</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><figure class="hero"><img src="/img/e9b377823d3659e1.jpg" alt=""></figure><div class="prose"><p>Unit 3，Eugene Soltes 教授 Control，
-A Letter from Prison。</p>
-<p>合同是真的，产品交付了，现金也收到了。一个管理者因此认为，把收入早记几天，和那些更轰动的财务丑闻有根本差别。这个案例让人重新看见，时间本身也属于事实。</p>
-<p>以下，enjoy：</p>
-<h2 id="案例梗概">案例梗概</h2>
-<p><strong>Computer Associates 是一家企业软件公司。</strong>Stephen Richards 从1988年加入公司的销售人员，一路成为全球销售负责人。高增长、高目标和高报酬伴随他的职业上升，公司也承受着季度业绩的持续压力。</p>
-<p>按案例介绍的当时会计处理，软件许可合同满足签约、交付和收款合理保证等条件后，许可费可以在当季集中确认。客户购买的期限可能长达数年，签字晚几天，却会改变整笔许可收入进入哪个季度。客户也逐渐学会，在季末等待更好的条件。</p>
-<p>部分管理者把季度在操作上延长，将季度结束后签署的合同提前记入。交易可以真实，期间却不真实。FY2000第二季度，正确记录的收入约10.47亿美元，另有约5.58亿美元被提前确认；公布每股收益0.60美元，略高于市场预期0.59美元，去除不当确认后则为0.05美元。</p>
-<p>媒体质疑和监管调查出现后，公司最初的内部调查没有揭示全貌。进一步的独立调查，从遗漏的文件与电子记录中找到证据。案例还描述了高管误导调查，以及内部法律负责人后来承认指导这种行为。</p>
-<p>Richards 于2006年认罪并被判七年监禁。2008年，他从监狱给当时的学生 Eugene Soltes 写信，解释自己面对的目标、激励、业绩认可和管理压力。他也写到，管理者常处在灰色地带。</p>
-<p>老师的问题因此有两层：行为究竟有多严重；如果用会计准则允许的灵活性得到同样数字，判断会不会改变。最后还要回答，如果自己站在那个位置，怎样做，以及愿意承担什么后果。</p>
-<h2 id="我的思考">我的思考</h2>
-<h3 id="几天的差异可以改变整幅经营图景">几天的差异可以改变整幅经营图景</h3>
-<p><strong>收入属于哪个季度，会影响别人如何理解企业。</strong> 在这个案例里，错误归属让明显低于预期的结果，看起来刚好超过预期。它改变的是投资者所见的表现。</p>
-<p>我自己的判断是，不能用交易最终真实来抵消报告当时不真实。也不能把提前确认的总额叫作被盗现金或投资者全部损失。清楚地批评一种行为，同样需要对数字保持准确。</p>
-<h3 id="理解压力并不需要取消责任">理解压力并不需要取消责任</h3>
-<p><strong>压力的机制值得理解，个人作出的选择也需要被看见。</strong> Richards 描述分析师预期如何进入内部目标，再通过组织结构、激励和管理方式传导给团队。这是重要的解释。</p>
-<p>信里另一点让我在意：金钱之外，业绩认可与自我认同也可能有很强的力量。当“总能完成任务”成为身份的一部分，承认一次未达标就可能变得异常困难。控制制度若只盯住奖金，可能漏掉这个更安静的驱动力。</p>
-<h3 id="相同数字需要追问不同的形成过程">相同数字需要追问不同的形成过程</h3>
-<p><strong>合理的会计判断，与故意改变事实，应当被分别评价。</strong> 如果某项估计有证据、前后一致、披露适当，不能仅因它帮助达标就认定其错误。</p>
-<p>但合法性也不能单独回答所有管理问题。推迟有价值的研发，可能提高当期利润，却削弱未来；一项勉强可辩护的会计处理，也可能让读者难以看清经营变化。我会同时看事实、判断依据、透明度和长期价值，而不是只看最后那一行利润。</p>
-<h3 id="控制要在目标即将落空时仍然成立">控制要在目标即将落空时仍然成立</h3>
-<p><img alt="" src="/img/fcb3bd33a3a5c6a3.jpg"></p>
-<p><strong>真正的检验发生在最后一天，而不是培训完成的那一天。</strong> 如果所有人都知道日期不能改，却没有人能承受未达标的后果，规则就会被不断重新解释。</p>
-<p>我会把签约、收入确认和收款分开记录，保留真实时间与原始证据。对超出正常流程的要求，提供能独立复核的渠道。案例中内部调查曾经失效，也提醒我们：把问题交给一个有正式头衔的人，并不自动意味着问题得到了独立处理。</p>
-<h3 id="正确的选择也要写出代价">正确的选择也要写出代价</h3>
-<p><strong>拒绝延长季度，可能意味着奖金减少、股价压力，甚至失去职位。</strong> 如果课堂答案只有一句“我会坚持原则”，就省略了真正困难的部分。</p>
-<p>我自己的选择仍然是保留真实日期，报告实际缺口，并推动独立复核。同时修正预测与激励，让公司能够面对迟签合同和客户季末谈判这些经营问题。接受短期代价，并不保证马上得到奖励；它只是让后续决定重新建立在可信的信息上。</p>
-<h2 id="对-arcus42-的借鉴">对 Arcus42 的借鉴</h2>
-<p><strong>结论要能追溯到当时的信息。</strong> 原始来源、日期和判断过程，是后来复核的基础。不能用后来知道的答案重写当时的不确定性。</p>
-<p><strong>允许诚实地报告未完成。</strong> 如果团队只能汇报好消息，就可能逐渐把精力转向维护完成的表象。真实的进度才能支持下一步安排。</p>
-<p><strong>提出异议需要可用的路径。</strong> 当设定目标的人也决定所有评价时，疑虑很难被完整表达。需要有人能够独立听见问题。</p>
-<p><strong>指标应当接受行为层面的审视。</strong> 每一个看似清楚的数字，都在鼓励某些选择。除了问目标有没有达成，也要问为了达成它，人们放弃了什么。</p>
-<h2 id="写在课前">写在课前</h2>
-<p><strong>我的课前判断是，这是一项严重的报告失真。</strong>对真正合理的会计选择，评价应有所不同；对误导事实的做法，不能因交易最终发生就轻轻带过。</p>
-<p>可靠的记录，会为未来保留一个不必反复解释的起点。</p>
-<hr>
-<p>本文依据课程案例及其中信件作个人学习分析，事实与会计情境限于案例时期，不构成当前法律、会计或投资建议。文中未引用另行布置、尚待取得的《Paper to Practice》前言。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "EcwvFlp1/NfV3gyY", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -128,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

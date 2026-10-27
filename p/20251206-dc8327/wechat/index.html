@@ -16,54 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2025年12月6日" data-url="https://joycema.ai/p/20251206-dc8327/">复制正文到公众号编辑器</button>
 <a href="/p/20251206-dc8327/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2025年12月6日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>「人」的宝贵，恰恰来自我们的有限性</h1><p>Joyce Ma<span>2025-12-06</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>今日「宜戒AI」 </p>
-<p>2023年 ChatGPT 发布不久后， 我给自己定下的「打卡」任务中增加了「每天至少使用AI一次」</p>
-<p>然而，今天我们已经在思考 —— 如何在沉浸于AI的便捷与宏大之外，找到真正属于「人」的价值 ——</p>
-<p>我又要求自己必须有「非AI写作时间」。</p>
-<p>这样的变化，既可怕的展现了AI对人类集体心智的影响，又体现出我们这个渺小物种对自我意义与价值的可贵追求与挣扎。</p>
-<p>现在，为了让我回到「我」上面，我摒弃自己努力跟上的浪潮，回到更原始的修行轨道上。</p>
-<p>自己写作，是一种选择。人的特点、人的独特，恰恰来自于我们大脑的能力狭窄。</p>
-<p>AI时代，人的定位，可能也恰恰来自我们的「有限性」。</p>
-<p>意识到我既是一切又什么都不是。</p>
-<p>前两天看到这样一段话：</p>
-<p>“我们每个人既是一切又什么都不是，这是一个巨大的悖论。</p>
-<p>在我们自己看来，我们就是一切。例如，我们的生命终止了，对于我们而言，全世界也就消失了……因此，对大多数人（以及其它物种）而言，失去生命是最糟糕的事情，并且尽量去过最好的生活是无比重要的。</p>
-<p>但是，如果从自然的视角俯视我们自身，我们显然又毫无分量。现实是，金泰呢的每个人都只是约70亿人类中的一员，而人类又只是地球上约1000万物种中的一种。 地球也只是银河系约1000亿颗行星中的一个，而全宇宙有约2万亿个星系。🪐 人的寿命只是人类历史的约3000分之一，而人类历史又只是地球历史的2万分之一。 </p>
-<p>换言之，我们渺小、短暂得不可思议，无论取得什么样的成就，其影响都是微不足道的。”</p>
-<p>我们本能地希望自己人生有意义。 我们如何才能显得重要？我们对他人重要吗？可他们和我们一样，从宏观角度来看也不重要。还是我们在某种更大、更玄妙、永远无法真正理解的意义上重要？又或者说，我们重不重要这个问题根本不重要？</p>
-<p>这样的问题思考起来，既深刻又好笑。 </p>
-<p>人的价值，来自哪里？</p>
-<p>前两天我在清华大学，旁听了本科生的一场心理学课。课前一组本科生讨论了一个非常有趣的话题：</p>
-<p>情绪价值和照顾价值被AI和机器替代后 ——人类之间，长期、稳定、排他性的亲密关系的特别之处在哪里？</p>
-<p>这场15分钟的分享，内容和呈现的方式都很有趣，充满了哲思 —— 他们从6个角度论述了两者的不同，比方说：</p>
-<p>人类的互动是临场的、自发的， 而科技是预设的框架；</p>
-<p>人类恋人基于默契产生经历是隐私的、有局限的，</p>
-<p>而科技是“大他者”，是所有信息的集合；</p>
-<p>人类恋人是有主体性的，爱是自发的，</p>
-<p>而科技带有强烈目的 - 服务性的，</p>
-<p>科技没有选择的余地，我们没有办法感受到被选择。</p>
-<p>他们好棒！更有甚者，他们还在最后批判了「批判的方法」：</p>
-<p>到目前为止，人类所有的亲密体验都是基于「人与人的体验」。</p>
-<p>当我们对机器提出批评时，我们不能以现有的、惯性的人为尺度，去比较人所能做而机器不能的地方。 </p>
-<p>因为这样的批判尺度，对于科技来说是不公平的。</p>
-<p>那么，我们为什么会去选择爱那一个「特定的人 THE ONE」？</p>
-<p>每个人是独一无二的吗？</p>
-<p>当我们把自己放在更广阔的世界中，没有哪个人是独一无二。抽象到一定程度， 每个人都是拼接的。 经历、记忆、性格都存在大量相似性。记忆是一种构建 —— 我记得我记得的东西，也未必是我记得的东西。</p>
-<p>但是，人类的生命短短几十年，我们遇到“这样一个人”的可能性微乎其微 —— 因此他们对我来说，就是独一无二的，我对他们，亦如此。</p>
-<p>记忆也是 —— 我的时间是单向流逝的，我的青春只有一次，它可以是千篇一律的，但它贴上了我的标签。</p>
-<p>我们不必也不应该时刻把自己放在浩瀚无垠的时空中。</p>
-<p>亲密关系是我赋予的，它带上了我的投射，而我对于我自己来说是空前绝后的。</p>
-<p>我到底想说什么？</p>
-<p>我想说的是：</p>
-<p>在小径分叉的花园，我们有无数个选择。在无数平行宇宙中，此刻的我有无数话想对你说，有无数想做之事、想读之书、想爱之人 —— 有无数个“未竟之自我”。</p>
-<p>然而，因为我大脑的局限性、我时间的有限性、我生命的单向性，每一个当下，我的性格、我的认知、我的表达，都只能是其中一种选择。这个选择，未必是经过AI精密计算下，最完美的答案，是临场的、充满偶然性和不可逆的。正是这些有限性构成了「我」。</p>
-<p>过去，我们追求认知丰富、展开完整；而今，人的价值，可能恰恰来自 ——我只能如此，我选择如此。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "c6ocPZ5wTUfY+rnB", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -132,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

@@ -16,29 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2024年1月17日" data-url="https://joycema.ai/p/20240117-6039f5/">复制正文到公众号编辑器</button>
 <a href="/p/20240117-6039f5/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2024年1月17日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>‍生日，一整天的小确幸。</h1><p>Joyce Ma<span>2024-01-17</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>‍</p>
-<pre><code>  今天，是我的生日，来到这个世界整整13140天，
-</code></pre>
-<p>十个一生一世。</p>
-<p>躺在床上，来不及为受伤而难过，也来不及为大难不死而庆幸。只是尽量把自己投掷进入适合的状态中——过好每一天，沉浸式感受来自身边的爱，趁热打铁复盘失误、执行康复计划、透过当下来了解自己、从一个被照顾者的角度理解身边人……太多的事情做。</p>
-<p>过去、当下与未来，从未太在意过去，还年轻，来不及感怀。人们都说“活在当下”，可「当下」也大多是短暂的情绪，不够可靠。可是，假若没有过去和现在，未来又有什么可期呢？ 人，有没有可能超越时间，同时活在过去现在和未来呢？也许换个维度来看，当下即永恒，每一个生命的瞬间都是人生贯穿始终的切片。就像今天。</p>
-<p>今天，所有我爱的人，都关心问候了我；家人压下被吓出窍的魂魄，为我准备一日三餐，极尽地包容；伙伴陪伴在身边，给我无微不至的照顾，还用心准备了惊喜；生命中一群我欣赏甚至仰慕的朋友，给予我无尽的欢乐与关怀；</p>
-<p>想到你们，我就内心充实，心灵富足。</p>
-<p>回想起那些曾经爱过的人，曾经以为一辈子的朋友，消失的人，不再出现的问候，也在心中轻柔地再次道别，我爱他们，也一定伤害了他们，希望他们原谅了我。</p>
-<p>今天，没有按照计划进行，和朋友们连线聊天、连麦唱歌🎤 一整天，过得细细碎碎，随波逐流。开心快乐答复每一条问候的信息，然后，什么都没有做。</p>
-<p>可是，很幸福。 随手拍下生活日常，这也是人生，没有运镜，没有特写，没有波澜壮阔，没有奥秘，也没有感悟，有的是，一整天的小确幸。</p>
-<p>就像视频中背景音乐唱道：</p>
-<p>如果人们不相信自己的幻想生活有时会非常苦涩</p>
-<p>因为一个吻而得到安慰因为一个誓言而更加坚定‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍悲伤就会很快平息</p>
-<p>最后分享一个我今天的生日礼物和蛋糕——来自山西的非物质文化遗产——连花篮都是馍做成的 绝美花馍大花篮！</p>
-<p>牡丹象征着“荣华富贵”、福袋象征的“福气满满”、苹果象征着“平安”、葫芦象征着“福禄”、还有步步高升和五福临门等等各种惊喜各种美好寓意……</p>
-<p>一整天都沉浸在碳水的快乐中。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "02xdZkoxVjbPYAJ3", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -107,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

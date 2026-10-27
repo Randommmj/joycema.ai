@@ -16,34 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2025年9月7日" data-url="https://joycema.ai/p/20250907-7c3011/">复制正文到公众号编辑器</button>
 <a href="/p/20250907-7c3011/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2025年9月7日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>哈佛笔记｜让我成长的朋友们</h1><p>Joyce Ma<span>2025-09-07</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>见到朋友们，真的很开心。还是去年一起在哈佛商学院夺冠🏆的小组I think these are life long friends.发自内心的，喜欢这种纯粹又相互成就的友情。过阵子，中东印度大哥过50岁生日，所有人都拖家带口去迪拜帮他庆生，我希望到时候带上妈妈。My old living group friends, I just love them soooo much!世界就是很大，很棒的人真的很多！1. Giving Back</p>
-<p>我问中东印度大哥，“五十知天命，你知道自己的天命了吗？”</p>
-<p>他快速且坚定的说，我知道自己接下来要什么。 我的下一个人生目标是签署 <The Giving Pledge> —— 比尔盖茨发起的这个计划，大概$1 billion捐赠起步。他想把自己90%的财富捐出去，每个孩子留1亿美金，其余的回馈社会。</p>
-<p>他说，以前不想stretch the target，但现在有机会了，就希望追求一个大数额的捐赠，因为神是在通过他做一些事情。</p>
-<p>他说，很幸运他太太也很支持，他的孩子，则应该去追求自己的人生。</p>
-<p>让我感叹，也思考自己的下一个目标。</p>
-<ol start="2">
-<li>哈萨克斯坦的WARM文化</li>
-</ol>
-<p>最大的地产商CEO分享他对文化的思考：哈萨克斯坦的文化是WARM的 —— Western, Asian, Russian, Muslim</p>
-<ol start="3">
-<li>罗马尼亚男女相对保守</li>
-</ol>
-<p>罗马尼亚小哥和太太当年约会第二次就搬到了一起。</p>
-<p>年轻女孩子如果有男朋友，就不能单独/和女性朋友去酒吧了。</p>
-<p>（🤷At least he told me so）</p>
-<ol start="4">
-<li>让人如沐春风的泰国印度小哥。</li>
-</ol>
-<p>原来印尼不仅排华，也排过印度人。家族第N代，却一直自己创业。用15年建立了全球性的医药公司，现在又开始了新的营养品公司。学习之余，社交、和家人通话、壁球运动一个都不少。当他看到女生被勾肩搭背，会主动上前解围。</p>
-<p>在这些人周围，你就是想要变得更好。</p>
-<p>还有印度印度人和巴西好兄弟 with their pink Labubus！🤣</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "cpdbf4uRkbjHnhYS", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -112,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

@@ -16,84 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2025年9月8日" data-url="https://joycema.ai/p/20250908-bb2100/">复制正文到公众号编辑器</button>
 <a href="/p/20250908-bb2100/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2025年9月8日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>哈佛笔记｜BBBK：卓越是一条独立的赛道</h1><p>Joyce Ma<span>2025-09-08</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>首先，这个教授是我超爱的教授，可能也是哈佛商学院这一届同学中，公认的最棒的教授之一：</p>
-<p>Das Narayandas 达斯·那拉扬达斯</p>
-<p>哈佛商学院（HBS）是非常受尊敬的教授之一，也是Executive Education负责人。他的研究领域包括B2B 营销、客户关系管理、品牌战略等。他经常把研究成果带进课堂，把理论和实际案例结合。他的课经常让你换位思考，从客户、管理者、股东多个角度切入问题，是 “一位能让复杂问题简单化的老师”。</p>
-<p>每次Das的课都让我思考很多：</p>
-<ul>
-<li>
-<p>如果成为一个创造独特价值的公司？</p>
-</li>
-<li>
-<p>如何有勇气成为最贵的产品？</p>
-</li>
-<li>
-<p>如何完美的执行落地？ 战略固然好，但只有做出来才可以！</p>
-</li>
-<li>
-<p>如何让所有的战术闭环？</p>
-</li>
-</ul>
-<p>每次上完他的课，我都会有一大堆想法想要实现，我都会感恩自己有事情可以做。都很想快点见到我的团队。故事梗概Pest CONTROL vs Pest ILLUMINATION公司背景Bugs Burger Bug Killers (BBBK)，总部在迈阿密，1985 年收入 3300 万美元（相当于 2023 年的 9320 万），有 600 名员工，年增长率 20%。客户 1.5 万家，多为酒店、医院、餐厅。创始人 Alvin “Bugs” Burger 以“零害虫”承诺闻名。行业背景美国有 9000 多家害虫防治公司，总收入 22 亿美元，大多数是小规模、家庭式，靠住宅客户。大型对手包括 Orkin（2.13 亿销售额）、Terminix（1.6 亿）。保险费暴涨，行业普遍服务水平低。创始人故事Bugs 来自灭虫世家，军队退役后入行，因行业普遍偷工减料、不道德而自立门户。和妻子 Sandee 用 1200 美元起家，从零客户做起。早期就提出“100%消灭害虫，否则退款”的承诺。服务保证独家“无条件保证”(Unconditional Guarantee)。若客户被查出害虫，BBBK 不仅退还费用，还会赔偿罚款、补偿声誉损失，甚至替客户支付另一家公司一年的服务。客户若在饭店见到蟑螂，餐费全免，还送礼券。核心做法服务员（Service Specialists）是“米开朗基罗”，经过 6 个月、1.5 万美元/人的严格训练，待遇优厚，流失率 &lt;3%（行业平均 60%）。服务时长 3-5 小时（对手仅 30 分钟），药剂费用占比 12%（对手约 5%）。要求客户签署清洁协议，否则拒绝服务。设“红点计划”(Red Dot Program) 督促卫生。价格极高（是对手 4–10 倍）：如佛州 Diplomat 酒店初次清理 4.5 万美元，月费 7200 美元。发展历程70 年代从佛州扩张至全美，靠公共关系和“骑士般”形象获客户。客户包括五星级酒店和连锁餐厅。挑战竞争者模仿“零害虫”口号。高价导致客户流失（年损失 200 万美元合同）。扩张过快带来管理问题。Bugs 自身精力和接班问题。保险成本大幅上升。</p>
-<p>课堂笔记</p>
-<ol>
-<li>
-<p>Build a brand out of the commodity.我们不是“更好”的那个，我们是“不可比拟”的那个！We are NOT the better one, we are THE ONE!Risk of Failure is very high，对我们的客户来讲，他们不是要选择相对好的，必须选择「最好的」—— Arcus42 需要思考这一点🤔</p>
-</li>
-<li>
-<p>Excellence vs Mediocrity 卓越 vs 普通</p>
-</li>
-</ol>
-<p>PEST EliminationExcellence</p>
-<p>PEST ControlA business of MediocrityNot committed enough当团队追求卓越，就不会花时间为自己找借口，不会说“大家都做不到” —— 因为做到别人做不到的事情，本身就是我们的追求。How many times your people spending time justifying themselves？ —— That’s your problem！ Because you are establishing a business of mediocrity 一记警钟！</p>
-<ol start="3">
-<li>Play a different game -- your game!This case is not about how you are significant better than others but how you are distinguish different from other people —— you need to play a DIFFERENT GAME</li>
-</ol>
-<p>What is the result? —— BBK can charge 10 times 当你和别人不是同场竞争的时候，往往就不是在卷价格。</p>
-<ol start="4">
-<li>
-<p>This models are simple, it is about DISCIPLINE❗️道理很简单，全在执行！There is NO 99% excellenceThis is NOT about strategy, you can show your competitor but they can still not copyThis is about EXECUTION!!「完美的执行&amp;平庸的战略」 可以打败 「完美的战略 &amp; 平庸的执行」</p>
-</li>
-<li>
-<p>MAKE your customer CO-PRODUCERS，DON‘T spoil your customers 让客户成为你生产流程的一部分！ 就像BBK要求客户也必须签订《清洁协议》Can you mange a spoiled child ——  NoThe Customer need to appreciate your workget them involved in the production process最令人印象深刻的是让我们参与制作的日料 -- 有参与感，客户更珍惜，更喜欢。例如哈佛：People read the cases for HBS 告诉你，如果你不案例，有损失的是你自己。OTHERWISE — PenaltyWhat am I doing with my customers that increase my possibility to performance well —— That’s the low hugging fruit！—— 有什么能和客户一起做，来提升整体胜率的？ 现在就做起来！这是低垂的果实！Make your customer a hero by making your customer involved❗️Managing your customers</p>
-</li>
-<li>
-<p>Your want the excellence in your perspective NOT the customers perspective 客户不配合？客户不需要卓越，需要卓越的是你！所以你要想办法，让客户配合得更容易。 —— Make it easier for your customers</p>
-</li>
-<li>
-<p>Customer profitability 管理客户就是管理利润Customer Management is also profit management</p>
-</li>
-</ol>
-<p>4s ModelSELECT （选择客户）The best time to say NO in a relationship is IN THE BEGINNINGWHO do we want to work with</p>
-<p>Every customer need to be served in an unique way.</p>
-<p>Every customer need to be served in an unique way.SERVE （服务客户）HOW do you want to serve?</p>
-<p>SATISFY （满足客户）Do something that they care about</p>
-<p>SURVIVE （提升）And THRIVEWhat in it for me？</p>
-<ol start="8">
-<li>When the Guarantee is involve, why take the riskSo that — the Whole Team knowsI promise EXCELLENCE, you need to deliver ExcellenceThis is a service industry, 99% is a failureFailure is allowed but failure is not allowed repeatedlyInternal management and message</li>
-</ol>
-<p>SERVICE PROFIT CHAINEMPLOYEES — Employee Management SystemHiring400:1 录取率Lie DetectionTalk to the familyTrainingHR Budget &amp;15k / employeeTraining for 5 months！Do what is importantShow that you are doing what your employees are doingLEAD BY EXAMPLEThis is excellent executionMentoringFair Evaluationmaking failure expensiveCompensationwhen the employees lose the customers, do not worry, you are protectedPay below market —— how？Intrinsic : High Performance Culture — place that people want to work inExtrinsic : Money $$</p>
-<p>Service Excellence</p>
-<p>Quality of service provider🟰 Quality of service Provided</p>
-<p>Core ➡️ Service excellence</p>
-<p>CUSTOMERCustomer Satisfied</p>
-<p>👇LOYALTYRevenue increaseCost decrease</p>
-<p>👇COSTUMER PROFITABILITY！！</p>
-<ol start="9">
-<li>
-<p>一个我喜欢的课堂细节When being asked：are you ok with me making fun of your industry? if yes tell me and i can tell people otherwiseHis answer : I’ll wait till the third class这个答案 既不软弱 又不强硬。 我喜欢！</p>
-</li>
-<li>
-<p>The following storySold the business —— Failed!Do it again himself? —— Failed again!</p>
-</li>
-</ol>
-<p>This is a model lead from the front! —— If this is model strongly dependent on the leader, i love it , but is it sustainable?</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "FmGTbid3Y98lNEvZ", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -162,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

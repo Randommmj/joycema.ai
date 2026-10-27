@@ -16,28 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2023年12月31日" data-url="https://joycema.ai/p/20231231-844431/">复制正文到公众号编辑器</button>
 <a href="/p/20231231-844431/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2023年12月31日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>2023年推荐的10本书</h1><p>Joyce Ma<span>2023-12-31</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>这张图一直在我心里，送给所有的朋友。‍‍‍‍‍‍‍</p>
-<p>读书不仅是脑力训练、不仅乐趣无穷、不仅让人把不同事物之间隐秘的联系打通……</p>
-<p>读书就像流连世界的旅行，让人的心灵有无限扩展的可能性，由一个兴趣催生出无数兴趣，由一个问题带来无数问题，无休无止、无穷无尽。</p>
-<p>读书又是保持内心平静的一剂良方，就像一位温润的恋人，你若不找他，没有压力；你若去找他，也有丰富的内在可供探寻。‍‍‍‍‍‍‍‍‍‍</p>
-<p>我们生在文明之中，文明对我们有一个承诺：</p>
-<p>一个更好的、心智更健全的、更良善的自己，她在生命的前方等待着我，我一定有办法抵达它。「阅读」是其中最便宜、最易得、最丰富的一条路。‍‍‍可以推荐的书太多，这些书也都太棒了，可这份推荐完全没有体现它们精彩的百分之一。问题在我，“吃”下去的内容，绝大部分都用于抵御日常琐碎，消耗殆尽。剩下的部分也过于肿胀，消化不良，只堆积在肚子里，吐不出来，总显得无力。 </p>
-<p>只能不断用“完美是完成的敌人”来告诫自己，写出来总比不写好。 1. 《通往奴役之路》</p>
-<p>【英】弗里德里希．奥古斯特．冯•哈耶克这本书好到没什么可说的。蒙昧主义试图让我们相信，我们所做的一切不是做得明智，就是非做不可。在还没有领悟到我们做过了许多蠢事之前，我们将不会变得更为明智。‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍啃这本书，对人的智识是一种挑战与享受。从这本书开始，爱上烧脑的大部头。‍‍‍‍‍‍‍‍‍2. 《稀缺：我们是如何陷入贫穷与忙碌的》【美】塞德希尔·穆来纳森；埃尔德·沙菲尔</p>
-<p>把「稀缺」界定为一个心理问题而不是资源问题，真是一个奇妙且深刻的视角。稀缺会俘获一个人的大脑，使他过于关注稀缺的对象从而失去正常的判断力，导致稀缺状态进一步恶化。因此，真正可怕的不是资源的稀缺，而是俘获我们大脑的稀缺心态。这个结论，是一个终身受用的告诫。</p>
-<ol start="3">
-<li>《13+1体系：打造持续健康的组织》【中】黄旭这是一本很容易上手的实操手册，让人比较容易入手“使命、愿景、价值观、战略、三年规划……”一路直至落地。一页一页跟着做是个很好的阅读方法。‍‍‍‍‍‍生存下来就能够奢侈地去思考这些问题了。‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍4. 《沉思录》【古罗马】马可·奥勒留</li>
-</ol>
-<p>“每时每刻都要坚定地思考，就像一个罗马人，像一个富有完整而朴实的尊严，怀着友爱、自由和正义之情感去做手头要做的事情的人那样。”</p>
-<p>第一次读这本书是大学期间。今年再读，仍然大受震撼。任何时候读，读任何一段，总能让人获得力量。‍‍‍5. 《讷河往事》【中】黄蓉想用眼泪来洗净心灵，那就读这本书吧！‍‍‍正义和爱，是永恒的英雄主义。‍‍‍‍‍‍6. 《宝贵的人生建议》【美】凯文·凯利</p>
-<p>随时随地翻阅，生活马上能够受益。真正做到了“开卷有益”。‍‍‍‍‍‍‍‍‍‍‍7. 《芯片战争》【美】克里斯·米勒‍‍读这本书，让人看到时代的浪潮如何塑造了海岸线。太多的细节了，尽管我们已经对芯片的发展耳熟能详，但真正回到历史的现场，才能明白这当中涌动的暗流和历史真实的面目。‍‍‍‍‍‍‍8. 《昨日的世界》【奥】斯蒂芬·茨威格‍‍除了对历史的了解，茨威格的文字让人有纯粹的感官享受。从他的笔下，我重新认识了欧洲人，认识了一个群体对于生活的意志。‍‍‍‍‍‍‍‍‍‍9. 《随机漫步的傻瓜》【美】纳西姆·尼古拉斯·塔勒布‍‍‍‍这世界随机运作的方式有时被称作“命运”。当生活的随机性摆在眼前，我们才明白自己有多容易被愚弄，我们才能明白什么叫做“与其预测，不如准备”。 在这个时代，这一点尤其重要。‍‍‍‍‍‍‍‍‍‍‍‍深深记住一点：不管我们的选择有多复杂、我们多擅长支配运气，随机性总是最后的裁判，我们仅剩的只有尊严。碰到厄运时，不妨强调个人举止的优雅，我们应该表现出不管什么状况下，都知道“如何生存”。‍‍10.《中国历代政治得失》【中】钱穆制度必须与人事相配合。这本书让我们看到人事与制度是如何交织，相互塑造，并推动历史的前行。就制度而言，必有一种与之相当的道德意志与忠诚之贯注。‍‍</p>
-<p>‍‍‍‍‍‍‍‍‍‍‍‍</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "g9uM6UIH8Xo7PB8P", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -106,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

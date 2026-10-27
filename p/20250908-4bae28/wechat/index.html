@@ -16,103 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2025年9月8日" data-url="https://joycema.ai/p/20250908-4bae28/">复制正文到公众号编辑器</button>
 <a href="/p/20250908-4bae28/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2025年9月8日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>重拾「富兰克林的十二条美德」</h1><p>Joyce Ma<span>2025-09-08</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>今天印度朋友跟我讲：Joyce，我想来夸赞你一下。 我总是能看到你在工作，你总是非常有活力，非常有passion.</p>
-<p>于是，我分享了富兰克林年轻时期为自己定下的的「13条美德」 —— 其中有一条 “手头总做有益的事情”。 </p>
-<p>我想，是这样原则的影响下，形成了当前的我的很多习惯。本身富兰克林是有13条的， 但其中一条，我并不完全认同，因此就删掉了。 其余的，我发自内心地、希望自己终身去践行。</p>
-<p>印度同学的提醒，让我再次想到，这12条美德的重要性。提醒自己 —— 重拾这些重要原则。 </p>
-<p>写出来，鞭策自己一下。</p>
-<p>富兰克林的12条美德</p>
-<p>一、节制。</p>
-<p>饭不可吃胀。</p>
-<p>酒不可喝高。</p>
-<p>二、缄默。</p>
-<p>于人于己不利的话不谈。避免碎语闲言。</p>
-<p>三、秩序。</p>
-<p>放东西各归其位，办事情各按其时。</p>
-<p>四、决心。</p>
-<p>决心去做该做的事情，做就做到心想事成。</p>
-<p>五、节俭。</p>
-<p>不花于己于人没有好处的闲钱，杜绝浪费。</p>
-<p>六、勤奋。</p>
-<p>珍惜时光。手里总忙有益之事。剪除一切无谓之举。</p>
-<p>七、诚信。</p>
-<p>不害人，不欺诈。</p>
-<p>思想坦荡，公正；说话实事求是。</p>
-<p>八、正义。</p>
-<p>不损人利己，伤天害理的行为永不沾边，利公利民的应尽义务切勿放手。</p>
-<p>九、中庸。</p>
-<p>避免走极端。忍让化冤仇。</p>
-<p>十、清洁。</p>
-<p>身体、衣着、居所，不许不干不净。</p>
-<p>十一、平静。</p>
-<p>不可为小事、常事或难免之事搅乱了方寸。</p>
-<p>十二、谦卑。</p>
-<p>效法耶稣和苏格拉底。</p>
-<p>Benjamin Franklin’s 12 Virtues</p>
-<ol>
-<li>Temperance</li>
-</ol>
-<p>Eat not to dullness; drink not to elevation.</p>
-<ol start="2">
-<li>Silence</li>
-</ol>
-<p>Speak not but what may benefit others or yourself; avoid trifling conversation.</p>
-<ol start="3">
-<li>Order</li>
-</ol>
-<p>Let all your things have their places; let each part of your business have its time.</p>
-<ol start="4">
-<li>Resolution</li>
-</ol>
-<p>Resolve to perform what you ought; perform without fail what you resolve.</p>
-<ol start="5">
-<li>Frugality</li>
-</ol>
-<p>Make no expense but to do good to others or yourself; i.e., waste nothing.</p>
-<ol start="6">
-<li>Industry</li>
-</ol>
-<p>Lose no time; be always employed in something useful; cut off all unnecessary actions.</p>
-<ol start="7">
-<li>Sincerity</li>
-</ol>
-<p>Use no hurtful deceit; think innocently and justly, and, if you speak, speak accordingly.</p>
-<ol start="8">
-<li>Justice</li>
-</ol>
-<p>Wrong none by doing injuries, or omitting the benefits that are your duty.</p>
-<ol start="9">
-<li>Moderation</li>
-</ol>
-<p>Avoid extremes; forbear resenting injuries so much as you think they deserve.</p>
-<ol start="10">
-<li>Cleanliness</li>
-</ol>
-<p>Tolerate no uncleanliness in body, clothes, or habitation.</p>
-<ol start="11">
-<li>Tranquillity</li>
-</ol>
-<p>Be not disturbed at trifles, or at accidents common or unavoidable.</p>
-<ol start="12">
-<li>Humility</li>
-</ol>
-<p>Imitate Jesus and Socrates.</p>
-<p>这是富兰克林非常年轻时候的想法，我相信这是复利的魔力，摘自他的自传：</p>
-<p>他还写下了让自己养成这些美德的过程（同样摘自《富兰克林自传》）：</p>
-<p>以下是富兰克林的小本子的样子：</p>
-<p>有时候，他还选用汤姆逊的诗作为一段小小的祈祷文：</p>
-<p>光明与生命之父哟，您是至善，</p>
-<p>教我如何为善，您亲自教教我！</p>
-<p>脱离所有低级的追求，用知识、</p>
-<p>宁静、纯德充满我的灵魂，</p>
-<p>赐予我神圣、充实、永不凋零的福祉！</p>
-<p>秩序的规戒要求办事各按其时，</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "32z6y9NYZF5pluQO", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -181,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

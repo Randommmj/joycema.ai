@@ -16,17 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2023年7月29日" data-url="https://joycema.ai/p/20230729-84729a/">复制正文到公众号编辑器</button>
 <a href="/p/20230729-84729a/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2023年7月29日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>SFMOMA 1900-至今 馆藏节选</h1><p>Joyce Ma<span>2023-07-29</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>在旧金山市内小住，直接办了一张当代艺术博物馆SFMOMA的年卡，计划是每天背着电脑来这里办公。 </p>
-<p>百看不厌的，是1900年-至今的馆藏展，每一件作品都是经典。 ‍‍‍‍‍‍‍‍‍‍‍</p>
-<p>博物馆出来，回酒店的路上，</p>
-<p>拍下傍晚Gallery橱窗的倒影，</p>
-<p>也似乎充满了当代艺术的味道。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "SxJpsoOPGvWMVwZ1", "c": "2zlIhDNkphsFjV1sklNt1AC23VGS3PDhjo059otoOPX8i0DXklcSrg1TpNG55do2r1/Yvkqr0d6OyI+iJ+lY01uMv7DxFWykP1l6K5pHk3c1FiLoyyvb3w2hZixU0OrGlVGlT7cb1MM8/duZIugtu5QZ1Au+MplFKszSpB2zA19t7AqZa4KcvQ7uttUF0TP1RwcIA9gtDA3O32SipFEuF0rOZ0do4ylADCfJ97SIXxOxnn3QrrArlRQgPt8VCGC5M2poI2WHe+R2K8DufDHod45skC+pGD7YQw4CkGCzZ5HwZJtAaMvPm9PmDbuVGVPoHr5dOmZREiQf6Go2DxSZqpm1zqlIMfDWBLVULB36YeLKEjfyUCPLZmZzDetZ+kLfSjxFsAU9pKCWpaWToIjnRA17ZCc2Mjmu0pmQBBCvlFfdPSFD50L/Wa63TCjacn57mzJ09x6Ax5g/ymnTRNGViDx/4HM7vyyuxkG9ocTWh7fDtDrlRIcExCsvk49eawroKpC0dnioh5+wx/sinPymYS4BPmDCUoDuovenDkwMsTEYK57NIfKpDB6p7/Al4/h1s3ELXdwnuOCmWw=="}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -95,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

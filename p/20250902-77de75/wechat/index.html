@@ -16,102 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2025年9月2日" data-url="https://joycema.ai/p/20250902-77de75/">复制正文到公众号编辑器</button>
 <a href="/p/20250902-77de75/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2025年9月2日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>哈佛笔记｜Build to sell的经典案例</h1><p>Joyce Ma<span>2025-09-02</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>我发现，想要每次结束课之后，把所学都分享，几乎是不可能的事情。</p>
-<p>因为新的知识总是扑面而来，新的事情总是接踵而至。</p>
-<p>因此及时写下一些重要的take aways和inspirations已经很好了。</p>
-<p>「完成」比「完美」重要。</p>
-<p>Dr. John的案例</p>
-<p>故事梗概连续创业者 John Osher 团队做出了一款低价电动牙刷 SpinBrush（零售价&lt;$6），用两节AA电池驱动，包装上带“Try me”按钮，消费者不开盒就能感受动力。1999年起在 Meijer 等渠道小范围测试，单店日销可达 7 支，远超普通牙刷“周销 1 支”的常态；到 2000年初已日销超 6,000 支，并进入 Wal-Mart、Target 等大卖场体系，开始在 IRI 排行可见。但巨头（P&amp;G/Crest、Gillette/Oral-B、Colgate、J&amp;J/Reach 等）随时可能跟进，团队面临：是继续独立扩张？授权品牌？还是整体出售？</p>
-<p>公司为什么能打穿市场1. 价格带“&lt;$6”切入、解决“电动牙刷太贵”的痛点；2. 混合刷头（固定+运动刷毛）保留手刷手感还提高清洁效率；3. Try-me 包装大幅降低首次尝试门槛；4. 借力中国高质量代工与30天账期，把现金流、成本打下来；5. 精干 9 人团队、直接对接大零售商，超低管理半径</p>
-<p>行业与数据要点1999年美国牙刷市场约 $8 亿零售额，其中手动牙刷约 $5.45 亿（1999年零售额 544.8m）、电动/配件约 $2.31 亿（1999年零售额 230.8m）；电动牙刷基座在美国家庭的渗透仅约15%，增长空间大。</p>
-<p>Osher的“16条创业不必犯的错误” 很不错，中文英文都放上。John Osher's List of the Sixteen Mistakes Entrepreneurs Do Not Have To Make ：</p>
-<p>Wrong Expectation Mistakes 错误预期 1. ﻿﻿﻿Miscalculate size of market, timing and ease of entry, as well as potential market share. 高估/误判：错误估算市场规模、进入时机与进入难度，以及潜在市场份额。</p>
-<ol start="2">
-<li>
-<p>﻿﻿﻿Underestimate financial requirements and timing. Run out of money. 低估资金需求与到账节奏：低估需要多少钱与到位时间，导致现金断裂。</p>
-</li>
-<li>
-<p>﻿﻿﻿Over-project sales volume and timing. Fall short of sales projections. 过度乐观的销售预测：对销量与节奏估得过高，最后达不成销售预测。</p>
-</li>
-<li>
-<p>﻿﻿﻿Cost projections too low. Costs are higher than budgeted. 成本估得太低：实际成本高于预算。</p>
-</li>
-<li>
-<p>﻿﻿﻿Hire too many people and overspend on offices and facilities. Overhead too high. 人员与办公过度扩张：招太多人、在办公室与设施上花太多，造成管理费用过高。</p>
-</li>
-<li>
-<p>﻿﻿﻿Lack contingency plan for shortfall in expectations. 没有应急预案：当现实不达预期时，缺乏备用计划。</p>
-</li>
-</ol>
-<p>General Mistakes 常见错误 1. ﻿﻿﻿Have too many unnecessary partners. 合伙人过多且非必要。</p>
-<ol start="2">
-<li>
-<p>﻿﻿﻿Hire for convenience rather than skill requirements. 为图方便而非基于能力要求招人。</p>
-</li>
-<li>
-<p>﻿﻿﻿Lack continuous overview of company, manage in parts.缺乏持续的全局观：用碎片化方式管理公司、各自为政。</p>
-</li>
-<li>
-<p>﻿﻿﻿﻿Accept "not possible" too easily rather than "find a way."  太容易接受“做不到”，而不是坚持“想办法找到路径”。</p>
-</li>
-<li>
-<p>﻿﻿﻿﻿Too much focus on sales volume and size of company rather than profit. 过度关注销量与规模，而不是利润。</p>
-</li>
-<li>
-<p>﻿﻿﻿﻿Seek confirmation of one's actions rather than seeking the truth. 寻求对自身行动的确认（证实偏好），而非追求事实真相。</p>
-</li>
-<li>
-<p>﻿﻿﻿﻿Lack simplicity— create too complicated business that requires too much talent to execute and manage.  缺乏简洁：把业务做得过于复杂，以至需要过多天赋/人力才能执行与管理。</p>
-</li>
-<li>
-<p>﻿﻿﻿﻿Lack clarity of ones long-term aim and business purpose. 长期目标与业务宗旨不清晰。</p>
-</li>
-<li>
-<p>﻿﻿﻿﻿Lack of focus and identity. Too many directions at once. 缺乏聚焦与身份定位：同时追太多方向。</p>
-</li>
-<li>
-<p>﻿﻿﻿﻿Lack exit plan and strategy. 缺少退出计划与策略。</p>
-</li>
-</ol>
-<p>我的课堂笔记</p>
-<ol>
-<li>
-<p>Concept does not lead to a number, look at the numbers.</p>
-</li>
-<li>
-<p>The only thing you can spend and borrow is cash, not multiples.</p>
-</li>
-<li>
-<p>Dr. John’s 在谈判中，有很高的增长assumption，因为它只有几个月，就有10%的市场占有率。公司需要有momentum，如果已经存在，那么需要将它讲出来。 —— Arcus42只有几个月，我们取得的成就代表着我们的momentum.</p>
-</li>
-<li>
-<p>How convincing about your company？需要从各利益方角度去思考，how convincing is our company？</p>
-</li>
-<li>
-<p>我们的track record是什么？</p>
-</li>
-<li>
-<p>计算出价时，要带上《可能性分析》</p>
-</li>
-<li>
-<p>Build to sell：Dr. John从第一天就将卖给P&amp;G设为目标，甚至研究了它收购自己之后，股价的变化。 From Day One，P&amp;G is the target!</p>
-</li>
-<li>
-<p>They made the company a product!甚至作为一个小公司，他们的代工厂都已经符合P&amp;G的标准，戴白色帽子之类的。</p>
-</li>
-<li>
-<p>重要思考的问题：How do I create something that someone wants to buy , not something i want to sell</p>
-</li>
-<li>
-<p>“假设卖掉公司，它如何卖高价”，是一个非常好的mindset， 可以看到这个公司的短板和长板</p>
-</li>
-</ol></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "yzKkdXWzSEi4voFx", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -180,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

@@ -16,125 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2026年4月7日" data-url="https://joycema.ai/p/20260407-3133da/">复制正文到公众号编辑器</button>
 <a href="/p/20260407-3133da/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2026年4月7日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>语言，最古老的脑机接口：我对 AI Native 家族办公室的七个思考</h1><p>Joyce Ma<span>2026-04-07</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>创业札记</p>
-<p>最近创业时，我越来越强烈地感觉到：AI 对家族办公室的冲击，不仅仅体现在谁更会做资产配置、谁更会写投研报告上，更能体现在一个更底层的地方重构理解，重新定义交付。</p>
-<p>有一点杂思，写下来，写下来。</p>
-<p>思考一</p>
-<p>将自己过往的文章、日记、会议转写和发言内容都喂养AI，是一种初期的粗糙的“脑机接口”。</p>
-<p>这里的“脑机接口”，不是狭义上在大脑里植入一个设备，而是更广义的：外部世界如何进入人的认知，人的认知又如何被外部读取和改写。</p>
-<p>语言，恰恰就是这样一种古老的接口。</p>
-<p>它对于人的影响，常常因为它的常见而被低估。</p>
-<p>语言当然不能穷尽一个人。</p>
-<p>一个人的经验、直觉、身体感、羞耻、恐惧、控制欲、责任感，绝大部分都不可能被完整说出来。文本从来不等于人本身，记录也从来不等于意识全貌。</p>
-<p>但是，即便如此，语言仍然是今天最普及、最低成本、也最有杠杆的认知接口。因为它一直在持续“读写”我们的大脑：</p>
-<p>被激励的话，可以重写人对风险的判断；</p>
-<p>新的命名，可以改变人群对事物的理解；</p>
-<p>好的问题，可以把原本模糊的焦虑压缩成可讨论、可决策的对象。</p>
-<p>神经可塑性，就在于神经系统会在内外部刺激下改变其结构、功能和连接，换句话说，语言不只是表达工具，也是认知塑形工具。人的语速大约是150个字/分钟，带宽不算高，但穿透力极深。</p>
-<p>人的完整意识无法被语言穷尽，但语言依然是人类目前最普及、最低成本、也最强大的脑机接口。</p>
-<p>思考二</p>
-<p>家族办公室从来就不是一个单纯处理财富的行业。</p>
-<p>表面它在管理资产，深层却是在处理“人的问题”。</p>
-<p>家族里最难的东西，往往不在报表里，不在法律条款里，而在会议上的一句“再看看”，在一次沉默、一次转移话题、一次轻描淡写的抱怨里。</p>
-<p>家办真正管理的，表面上是钱，深层上一直是被语言组织起来的认知：</p>
-<p>如何定义“安全”</p>
-<p>如何定义“公平”</p>
-<p>如何定义“下一代准备好了没”</p>
-<p>如何定义“保守”</p>
-<p>甚至，如何定义“我们为什么还要保有这些财富”</p>
-<p>这些都不是纯金融问题。</p>
-<p>它们首先是人的问题，然后是结构问题，最后才是产品问题。</p>
-<p>因为如此，传统的家族办公室，</p>
-<p>本质上是一门高价手工业。</p>
-<p>思考三</p>
-<p>家族办公室的三大困境在于：</p>
-<ol>
-<li>
-<p>过度依赖少数懂法律、税务、投资、又懂人性的“十边形合伙人”；知识沉在个人脑子里，沉不进系统；</p>
-</li>
-<li>
-<p>卖方佣金会像毒药渗透、悄悄改写建议；</p>
-</li>
-<li>
-<p>家族最关键的隐性需求会在一轮轮会面、整理、转述和交付中不断损耗。</p>
-</li>
-</ol>
-<p>我将之称为“信任的熵增”。</p>
-<p>顾问拿佣金，机构有KPI，律师要隔绝风险，税务师只算税，投资经理只盯收益，没有人站在家族的视角俯瞰全局。每个专家都在自己的孤岛上忠实工作，但整合起来，家族拿到的是一个四不像的方案。</p>
-<p>更甚：每隔几年，核心顾问离职，新人来了，家族需要重新解释自己。那些沉淀了十年的对这个家族的理解——创始人的顾虑，二代的压力，太太对风险的隐性焦虑——全部归零。</p>
-<p>家族真正想守住的东西，最后常常只剩下一套形式上很严密、实质上分辨率很低的条款。</p>
-<p>思考四</p>
-<p>AI会重写这个行业最底层的生产方式。</p>
-<p>大语言模型真正打开的，不是回答问题的能力，而是第一次让机器有机会大规模处理人类最重要的非结构化数据——语言。</p>
-<p>AI 绝不应该只是“更聪明的投顾”。</p>
-<p>它可以持续记录、对比、抽象、复盘；</p>
-<p>可以发现前后表述的矛盾；</p>
-<p>可以识别反复绕开的议题；</p>
-<p>可以把“言外之意”慢慢沉淀成结构化的家族认知图谱。</p>
-<p>对家办行业来说，这意味着我们第一次有机会把对一个家族的长期理解，从个人经验，变成组织资产和系统资产。</p>
-<p>我们应该做的不是一个“家办版 ChatGPT”，更应该是一整套家族传承的认知系统：</p>
-<p>它识别家族的意识，提升家族的认知带宽；</p>
-<p>不替家族做决定，而是把家族真正关心的价值排序、风险语言、关系张力、决策风格，长期、连续、可追溯地保留下来。</p>
-<p>思考五</p>
-<p>从商业上，这是一个有着巨大潜力的市场。</p>
-<p>首先，是时代的浪潮。</p>
-<p>Deloitte报告，全球单一家办已从 2019 年的约 6,130 家增长到 2024 年的 8,030 家，并可能在 2030 年达到 10,720 家；其 AUM 预计从 3.1 万亿美元增长到 5.4 万亿美元。McKinsey 则指出，2023—2030 年亚太 HNW/UHNW 家庭预计将发生约 5.8 万亿美元代际财富转移，而香港和新加坡的单一家办数量自 2020 年以来已增长至约 4,000 家。</p>
-<p>其次，真正的大机会不在现有的家族办公室，而在能力下沉。</p>
-<p>McKinsey 的分析显示，亚太只有约 5% 的 UHNW 家庭拥有单一家办，而欧美这一比例超过 15%；在亚太，AUM 超过 1 亿美元的单一家办运营成本通常就要 1-3%，低于这个规模，运营成本比甚至可能到 4-6%。与此同时，人事成本往往是最大的开支项，可占运营费用的 45-65%。这意味着，一旦 AI 可以替代大部分初级、重复、可标准化的劳动，它改变的不是一个流程，而是整个行业的经济学：过去只能由极高成本组织供给的能力，第一次有可能被产品化、平台化、持续化。 </p>
-<p>McKinsey 对财富管理未来的一个判断：随着 AI、数据整合和平台自动化推进，过去只有 UHNW 家办才能拥有的整合式能力，会逐渐扩展到更广的 HNW 乃至 affluent 客群——“when every client is a family office”。服务内容也会从单一投资建议，走向 family governance、税务与遗产架构、信托管理、保险、慈善、医疗 concierge 和 lifestyle services 的整合。</p>
-<p>McKinsey 另一个判断也很值得玩味：在财富管理里，任务型效率工具已经可能带来 20-30% 的顾问时间节省；而当 AI 进一步走向智能编排，团队级的复杂工作流应用，改变的就不只是省几分钟，而是增长和交付的逻辑本身。真正值得做的不是一个note-taker，而是一个能把理解、执行和复盘串成闭环的系统。 </p>
-<p>思考六</p>
-<p>AI Native 家办不是“去人化”。</p>
-<p>恰恰相反，它把“人”的要求抬得更高。</p>
-<p>AI 先吃掉大量初级、重复、可标准化的劳动。</p>
-<p>被释放出来的，也不是“人”本身，而是人的时间、判断力和共情能力。</p>
-<p>让人用更低的边际成本，交付比传统模式更稳定、更私密、更连续的服务。</p>
-<p>但是语言永远不可能穷尽一个人，所以我也不相信系统能够“复制人”。</p>
-<p>但这恰恰不是坏消息。</p>
-<p>因为 AI 最值得被期待的地方，从来不是替代人的完整意识，而是成为一个高质量、可持续、可校正的认知交互界面：</p>
-<p>它帮助家族更准确地表达自己，</p>
-<p>更清晰地理解彼此，</p>
-<p>更长期地沉淀判断，</p>
-<p>并在一次次关键决策里，把问题问对。</p>
-<p>真正高水平的系统，不应该假装自己完整理解了一个家族：它应该知道语言的遮蔽性，知道它只能触达可表达层，知道沉默也是信息，知道某些地方必须追问、某些地方不能越权、某些地方只能由人来判断并承担后果。</p>
-<p>AI 负责流程，</p>
-<p>人 负责节点。</p>
-<p>AI 负责记忆、对齐、检索、推演，</p>
-<p>人 负责判断、伦理、边界、格调。</p>
-<p>真正做到 —— </p>
-<p>High Tech, High Touch。</p>
-<p>不是一群程序在服务一个家族，</p>
-<p>而是一群能承担结果的人，用AI大脑，去做过去做不到的高密度服务。</p>
-<p>思考七</p>
-<p>让“信任的黑盒子“被打开。</p>
-<p>价值观是一个组织的灵魂。</p>
-<p>在传统大机构里，人既是流程也是神经末梢，价值观经常会输给 KPI，人的动作总是变形；但在 AI Native 的组织里，价值观第一次有机会被写进流程、权限、拦截机制和复盘标准里，变成可执行、可审计、甚至可检验的东西。</p>
-<p>买方立场不再只是一种职业美德，它可以逐步变成系统约束。</p>
-<p>对家办行业而言，这会是一场非常深的重构。</p>
-<p>某种意义上， 它更接近我想打造的平台。</p>
-<p>我们的技术路径</p>
-<p>我们正在追求搭建两个东西：</p>
-<p>单一事实源 Single Source of Truth</p>
-<p>通俗解释：家族意志的不被篡改的底账</p>
-<p>一个家族中，不同人、不同场景、不同需求下所展现出的偏好和决定，不仅有所不同，且可能相互矛盾：跟律师吃饭时，律师为了合规，只记下了：“要在开曼设信托”。跟私人银行家打球时，Banker为了卖理财，只记下了“家族每年需要 8%的现金流分红”。他跟儿子吵架时，吼了一句：“你这个样子，就别想进董事会！”儿子记下了这句话。</p>
-<p>这就叫“多重事实源”。这个家族的真实意图被撕裂成了碎片，散落在三个不同的人脑子里。一旦冲突发生，这三方拿出的文件和口供都是互相冲突的，家族瞬间陷入争产内耗。</p>
-<p>Arcus42的单一事实源（SSOT）： 我们用 AI 把这些所有的碎片全部吸纳进来，经过碰撞和清洗，形成一个唯一、完整、不可篡改的“家族数字底账”。 这个底账里，不仅有信托条款，有现金流要求，更有“人的权力边界”。</p>
-<p>「单一事实源」的意义在于：不管过了 50 年还是 100 年，不管外部换了多少拨律师和 Banker，当家族面临重大决策时，Arcus42 的系统里存着唯一一份、未被利益方扭曲的“真实意志全景图”。这是不可替代的信任。</p>
-<p>「超级控制塔  Control Tower」</p>
-<p>通俗解释：站在整个家族上空的“航空调度中心”</p>
-<p>今天的家族传承，买服务就像在建一架飞机，但没有塔台。税务师说：“为了避税，咱们把资产全转移到新加坡。”律师说：“不行，新加坡的婚姻法上会让儿子面临净身出户的风险。”投资经理说：“钱都卡在架构里了，我昨天看到的一个极好的独角兽项目投不了了！”</p>
-<p>每个人都在自己的专业深井里给出“最优解”，但加在一起，整个家族的运作就会撞机。</p>
-<p>超级控制塔： 控制塔（Control Tower）原本是航空业和全球供应链的概念：机场塔台不负责开飞机（不直接卖理财或起草法律文书），但它能看见所有飞机的航线，并负责统筹调度，防止撞机。</p>
-<p>答案终将过时。</p>
-<p>一个能记住、能反思、能进化、又有边界的系统，会成为AI时代家族传承最重要的新基础设施。</p>
-<p>今天先把话放在这里，</p>
-<p>期待有同样观点，或者感兴趣的小伙伴，找我探讨！</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "dM9YC2DbZlUdtEXj", "c": "84YFIz3BDF4YcMM5NY5H8GCBX71KG3acXr3+X2NcSBrdPsPxH9jEOEc8plwzKs6sA0jhvYY9Z9WvpeOyR1xdrOoLuwO+txFLuKEgL2t2V7fuQCYC8CoGkvB913Y1al/FNoDR2f1JVo/hIdCZ/v90scoe/CsMBb509VlxTCWcfSy7D6id0edLlEgTcx4yyaH/WufroAu6zKtVawxsFhfpgKPHYks37aGuBAdXLsS4rBqfRwPj0EiWevl5ZT7UJED83Iuu/hOWL2MrdFCVO9GbRCPZtH7432GhtYZV+Pe5KCRN9AxUIkn7fH55nZYFKzqRS3WqPcl2eZ2Zs91+bOsg9VWQUxlK/yDAYzcHbQ87KzTzXfOaRNm4eASbHsG6qEWKFAVBII0fBD9Qv4knGP6ARJi6M9UjI0+mDHB4FdtwFsOqIWRd83xqiEdXinPTh9xPTwZq70K2sa8hsEzrczv1JryFsiVC1d2iI4hfcJjinOJA6QEC9qmYV/dZ2SVY2eXCcez9hLDb2tygd39GZ4pMZEPsefhLQx6cbo3TN2sJQL//aop1ehSSlmxgGMMGngr2/mZ8S+UFgPDglJ/BL1EptQnhJV8ltFR2P7765sQqyIdYzxx+8sKF6wpxcJ1K5kO/rhey9JyZ/muu31p1TZJoBgPhr99ywVUWoSoTBTiSuh9Urj47QubOKepIVGgi4/5iHULv/O64vWiD+MRcZjB8m2ohf+Gc5rtFb3iuFO1BgMX3XoZiPKqgxyBHy8d09Xs6oJGLPduvWtEZ4tOhIO1fAyjaL6B28vhktfpUCIS7NoVnsSxu/3OUoq79+YgB8INuynT0F81f03/blmKMvgCKpCpDSONBqTt6ibh1jEKYjqu01+uRSlNZ3YmeSqyvEBWTGHd8fb7AK6abtZZlDwWa5QdbJXlSxjQSXcmyXL4rkpnDYCxYQmBMpp9Eb58cDRfq+4U2e+ohSldx72e/ybJ+V2+/2BHXw7Wl7QcHspzTr+1WPiNTxMvmutL1uKi42UOLY/B/HbjgFb2Dh9/Ykb/VNOAqXp+KnpleTgg1T11tnx75TIzz9vzv4mbqR6rXawJ0aGfyFVCZxKCNnX2DELtWCXez56jl9nEaM5Rbq3YaRd1p9yh7tL+S63UGwWFZlkxhW/hOQ/5G6JZtrrus81pUU8arBSLKHNvGSqEuj0TMYFfpJ3FIEVH8F9SuydwDMhEmXD2624AHyXEOiifmqKbnqTwNEDQmplgsTBZZPElp9IWfMo6n6uYv2xgFbGmhmI8xZ9OCP+RUFIkc5AVZ7yJYfjkKuVEAySOlHgYJb+JFZmSavQ6bLE5eKoM+Y1PeIc6fTaFUmBvX5zRsMdsOYmybQgdGUjYVcYbCySSvbflzueopIj9fq5tJDHT+PmhI0dEkz73UwF4fUSFrbGAn6z5iN/gMewAx1uiD4RAFsXDXoNIO6Gz/AhjEk9zeNrxK4ZgRs6YzC1UaUOUsLF9PWFfZ/lUZVJ1/2yuHc6Y38RkCv7NpkqphWm1XayeW4H4C7sZV36Hvex9AijgKlDm2uLN0UKToc6QjjpIN0Yt4Gc4YoT8t2MIcZVfnlUsGOZl/bpYiS6yh1OdhfvRWPSB6UQRRSxSo1mgZTMUO8ds+6Sii8JeqIqInwjhKcwWBERrVk0JDulVyf5iS8kmNpg7jXUL30wxLcSbrjwe6abEtpml3xLEEYVIcx9SUP2NKc7dR8zRul6ZYiTjdeDVWzJCc5OWLCm6TIMVHj5w6am42wgG5P44cRalxz/VpQ9SL0ees0AOKpRq4vYOt2Xz7tVtBkgc7RPfqhcxtSiB9WXRvuEEFDWen8O2DytFfzQ4L+V3oa/nbA4XJC1KcGDR4yxEb5v1UvWNhrQH4dcqv42Nyoap9Im+2ygeN+kRaOrR2A8S4tTNSq4stxIWBLDhjcru9xNiqJxBdiKyIkHTnNbHQ0Xzo2pF9UGOErbN1Yghsq1n/64ELUDEoOQ2DHgjoCNfO/alNrI0Y5/OhFaRyCTIKjrs3/fqUrTW6+HhZMg5BrWyL4NteDI7S83FAaB1MyhQOUUdcWU9lkGlm2kVzgAdXPDn51mRkm4McEgGwijj5Kd5zxPFZqOLzYSAN/9GkqPQRpIjWxfS1WNuyajKbZXnsVVDWjXlyyW0I9cEa6tHEE+MPaKVJ1uzZiYuTwmjlI2s83DRr+uGZx9ZZ+nAvFqOUlRtqbe3LFZIbmrP2hZy5epRES8H/mGIU8u3gsCchOyGQmnudzCUUF5O1EjapG2IeMcMvL83t6THmiF1tG0H7foBFmPz6z61Ys0XovkhSTRzD2O6ynPrNOwrTZVhwy3yqbVJ+nEulwl4EyQcBB1lszbpFBMCrmu5aPhedT9beesDWzaPcm9oViSsPdtdvexuxuK0BUzhys95GYkqnlE6c5iz489oT1CXEnkqkklBdFjzC8eUY65XPXoJQye0zOq2PLYl5pCG/w4jIBpBumzZiFBwnYckrn4bDBxLBTfFnwvoL6LDnsAf49tNVT+/kVxKKI/Lhtms9qgbxom4mu0o82pn5xcoGF/RkAsDDb24YXm6to+Y4QAVWYlPS907ri8gWGroGloXFrCXwIJD5pLGBRsi4DrkXyJPC5taaDx3lq1apDE99qKnuYPTJ/e+SOncZ0FlnvxMR6MDc1pFnL1pXaKcoP54F2peXTxQIZt9KVRxlHvUxuNj848e2ZAKhXPMC81ydfCdFvoa//9bvPfJtw2LoVneehLc5OOVGjrgG1chDyrxMGJh9D/ejNrdSvdHd3wt3v0akf3+2qeNOo6V0XHTe8xpTgHLh+G+9mPpo8o8F4FzfxWUebb6cXVpNZg14747PUIxI3asppd7XMtvzsnMeiWBDYHYtARxpV4GsZ8vEUvVOpKL4gbCr+9mFsoZY9eyH4vbFx6GVU1wfVBk/a/ytNFZZdxEq8NqMaEZoKdtOl5Mk2JcQRYMyrmbrIIEJmkBCciMvI7Y68/03lDB6t1Pkm/JxldiekGpb6h7f7AnFDQASBQTIK7zcWP/MAR+GGyTE0w/bGnynU69R/tPODO5gndDcyyt0izVZ05efb7CxrBB0IlerZ4Ygmwu3KRzFHurQFb4Apf2AJIjjvYRSA+Y8ECfjbH9045C2lsm7vp1G3t77rdJvhyhojH5Ntec28Jz/8TIdCNC/nOJ8Fpg2SYEZwQofm4JVRruo1dSvTxvftUyjKdZi9Wg5sTLGLlYWowcc9ns0Iz4gMwBbSQu2zo5jNc1skFwTHGsH5tD/RjpoHh9S7eemu/09SYlAJl3PZR19/Pwxo1sWTL+OvyGC9jNZcG0K5JtMfTm4Z4qGJmW7afX6JrlITzPhclP75Ximtqj0rMuFrFxrfGvJUZM9Y9sVEDSqu1JCJoruro/lLfjVAQxeJQf7U8Kmg6dFS2bAlNChH4F3rCKsMIkmlot0i3Ca0ty4iDtlA8I4vFbDQ6mJORUCw2vybiHpCXedVo7l56n0sttHaGzpPkWJN+Vq+02at++xNWVxicDWyYN43hm3r72ZRhx/WsxiubidpcPbq8V89Tgix1RJCC1AyLCLhh4TcW2YV95cpmyIQdcHpW2naj2PBo18PMZQaqn3vQlyr2vGrz0Ac9E2fp3ncotJ7jgLSX5agunB/iYDz6RJYf42E0Ac+pVljA4GhheslskLWQc03roZiVQmfBaWJ23LDvizy6ojcn1W7/u3Ir/l9fI4veEmpdD1x8q6So7l5/reXoGgJmMQmAdgITjHDiMxvY5VAb9sao0VSnrgNn12JJ2WtwSDuvFgR/qR0WfAvL3PYU+ilhmYEdHSB73ZlU+3kZceiHGRI8r26q2eEdt6KKz1LvbQAJOGugFs2YruZrATaHIMcgTSO0ivbtZuThN5un8jzKesnz2Jia71vlDRptZOzHuO7dQM+dikv5SwsAkI8Nazs7AEQ1/Ngdy/sVHfb5qhQ/kLF5NBM/IUTeEAd/Wp6X5tkzonv6jB/j4AHZyKad0VHNg2xmHvJ7HN4R6Kgd3mkU055Z3rjWcU8JSG1gKu6yNjP2whMI2GyXQ2T+i6oxmdEP0s4HP4l7rrw+gSnoMsepaw/WUlI54Xl/TJHmq1OYRkDnU+P28vI1fN/BbnMtj55F0SJj3riBpmHC/+cuPJ2X2GZ9S6wfEQfZtllaf9QWRIuNRLwIVR9VcR6/h09sCOVeQt0MrICfSKu6y3gVaexvrvlhlRgkb2QpsY8PxOOcUaphGgWfJpdRParceHKk9cBQkvp0jWIh+qgV/DhSQ3YmppN66aKrppVEYbHSoZrIbqK9YEjXQW4lUqUkZkv1dT9Xnnn7e7M/Fr1KUmOZj6zY1iHWqURvqul/iUekWfeKX8rLRuPzfvaMnRcQX85+1pi9iRcwVHt2zP/PsmVBUpcGiHcFW+2HI0zGY4Kv5YM72JQ5070D4pNRoI5XTivlIIRTsuUTIg61v7EuuQnfyHoaI8uyHUqH9I705pp+qWes4B+sQr3QIefkqsQNuW/CadAYBpnBwUV03kaemVi4k423qaI0TtUCthKhRBV2Xix4do8AYtHXN90Bvpz1WsdAbtDWHUUZY853kvShyEnRne3PLgj6tOaynVqmXHxZXaWdaCMUsizsCFZpEA3UJ+KeDGaHODLdA4VIEreeyPHPiRvzOeP6jG/DY2cUg2AKe7b0tj0ediUe4hApHk+MTRdjWJvyebyL7pz86BaBfi5mp2d78uraVyxHUFcqlSUijM/R/C1JiK+Fdq6TFK5CnfjVkfPmtE0aLvUozteKCx53vko1AwT8ryqYX6kyC5jhD106aA7Ip6xev6HxJuYNU7QCyqghBzj2QsONkrfPDHTXGLrV7pca2gUaFDoeuu0nzCUonuzucO8ySsmjv1mwtkmHskrr1BjQgjeCr6NeT6les6TYgAXQevRgY1xdnR2t2rLD2J79zkrSpjKz5x41Tu2vu2zdVYfOMoTTP8cq0O73FFht4MDJUMlzjkQF/c0CDAlOB47iK2OzbGuS0DPV1cg5FwF99AoHvc/IhUTUbJFKV+uIbWfBU3u1yakU9/N+e05xwZycLhr+OMSf1dNMrwnKF3Io60hPlcnwlx2bs1fP10LotmFRhWbXFgBdilsaA2bCPya7BbbP+Gm4XcjkwEpx+plZVj4LNrtHsc/+ebEJNqzrM7l/CAoNFTpgxgnRiaewzsX0qxAIMKNUkbqHyCTeXQkyGY3bi7TTgq1RC04nvxm4a8WT4g7v3ADFs3rdikB3ZkuvKw2V8Ur+ytDNB0ywIXj2dgZDp7aLqGoN3AiGvBJP1y9dna1E0qr5NJ6s9q/ICAEI8xszZc+CyMTygm4l4fZ6F0TJ2Lg/baQBJzHed2yTpmbEss4nZ6fB3yssyzCAVnXCcT4lP78jEbFAa6ZaJF6P2nZhF4yAWVE3GiTzSHDs01fSOpeGbuvAwHs/b6n0UCGhK2UbV2OMFIvlmVUODkWeTWVD514znMjEdwrLsxHCRPKfc/+7k72M/UO425gNiSmulwE/YsSM5/1ot5bfqU+Z/iOVB4SAZ+Q9EnfAuOJGDocrfJR7RS7NtaRfC7+Ce8vzvwPfIuyp6ZogMx2knvar83Ci+2Ehwq8rqbjN8pcblWTzOUP7HyXyQHjttGSkF0SmzsJ4T1kv8sJOCs/yDwukS35FMU4BoJuDBLvhVcdpgjRlVZBjpbyDp2phPwvf4MxWzmatv7bd9s3ePvBeOGuFUTAkrCqOtSs9s6Zj7yAlRM/Bpd5mc4dz+wHaZTqWqPYVG7rbCYZmje8ElOzNDTXSI0eDH5WloYJAdKbfza9gAMlkTgojN0ssHOvmvGmbAQu1EJxRWSM+zVwiMnsggr1x3oqBwF5NDR9bj3JzafiwdfTP89CC7C808GErQSwZv79yXQKmGj9+TXslIieASmZiw6bpBQniG/I6Cd/FkSQ9rad1eFRCTIr+m5X2o7n6TEetQm7WE/Zc75sg1kfu6aZiBrIa/nIar6JITZkX3FlFt1vdlaPhIbxtafKPcxEw9HW0uH1loSAJlZSIxFuK8KGTGHYyp7tgCLQv70l4RekVdETRj+p7IZktx+biU+i1Yk80EiOcLI3lWnSIeFXZQGU41n5T3FuInIhCx0BHYMr0NxF6offcIBpkwAXGkU3P+K24T4FGHRF1rvToL3nJWvQnmhnAcAnv9doY1RMEqGUPNj4EsLtrR+g1NByxOpQhFjbFjN1JlliXTo3RCg9PBSG/9FqYt4/0JYiNXggs5hewjp6XSQtt9frZr9r/IwntcEo6bLOLmjQ+1yBXFpk1r4gfS31PoDdZv36+iukUIZ5JUjzL1wF6Ul9xoopYXsyclY6MF9a4O+ajmWZ3CxtrvK44iCTXy/h/VrzIZ3gQq62tZf9yojRMThwZzeZVrV4CQUyvrWwTWYrjIX5TXC4pDrQm92ArSscs7we+kP6JjEqDPaSsBYCltGz2PXhpPZz7IdfCfZ+6Wfd6D8ExFpfksmO797g7yB+q95NUCbn73i7x6iD5GL4fAl52EUO0eAi9l7x9/MXSS5MgizED/hIoG4CtCshWdwsDRZVJeSazRIQh8OsQ7SImxHqcouyUGPvA1GevGGEiOYCLCpjOfW4RGWZTsGjBklHl6kip8Fpr5CW3E+xff183Qgje5abgzVLMNxwt57/Igs2LJ1L7FmynFTR//STir0gjTvZQNb+ahwxticN5hL+eTWei5FjQi7YY4A90uWNtkOyw8X1WLrpy6ne7pzZmvfrpAh5fxwDAX06VG4G62Fm/CbKS1xpvF0TGL07pJxn22Tb9Bjk0U17s+xwSKsni//wpKPMNloT3PU7f5wtTX+M+x3os6PQDiOMMZLPh/MdfBg6kS3zuJi4I+pPkKx1VfQSqYsNElu0UGAiFmaxGkfjna97EWvH1keOM/5QffGTPa+FPfA15ZpQF2p8xVvlK+GYtW7fN9P/2E1IbTYphYyreBbu7fTSFNhhdFgqD24G1jxH8CDx+5fhd89pCd7KhTzL3fHyuS9HCUgZ+nfzMkFEqfSFNjooNWk+gZstLtm6X2fv447bJX3K/5uGbh7msYbo641y58hnLZ2MzQqxtUnALNLByjdROuQiF2N/pyaM5rErczF6cfQajW/y1TxGgc1DyV/dsTaEXMC9INgVifCyEr+XKyCepoJU6BUUoZ91nKxVwejymD0bSJCLAne+0W4v/6CjbcUSbD6TduNVnzFAzd+rKXAdcpx/GZlYC4kzp6nw+13IqMbwbbZUfRRIRy0QOEeLOmMxP9AxWRD9dwCt3TxRogPTyDafW1mZgeqJPEPfgcYOvnNIVTv1L6CZ8k6Y59yZ0U3JMYf397pUrXLB9ybiAsDRzu13QTY4oG0M1M/rpEZX4uptSqBMVkjmKcO1DOo6v27gv7HMVDl2PGhyJfl1WwplwO+FVvK1uD6IK89uYlOcVRgowAiS93bWG2/qwaukKUh/md9SgsQfNMd4SNxkxfuyh8VejYZv9zmGLNCYSBUJZo/T7+Wk/PrQBTorjMd0Ugwbqel/hSgNBId91OhVknxrredHimREAfTKjJ8NOlHEmekX14Rp8H3UWZDxErONx0ikKESeJ5KXigRcPS1/YI/2Hx98Z+8nzaOfVcE1KqFBhBzlz9RBM7lgxXDtVO94lSS3XYwAUGLxGUjKnJyXy4h6g/KlC0OHHVcCwo1K8by9ZhQE2s7yzqwArHcfhWvyqpXSnCzzkZqA49Pi+nJJteYIP4qU5FgPfhSHARDN4j8inH6+FhlDIFHUN0MW78chsfyVV62NjrMUOQ3NRjmf5+eXrjfuO1EWDbgZkd6euToZPp31z1QDF0fx9Z/OjaFjKWQKWIgF5RQOj3ipzxmMHZhRepAvaG7Z6n1r1EtXy7SnrOtcALAW9LOAo6tPOuPcjyIbBCw4zXZjZd+VdXWrTdvss6+8wue6d/3OlV3HrEZ/Rs1dp9gZYs46dW9nGJqnAOLNRdkVe9BPa7mN9gnAHQlg8WCIwpVbg9+gSLrIobL5qGa0FvN7CFDq0yfMfP+zuuk7RHuDOpluXMHYiANewcyZ90DzGYMeeoSakpUh2byTHQwYIfGXYmc4Lp5KMGR3YQyx0h0qDEgmOLfS+/1gQO3rh8B90ElRY2kk0+uEVcQjjLS+z2qElJFBk0ucEheVlGtgMbE8Bu4pAgeMVxEVhdpxYYnpaiJ+XWaDvwR9FJgsK2RMSi3RNUSPEeDkQMu3MapdIYeLYHUKcxuDTUwT4C+yKEGsksJfSH956OitTybdoN3to7HXxp8Zv28n35utL5kFglOCs9jGzXrGfzClGqQxxxy1ZeWJj/BwZvv8BYcxFH3M5MSGCM3+xat2rE3AtUDPwHzhDDN2eNcYU/lfvL5EeQEhCrbYFxms+7X8IopzgB/YN6tAdC7yIRvCdy8IIKLl1swBM8qa5OubqY9q7bEvKEcL5xPIdCJKlJfWadwPnGUagnCpcyz3M9fCVeeZvU+IAa1Ic2T2OdfJJqTZdwzpd3tnsj8FhoFHLMZb8taHAtgVDre837LTNJnBqFqLUMjXOBj6SZ1qfvCji7PHgJqLpSGqtLinWaCbivw6o32G4WvA4R40xj+4C9cbLPFFzgJZBbz/GveCEyXeAJklzDELBPYnzX83oMmo0zcewNdozotxoW2Z3W6bRv/BPymoIaPu6r/b+L69fxzh6TFWUA6IYF5k/8vsWtaq1pDqg8AfY74HtdfiLWbdpnu+DSrZUuKC+5AWAPoQcs6y/ZrAboTqkraNsm2mB3nQZUVLIbjmKcV9kAUDeXZyW39Ed6M+XyTB0AfbLEmYXDsnxzIBn+1XZ5yrhuIV4hJ+i3kLLV2SojYLe8oFpDozsoZps+TcuyRKhXDA8ueD72r0AK7W3+TzD3RrQyecISGSuxENCZJvp9ixzUs+IILByk1+qmveanYOQwZMPXsG6fct/vEjEG9b0GBueQzweRFdR/T8Mtj6B7vdvw4DskWiGTcdUFB2wF3TS3eDVIcqxKbkwD6M/nStZJ9P4vD5ZbyWInI7RCuvhXXYFoyAEY8BFaeAbfGncspp1RXs7kjDVR7ewcAEiQHdbfsBJ8m8clnCnZ56vXfPOv6PZfSAVwX6gX951BCV3CRdvkR7BMAlGDDAANjPvuRCakWN4cRlsAPNKbHmQ0mGYByT/WqEZx37bKdEURcK0ZGC5Li5cmVBsDEWVW40qSvv1PRB+5bC9Js0vVJu2uTIc09pyQGtyDcWZS5KVxnwoPWnKi0tdicntJWmedbDljsrGg1ooqAaiEgzZy1heNswxzxh2TnefkWNK9gh2YNWoUCKiJwKjV7xvT3vwDGeLWk1Ab3YAvre6LVUuQ6RPiFZtIbmis+/e+U8GhaGcsGjyWeYoV8Zqb0iQ7sLYgAu5gEKVpW4cZwR+hM8aKY0WXcRLL6mGxlHaX8z8oi+BawwAMwq0FYOvCknKDQBIlzcDasj3yBo02QtZnFUGfyAANXLOyhbmCK2uf2QWd8fG7feCViQhpXzQYxNERUt/OYOPY/nxHs4q6NW3Lur84HWifm79Evmf4Pqyri4p/g7Thk/6YwnuMNQ/OuQ1/+rZQ6jPmFBssvUnFDXCplMQz7Nvc3OIrRN6Bv9+HH9I+4fgHhPTQMpZSvSORa6WlqG2jtXbBUV4aRXduhAw3H8Y7J9EZJ0MpK3lIybpGxZqByJ0PqUEt7tVqtloe1Z2JJwtP8ZKzdIVmYE17SLlpaJPnwo+q+MNhgZuh9TI2aTESGjs6Xzt3cfvVbg3LCfjfTkY3+TaRbXdUG6h31muJsqWhTeLyuG2wr5t8lbNr+iQOh58/c6PUa7xkzI7dOtgOJUvdshD7vJ9edAOBzGHk1iggjprnag2r2vuIsv6ilcAauCi/cRusCOHWvxW6SIYOkBkmPMMMGd1fLZpJcfZJ6DfS4s5SVaFhfOpe2gpp1jvXSK38BlxcLfofPOqCpvnx49yNKgpKb7LxnDO4mHiOiffKm3+Hd7VC7XlVB/Knn279pNkO/RNtp6kRWeczRtdBetkyk0kNlxFJdKz+bzuJJ4PybBeMuHQvxeuaqEo1G6UaWVgdyuRYr2R/hJbLP0cQbJLSxkz1eQCJts9MWEnPNBoCspco7ZTJSi3JNsT1O3l422HOcwTjbskxBRDXvX7vGN7xG3JZmaBUvR0F4T/TM/Auv+hzTXSk7aeWxIJG/x+BpbTmHz0364r/mwlpZAjd3v5UeV1Izv63GIvAVZUNClU2MtY3WVkZhR4p8d+0iqwc+y4gNdBfitjGpVzuwQ+7mvEroobxfJM72ABPZAHAX8Olwp+BCJbYQIQLz0u6SJFd8GODKYH6gd6uxLzDwkDNqpSQ2ejGOyLrCTOMrczruFe/Vc0WIiAzTfX9LGCtWwIjnlIyHSpCBrswGYhdDS8WqPoO0uxe0SVszQmV8K4B16NaTagl54uAHMVU2pUJkVSjYZJhHCMMyvboJqs9tIkQvkzVnUs7+1wYZAZdQ339VhuWrOEwx4x2mGvWHToM1rSZDBArSa0z5Sg+G6wO4pqoKRDix7SrbEixOvvqAXXTRtQGDWKjbMcB6DoSI7v8aViU/EBnIn2QrXxH4xLfo6gIZuYl1QfvdVB20tXdtMbJ/qqWN5eOEsFPLcgo/2DufylGnQrrEODkEDewHhUhbl5S+mqgbHIutJBENtYOTzuax7pYT65dWFwx85+LMKi3ba9tMeSiJpKpZxbJYDX4JPHVXg+SPIncuKcIeJYureQ2MBG/YqPrVZHHgApE+ljHj74rKq9U3R0BYZipLaL8xffYhMVTTz/tFgyuqLuu3sV1W5EsUAvxOINwCjyQZ6VW89A+YOQxzCwYoUv3w71qUQkRLW37/cKcUir+uiMoSaFPDWWNQT+8T1Mtjbpn08EHl2OlIDtXJxt1EoCj/Bb1IKjKINo5SlakTrqLX+mgLRMdVPUErLE/hS8RkO+MXYaD7zmjOEZnHN04R/JC11PEM6478eQg7I5IyTJAnKq0P50aMkAKWCk5jW4Wfva548ed/l/v8aZoZ7Q2kWn3fyIHxRO6Dp/UqOLnBS9xNC1kSHAle18iS+JCbLn6ffIqW17kg6r+ezYeSOvAWtK3Jz0ubmYpgJnt1Sbjh+WZsZmTboJMHldXI8UbtNYt+t8vkg9vqS3NpZ6HP+a2BGWmqhL31FEDqguDTB9YU8lEXQpCt5KrehGI7r8+3WgwL/ajBsvwGZ81Nb1kU9YIGxkRoV+fLr3vnGp50iF+VE9JSAcFRyqIQzszE47o7I0d9YhXzJZ38wCaulblw8jLS0a6ZX2PKyPMGa34nb+VmqCK5QEFQlxbIr7XRANWEH9UotXrD3GcP5/7tOe2ryLNIHYmMG0dHXFPZRfGcj+mpK1iw1vuGp0BI3VuMog6fO40RwwZIxGCC8q6RQQ4VP9lMymn3BB8F8tjYi9pSnjWrpkxxsI0OI32BqE1Dzgott+rRVnFyYPLysz/RNflEr9Op4o+iPIFqNTEfYajgIhdDaLbyXFOfD1ySpiFWRZyslSsvQxF0QMwfYzrM40yiyCcMWH1dSZb0HBhlJev0TBfuZQIW1pjNQlq0yrN6gQDjmnzDgVY0ZcYTXaeEQvyxeNhKugahxKfy5RW41w8gplU/bQ9t2mnfeRBBwtITv/k0AJw6qthnaTN6rd8h8/3V2tnF/l0dY8jha1lQ8Wa6kQZfHILUw7+Z0NAEOi6/ktnP52TJsDWAg/thBp0C9hw7NVMkBSizu4wTZMxTbaKtJIwU5LDmQUM+UQOqRXHYb0VxDB3/eElUsiSpETbz+8PUbVRYbpAQclmmob71Sqj2Nc//Q0zHa2UC9sdVWaU3/QpFaOalIMaUGQpA3H70Er8G/WDlwgn8OEntdhQu6TAECAmo0sfaJsISxHWIGiYo5mDe4Wdyi1kOqQUTCMQoJ2FQ8vX2oGR/ygaZUKQUn85BVjdWf1/fXnE/IYaWryS7O14pmXs26ofpYkaJVblJ6D2kmGEY/AVm8saAvis+2o66mJYxwsrHx8a9uDsx6ieekMzuYSIHK0TiQFarl2deALZP210HcyKtrLiHMi+rxG6CfJl1+/IBXaMQKtWYksVASWAEPMvWvuSADlXy4iZhuFGoDtGWv87NjdoKpF7Yh/FZKfAv32jK1VmREYq/6zW0fXF+rf7Rqde89Fdj+8xrnh3q7C/P5Q7Hqbi1eoswkRRm35aK9tMUHipI2SoQbCC0ukI2lkxSXerWR0/2kDM0iIHOE4HvUhisQr45Bf33lBKDgvN2MuJVqkG5s1rt8XPLpDHxWBlx0kVapNqWON5EAUe1IPaufGP7cRPUJXnPxXim62eBaYUstg8Aix0YT99rqTjGW7XiheWGFO8OLKU99dbUK88Jx3zV3m8fAf9q2ajUK+onPe68sAAXYeVhnthZaNQEWsnnDuOSdRIaUxL5p6bOkTzduZvbhPMd91AsCuXJse6XlbMItXhull70xdcNDjHO/gKyDrEZLjQiIWyBG+06NdjGwCZUSgDi9zziwk1fXsW6/CvBF3eIpt1uDEmStY8wZQ927YNM2/pJwz3+eCpV1rgxEeEHunhTuwXk+nMUg62boLg01mMKJcre3lJ+kaZEzWBkJBDevJ+rgsZsD9hKtGNgUvpmv9pcGpDfCU9v1IGw/sR3h76+pZ2P1JLhDAI2RcIU2taQ7Ig7fLbD8wd7sPHINgLkXGvLHAuzPNbKCR+yP2pg/tdd5o8m6WMZYYV80QWGhH7NOlm47zMMBhr0S31n1hQJBkD5Col+AAY/bHwfGcwohhYCULfiQzFzQVVMGxrfYGHEwf6TOkgDIzfeWZ5JcDXzsSkfxETmayz0LWAnkOJkefZUeqH889MWz1GdmXX26ZgEwlvK9GLwDDxBBC/g6O3CqX+TWKiC0ulZNvyfGbYtIKaqfv3Z1mgKwMs7kFzeVEYPLKSryT3BZObU6I5uZ9usU+Aff84QjPr38vVidFCKsJxV2pjH6/7aL+m6Nve/JFGGSPJezCcUv4xXbci3fNw+WjMntA9PwkhQCNDlo++XqPC/Ee67Jj/n6dc5pYslrhOKy3urIzdOhtg0TI84SiOCmROkLjd7hMopaeUCZ8mCPg4xemmQTl+KC02PJE+bfjpyzJtJFCVSaluoa55rMoQAD9RtsU5rRa75F6DgwvOMMg3EQQcHJtvfQvdw6Clu+QKpZWz+OcRvyY/PYwLXqhz/uRufihbEvLuWjJlDnXwmC7VWn9QbOS0acE8vOoQIod2Tv0tUxpLHeBTcf111/hDwzyrTP36ZOm6NrZ9HuBpbZyOFDf7y8fHEqLHh0+uQ+xe9WbaLRxgje+o5OZILCi83jgTq+h/yAvrirhDgAoBCz96aicxOCNXhmXker/94+ME2hGUytAEIQuvoALhnka9lBft3Kb6B6Gtbuub04FL+HDhJy3UeM/MzvqlJDCrSjy+M5wB3DNnPGAxvNZGnZN0a2LkWqPel9jcm7DSMrSzBSb4h25Of5rTlXTfAmIHHVb0syTAYJTYMOyqW+kky6mwsR0AXcM0OtTARiYO9WVfVh+sVZJj3qHlbPNb45MWViAtMu4QCB/9QCIgN0TPkeneKiTCJL5ydnGR8L10dM89t25QMxPZtwtUixtsGNPVXRaN7iX3i33Smh85baqkirkrUSjSru4C+QnXoY1wkfRRfjespOZnU8PuR7bZIuUdfRtdFk8OeZsbfjnGZvETccR/9xNdo4EPERsvMh328jR007tWjZO/GJF41xfBLlTt4RKVQigteSGFkVt+Z8Si05apI6HhCwNL0Vr+E3SimBP4uBTxMbNRet5rojvqnU1qyI3fqCHTW9RGrHJG3nXOBxpdzstSmpPCcNLBRRSxP0yBCX9yqqDUPkrfnZ+XbKHc/wYLzzkKDEm07PHisY08RhKUvSYrPPmI1IYt8k1qMDcqnXmYMaNYISCfzkI4NsrE//g0/yte+VP3at6g2BG06K4r2TrOF/ZGuDgLyKi21wvO1lbue7bhKZZFWApCJAOFxa82fDWehDz1kNpuGH3g+9qaNYXK++h2kCCaY43+XmWEtCMRtBGiv8H/BOuQ6PQYX/ICzU3letEEzW61LLWLKVuj7gV3aA5pgg5WivWry3MEJ0a385KafBqO60QMBDRAWLi3QnJGuE+4GVZRf81K4b5nW/C75cmYHViEg1ZR5W/5eig2ORravskpOSRH3qyFtf3qKYMCB7KzEB6kda/scudI5OlGxCQiYmsnEjtiXtMj9W36HdRiWY7fsWW4Kg1r7kwJjmF6dt11B3CA2fPlkanv0qkk0PVJMxhu+mXuXn8ObOTHnjA7WSlsoZpivydTUQNae+4n7rJ/dMASugf2yCvu3JwkfHYr7YuqnSRwNO9dnRYXZmrkgSYrwhXBCYPll3i5JNFsQMKZHN3QQO41trIAIlEm5YQQXv03fGuJ6vNss0DhzlNAjWRPrYep+xc0CCJNOElvbxFoNgPbrA6sfQzav69Ex3HQaWj6fYaERdBJ3XesWeqp0CR3zlZpc6W3oBGUuW/kDahlnJcGB+Ja5/37gR2D63G92mWBkSP1tLDLwxHMytOhwm4i/6uP6lSlwSaNyaKmLTqPi0uUwyy6tyVj1wR2QIcGV836E3Ox2bfDMOF9htXb8M0fUE+x8UEMGronfYVus8OI9B4U5PRGg8EGZaz3lwxVp+ERX3iGHgjz/wkI9jrE1ArBEvA/aVwJ1Ivy2qzDKM6KaIDVLn6dLDVW7fERJwnheFqLNqNwTxfzmzrdHzTvHBZVk+FZ/nLjkA3ACd6taLw4crp587gzWSLVs56V7yoAZcUzK6LuJWs3a1CvFKT/JYAkeUKQ9cKmQcw85R3remF3o0QmArEDpngWLxHVL72rq1mL+9yIGC7sia9qFnd1aCiVq6DoxbAMmy+XjRwvEDzV0nLH56e8bKlscpc5AwK/TFMjm6cDhhfQTHqLj99yNPAwMbwpIKVdaCmdsjKFWQEqMj7RQ8EJPdOHCVlasScteU6jkbG7f7ZHsds8mbZ6UKl7geVV/BFpcc/5gaQWFUvIp+P6GoQfBMMo/RtuC6wzMxJkaH/ugUkkdhL9ZC9oyEZq/9C+2wJYZi8LoTrGiiOsAyLnewaD7emuKWq8E3lXKjWxSyDAi1Bhq0myf+p0SCrgUyxZOZ8Hsw1z3JEpNmfiYNFNm8iH03lWO4gkRRClV6fk47zjN2/xE16ra0PhsMNSOuaROyqoyompvzmMntaoVw7fYsHKWf673YT689gHnVjWO9C/5HU+rHDCvn4MTH6b3bP912NMqLrVLweat7zP8p9NI0Z8YZ0szEiTbblXQALdeKB+9jPsaOsaOhQPQIz3d4ILS+TSQxjUp4AGGxg0OlZGThSGxiY+nu4ca0eZ8z5V+RKzUUvJlg7OEYGsVbGiejbXBdFeLylPhDfUWArHj4oEh2CPSOgENv49mrxl6jWYWVC+rA++FzXXQao/EEFzR7GqwlSo6aM+PcnclpmfufiklgZhNh3klRBiXBPvjTReIUxHzvowrMbm9ewshQmXoY6s3nJZX8hj6vEV8iW0W9HKEQ/O10QuYUZbqjxAcEuLUczBffpIIptaR2Qd9LwwZ1S/LLWu6WJ65YzzROBOuToZ6WsjzHbwqrrnrIKVwrGyZaftf6jHfNV/nYxyFO8e6sNfqRAvdeERSeVGyZ6QCZUrmczPP4Vcuqxk="}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -203,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

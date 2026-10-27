@@ -16,90 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2026年10月10日" data-url="https://joycema.ai/p/20261010-d8908d/">复制正文到公众号编辑器</button>
 <a href="/p/20261010-d8908d/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2026年10月10日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>哈佛笔记｜市场营销案例：Olay —— 一个 20 亿美元的品牌，是怎么腰斩的？</h1><p>Joyce Ma<span>2026-10-10</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><figure class="hero"><img src="/img/2e1adfc7c96355ac.jpg" alt=""></figure><div class="prose"><p>Unit 3 开课，Das Narayandas 教授的 Market-Facing Functions，第一个案例是玉兰油：Facelift at Olay (A)。</p>
-<p>这不是一个"老品牌被新品牌打败"的故事。这是一个品牌，自己把自己拆散了的故事。</p>
-<p>这篇是课前写的。先把判断放在这里，上完课再回来对照。</p>
-<p>以下，enjoy：</p>
-<h2 id="案例梗概">案例梗概</h2>
-<p><strong>2017 年 10 月 4 日</strong>，宝洁北美护肤总经理 Chris Heiert 收到高层一封邮件：Olay 7–9 月销售同比 -12%，在本已很低的预期下还大幅缺口。你答应的全年增长，还算数吗？</p>
-<p><strong>Olay 的来路</strong>：1952 年诞生于南非，一瓶粉色"美容液"。1985 年随 Richardson-Vicks 进入宝洁，当时只有 5 个 SKU，年销 1.65 亿美元。</p>
-<p><strong>黄金十年（2000–2009）</strong>：
-- 2000 年去掉 "Oil of"，改名 Olay；推出 Total Effects，19.99 美元，"对抗七大衰老迹象"，定位是"兰蔻、雅诗兰黛的功效，一半的价格"。
-- 2003 年推出 Regenerist，五胜肽，"无需手术"。一位皮肤科医生在早间电视上背书之后，货架被买空。
-- 2007 年推出"红罐"金纯面霜。
-- 宝洁把这个打法叫 masstige（mass + prestige）：百货公司的功效，放在沃尔玛卖。2008 年 Olay 拿到美国面部护理 16.7% 的份额，2009 年全球零售额突破 20 亿美元。</p>
-<p><strong>下坡（2010–2017）</strong>：
-- 货架上同时有 5 个子品牌，沃尔玛一家最多 140 个 SKU，功效说法互相重叠。消费者看了广告进店，记不住是哪一罐，于是空手走出去。
-- 每年推 30–40 个新品。零售商的原话："Olay 没有兑现承诺，我们不再指望它带动品类增长。"
-- 2013 年为了讨好大学生，推出 Fresh Effects 祛痘线。首年 800 万美元。
-- 2008–2015 年换了三任总经理，每人一套战略。
-- 千禧一代叫它 "Oil of Old Lady"。
-- 2017 财年，零售额跌回 10 亿出头。腰斩。</p>
-<p><strong>外面的世界</strong>：市场本身在涨——美国护肤 177 亿美元、年增 6.7%；中国 269 亿美元、年增 8.7%。涨的部分被别人拿走：Glossier 靠 Instagram 和"开箱"；Rodan + Fields 靠皮肤科医生加社交媒体直销，2017 年销售过 10 亿，超过了 Olay；韩妆靠面膜、精华和"十步护肤法"进了沃尔玛。而 Olay 80% 的广告预算还在电视上，数字渠道不到 5%。</p>
-<p><strong>手里还剩什么</strong>：美国成年人认知度 90%。红罐是品类销冠，《好管家》实测打败贵 4 倍的面霜，电商评分 4.5–4.7 星。护肤毛利健康。但红罐的家庭渗透率，只有 2%。</p>
-<p><strong>Heiert 面前的三道选择题</strong>：
-1. 卖不卖？宝洁 2015 年刚把 43 个美妆品牌卖给了 Coty。
-2. 聚焦 35 岁以上，还是去追 21–35 岁？
-3. 扩充产品线、甚至 all in DTC，还是砍 SKU？</p>
-<h2 id="我的思考">我的思考</h2>
-<h3 id="不卖卖掉解决的是总部的不耐烦不是品牌的问题">不卖——卖掉解决的是总部的不耐烦，不是品牌的问题</h3>
-<p>卖，是把一个还活着的资产在最低点出手。</p>
-<p>90% 的认知度、品类销冠、4.5 星以上的口碑、健康的毛利、还在涨的品类——这不是一个该被清仓的品牌。宝洁 2015 年卖掉的是 CoverGirl 和伊卡璐，留下的是潘婷、海飞丝、Olay、SK-II。Olay 在支柱那一层。</p>
-<p><strong>卖掉，解决的是总部的不耐烦，不是品牌的问题。</strong></p>
-<h3 id="钱在-35-岁以上年轻人推动增长是零售商的焦虑">钱在 35 岁以上，"年轻人推动增长"是零售商的焦虑</h3>
-<p>数据先说话。2017 年美国护肤品销售：55 岁以上占 40%，45–54 岁占 24%，35–44 岁占 20%，35 岁以下只有 16%——而且三年几乎没动。</p>
-<p>"年轻人推动增长"，说的是新品牌的增速和零售商的焦虑，不是销售额在哪里。</p>
-<p>Olay 赢过的位置，是 17–25 美元这一档，占品类 35%。价格带没错，错的是这一档里的产品让人分不清。</p>
-<p>而"讨好年轻人"这个实验，Olay 已经做过一次了——Fresh Effects，800 万美元，顺便把"Olay 到底是什么"搅得更浑。年轻女性的入门产品是卸妆巾，那是露得清的地盘；天然成分是艾维诺；对话感是 Glossier。</p>
-<p><strong>一个品牌，不可能同时对 19 岁的痘痘和 55 岁的皱纹说"我最懂你"。</strong></p>
-<h3 id="140-个-sku-是衰落的果也是因">140 个 SKU 是衰落的果，也是因</h3>
-<p><img alt="" src="/img/4fe68a6a90ac5225.jpg"></p>
-<p>140 个 SKU、5 个子品牌，是 Olay 衰落的果，也是因。</p>
-<p>每年 30–40 个新品，零售商已经不信了。这时候再加一条线，或者因为"没有 DTC 经验"就猛冲电商，是把已经稀薄的资源再摊薄一层。</p>
-<p>红罐的家庭渗透率只有 2%。<strong>把这一罐卖清楚，空间比再造一个子品牌大得多。</strong></p>
-<h3 id="olay-赢是靠变清楚不是靠变年轻">Olay 赢，是靠变清楚，不是靠变年轻</h3>
-<p>回看 2000–2009 年的 Olay，公式其实很简单：一个承诺（看得见的年轻），一个价格逻辑（大众渠道里的高端），少数几个有真科学的英雄产品。</p>
-<p>衰落，是这个公式被自己拆掉。五个子品牌抢同一句话，"创新"变成了上新速度，三任总经理三套战略。</p>
-<p>品牌的意义，掉成了内部访谈里的那两句话：</p>
-<blockquote>
-<p>"Olay 是一条温暖的羊毛围巾。你需要它，但它不时髦。"
-"如果 Olay 在一所高中里，受欢迎的女生排第 1 到第 8，她排第 9。离受欢迎很近，但进不了那个圈子。"</p>
-</blockquote>
-<h3 id="抗衰老这个词先于产品过时了">"抗衰老"这个词，先于产品过时了</h3>
-<p>2016 年 Olay 在 11 国调查 6800 位女性：三分之二认为年龄已经不像母亲那一代那么重要，80% 认为以后更不重要。</p>
-<p><strong>Olay 的科学没有过时，Olay 的语言过时了。</strong></p>
-<p>所以答案不是"回到 2009 年的口号"，而是回到当年真正起作用的结构——少、清楚、功效被证明、零售商算得过账——然后换一句话说：从"对抗衰老"，换成团队已经摸到的那句"肌肤看起来年轻，所以不会泄露你的年龄"。</p>
-<h3 id="olay-不缺战略七年里有过太多战略">Olay 不缺战略，七年里有过太多战略</h3>
-<p>课程说明里有一句："没有好的战略能离开出色的执行而成功。"</p>
-<p><strong>Olay 的问题恰恰不是没有战略，而是七年里有过太多战略。</strong></p>
-<p>执行上最难的四件事：
-- <strong>零售商不会因为你承诺变简单，就把货架还你。</strong> 你自己砍 SKU，空出来的位置他们会给露得清、韩妆、Drunk Elephant。所以这不是一次求情，而是一笔交换：主动让出死库存，条件是英雄产品的面位写进下一次陈列图。沃尔玛占宝洁 100 亿美元销售，这场谈判就是战略本身。
-- <strong>砍单品的当季，数字会先难看。</strong> 对那封邮件要诚实——这个季度不会靠多上新把增长做回来。把增长承诺，换成一条有日期的路径。
-- <strong>流失的顾客不好拉回来。</strong> Heiert 自己说：品牌给了她离开的理由，她离开了，发现了另一个牌子。认知还在，习惯不在。
-- <strong>考核机制和战略对着干。</strong> 如果前线还是按"上了多少 SKU"考核，他们会把"砍产品线"读成"放弃增长"。战略和考核必须一起改——停掉上新配额，只看红罐动销、复购、零售商每英尺毛利、家庭渗透率四个数。</p>
-<p>还有一条：对总部，先要一句话——24 个月不换战略、不换总经理。过去七年的失败模式，就是一年一换。</p>
-<h2 id="对-arcus42-的借鉴">对 Arcus42 的借鉴</h2>
-<p>读 Olay，我一直在想我们自己。</p>
-<p>一个多家族办公室最容易犯的错，和 Olay 一模一样：什么都想做，什么都说"我们也有"，于是客户站在"货架"前分不清你到底是什么——然后空手离开。</p>
-<p><strong>第一，先回答"我们为谁"，再回答"我们做什么"。</strong>
-35+ 还是 21–35，不是一个市场细分问题，是一个"我们愿意放弃谁"的问题。家办也一样——愿意为所有人服务，等于没有为任何人服务。</p>
-<p><strong>第二，英雄产品只能有一个。</strong>
-红罐之于 Olay，相当于我们那一项"看得见效果、算得过账"的核心交付。其它都是桥。桥可以留，但预算、人力、注意力，先给已经证明有效的那一端。</p>
-<p><strong>第三，信任的熵增，是从每年 30–40 个"新品"开始的。</strong>
-零售商说"你们没有兑现承诺"的时候，Olay 还以为自己在创新。每一次兑现不了的承诺，都在悄悄降低下一次被相信的概率。对家族客户，这个账更不能欠。</p>
-<p><strong>第四，语言会先于产品过时。</strong>
-Olay 的科学没问题，"抗衰老"三个字过时了。我们对家族说的那些词——"传承"、"架构"、"配置"——哪些还在被听见，哪些已经变成了背景噪音？这个问题我没有答案，但值得每年问一次。</p>
-<p><strong>第五，战略和考核要一起改，否则战略只是一份 PPT。</strong>
-三任总经理都有战略。真正没变的，是"上新 = 增长"的考核。组织会做它被衡量的事，不会做它被告知的事。</p>
-<h2 id="写在最后">写在最后</h2>
-<p>课前的我，把票投给了"少而清楚"。</p>
-<p>上完课，再看哪一条被推翻了，被什么推翻的。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "uGNxv4VQfpRP6FQv", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -168,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

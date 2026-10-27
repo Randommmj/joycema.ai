@@ -16,63 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2025年9月16日" data-url="https://joycema.ai/p/20250916-0f3b81/">复制正文到公众号编辑器</button>
 <a href="/p/20250916-0f3b81/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2025年9月16日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>创业手记｜超越实习期的实习项目</h1><p>Joyce Ma<span>2025-09-16</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>哈佛同学Dan的一篇博客启发了我： </p>
-<p>Internship可以非常酷！可以非常有产出，尤其在他们擅长的地方！</p>
-<p>我需要年轻人，需要有激情且愿意做出一点cool stuff年轻人！</p>
-<p>Lesson Learnt：</p>
-<p>实习生 = Project-based contributor</p>
-<p>短期聚焦，快速出成果</p>
-<p>实习生不需要承担复杂的长期战略任务，只要在 2–3 个月内解决一个明确的功能性问题，就能留下实际成果。</p>
-<p>作者的两个项目（播客工作流、Slack 导出器）都是这样：功能聚焦 → 痛点解决 → 立刻见效。</p>
-<p>成就感驱动</p>
-<p>实习生往往缺乏组织影响力，但如果项目可以“被全公司使用”，他们能获得极大的心理满足感与归属感。</p>
-<p>这种体验远比“做调研、写备忘录”更能留住人才，甚至让实习生成为长期拥护者。</p>
-<p>双赢模式</p>
-<p>对公司：以很低的成本解决了一个被忽视但耗时耗力的痛点。</p>
-<p>对实习生：在短期内看到真实落地的成果，甚至能写进履历或博客，长期增值。</p>
-<p>可以在Arcus42实践的内容：- 把实习设计成“解一个功能问题”：比如 Arcus42 可以让实习生负责一个“客户资料自动整理器”或“家办知识问答小工具”。- 范围要小但要能落地：目标不是“战略大方案”，而是一个有清晰交付物的 project。</p>
-<ul>
-<li>
-<p>给舞台和曝光：一旦做成，就让团队使用并给予认可，让实习生获得成就感，形成正向循环。</p>
-</li>
-<li>
-<p>潜在的人才筛选机制：能在短时间内交付有价值工具的实习生，未来更可能成为核心成员。</p>
-</li>
-</ul>
-<p>下一篇文章就要招实习生！</p>
-<p>以下为博客原文：</p>
-<h2 id="实习项目机器学习trailofbits工作体验">实习项目、##机器学习、##TrailofBits工作体验</h2>
-<p>大多数时候，你的暑期实习一结束，你的项目也就被遗弃了。我以前也有过这样的经历。但 Trail of Bits 不一样。作为今夏 Dan Guido 和 Sam Sharps 手下的一名业务运营实习生，我用 Claude（Anthropic 的 AI 模型）构建了两个自动化工具：一个是能每年节省 1,250 小时的播客工作流（podcast workflow），另一个是让员工能用一次查询就找到关键公司知识的 Slack 导出器（Slack Exporter）。这两个工具在我实习结束后，依然会在公司范围内被持续使用。</p>
-<p>播客工作流（Podcast workflow）</p>
-<p>Trail of Bits 拥有多个领域的专家团队，很多成员都有博士背景，涵盖 AppSec（应用安全）、AI/ML、区块链和密码学。他们希望能更多参与相关播客节目，向外界分享我们在推动网络安全边界上的探索（同时也鼓励其他人效仿）。为了对社区作出贡献，他们专注于填补一些极度细分、几乎只有他们才能解答的知识空白。但如果要靠人工逐一筛选这些关键词播客，每周要花上几百小时的收听与研究。</p>
-<p>为了确保能在海量信息中找到“针”，而且能规模化做到，我们需要一个自动化工作流。它的运行方式是这样的：</p>
-<p>用户可以手动运行，或设定在某天某时自动执行。</p>
-<p>系统会检测某集是否包含合适的关键词，Claude 随即生成各种关键信息：节目的总结、嘉宾观点、带时间戳的引述、外发邮件草稿等等。</p>
-<p>所有输出会通过 Replit 前端展示。</p>
-<p>在构建过程中，我发现 Claude 有一些局限性。例如，它会虚构不存在的员工来匹配某个播客嘉宾。为解决这个问题，用户可以上传一份 Excel 文件到 Replit 前端，将 Trail of Bits 员工与其擅长的关键词对应起来。Claude 也无法直接找到主持人的联系方式。不过它能提取主持人的姓名和网站，再通过外部 API 获取联系方式。以下是 Claude 及其他辅助工具（比如 Excel 文件）生成的洞察示例。</p>
-<p>这个工具每周能监测 50 个以上的播客，一年就是 2,500 集！即便低估，每集 30 分钟，这套流程一年就能节省 1,250 小时的收听时间。更不用说额外节省的查找主持人联系方式、匹配合适员工、撰写外发邮件的时间。</p>
-<p>Slack 导出器（Slack exporter）</p>
-<p>Trail of Bits 的 Slack 有数百个频道，每个频道可能包含数百甚至上千条消息，搜索和分析历史信息非常耗时。为此，公司之前实现过一个基于终端（terminal）的 Slack 导出工具，可以把频道导出为 JSON 或 Markdown 文件，再上传到 Claude 获取总结与洞察。</p>
-<p>然而，这个方案有两大局限：</p>
-<p>所有员工都需要用 Slack 导出器，但由于它只能在终端运行，只有工程师能用。</p>
-<p>用户必须提前知道哪个 Slack 频道包含所需信息，因为 Claude 只能理解被导出的频道内容。</p>
-<p>为解决第一个问题，我发布了 Slack 导出器的 Electron 桌面应用。用户只需启动应用，就能导出频道，无需输入任何终端命令，人人可用。</p>
-<p>此外，UI 也更高效：用户可以搜索频道，甚至一次性选择所有频道：</p>
-<p>一旦选择了一个或多个频道，用户会看到多种导出选项（JSON、Markdown 等）。</p>
-<p>为解决第二个问题，我使用 Claude 的 MCP（model context protocol，模型上下文协议），直接把我们的 Slack 工作区暴露给 Claude。这样，通过 Claude 的桌面应用或代码接口，用户可以跨所有公共频道以及他们加入的私有频道进行搜索，无需再导出。想知道公司每个项目的进展？只需一次查询。要为新员工做入职培训，但团队成员都太忙？还是一次查询。</p>
-<p>凭借这个工具的广泛应用，我们团队能把精力放在推动网络安全前沿，而不是在 Slack 频道里翻找信息。</p>
-<p>激发兴奋感（Generating excitement）</p>
-<p>人人都在谈 AI 应用，但简单地复制粘贴进聊天机器人只是冰山一角。这些项目展示了 AI 应用可以走得多远。要构建这样的应用，你必须理解用户的问题，并持续让他们参与进来。我的测试过程大概是这样的：发现 bug → 紧急现场修复 → 收到新功能需求 → 当天测试新功能。</p>
-<p>与大多数实习项目一结束就“夭折”不同，我的工具之所以存活下来，是因为通过测试，员工把这些工具应用到自己的挑战中，真实体验到效率提升，然后将其融入日常工作。同样重要的是，他们把这种兴奋感分享给其他员工，从而让这些工具成为公司范围的基础设施。</p>
-<p>通过这些项目，Dan、Sam 和我希望让大家看到，AI 并不是取代员工，而是增强他们的能力。每个团队都有等待被发现的 AI 使用场景。在 Trail of Bits，我们正努力去发现并落实它们，而每个人都能贡献力量，哪怕是实习生。</p>
-<p>编译：ChatGPT</p>
-<p>内容来源：https://blog.trailofbits.com/2025/08/28/intern-projects-that-outlived-the-internship</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "OH0s0pHcqyHBN8M8", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -141,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

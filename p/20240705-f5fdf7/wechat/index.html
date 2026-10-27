@@ -16,51 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2024年7月5日" data-url="https://joycema.ai/p/20240705-f5fdf7/">复制正文到公众号编辑器</button>
 <a href="/p/20240705-f5fdf7/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2024年7月5日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>荷兰人口中的荷兰</h1><p>Joyce Ma<span>2024-07-05</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>荷兰与水</p>
-<p>荷兰面向北海，如果没有工程师的工作， 荷兰的西半部可能被淹没</p>
-<p>与军事防御相比， 我们的水上防御更受重视</p>
-<p>‍荷兰的外交</p>
-<p>永远寻求 法国、英国、德国之间达成平衡</p>
-<p>我们追求中立，一直努力使国家处于三个强大、但总是冲突的国家的对立之外</p>
-<p>‍荷兰的繁荣仰仗‍</p>
-<p>不是农业而是商业</p>
-<p>荷兰是欧洲的商人 —— 我们的船前往地中海沿岸</p>
-<p>这是荷兰黄金时代的经济基础</p>
-<p>‍荷兰的扩张</p>
-<p>我们的商业版图很快超越欧洲</p>
-<p>从非洲贩卖人口到美洲</p>
-<p>从非洲到美洲到亚洲</p>
-<p>这些海外的定居点使荷兰人对其他的动物、植物产生了兴趣</p>
-<p>玛丽亚：绘制了很多动物植物</p>
-<p>荷兰虽然发生武装冲突， 但也努力达成共识</p>
-<p>不仅是国际问题</p>
-<p>也体现荷兰人解决彼此内部冲突的方法</p>
-<p>荷兰人对威权极权的不信任</p>
-<p>Orange大公一开始就制定了一些限制权力的制度</p>
-<p>Orange家族成员也试图建立绝对君主制， 但被扼杀在摇篮</p>
-<p>20世纪变成了国王，但是也被限制的权力</p>
-<p>荷兰人会举国欢庆国王的生日，荷兰的锦标赛的庆祝</p>
-<p>这是荷兰人偶尔爆发的民族主义</p>
-<p>‍荷兰人的包容</p>
-<p>包容不同的信仰、民族的人</p>
-<p>历史上很多节点，这种特点发生了这种包容</p>
-<p>但是这种宽容是一种漠不关心的表现：</p>
-<p>荷兰现在组建的联合政府，有些部长毫不掩饰自己的排外思想</p>
-<p>‍荷兰人的直接</p>
-<p>非常直接、没有小心翼翼的暗示、没有努力顾及对方情绪</p>
-<p>我们会直接了当</p>
-<p>如果这个房屋的主人不希望其他人停自行车，如果看到了一定要听从，他如果说了， 那就是绝对不能停。</p>
-<p>‍荷兰的20世纪</p>
-<p>1900年的500万， 到2000年1000万到现在1500万</p>
-<p>是世界上人口最密集的国家</p>
-<p>面对英国、法国、德国， 荷兰努力保持中立， 1940年1950年，德国的占领使我们认识到，对于一个小国，中立不可能</p>
-<p>荷兰 1949年加入北约，成为欧盟成员</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "avH4tNv8wVrQVOgI", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -129,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

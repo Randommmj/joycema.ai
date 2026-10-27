@@ -16,32 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2023年12月23日" data-url="https://joycema.ai/p/20231223-00e705/">复制正文到公众号编辑器</button>
 <a href="/p/20231223-00e705/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2023年12月23日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>创新者的窘境-USS钢铁公司的选择</h1><p>Joyce Ma<span>2023-12-23</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>创新对正在经历危机的公司/行业，有点像等死和找死的区别。 </p>
-<p>所以，要在晴天的时候修屋顶，居安思危是古老的智慧，是在大时间尺度下才能够被验证的事情。‍‍‍‍‍‍‍‍‍‍‍</p>
-<p>美国钢铁公司的案例刚讲完没多久，这个公司就宣告被并购了，结束了它百年钢铁企业的生命，由于商学院对案例有版权，我不确定放多少信息是合适的。大家可以搜索“美国钢铁公司”以了解更多背景和细节，大概讯息如下：‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍2023年12月份，曾经的美国钢铁制造业巨头“美国钢铁公司”（USS），在经过4个月的竞价以后，最终以149亿美元的价格，“贱卖”给了日本企业，这家钢铁厂曾经是美国经济的顶梁柱，距今已经有122年的历史，也是世界上最大、最有价值的企业。在上世纪初，该公司生产的钢铁，帮助美国成为了全球经济超级大国，见证了美国一座座建筑的兴起，为摩天大楼、水坝和桥梁提供钢材，也为美国消费者梦寐以求的汽车和电器供材，竞争力之大，一度促成了美国反垄断法的制定，也是世界上首家市值突破10亿美元的公司。在1943年的时候，该公司员工总计有34万人，但到了去年，只剩下了2.25万名员工。而其本次出售的估值，还不及苹果公司的0.5%。该公司的没落，只是美国钢铁业落寞的一个缩影，事实上，如今整个美国钢铁行业都只剩下一个空壳，没有一家能跻身全球十大钢铁生产商之列。究其原因，</p>
-<p>首先，技术创新的缺乏。该公司一直使用的是上世界40年代的技术，美国钢铁工业长期依赖传统的高炉-转炉法生产钢铁，而忽视了电炉钢和连铸连轧等新技术的发展，导致生产成本高、质量低、环境污染严重。</p>
-<p>其次，市场需求的变化。美国钢铁工业主要依赖于汽车、建筑、机械等行业的需求，而这些行业在20世纪后期都出现了衰退或转型，导致钢铁需求减少。</p>
-<p>再次，国际竞争的加剧。美国钢铁工业面临着日本、欧洲、中国等国的强劲竞争，这些国家的钢铁企业采用了更先进的技术、更低的成本、更高的质量、更灵活的策略，抢占了美国钢铁工业的市场份额。</p>
-<p>最后，政策和制度的不利。美国钢铁工业受到了政府的过度干预、工会的过度保护、环保法规的过度限制等因素的影响，导致钢铁企业的运营效率低下、创新能力弱、适应能力差。《创新者的窘境》（The Innooator'sDilemma）中根据创新的环境确定了两种不同类别：「维持性创新」和「颠覆性创新」。</p>
-<p>在「维持性创新」环境中，当竞争涉及到生产出更好的产品能够以更高的价格出售给具有吸引力的客户，我们发现老牌企业几乎每次都能胜出。在「颠覆性创新环境」中，当面临的挑战是需要人们将一个简单便利的产品商业化，并以较低价格出售给新客户群或缺乏吸引力的客户群时，后起之秀往往能赢得竞争。这就是我们常见的成功企业被打垮的现象。当然，这也暗示着，对于后起之秀，打败行业知名企业的最好方式就是使用颠覆性战略。</p>
-<p>就像美国钢铁公司USS一点点让出了自己的市场份额，不断地、一点点地被小型钢厂从利润微薄的底部攻上来。‍‍‍‍‍‍</p>
-<p>他们都太愚蠢了吗？ 不是的。当我们深入当年的案例中，能够清晰的看到传统「维持性创新者」在面对创新选择时，“各有各的难处”，且都很有道理，是理性的选择让他们一步一步走向了被颠覆。 想象一下，在面对“电炉钢和连铸连轧”等新技术时，USS公司决策层会议上都有谁呢？ 工会、客户、销售代表、财务团队、股东。不同角色想要新技术，还是旧技术呢？工会：想要旧技术，因为他们保住工作；客户：想要旧技术，因为他们要好的、稳定的产品；销售：想要旧技术，因为他们要满足客户；财务：想要旧技术，因为在报表上数字更好看，新技术需要做摊销，盈利是需要时间的。股东：也要旧技术，因为他们更在乎报表。CEO想要新技术吗？ Maybe yes。可是，谁会在谈判桌上，承担风险来选择投资新技术呢？这不是一个事件，这是一个过程。很多大玩家看不上新技术在最初带来的微薄利润，忽略颠覆性创新，而选择的维持性创新上面发力。如果决策方，不需要对企业的「百年大计」负责，那么走向衰败似乎就是大概率了。—— 这里家族企业倒是有些优势。</p>
-<p>有时候战略就是看得到战局的变化，就像讨论中一位企业家说：</p>
-<p>“我可以不赚钱，但是这个技术必须投资，这样才能把小竞争者锁死在低端市场。” ‍‍‍‍</p>
-<p>这种霸气，听得我有点儿心潮澎湃。</p>
-<p>Anyway我武断地下个结论：</p>
-<p>对「创新」要有超越「理性」的追求。理性是根据「已知」做计算和判断，而创新就是充满未知，创新是模糊的正确。 </p>
-<p>同样正确的道理还包括：</p>
-<p>「去爱」永远好过「冷漠」‍</p>
-<p>「原谅」永远好过「记恨」‍</p>
-<p>「学习」永远好过「停滞」‍</p>
-<p>「开放」永远好过「封闭」‍</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "X0bJLbk6rFpsKPTa", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -110,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

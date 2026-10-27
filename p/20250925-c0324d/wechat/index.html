@@ -16,85 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2025年9月25日" data-url="https://joycema.ai/p/20250925-c0324d/">复制正文到公众号编辑器</button>
 <a href="/p/20250925-c0324d/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2025年9月25日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>哈佛笔记｜家族企业传承案例 - Sam Steinberg （上篇） - 从商业先锋到传承困局</h1><p>Joyce Ma<span>2025-09-25</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>因为家族传承是我最关心的事情，这一篇案例我会复习得尽量详尽。</p>
-<p>如果可以，我甚至希望再逐字逐句读一遍，把其中的经验、知识与启发榨干。</p>
-<p>整体分为上-中-下，三篇。</p>
-<p>上篇：讲故事 → Sam Steinberg 的零售传奇与传承困局</p>
-<p>中篇：抽象出普世性的传承问题、失败路径与方法论</p>
-<p>下篇：传承ARC 模型，提供传承的施工图和实践指南</p>
-<p>此处注意！！What a coincidence! 👇</p>
-<p>传承模型ARC ==&gt; 我们的ARC！</p>
-<p>以下，enjoy：</p>
-<p>一切从故事开始</p>
-<p>Sam Steinberg：被鞭策的那匹“强马”1) 开场：两匹马的故事</p>
-<p>1911 年的蒙特利尔，移民区的狭窄楼上房。小小的杂货店，堆着纸箱、木板、油渍。14 岁的 Sam 站在柜台后，手里还粘着芹菜叶。他问母亲：为什么总是我在店里干，兄弟却可以出去玩？</p>
-<p>母亲 Ida 抬头，只说了一句：</p>
-<p>“两匹马拉车，要鞭策那匹强壮的。”</p>
-<p>从那天起，Sam 明白了：他的命，和这家店，绑在一起了。</p>
-<p>2) 崛起：自助超市，一把换赛道</p>
-<p>20 世纪 30 年代，Sam 去多伦多观察 Loblaw 的新打法——顾客自己拿货，最后集中结账（self-service）。他回来，干了三件事：</p>
-<p>直接把门店改名为 “Wholesale Groceteria”（批发式杂货店），</p>
-<p>周末一夜把价签统统下调 15%–20%，</p>
-<p>发传单，把第一次“逛超市”的人潮引进来。</p>
-<p>结果就是——“忙得挤不进去”。到 1935 年，他把所有店都改成自助；1943 年，又把肉类柜台也改为自助，据说是北美头一家这么干的。</p>
-<p>Sam 的金句很直白：</p>
-<p>“我看见一间开了10年的小店还那么暗淡，我心里想——十年后我绝不能那样。”</p>
-<p>他还把购物车、透明保鲜包装带进加拿大超市，把“挑得快、结得快、看得见新鲜”的体验，变成了一套流程与动线。</p>
-<p>3) 顾客第一：数据与人情并驾</p>
-<p>战争年代，很多货物配给紧缺，不少人转向“黑市”。Sam 死守低价与合规渠道，反倒把口碑坐实了。</p>
-<p>他每天清晨会连打二十多个电话给门店经理，亲问陈列、补货、客诉；他把 20 家门店设为实验门店，另有 10 家做对照组；他拉了一个650 位女性消费者小组，专门测试新品，帮“男性采购员”看到女性的视角。</p>
-<p>这套“一线感知 + 现场实验”的组合拳，在 1940s–1950s 就成形了。</p>
-<p>4) 资本加速：47 天一店，自己做购物中心的房东</p>
-<p>战后，郊区化开始，购物中心兴起。Sam 盯的不是“别人给不给我位置”，而是 —— “别把命交给开发商。”</p>
-<p>于是他自己下场做购物中心；同时开闸融资：</p>
-<p>1952 年发行500 万加元公司债，</p>
-<p>1955 年发500 万优先股，</p>
-<p>1957 年IPO 募资850 万；</p>
-<p>凭这些子弹，他在 1953–1960 年做到了“平均 47 天开一店”。</p>
-<p>到 1969 年，Steinberg’s 已经170+ 家店、17,500 名员工，年销售额接近 5 亿加元，净利600万+。</p>
-<p>5) 裂纹1：把“强人红利”吃到极限</p>
-<p>Sam 是天才型零售家，也是不折不扣的“家长”。</p>
-<p>传说有 250 人直接向他汇报；</p>
-<p>董事会上即使“7 票赞成 2 票反对”，只要他站反对那边，他就会半玩笑半认真地说：</p>
-<p>“少数人才是对的。” 这种“少数否决多数”的速度优势，在单一区域单一业态时有效；</p>
-<p>但组织一旦变大，制度的支撑就跟不上了。</p>
-<p>6) 裂纹2：多元化的“非对称”</p>
-<p>1959 年，他一口气收了安大略 Grand Union 39 家店，却踩到了“差点位+强对手+价格战”的坑；1960s又进入折扣百货（Miracle Mart）、餐饮、加油站、法国门店、制糖/面粉等，除了烘焙/糖业和供应链有些协同，其他大多拖累主业。</p>
-<p>1968 年，公司净利较上年减少约 150 万，转弱的信号已经写在报表里。</p>
-<p>7) 家与业：当“继承”被误解成“按亲疏排座次”</p>
-<p>Sam 与妻子 Helen 有四个女儿。他渴望儿子接班，甚至在最小女儿出生时发过脾气，说：</p>
-<p>“又是个女孩。”</p>
-<p>于是，他把希望押在女婿与外甥身上：</p>
-<p>大女婿 Mel Dobrin从会计做起，后来管零售 + Miracle Mart；</p>
-<p>二女婿 Leo Goldfarb负责地产拓展，被不少人认为“最像 Sam 的接班人”。</p>
-<p>无奈，Mel vs Leo的矛盾越来越激烈。1968 年，Leo 离开公司，还与 Sam 的二女儿离婚。</p>
-<p>最关键的是：Sam 从未真正进行“沟通式的共识建立”，而是靠“我指定”。当他试图“让 Leo 去做接班人”，却让 Leo 自己去“通知” Mel...</p>
-<p>别想了——冲突就此爆表。</p>
-<p>8) 1969：关灯与交棒</p>
-<p>64 岁，董事会与高管层一起把他“请”上了继任的议程。Sam 决定转任董事长，召开三天闭门会挑总裁。候选人是：</p>
-<p>弟弟 Nathan（资历深但更像执行者），</p>
-<p>外甥 Arnold（Harvard MBA，但资历浅），</p>
-<p>女婿 Mel（位置在、威望欠），</p>
-<p>老臣 Jack Levine（强在地方与门店，但政治资本不足）。</p>
-<p>三天过后，答案并不清楚。因为真正的问题，不是“谁更像 Sam”，而是“谁能带着制度跑下去？”</p>
-<p>9) 财富传承 vs 权力传承</p>
-<p>说句公道话：在财富与税务层面，Sam 的布局很早、很聪明——</p>
-<p>给四个女儿各建平行信托；四信托各持 Rockview 25%，Rockview 再持公司40% 投票股；</p>
-<p>再加上 Sam 个人12%，家族合计 52% 控制权；</p>
-<p>还有投票信托把投票权集中给 Sam 在世时行使，遗产税也通过“提前放入信托”得到管理。</p>
-<p>但在权力与领导层面，他准备得太晚、沟通太少、放权太难。</p>
-<p>而且，他太缺乏想象力了。只有女儿，却从来没想过要女儿接班。</p>
-<p>这也是为什么，哪怕他拥有 170 家店、数万人、5 亿销售额，到交班那一天，组织仍可能瞬间掉线。</p>
-<p>Sam 的一生，把“被鞭策的强马”四个字演到了极致。他用勤劳和直觉、用创新与速度，拉动了一个时代；也因为过度集中、亲属主义、对制度化的不适，让公司在传承拐点处摇晃。</p>
-<p>他的故事像一面镜子：</p>
-<p>财富可以设计传下去，权力需要艰难地练习，价值则必须日复一日活出来。</p>
-<p>我们接下来，会把这面镜子里的“直觉”和“方法”拆开看，用更普世的视角来再拆解一下“家族企业传承”。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "741K3QCFJ/hK7jhz", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -163,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

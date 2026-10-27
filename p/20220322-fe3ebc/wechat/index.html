@@ -16,69 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2022年3月22日" data-url="https://joycema.ai/p/20220322-fe3ebc/">复制正文到公众号编辑器</button>
 <a href="/p/20220322-fe3ebc/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2022年3月22日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>一晚深度睡眠4.5小时，我做对了什么？</h1><p>Joyce Ma<span>2022-03-22</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>睡眠的重要性就毋庸置疑了——谷爱凌的秘密武器是睡觉；睡觉是延缓大脑衰老、预防老年痴呆的三个措施之一，另外两个是少吃和运动。</p>
-<p>深度睡眠又是什么？</p>
-<p>深度睡眠时，脑电波信号是有特征的，心跳、血压、体温也都降到一天中的最低水平，很难被唤醒，而且中间还会出现快速眼动（REM）。这个阶段免疫物质释放最多的阶段，也是青少年生长激素分泌最多的阶段，对健康影响很大。对记忆力重整、激发创造性思维、提高学习能力也很重要。</p>
-<p>根据2022年3月19日发布的《中国睡眠指数报告》，拥有深度睡眠的人占28%（哪怕只有5分钟也算拥有）。这个值非常低（我怀疑是手环的问题，iwatch的记录数据普遍更高）。正常情况下，每一觉深度睡眠应占15-25%的时间。8小时睡眠，正常深度睡眠应该在1.2-2小时，对吧？</p>
-<p>什么也不说了，上我的图。</p>
-<p>实际上7:20就起了，6:50小时睡眠，其中60%时间是深度睡眠。 </p>
-<p>作为一名生活黑客，监测睡眠已近两年，在对自己的身体数据进行多方对比，再结合各种科学研究后，总结出了以下几点亲测有效的睡眠秘方。供朋友们参详：</p>
-<ol start="0">
-<li>监测</li>
-</ol>
-<p>苹果iwatch、小米手环，什么都可以，就像称体重一样，监测就是改善的开始。</p>
-<p>时隔一年的深睡记录，对比还是明显的。</p>
-<p>以下是亲测有效的好眠方法：</p>
-<ol>
-<li>戒酒</li>
-</ol>
-<p>喝完酒的深度睡眠，是零，是零，是零。这个事情在我身上发生的概率是——100%！</p>
-<p>很多人感觉喝酒睡得更好，其实不然，酒精会致使大脑神经兴奋，难以进入深睡，而且酒精会大大抑制快速眼动期（REM）的出现频率。</p>
-<ol start="2">
-<li>规律 规律 规律</li>
-</ol>
-<p>有人是早起早睡型，有人是晚起晚睡型，现代科学认为两者都可。最重要的是，一定要早同一时间起床，醒了立即起床，绝不赖床，并且晚上困了才上床，不困就不要上床。</p>
-<p>保证自己早上同一个点起床，包括周末。固定的睡眠节律，这是非常非常重要，且易被打破的。尽可能坚持这个节律，是提高书面质量最重要的一件事。</p>
-<ol start="3">
-<li>找到自己的睡眠周期</li>
-</ol>
-<p>R90睡眠方案，每个人都有自己的睡眠周期。例如我是1.5小时，那么就要睡1.5*N小时（N为整数），一般来说，我会睡5个周期，也就是7.5小时，理想情况下前后会留10分钟富裕。如果非要我睡到8小时，那很可能我要从深睡中被强行唤醒，整个人会感觉更累。</p>
-<p>参考书目：《睡眠革命》（尼克.利特尔黑尔斯）</p>
-<ol start="4">
-<li>晒太阳</li>
-</ol>
-<p>我的智能窗帘7am会自动拉开，让阳光射进来。阳光可以通过视神经传递到下丘脑合成褪黑激素，还能刺激血清素的分泌。血清素和褪黑激素，都是睡眠的重要动力。（服用褪黑素的朋友们，这里有免费的了）</p>
-<p>但阳光是衰老的一大要因，所以女神们也别晒太多哦。研究结论是，要尽可能避免上午十点到下午三点的太阳，紫外线比较多。</p>
-<ol start="5">
-<li>控制睡觉温度、颜色、气味</li>
-</ol>
-<p>卧室尽量黑暗，尤其要避免蓝色的光，因为蓝光会影响褪黑激素的分泌。如果非要开小灯，最好是橘黄色；</p>
-<p>室温要凉爽不要潮热，最适宜的温度是18-22摄氏度。温度的下降，会导致我们核心体温的下降，就会触发睡眠驱动。</p>
-<p>当我开始记录睡眠时，偶然间神奇的发现，晚上泡脚会让深度睡眠直接增加0.5-1.5小时。真正的原因就是，泡脚的时候体温上升，泡完出来，环境温度低，体温下降触发了睡眠驱动。</p>
-<ol start="6">
-<li>运动，尤其是有氧运动</li>
-</ol>
-<p>运动会体温升高，并且持续好几个小时，等我们身体凉下来，体温下降会增加睡意；运动会分泌很多激素，舒张血管、降低焦虑；运动时细胞会产生腺苷，它的一大作用就是诱发大脑困倦。</p>
-<ol start="7">
-<li>关于咖啡与茶</li>
-</ol>
-<p>咖啡因的半衰期是4-6个小时，所以要给咖啡因足够的代谢时间。医学上每个人每天咖啡因摄入量，大概400毫克，大致相当于两杯星巴克grande美式咖啡的量。</p>
-<ol start="8">
-<li>NMN</li>
-</ol>
-<p>这个没办法证明，但我和小伙伴规律服用后，确实4小时深睡出现的频率高了。</p>
-<ol start="9">
-<li>冥想</li>
-</ol>
-<p>是诱发放松，也是缓解压力的好方法。我几乎每次听睡前冥想，都能5分钟入睡…</p>
-<p>晒一下我今天的冥想记录吧。来自脑机接口新玩具——Brainco的冥想头环（感谢N女王！）。每次冥想也都经常会睡着或睡眠质量变好…非常推荐（不是软文！）</p>
-<p>睡觉了睡觉了，今天过点儿了😴</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "5/VMKv4QlPJ1haNI", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -147,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

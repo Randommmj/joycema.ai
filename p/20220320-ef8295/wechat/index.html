@@ -16,55 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2022年3月20日" data-url="https://joycema.ai/p/20220320-ef8295/">复制正文到公众号编辑器</button>
 <a href="/p/20220320-ef8295/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2022年3月20日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>有些人，无需自律。</h1><p>Joyce Ma<span>2022-03-20</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>记于读《活着就是冲天一喊》后</p>
-<p>那些在苦难中写诗的人</p>
-<p>是值得歌颂的勇者</p>
-<p>他们不会躲在电脑后</p>
-<p>用仙侠小说或综艺节目</p>
-<p>逃避自己的人生</p>
-<p>现实早已逼得他们无处可逃</p>
-<p>他们的诗歌</p>
-<p>是沉重的疼痛、血和泪刺激出的灵感</p>
-<p>他们无需自律</p>
-<p>自律这个词堪称凡尔赛</p>
-<p>有诱惑才需自律</p>
-<p>有些人生</p>
-<p>根本就没有诱惑可言</p>
-<p>有的只是避无可避的灾难</p>
-<p>尽量选择更轻的那个罢了</p>
-<p>他们不必强迫自己工作</p>
-<p>因为不工作便没有饭吃</p>
-<p>他们不必强迫自己断网早睡</p>
-<p>因为疲惫的身躯早已昏迷</p>
-<p>他们不必强迫自己运动</p>
-<p>因为早已失去健康的身体</p>
-<p>他们不必规划时间陪伴父母</p>
-<p>因为双亲已离去多年</p>
-<p>他们不必戒糖</p>
-<p>因为那是留给孩子节日的礼物</p>
-<p>他们不必费尽心思的提防</p>
-<p>因为除了自己破百的身躯</p>
-<p>他们一无所有</p>
-<p>他们不必，他们不必</p>
-<p>他们不必选择</p>
-<p>可是，他们仍然在选择</p>
-<p>让自己的心底开出花来</p>
-<p>已故诗人许立志，写道</p>
-<p>眼前的纸张微微发黄/我用钢笔在上面凿下深浅不一的黑/里面盛满打工的词汇/车间，流水线，机台，上岗证，加班，薪水/我被他们治得服服帖帖/我不会呐喊，不会反抗/……多少白天，多少黑夜/我就那样，站着入睡。</p>
-<p>服装厂的熨烫女工邬霞，在《吊带裙》中写道</p>
-<p>包装车间灯火通明/我手握电熨斗/集聚我所有的手温/我要先把吊带熨平/挂在你肩上不会勒疼你/……我要把每个褶皱的宽度熨得都相等/让你的湖边 或者草坪上/等待风吹/你也可以奔跑 但/一定要让裙裾飘起来带着弧度/像花儿一样/……陌生的姑娘/我爱你。</p>
-<p>在矿山里得知母亲得了食道癌晚期，陈年喜痛苦又无助，但他最终选择，“劈山救母”，写下了《炸裂志》</p>
-<p>我微小的亲人/远在商山脚下/他们有病/身体落满灰尘/我的中年裁下多少/他们的晚年就能延长多少/我身体里有炸药三吨/他们是引信部分/就在昨夜/我岩石一样/炸裂一地。</p>
-<p>后记</p>
-<p>最近不太自律，遇到一点小问题，就挫败、焦虑、失眠，恨不得哭一场。</p>
-<p>直到今天在得到app听了《活着就是冲天一喊》这本书，又憋着一口气，读了作者陈年喜的人生经历与诗歌，越发有种羞愧与悲勇在心中。写了上述一连串的胡言乱语，也不能表达内心情绪之一二。最后，还是只能借助贾行家老师的话：</p>
-<p>“在陈年喜的书面前，我再次明白，我既配不上自己的幸运，也配不上目睹和感受过的痛苦。”</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "Vf3J3CiPQcofcHoi", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -133,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

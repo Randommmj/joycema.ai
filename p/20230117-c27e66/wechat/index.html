@@ -16,27 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2023年1月17日" data-url="https://joycema.ai/p/20230117-c27e66/">复制正文到公众号编辑器</button>
 <a href="/p/20230117-c27e66/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2023年1月17日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>关于认真</h1><p>Joyce Ma<span>2023-01-17</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>昨天和高山同学们after party，因为零点一过就是生日，所以大家分别送了我一句话。 很感人的一段时光。‍‍‍</p>
-<p>一位朋友形容我是个「做每一件事情都很认真」的人。很高兴，也有点小惊讶。曾经的我不是这样的，就像很多人一样，我害怕去认真、害怕在乎。认真想来，是因为变勇敢了吧。</p>
-<p>因为，「认真」背后是「勇敢」。</p>
-<p>一位帅帅的但我不知道名字的英国男演员曾这样说：</p>
-<p>I gave myself permission to care. There are a lot of people in this world who are afraid of caring or afraid of showing that they care, because it is uncool, it is uncool to have passion.</p>
-<p>It is so much easier to lose, when you've shown everyone how much you don't care if you win or lose. </p>
-<p>It is much harder to lose when you show that you care.</p>
-<p>But, you will never win, unless you also stand to lose.</p>
-<p>Do not afraid of your passion. Just give it free reign, and be honest and work hard, and it will all turn out just fine.</p>
-<p>我允许自己去在乎。因为这个世界上有许多人害怕去在乎，害怕显露出他们在乎。</p>
-<p>因为不够酷，有了激情就显得不淡定。越让人觉得你并不在乎得失，真到失去就越轻松；越表现出你在乎，失去时就越艰难。‍‍</p>
-<p>但是，</p>
-<p>想赢，你就要能扛得住失败。</p>
-<p>不要回避你的情感，挥洒你的激情，诚实面对自己，并且足够努力，该来的自然会来的。‍‍‍‍‍‍‍</p>
-<p>祝我自己保持激情、保持在乎、保持勇敢、保持认真。Be fearless.</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "vxWOH7/c5KLXR2nn", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -105,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

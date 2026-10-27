@@ -16,137 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2021年12月17日" data-url="https://joycema.ai/p/20211217-15f6f5/">复制正文到公众号编辑器</button>
 <a href="/p/20211217-15f6f5/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2021年12月17日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>世界，是我们选择的样子。</h1><p>Joyce Ma<span>2021-12-17</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>我们人类的出厂设置就是对负面消息格外关注，这在心理学上有个词叫"负面偏见"。 在漫长的演进中，对风险更敏感的人类更容易生存下来。这也让我们每天被焦虑信息围绕着，时时都在感觉世界的分崩离析。</p>
-<p>所以，国外有个小哥做了一件很意义的事情，他建立了一个「快乐广播站」，专门收集世界各地的好消息。推荐大家去看看www.thehappybroadcast.com</p>
-<p>以下是2021年发生的40件好事儿，enjoy：</p>
-<ol>
-<li>
-<p>墨西哥禁止了化妆品动物实验！成为北美第一个禁止化妆品动物实验的国家。Mexico just banned animal testing for cosmetics! It's the first country in North America to outlaw the practice.</p>
-</li>
-<li>
-<p>如何阻止非法捕鱼？用雕塑！一个意大利活动家将39个巨型大理石雕塑投入大海，这些雕塑不仅为非法网鱼造成巨大的物理障碍，还成为了水下生物的天堂。How to stop illegal net fishing? With sculptures! An Italian activist dropped 39 huge marble sculptures in the sea. The sculptures created both a physical barrier for nets and a heaven for underwater life.</p>
-</li>
-<li>
-<p>葡萄牙工薪阶层在工作相关的精神健康领域取得重大胜利。新法律规定，老板在工作时间以外给员工打电话、发短信或发邮件都是违法行为。Portugal have been given a massive win in work-related mental health as a new law says it's illegal for your boss to phone, email or text you after work hours.</p>
-</li>
-<li>
-<p>艾滋病疫苗通过了第一阶段的人体试验，在受试者中，成功率达到97%！里程碑式的重大突破！This is huge! Landmark HIV vaccine passes phase 1 of human trial and proves successful in 97% of the participants.</p>
-</li>
-<li>
-<p>大堡礁迸发出新的生命力，几百万的珊瑚礁宝宝出生，在过去几年大堡礁出现3次大规模珊瑚白化后，这是一个令人振奋的消息。The Great Barrier Reef bursts with new life as millions of "coral babies" are born! A very happy coral reef news after three bleaching events in past years.</p>
-</li>
-<li>
-<p>世界上已经有10个国家的电力97-100%来自可再生能源。Today's small victory is that there are already 10 countries in the world whose electricity comes from 97-100% renewable energy sources. Progress!</p>
-</li>
-<li>
-<p>瑞士巴塞尔成为世界上第一个强制要求所有新建筑搭建绿色屋顶的城市，超过100万平方米的绿色面积被打造出来！Basel, Switzerland has become the first city in the work to make green roofs mandatory on new buildings. More than 1 million square meters of green spaces have been constructed.</p>
-</li>
-<li>
-<p>肯尼亚传来的好消息！2020年没有犀牛死于非法狩猎。犀牛的数量从2019年的1441头，增加到1605头，增加了11%。Amazing news from Kenya! No rhinos were lost to poaching in 2020 and there was also an 11% increase in rhino numbers from 1,441 in 2019 to 1,605.</p>
-</li>
-<li>
-<p>夏威夷成为美国第一个禁止销售含有伤害珊瑚化学物质的防晒霜的州，开启了珊瑚友好防晒霜时代。Hawaii is the first state in the US to ban the sale of sunscreen containing coral-harming chemicals, ushering in a new era of reef safe sunscreen.</p>
-</li>
-<li>
-<p>为增进不同宗教信众之间的相互了解，德国柏林将新建一座名为“House of One”的混合教堂，里面有犹太教堂，基督教堂，还有清真寺，三个教堂由一个会见区连接。Berlin will soon be home to something unique. The "House of One", a place of worship and cooperation that brings a synagogue, a church, and a mosque under one roof, all linked by a meeting space.</p>
-</li>
-<li>
-<p>大熊猫不再是濒危动物！感谢保护工作的开展，它们的数量在多年下降后终于出现了回升！Great news!Giant pandas are no longer an endangered species. Thanks to conservation efforts, their numbers are finally rebounding after years of decline.</p>
-</li>
-<li>
-<p>智利正在由同等比例男女代表共同起草新宪法，属全球首例。Making history: Chile is creating the world's first constitution to be drafted by an equal number of women and men. A new global standard for gender equality.</p>
-</li>
-<li>
-<p>一家初创公司用AI在超市动态调整价格，离过期日越近的产品，价格会越便宜。这种方式可以减少40%的食品浪费！A startup is using AI in the supermarkets to dinamically change prices. The closer a product is to its best before date, the cheaper it will be to buy. This could reduce food waste by 40%.</p>
-</li>
-<li>
-<p>一家德国动物收容所用约会软件Tinder帮小动物找家。他们会为猫咪和狗狗创建一个“交友”简介，让合适的铲屎官更方便地跟它们配对。A German animal shelter is using dating app Tinder for a good cause. It created "dating" profiles of cats and dogs to match them with their forever human.</p>
-</li>
-<li>
-<p>重大进展，南非终于要禁止为战利品狩猎和游客抚摸而圈养繁殖狮子的行为！In a major move, South Africa will finally ban the breeding of lions in captivity for trophy hunting or for tourists to pet.</p>
-</li>
-<li>
-<p>非盈利机构“海洋清理”用一个长达半英里的巨大装置从太平洋捞出2万磅的塑料垃圾，证明海洋垃圾是可以清理的！A half-mile installation by nonprofit The Ocean Cleanup just took 20,000 pounds of plastic out of the Pacific, proof that ocean garbage can be cleaned.</p>
-</li>
-<li>
-<p>1979年，16岁的Jadav Payeng开始在印度当地每天种一棵树苗，他坚持了40年，如今，创造了一个比中央公园还大的森林。In 1979 at 16 years of age, Jadav Payeng started planting a tree sapling a day in his region in India. He did that for 40 years, creating a forest larger than Central Park.</p>
-</li>
-<li>
-<p>在撒哈拉以南的非洲地区，疟疾是造成儿童生病死亡的最大因素，但是就在今年，世界上首款疟疾疫苗已被批准！数十亿人有望得到接种。Groundbreaking vaccine for malaria, the biggest cause of childhood illness and death in sub-Saharan Africa, is approved and could be rolled out to billions.</p>
-</li>
-<li>
-<p>实验室培育的钻石也是永恒的。世界上最大的珠宝制造商将不再使用开采的钻石，而是专注于更可持续的实验室培育钻石。Lab-grown diamonds are forever. The world's largest jewelry maker will no longer use mined diamonds and focus on more sustainable, lab-grown gems.</p>
-</li>
-<li>
-<p>每一次威尔士有一个新生儿出生，他们就会种下两棵树，一棵种在自己家，另一棵种在乌干达，目前已经种了1500万棵树！In an unlikely partnership, every time a new child arrives in Wales, two trees are planted, one at home and one in Uganda. So for 15 millions trees have been planted.</p>
-</li>
-<li>
-<p>为回应140万欧盟民众签名的请愿，欧盟议会以压倒性投票宣布，将逐步淘汰笼养动物的农场。（这个图哪里怪怪的🤨）European Parliament overwhelmingly voted in favor of phasing out caged animal farming in response to a petition signed by 1.4 million EU citizens.</p>
-</li>
-<li>
-<p>重大研究发现，地球臭氧层正在愈合，大概2050年能得到彻底修复！Major study finds that the Ozone layer is healing and it's on pace for a full recovery by 2050.</p>
-</li>
-<li>
-<p>欧洲第一家大象退休之家在法国开门，专门收留那些从动物园，马戏团退休的大象，52岁的大象Gandhi是他们第一个住户。The first "retirement home" in Europe for elephants from zoos or circuses has opened its doors in France. 52 year old elephant Gandhi is their first resident.</p>
-</li>
-<li>
-<p>尽管面临历史性挑战，但由于现在读者们的求知欲和对逃避现实的渴望，图书业正在迎来销售热潮。去支持你们当地的书店吧！In spite of historic challenges, the book industry is seeing a boom in sales as readers seek escapsion and education. Support your local bookstore!</p>
-</li>
-<li>
-<p>为了减少塑料污染，西班牙计划将在2023年之前禁止包裹蔬菜和水果的一次性塑料。Spain has announced plans to ban single-use plastic wrap for fruit and vegetables as of 2023 in an effort to reduce waste and plastic pollution.</p>
-</li>
-<li>
-<p>英国城市莱斯特，正在安装一批新的的“蜜蜂公交站”，30个公交站屋顶被铺上了野花，鼓励蜜蜂授粉。The UK city of Leicester is installing a new network of "bee bus stops", 30 bus stops that have been topped with a mix of wildflowers to encourage pollination.</p>
-</li>
-<li>
-<p>因为成功晋级世界杯，塞尔维亚足球队获得100万欧元的奖励。但球员们最后决定把这笔钱全部捐给帮助救治患病儿童的慈善机构。Serbia's Football team earned one million euros for qualifying for the World Cup. The players decided to donate it all to charities that help treat sick children's in their country.</p>
-</li>
-<li>
-<p>加拿大一家公司计划用无人机播种10亿棵树，无人机将飞到遭受滥砍滥伐的偏远地区，往地上射下种子。A Canadian company aims to plant 1 billion trees using drones that can shoot seed pods into the ground in remote areas that have suffered from deforestation.</p>
-</li>
-<li>
-<p>为了打击容貌压力，挪威新法律规定，网红明星的美颜照片都要打上特殊Logo水印，p图、滤镜，全都要标注。In an efforts to combat beauty and appearance pressures, Norway's new law mandates that social media influencers disclose when they've retouched or added a filter to a photo</p>
-</li>
-<li>
-<p>生活在野外的南部居留虎鲸只有73只了，但科学家刚刚发现，其中3只怀孕了！有一只马上要生了！Only 73 southern resident orcas exist in the wild. Scientists just discovered that 3 of them are pregnant, and one is close to giving birth.</p>
-</li>
-<li>
-<p>喀麦隆的大猩猩守护俱乐部将盗猎者变成了守护者。现在村民们不需要通过非法狩猎维持生计，而是依靠保护猩猩来赚钱。The Gorilla Guardian Club in Cameroon converts poachers into protectors. Instead of earning a living through poaching, the villagers get paid to monitor primates.</p>
-</li>
-<li>
-<p>足球季时，罗马尼亚足球联盟跟狗狗收容所合作，每场比赛之前，球员们都会抱着一直救助的狗狗来推广收养。The Romanian football federation teamed up the dog shelters for the soccer season. Before each match, players hold rescue dogs in their arms to promote adoptions.</p>
-</li>
-<li>
-<p>在一项重大突破中，血液检测被发现可以有效检测出抑郁症，躁郁症，并将病人和适合的药物配对。In a major breakthrough, a blood test proved to be effective in detecting depression and bipolar disorder and match people to the right medications.</p>
-</li>
-<li>
-<p>英国马上将成为第一个完全禁止进口和出口鱼翅，以及任何包含它们的产品的国家！The UK will soon be the first country to comprehensively ban the import and export of shark fins and any products containing them.</p>
-</li>
-<li>
-<p>80%曾依靠有毒杀虫剂的加州酿酒厂正在用谷仓猫头鹰替代杀虫剂来保护葡萄树，消除害虫。80% of Californian Winemakers who used to rely on toxic pesticides are using barn owls as a pesticide-free alternative to protect vines and eliminate pests.</p>
-</li>
-<li>
-<p>在芬兰，一批强悍的奶奶们组成一个叫“活动家奶奶”的团队，致力于控制气候变化，确保他们的子孙能有一个更可持续的未来。In Finland there's a community of badass grandmothers helping to curb climate change called Aktivistimummot (Activist Grannies). Their goal: to ensure their grandchildren have a sustainable future.</p>
-</li>
-<li>
-<p>在一项创造历史的判决中，荷兰法庭判决要求壳牌石油公司减少45%的二氧化碳排放。为制约跨国公司创造了一个先例！In a historic ruling, a Dutch court has ordered oil company Shell to cut its CO2 emission by 45%. A precedent for cases against polluting multinationals.</p>
-</li>
-<li>
-<p>伦敦的一家面料生产商，将菲律宾数吨菠萝肥料制成人工皮革，在时尚行业，0污染和不残忍是可能实现的！A textile maker in London is turning tons of pineapple waste from the Philippines into sustainable vegan leather. Zero waste &amp; cruelty free fashion is possible!</p>
-</li>
-<li>
-<p>格拉斯哥一家酒吧正在试验一种创新的能量供给方式——将热舞中人们身体的热量转化成供俱乐部使用的电能。这可以在一年中减少70吨的二氧化碳排放。A Glasgow club is trialing an innovative method that uses the dancers' body heat to generate energy to power the venue. This will save 70 tonnes of CO2 per year!</p>
-</li>
-<li>
-<p>重大进展！葡萄牙关停了它最后一个选煤厂，比预期提前九年成为一个无煤炭国家。Huge climate victory: after closing its last coal plant, Portugal is now coal gree. They have achieved the target 9 years ahead of schedule!</p>
-</li>
-</ol></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "pWb/6966sOsH2yS3", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -215,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

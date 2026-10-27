@@ -16,29 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2024年10月5日" data-url="https://joycema.ai/p/20241005-b9b308/">复制正文到公众号编辑器</button>
 <a href="/p/20241005-b9b308/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2024年10月5日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>哈佛笔记2: 战略转型 - 乐高危机</h1><p>Joyce Ma<span>2024-10-05</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>当思考战略转变时……‍‍</p>
-<p>外部环境分析很重要</p>
-<p>看到重要的市场因素相关变化；‍‍‍‍</p>
-<p>要考虑到价值链上的每个环节包括终端消费者的使用习惯变化——有时候客户未必是终端消费者，但终端消费者是必须考虑的因素。‍</p>
-<p>如果企业表现下滑，不要落入这样一种陷阱：去追逐那些看似更好的机会。</p>
-<p>你是否在新领域有竞争优势？</p>
-<p>你是否需要为新领域增加新资产？你是否改善了原有领域的劣势？</p>
-<p>一个有效的战略应该……</p>
-<p>适用于外部环境、考虑了价值链上的所有环节、与公司能力相契合，并且有效的排列组合起来；</p>
-<p>外部、内部、动能方面，都有一致性，相互协调。</p>
-<p>外部一致性：能适应竞争环境和市场变化</p>
-<p>内部一致性：资源是互补的，不相互拉扯动能一致性：先做什么、后做什么，有节奏有打法</p>
-<p>培养并加强你的核心竞争力如果你在主要战场出现问题，逃避它们、转换战场，这些问题会一直如影随形。</p>
-<p>战略是：Do the right thing, do it in the right way!‍‍‍‍‍‍‍</p>
-<p>目标：我们要达成什么、为什么我们有优势达到</p>
-<p>范围：我们的战场在哪里，设定好边界！行动：我们用哪些方式方法</p>
-<p>企业的所有权，将影响战略决策 Ownership influences a strategy viability.‍‍‍‍‍‍‍‍</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "0TAdW/v9gywTE3R5", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -107,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

@@ -16,43 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2023年1月1日" data-url="https://joycema.ai/p/20230101-48cc7c/">复制正文到公众号编辑器</button>
 <a href="/p/20230101-48cc7c/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2023年1月1日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>答案在风中</h1><p>Joyce Ma<span>2023-01-01</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>此时此刻，2022年的最后一天，</p>
-<p>听着这首歌来回顾与感受，</p>
-<p>告慰这一年的压抑与沉默，</p>
-<p>告慰那些在疫情中逝去的生命，</p>
-<p>告慰我们哀哭的灵魂。 </p>
-<p>我们必须对垃圾、泥浆、害怕、悲伤、恐惧 说“是”，一如对美好、温柔、享乐、平静、祥和、互助 说“是”。</p>
-<p>Blowing in the wind  by Bob DylanHow many roads must a man walk down</p>
-<p>Before you call him a man</p>
-<p>How many seas must a white dove sail</p>
-<p>Before she sleeps in the sand</p>
-<p>How many times must the cannon balls fly</p>
-<p>Before they are forever banned</p>
-<p>The answer, my friend, </p>
-<p>is blowing in the wind</p>
-<p>How many years can a mountain exist</p>
-<p>Before it is washed to the sea</p>
-<p>How many years can some people exist</p>
-<p>Before they are allowed to be free</p>
-<p>How many times can a man turn his head</p>
-<p>And pretend that he just doesn’t see</p>
-<p>The answer, my friend, </p>
-<p>is blowing in the wind</p>
-<p>How many times must a man look up</p>
-<p>Before he really see the sky</p>
-<p>How many ears must one person have</p>
-<p>Before he can hear people cry</p>
-<p>How many death will it take</p>
-<p>Till he knows that too many people have died</p>
-<p>The answer, my friend, </p>
-<p>is blowing in the wind</p>
-<p>The answer is blowing in the wind</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "yeDFTgxOFuNnYB4g", "c": "3/6HJlSbzd6xCfRR01npF0sAEF5/RVvlxryRUYmDJvWGhF9sfDFa1XRafEoW/yOyVv8Xva7GsMu8msWeDKyKjdSRgva1Q9pUMAO2/RK2LdNgynW6D291sNAEUtKTQpn3hn4lXKNa7XusUEqeofLcVbS2mGMl4OopxA3iwOFpoogyZZ3YrTT1mlXauDX0vjldBT3XLpPpvAe1EtAAaGfLehw4feg4OfpwyNj1H/YVjRoz17A4xikCtU3sbtGw1eMtCjXNr4F60eUJkKAnNTMj8dhkpwcbsK85+mFBKFdx1biCzuXfDf2uV/KomrcpyUk7dmSTDuUfaB3Q4B+BD5PyisxH0XYEbLFLqDJiQplkfGOdcqgRgeOPAW/kSGfI9KupU0oVrz1AM5Vs6rrhYstZFhVdvIWpGamS/umSV/qv0glayGlFNK7CmewrCzifH76t1ftmB+eH5LjYeVPpKkn8b2d0AM9lQWbZifPs4RHEw1fJGSySYG3U8ahqjMkAs3BAQNPk6x98OiiustD3+NMEB9HMle/ClzfnLnr2CdXvuwsZ5ATil5NPceWaKEUXAPzt/hH4SS3gl288+kiKW/L3JW/+HGk0NJ7Fqd0QS/QGHTRx7jSS0M/e+CJy2wPlMaS6jOgcPujm3pbvNR8O2Q44PMjj+n9NW+NGwoqL4IJ/QuWfCOKr/LLxKlXllwJoC+L2HFvo8R9tjCjx7Fc/MDfrjf7IXKX7w/NLANxUPpMecP5b/RZsA0YmekGVECtvH6nbJkypMo+NImSOu2Cqsr+swtAhzr4LlJsniNuqMpfe4jNe15ov+WXKFyuDc8IcboLUEdIaq3h9xjAcIv0z3Z90ELDOXLQrSKmP/hE9x24a7yZVkAkulSR9he90GK9sFFX8nEf/I8xMrYVNbA053DDax4usEFTmK6+skPfN7Xn8an6PKgnYsFP9+cH9rNvqyoop4b0csoyEhMBEjJRmVyfgwcE3VeG4piHG5wbcXtwEfsl04QFaAGOIe1UJFWkpNGkvGnKVaN/O5FQLHd9Wcc3hWEgZK75I3g4S4JSGGn+ukooyWPUj0clat7vcish5sZ0QQReEGxsTt3SHQsgwiZctkWNzpR35NJQ8teh7iIp81CgSx5k8j+fWSr/HFlhJKJFYY0sb8+hvRBM79Ev1ciDASZtlcDkTFbflYiDmFFU8hxy6Ql22QqeYXSyTwjAHG+3fUbLzYY8hFow65mYeM2yBtF/LDCyFP4P5WbwxaRWqbUeV6JNQIjjfoiF34gS4rCkdJGtVmyg9fS9RIsM2Bx2WvmSZIr0GzaYzTREdJRljNtB7YW1u4pyNRFMEiSZNz8rK7pdmyhZTS8LSJ18ACOhi9RC5uiGW8WSUDifB8wBDtNc+Tj2ChiIoHcltdCov3w40L2FaaWW+IX9iUF0BA4z6q+UTP++4xjJzslmsajF8GwjKYvXpMTETMljlU6YSYDWjeIROh4rD+Z8WCzhYDIKEU2xqjuML7NXeoXwGJBNqlPIrymkYQ2x4av+6LySeDjvIOKP9m5BOoZKPWkN8XC4K2BlZoMMNu3GxgbnScA4OqkO/f/i65CDGWwFPkO+brIKpDRXtsOe65R53gNO5h8e2TJaRU/RrICGg6mjWKueQpCryKbGyeMN5H0kB4JijwHnhOwgAeKG+A/Ez3Ha24jvY5q9hcuiKOzjvDailL9aF6WrJ6PBTBAPXzEQYFJU7P5eNSFwCoWjFnL7ChggfSPQN56gvbZUaxNAwNsb3g6AsGaR3zvc8aCbDlKyYwX1boZHUwXInjnV2Cf4iraUjwgThTg7LFRvXH5tCxuJQBM8SZYojh45hRd50XjNMHU6vV5+r2TViVFH/TSF+2YpcJwfKm26rUm4U+6RR4ROLYeV41bk="}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -121,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

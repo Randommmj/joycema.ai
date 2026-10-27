@@ -16,59 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2022年3月5日" data-url="https://joycema.ai/p/20220305-43d782/">复制正文到公众号编辑器</button>
 <a href="/p/20220305-43d782/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2022年3月5日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>【周末读诗】春天·种种可能</h1><p>Joyce Ma<span>2022-03-05</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>春天，总是让人</p>
-<p>为种种可能感到愉悦。</p>
-<p>生机，就是心中蠢蠢欲动的荡漾，</p>
-<p>是忍不住的雀跃，</p>
-<p>是想要分享一首诗的冲动。</p>
-<p>种种可能</p>
-<pre><code>                   辛波斯卡（波兰）
-</code></pre>
-<p>我偏爱电影</p>
-<p>我偏爱狗，</p>
-<p>我偏爱瓦塔河边的橡树，</p>
-<p>我偏爱狄更斯，胜于陀思妥耶夫斯基，</p>
-<p>我偏爱喜欢人们，</p>
-<p>胜于热爱人类。</p>
-<p>我偏爱手边放着针线，用于不时之需。</p>
-<p>我偏爱绿色。</p>
-<p>我偏爱不把一切</p>
-<p>都归咎于理性。</p>
-<p>我偏爱例外。</p>
-<p>我偏爱及早离去。</p>
-<p>我偏爱和医生谈点别的什么。</p>
-<p>我偏爱线条优美的老式插画。</p>
-<p>我偏爱写诗的荒谬</p>
-<p>胜于不写诗的荒谬。</p>
-<p>就爱情而言，我偏爱平淡无奇的纪念日，</p>
-<p>那样就可以天天庆祝。</p>
-<p>我偏爱这样的道德家，</p>
-<p>他们不向我作出任何承诺。</p>
-<p>我偏爱狡黠的仁慈，胜于使人轻信的仁慈。</p>
-<p>我偏爱穿便装的大地。</p>
-<p>我偏爱被征服的国度，胜于征服别国。</p>
-<p>我偏爱有所保留。</p>
-<p>我偏爱混乱的地狱，胜于秩序井然的地狱。</p>
-<p>我偏爱格林童话，胜于报纸头条。</p>
-<p>我偏爱无花的叶，胜于无叶的花。</p>
-<p>我偏爱不截尾的狗。</p>
-<p>我偏爱明亮的眼睛，因为，我的如此晦暗。</p>
-<p>我偏爱桌子的抽屉。</p>
-<p>我偏爱许多此处并未提及的事物</p>
-<p>胜于许多我不愿说出的事物。</p>
-<p>我偏爱那些散漫的零</p>
-<p>胜于被编排成序列的零。</p>
-<p>我偏爱昆虫的时间，胜于星辰的时间。</p>
-<p>我偏爱在木头上敲打。</p>
-<p>我偏爱不去问还要多久，什么时候。</p>
-<p>我偏爱惦记着可能性，</p>
-<p>存在自有其理由。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "SfE3z05Cm40J1aP/", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -137,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

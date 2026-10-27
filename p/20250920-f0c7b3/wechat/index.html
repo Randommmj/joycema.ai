@@ -16,56 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2025年9月20日" data-url="https://joycema.ai/p/20250920-f0c7b3/">复制正文到公众号编辑器</button>
 <a href="/p/20250920-f0c7b3/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2025年9月20日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>哈佛笔记｜运营管理案例：Zara供应链 - 从“低垂果实”到不确定性的管理</h1><p>Joyce Ma<span>2025-09-20</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>故事梗概Zara 隶属于西班牙 Inditex 集团，是集团最老、最大、也是最成功的品牌。2018 年，Zara 占集团总销售额 69%（约 180 亿欧元）。它的核心是快速供应链（responsive supply chain），三周内就能设计、生产、上架新品。顾客因为店里常有新款而频繁光顾。</p>
-<p>2010 年，Zara 上线 Zara.com。到 2018 年，线上销售占集团总销售额的 12%，在有电商业务的国家达到 14%。但线上订单带来了退货率高、逆向物流（reverse logistics）复杂的问题。</p>
-<p>Zara 的应对：- 推出“店铺优化”（store optimization）：关掉小门店，集中资源开大旗舰店。例子：毕尔巴鄂（Bilbao）四家小店合并为一间旗舰，面积更大、销售额更高。- 全面采用 RFID（射频识别标签），库存准确率从 70% 以下提升到 98% 以上。- 开始尝试用门店库存发货，而不是完全依赖配送中心（DC）。- 推出 Click &amp; Collect（线上下单、门店取货），但带来店内拥堵，Zara 试验用机器人分拣系统缓解。- 投入巨资（2017 年 €18 亿，2018 年 €14 亿）推进“全整合、全数字化、全可持续”。</p>
-<p>核心问题：在电商快速增长的背景下，门店未来的角色是什么？库存应该如何整合？Zara 是否要在其他市场复制英国的“门店+DC一体化”模式？</p>
-<p>课堂笔记</p>
-<ol>
-<li>低垂果实（Low Hanging Fruit）：改进后的基本功</li>
-</ol>
-<p>在供应链的最初阶段，改进往往集中在容易看见、容易衡量的环节：</p>
-<p>库存准确率提升（Zara 用 RFID 把行业 70% 的准确率提高到 98%）。</p>
-<p>运输与仓储效率提高（比如 DC 与门店一体化，减少重复库存）。</p>
-<p>门店优化：小店合并为大旗舰，降低冗余库存、提升体验。</p>
-<p>这些属于“低垂果实”，是把效率提上来的第一步。</p>
-<ol start="2">
-<li>真正的难题：管理不确定性</li>
-</ol>
-<p>Slides 上老师特别强调：We have to learn to manage uncertainty。时尚行业的不确定性体现在：</p>
-<p>需求预测误差大：功能性产品的预测误差在 10% 左右，但创新型时尚单品能达到 40%-100%（见 slide 13 表格）。</p>
-<p>生命周期短：快时尚新品 3 个月到 1 年，远短于功能型产品的两年。</p>
-<p>高退货率：线上平均退货率 30%，是线下的三倍。</p>
-<p>Zara 的做法是延迟承诺：先小批量测试，等市场信号更清晰再大规模生产。Shein 更是把这个逻辑推到极致，每款先做 100-200 件，再决定要不要放量。</p>
-<ol start="3">
-<li>响应性（Responsiveness）比效率更难复制</li>
-</ol>
-<p>Zara 的核心不是“设备比别人先进”，而是组织能快速响应。正如 Inditex 前任总经理所说：</p>
-<p>“我们不懂为什么别人不这样做。设备大家都有，流程大家都能复制。”</p>
-<p>这句话的背后，其实是组织习惯、流程协同和文化的壁垒。快速响应，是很难照搬的。</p>
-<p>Arcus42 的启示我们的“供应链”在哪里？</p>
-<p>作为一家多家族平台，我们的“货”不是衣服，而是时间、知识、供应商和经验。</p>
-<p>对 Arcus42 来说：</p>
-<p>知识=库存：要有唯一 ID、可视化和复用（类似 Zara 的 RFID）。</p>
-<p>供应商=合作工厂：要有画像、匹配引擎、反馈体系。</p>
-<p>经验=测试单：先小规模试点（pilot），再复制到更多家族客户。</p>
-<p>客户经理=前线门店：他们需要的是轻装上阵，中台全力支撑。</p>
-<p>换句话说，我们的中台就是 Arcus42 的“Zara 仓库+系统”。</p>
-<p>AI 的新机会：从“快速时尚”到“实时智能”</p>
-<p>Slides 上最后提出了一个问题：未来能否有比 “ultra-fast fashion” 更快的模式？</p>
-<p>答案可能就是 AI 驱动的实时反馈。对 Arcus42 来说：</p>
-<p>AI 可以做“案例搜索”和“方案推荐”，相当于实时补货。</p>
-<p>客户行为数据（提问、需求、文档修改）就是趋势信号。</p>
-<p>中台通过 AI 路由，把最合适的专家/供应商快速派单。</p>
-<p>这就是我们自己的“实时供应链”。</p>
-<p>总是提醒自己，要把事情做好，需要有足够的时间、耐心和坚持。 运营是磨人心性的事情，但我相信可能也会有人天生就喜欢这些日常。 找到这样的人，并且以极大的热情和认可来对待他们。</p>
-<p>Tell them they are important.</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "1iiEVoYRQLGduDYU", "c": "RzF3OtEZIxyYeFWCSGWDnz2k/Xpg2n9c9Gp3/uSZCNRZ8heZ2a4LJcpR+hr8oLl0kJscP0C753d3wlvwYJ+jzq4ZliAqLCgebM6LjhIE+KO8WekICEyJn/dAe/4ofBMQQ47BXsd/+IrRGIc2SeUPiUfQc8iOVzSnN4NezY73w0r0KBo2D3yAy183JFHI2BGCMaS/zYXyFnlxVHiG419JXiUO9KwEuRRiNvOHibmNP6cyEHPt08eBTPIZvxxIHOFJq8LtKoXaXb0ugqkQ9MRda8LMuxAgm432N/3BNVi6DhLyybutfZNHwvPwFPmldZz2unLcScaPDIJ/yqhyRO8bT7MAQZvfacy2USqPTNgmiMC6zXWy6PL+8MtPkgiQDSyW0SAKvOjaNpROCQOav9qRKGCjujsYibnHqGOL+oK9me/E6CWc/F9hx6fk6otcvTbmp1XR+Lalth/o91+9Ra8+saQjI0sEbcZOzIKjIleOwxarO1Qp2+6ZCzVlUKHE0uiSpZTGDBUeYsElaV8gUUD4f64AvTi5Uynmo+9M7JeWv/9N/1uhcsJcdxEdb18wiurIdmXMMKh5Ny0xkP08Z37b9jpVbvRjnN3ZxfodlBiJjPcPtAPqKdS6ygn7NaulUrh+QKvlOzRVb+mU1rgkUdmYcIk1Kyq17Vrq7vWd317/O5Zi0ZVFT+qf8J9LpfPuDDqFlkLkNvOeFJVm5iGlOFo+hjXUWRpAh3nuaQP6GBtt/f0Hj/+O5qSYe3AvbZLC0CNTrsCzKdobeAmjfeyYH3xGtPAjFt3ATIVmg7T+hExwggzmOo0RlRFD+Z850xL+SflUWQdQbwlln1MjtiqGEKYSZuJ6fy8Ttl9fcGK5H8Ep5xPeE24g9vmSi3GJ9GTYjbkQdFEIMUaYcUtgvqK9AcR3sqaq2cgybHvLnfZYKhL5IHxlcTjOT6U+IZ6ZGu7BcpvtcqHqdUsRGAlQgwc37ydh2sv0AurddeLCD73YzIlU4AJNXK97nwQ+ENRRWsyzdhmf9O9yNoHPw3Od1IqyL/LDSkMasf1DmWQO57KL5+XD774IQA8dzREIc6JOfFNQ8L/Ibvf9aWHUcjc2P9PS6KopA12bxCL/RuT85i+TPsAawRlR2taxfZR/lP+ypFMYRM8gkljdw9NW7qFUlJht3KuS8m1Bv78dh3VAxm0IJ9V8dZ6vyDj/RyBl8n/dLWS8UDsNAcqfoXfUvJIbyZcCABB7O8FdrGEmN17p0sIAKt/eW3sgVDITyn0C2hHFnY27nMXPSNkgGD9QrzdUYF/DXLnJe2/ZThiGokaKT/8iLJdQJ9Tz51WgRr8aXZEaU4m6PgXtujEn3V0Y0qSzBYwxN2iThIOdQ7bsyr7dtY4c1xzUXqgzF1sxnSO9fWPPuVbfaetLOeo1Aha82M7p/HzlmyqFYh84uAhzRvWQCC2CsxIGiwwattX77xgu7uj7YFAkYvQtv/I0pOJ3UT8Hu2QPI0R1wShnG8rBwswo0FChb3RIShxxKNUFM3FGxovP6gfbYQ2oKBZngg6sVBb0NJLmr+j7CEydzZtw3vZf/JEzs0aB/YAOYJJH4YgWzf9gZT55khXSf151bvawzmB7083BcrF58aHwpyGIjAlHtoAOlmOilOLGZtRCgE2Uo2Sa1a9AwqQQUfURvT+8+T1JscCBvRUAlrqIbLjCeRXKtOny+vc4W+YG+T101fDVon77MxYk8voSGKkQ2+8krEsGQSCB6+2e9PfhqpYE7wVoDw4k2lAj8xr3OZKPG0u37jMfDzHRQfoMVMMlk1t/z/6l/zBsqF0cRHHyBOOGHQsf+89mYwULQjvDSg6Fqz5YNw89lOIOudpsG9k1YBAzTyVkulh3qm0U/RRH6vqBPifXGzqAIm4UuOz0tL+CxWN3uLVNJKU9WtNb5SlRjeGjsgp+tEg/ZSnjNF6cblcFkSE50RRa0P+0N+Hn4lZIUSLkxTbNamh/8ASJ7TrbZoTsVAurkm1NkNyzaQylAa+euY4zPOtd5R3/XAao81QdcmcEiiD1ZpRUwUX7XtskiCgNkG0+LB6tTR/UBrsqSyWPB0N8J2SzaPADnVd1881NtyRTfZ2gjgz1KvFQo/UmbT2xkodwjL2H4KrWtOiztHOYcSQoKzVJXEPRv68Mh88l+SWGn5ItVPwi9LjPbjW8R8Vlri9KIFE1ietfsjJ+32Io7Q0wMFwMc8NA0x1zfWDJW9HK+5Qid1/HrNl6TcHlJ2kKZV7S4t1azHYhcSKynIgXke+VrUt6WZd2ucbJoPfUq9iGWoVX7qcenPaaFgQBQoqiw0a7y4n4suJeKOQUK/XMyInquSryLvY0BjWIkt+ogOTDOoR4m+ryT1DYR9SPDwKHDKJk4SCl3R+mjaT2I+iJ0/X6mIyHkhBV4F6PODiiw2OYzJqNY0N6Z9BlO16nYypkUM/ct10QVP2plJruWYrXXTesu0+2tVLFMy9WAqkDE9d6ur+ou0C0GajGUJ9vh4bZZDmyinw6HW7q1bzOa6IKJYxUrWzLAECDMjmMg0t1+5oTSPXc8Dy1tmXBnpQvu9Oas9oylIgg1E5x4m4bQgBbXxrylKZwS1iyrNoyrC1eJURa7I3oH6CCPKVIPIjAkSwF/a+4V4C3GMOlpEQ+t/bwbVuftXLUp/1VeaaaYVdihxMPFyqptJYqy/QRW+37fsb3D69qoE4CGNHptGkTVItoVuBlaNgaKhehzKd2hGzvl8gOjpNWAsx8N0heXMEtugY3cg9Pn8mQQEI6f7IH/RxDTSeTeCe4HI+F9VSavSARWaeB3tAysidm36EW8G/Uwb9HSZI0c5U39Fk9mXacCuNYAdKLamOpdNOIk6F/CtgR97QL/NlCMh6K79jTT5vHLmc5qesyUSrMvtlvT++2XPbXBs/tbOK9d7Z5BiC0aNJhXofzo/fxes7YoC/U01DAy3Bn1gnW9h4MTXDYBLPSlOrVMx/dJQLdsYqToDYQNLYNsBVXuIYlIILs/bbaLKs54FaxTwq6wyjFYq8hTe+8qHZkF3SApda14zAt3QTjBmmVztNGidf7mrCOrETLSYSNjslbSLum3erdyJAD6WxdoAopdmNKMHfp/1DY6/V43ZCRX8NgQIe7PHihCJ71wDxjc3HBZBtOwAlTwLWrfGlkQRUOltU0hudowwTgCeteBwU71pLZAZr7+yxki/wAqA8/E+ZId6l0LF10bBBcoXvU2CBHg9t2LlOmTiMgU2LDAxiAxBnvjbRiOJehpUNj/vZ2+6y0Ri3MTWofpcoCoyXaEUTyXCpjydneGXniHJ1+uSiPpglvq1ogVMZy1RTguFv8Jy6LP19G3+iw8JSqDFCFzxdHG73rOg1a/Qc5h3M6YinajLq7UKXovG02k/qeSv+9TbKgmdF/X9ImO3FYCouGoUgHld9nZQZANdd9FsWpxMe7GVLUL4uEVD82vTYoCkiNZj8YXInZ8VitG1E0pUyj31j6Ou91DcZopUeh+gCH9woGN53REvCAr0TNZYTLfEzkIsa3aD/PomdrFo6qE3ziyIQCqK5TVGj1ZvRDFCyMEVkahUIogW7mNg66k+St24HO0aYcxIAboeveCmt7S9+wZ/lrsuy3ZVJIlYce+JP2QNDBuSOTHaF5DHqU6AlhMAUKY3+8n2UIp/evfolF2ABatd+hPgXSRj487Of8BrEIUnD9cEZG0rBXn3NVqdfvILdwIuTOw61JmmjoRiMGSsvWI1LMbDZtRvUvTjlWD3ihfgc5XDRWOHQUcSJcgyEXsC1+PM2cJYg8SQQYk4NG/Og2gWjvQ9JW7IFSPMhwKAITsD5WhDxG2KeBZBjgyzboKUDDeDxQ+lN8+L+cOh6X+bv+lUlRZw2fzGY/ZQz0raKd3b7Hk5DRjFilLWd7TtB7aJRZvSu7rtQI5qM8KeMy0X+AUSwfM8vksx5g4/2lCawgrKbMekyqiJHGXctoQo/4S5RHYW+1E4/wrg44zuLpffuV46Y3xBo55RJtGjeNAqRryaWpLVRdj2Hv4iDDa6cRRmm8bhCnDmnN6wmc6Yd+421ilDgAQQUI+PP5ds72Y4b8J1AP3RaIp7icd5daDO1a9ZpaEUxSvXRXby/TWsUKASxftPQG//Ztu/PU1Z9pRTAW94BOhpaY4xumNOB25BqYOJ4fY2AAFOfQ9fWyzQWQRzOTrT/lA4qd41jgdz6+bSDevBC9uT14bZOhDeInMZen63vTScJLy2w4ro/7c0zgLacI2EmPDL9kWjaDcwebLgSJWTtirHANix8P8eshHn1DJojzagDSb1iPKx3mlhwf8w1l+LLeNnYR9RVax7Oeno4YCVrLDK4/X75lZ/jVIvdHuyMblkzvbP1SI0EBmPHLOTjqwNjgLh8uTvdG8bf0hG8DJwmTn9gqRuHqnYdXQ52I1RJwMMtL3kPOrOBBJrIJLck3TFdWwc1FYnG8vJY8+OsYfVyQ6n6UTqMvHfO5sItCmm7QvLXcDVOZ0JXhdKnB1ZI6c9i1dKkmhdAmmRIJHvWHoZSTB21pSj1mx8POe78Ednsj5gY8GWU8448+UWypkJR8/VeF7eIXRszi0WTHCnVqPofyp2VRdjn6AII8MWjubMII2eBt/A5oN6YF/27SoHnBctNPETLnAB4S6RDz+iL6oHcEQgs47hiAJFvbdkv3vYCVKD9aGm9yvTE508ukvuPrJB/Gm9pVJgP0trzxrWUee6vhMrpOQRDhXntJOu7fnbUnP3PI4SRCUD4uqniaRKmJuRa7S5JOp4yrAqFL2CExqTg2yXqgXx5wuEXLrt+NpC6o73gj2Ro7vAJy1Qa3SX92McGrbzH1cSC9w94Epx60sPONZ3eaRxYHEr8+a6ILGlx2ABdoqj5NLY5DAP7ojUSlHlL+/yCgltl72s6BzDm2jjcBptrUJCj1AfF1BoJYt8AB8g4V+DQ/iKpPT85GyS4qEY3cs+ZmPn9OQHYL7UUrdQzBo+N/+Kg9rN5wQlW4/Ts+3Im5y5TKFe2a26fbLOE6wAoGpU68LEmaBXcCjBcvyYMxHuTr7m2N3ZwYtVtnqgj1fqG/m4uUODHXUjncQjFTPy3NZ9ocK5AlcwnDMYNcwVYOnvFrlh4mit2znus1v7lZPy4pXRQNFIkwqR5qa15u1alNng5PunEw7pe+/j+VPWJVL1wcBIWMPQjmVBgve3kJkVuwxdDjBsYppdo/13ESUta/8Jsk1JVLqj+U8IWyNVW0uIdQ373jurzv24VybGGf7D0lU+if3pqQf2/yTkMBB++7Yc43csGD5hOUTvrEqWRy24VG0u1heblFE3MihTwPs68j4mLESeGpGvOLsvA7GZ9K4L5Hh/xPEGmo6byvqxdljoyBHzaw+TjRC2qaDUtLp88hqqeZsG4LONGjL7s5CKpzg5lp7dQ2AJA93Eg4kfhJFtCbR1aLkvSAXWZdPJQlDZEjUCLo+/MWjR/1KIxhSxt4RaeP4tLCv1SexlmKSZ9dJNhCu24Mnqgw/l8EqPYqEcM+4qFkzJ15Z1oT1HNYCf08B7sLARhOri7X2Q4n6CleOiLv3+DCbQtrOWGsYp4OFV+0HjethUMdI6OymtZLHpjEzYVLRSYzOjS7l6u5vAgznLMUGaVi85d5QEbiAX5xnHdtYC1zGWXIE3FBNUDb0ck7CS5vnXr6g1dNdYwNCP1t4ORDdKnxkqwtONjSiwDFXQqR+km9jfTjcaCPYwQqvFsmC/k+ayBKkB47RxdfXBFUxulHSq0nFSnjI95e8ycVMdgGT+fi+a18cPWf+AejsR0qCfP4xm2uD49KyBEtsf+OPUIl2CP6jd8YQkgWFJWdPgE6hXPj6O0uDAA+BtAgrY15UBpdDZmI/7Pi22/kuwvdhLotfwLozc0n0GOn4wiCo2UY6UJKVHoSSvhtNyV6HOKgLml04FmSZ1IfXdR1uSi0b9QhY9dZju+pYEmKTDExReQbu0tAZP3Y6jNYlOvVJ64n60050//qEtIMEg3W1DLI4wNCfM1aOgCQxNqvpaex7Q2Z41qXkmrvPhsQHS5Z9dXA7sp/W7/0JAyHrKFM0yPSR6Gv60qyRHhL8EGIQ+mTqQiIl08NzeXuFVQ0F++cMXEFokQFa6qAS3gLOlhZXM3fGSIiMY9OsGXdL8uUhIrOSrdbnYrHxIhEvUKsNIcx9Zim0o51mi/LnsSFijip"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -134,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

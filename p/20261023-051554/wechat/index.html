@@ -16,50 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2026年10月23日" data-url="https://joycema.ai/p/20261023-051554/">复制正文到公众号编辑器</button>
 <a href="/p/20261023-051554/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2026年10月23日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>哈佛预习｜领导力：Jean-Claude Biver —— 让旧技艺获得新意义</h1><p>Joyce Ma<span>2026-10-23</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><figure class="hero"><img src="/img/5427250019b06c1b.jpg" alt=""></figure><div class="prose"><p>Unit 3，Jeff Polzer 教授 Leadership，
-Jean-Claude Biver (A): The Reemergence of the Swiss Watch Industry。</p>
-<p>当计时变得更便宜、更准确，机械表需要重新回答人们为什么仍然需要它。Biver 的故事，是一种旧技艺重新获得意义的过程，也是一位强烈的领导者与自身局限相遇的过程。</p>
-<p>以下，enjoy：</p>
-<h2 id="案例梗概">案例梗概</h2>
-<p><strong>石英技术改变了制表业。</strong>它更准确，零件更少，也适合大规模生产。瑞士机械表行业遭受冲击，大量企业与工匠失去原有位置。Biver 曾在 Audemars Piguet 和 Omega 工作，逐渐相信，机械表的未来可以建立在工艺、历史与情感价值上。</p>
-<p>1982年，他与制表伙伴 Jacques Piquet 买下停业多年的 Blancpain 品牌。团队寻找工匠，把旧农舍改成制造场所，坚持机械制表、低库存与按单生产，让品牌历史成为产品和工作方式的一部分。</p>
-<p>首年，公司卖出97只表，收入7.5万美元；五年后，年销量约3,000只，收入940万美元。Biver 不仅向消费者传播，也与行业领导者、收藏者和工匠建立联系。旧技能开始重新成为值得珍惜的能力。</p>
-<p>业务成功的同时，团队也面对他的情绪。他可以慷慨、热情、承认贡献，也会暴怒和公开责备员工。个人婚姻危机进一步影响工作。1992年出售 Blancpain 后，他很快发现财富没有替代团队与事业带来的意义，于是请求回到 Swatch Group。</p>
-<p>Hayek 让他同时承担 Omega 复兴任务。Biver 修复品牌信息，通过 Cindy Crawford 的长期合作和 Bond 电影，让历史资产与当代消费者重新发生联系。1995至1999年，Omega 收入从3.5亿美元增至超过9亿美元，集团资源也为这场修复提供支持。</p>
-<p>2000年的重病、家庭变化和在集团中的角色变化，让他再次面对选择。休假期间，Hublot 出现为一个可能的新机会，但该公司仍在亏损，所有者也担忧他的管理风格。过去的成绩，并没有替下一段生活作出决定。</p>
-<h2 id="我的思考">我的思考</h2>
-<h3 id="技术改变之后价值需要重新说明">技术改变之后，价值需要重新说明</h3>
-<p><strong>Biver 找到了机械表仍然值得被购买的理由。</strong> 工艺、历史、审美与身份，可以构成不同于低价精确计时的价值。</p>
-<p>我自己的理解是，这需要产品承接。若没有工匠、制造与一致的体验，历史只会成为包装。也不能据此认为所有旧技术都能重生；客户是否在意，是否愿意付费，仍然需要验证。</p>
-<h3 id="一致性需要进入每一项经营选择">一致性需要进入每一项经营选择</h3>
-<p><strong>品牌信息能够协调设计、生产、渠道与传播，才真正有力量。</strong> Blancpain 的工坊、限量感与机械承诺彼此相连；Omega 的历史、产品系列和长期合作则采用另一种方式形成一致性。</p>
-<p>这也解释了为什么不能照搬同一套动作。小品牌的稀缺逻辑，与集团品牌的规模复兴，使用不同资源。可以学习的是决定如何围绕同一个客户承诺展开。</p>
-<h3 id="个人愿景需要互补能力承接">个人愿景需要互补能力承接</h3>
-<p><img alt="" src="/img/ca806e441a41deae.jpg"></p>
-<p><strong>工匠、伙伴、员工和机构资源都参与了成功。</strong> Biver 的表达和动员容易被记住，Piquet 的工艺能力、Hayek 的支持、集团制造和渠道也同样重要。</p>
-<p>我会警惕把行业复兴写成单个英雄的故事。Swatch 的石英产品与产业整合也是这段历史的一部分。理解这些条件，才能知道一个想法怎样从说服别人，走到稳定交付。</p>
-<h3 id="高标准与伤害行为需要分开评价">高标准与伤害行为需要分开评价</h3>
-<p><strong>商业成功不能证明暴怒是必要条件。</strong> 案例中的员工既描述热情和慷慨，也描述羞辱、威胁与恐惧。两类证据都应被认真对待。</p>
-<p>我自己的判断是，可以保留激烈的思想讨论，同时明确反对伤害性的对人方式。道歉若没有行为改变，很难给员工稳定预期。领导者越有成绩，越需要有人能够平静地说出不同意见。</p>
-<h3 id="下一段事业要与此刻的生活相容">下一段事业要与此刻的生活相容</h3>
-<p><strong>卖掉公司没有自动带来满足，再次创业也不会自动解决所有问题。</strong> 案例结尾的Biver，需要同时考虑事业意义、家庭、恢复和真实权限。</p>
-<p>我会支持他研究新机会，但先写清投入、角色与边界。Hublot 的规模很小、仍在亏损，不能仅因自己曾经复兴过品牌，就假定下一次同样成立。对一个已经证明能力的人而言，允许自己有条件地选择，可能比继续证明更难。</p>
-<h2 id="对-arcus42-的借鉴">对 Arcus42 的借鉴</h2>
-<p><strong>工具变化时，重新说明人的价值。</strong> 客户需要的判断、解释、信任与负责，要在具体服务中被看见，不能只靠抽象叙事。</p>
-<p><strong>让承诺约束交付。</strong> 对外如何表达，内部就需要用相应的信息和行动承接。每一处不一致都会增加理解成本。</p>
-<p><strong>为表达配置验证能力。</strong> 能讲清方向的人，与能发现漏洞、验证事实的人，应该互相支持。好故事需要有人持续核对。</p>
-<p><strong>成功之后仍然保护分歧。</strong> 当领导者过去经常正确，团队更容易停止质疑。让不同意见保持可说，是对未来判断的保护。</p>
-<h2 id="写在课前">写在课前</h2>
-<p><strong>我的课前判断是，Biver 最值得学习的是重新发现价值、建立社群与协调行动的能力。</strong>那些给员工带来伤害的行为，应当被清楚地留在反思里。</p>
-<p>一门技艺得以延续，既需要有人重新解释它，也需要有人愿意安稳地继续把它做好。</p>
-<hr>
-<p>本文依据课程案例作个人学习分析，人物经历、经营数字与管理描述限于案例所述时期，不评价相关人物或企业的当前状况。行为评价为个人课前观点。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "62w8Rhp1sao7Wair", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -128,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

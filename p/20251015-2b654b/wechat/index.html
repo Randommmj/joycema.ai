@@ -16,49 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2025年10月15日" data-url="https://joycema.ai/p/20251015-2b654b/">复制正文到公众号编辑器</button>
 <a href="/p/20251015-2b654b/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2025年10月15日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>创业笔记｜为什么Arcus42从day one就需要是一家AI Native的公司 —— 我的思考</h1><p>Joyce Ma<span>2025-10-15</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>必须拥抱AI</p>
-<p>AI-Native不是潮流，是组织范式的迁移</p>
-<p>过去二十年，互联网公司改变了人与信息的交互；</p>
-<p>今天，AI-Native公司正在改变“人和组织如何创造价值”。</p>
-<p>区别不在技术，而在逻辑：传统公司AI-Native公司人是主角，AI是工具AI是劳动力，人是管理者流程靠人驱动，AI辅助执行流程由AI驱动，人类校准与决策报表、会议、复盘靠人整理数据自动流转、洞察自动生成招人扩规模算力扩生产力决策慢、信息割裂决策快、信息实时学习与反馈</p>
-<p>换句话说，AI-Native不是一项功能，而是一种公司基因。</p>
-<p>它让Arcus42从一开始就具备指数级的学习和迭代能力。</p>
-<p>为什么现在是Arcus42的窗口期</p>
-<p>我们在做的事——家族办公室——天然是“认知密集型”行业。</p>
-<p>我们的核心价值是判断、信任与洞察，而AI最擅长的正是“连接信息 → 生成洞见”。</p>
-<p>从投资分析、客户画像到财务结构，我们都依赖信息整合与推理。</p>
-<p>AI正从“工具”变成“劳动力”。</p>
-<p>“脑力（cognition）已成为可复制的生产资料，AI本身就是劳动力。”</p>
-<p>这意味着我们不需要再招无数分析师、助理，而是训练一支“AI运营团队”。</p>
-<p>很多老公司正在“被AI改造”，但他们结构太重，利益冲突太多。</p>
-<p>Arcus42还年轻，正好可以成为真正的AI-Native原型公司。</p>
-<p>从第一天起就让AI成为同事，而不是外包。</p>
-<p>我们需要的内外部的团队</p>
-<p>不只是“懂AI的工程师”，</p>
-<p>而是探索——“AI如何重新定义组织本身”。</p>
-<p>“探索AI原生的组织形态，让人类与AI协同，以百倍速度迭代。”</p>
-<p>这正是我们所需要的中台逻辑：</p>
-<p>Arcus42不能只做一家“用AI的公司”，而是一家“由AI驱动的公司”。</p>
-<p>朱棣文和许许多多的大师都曾说过类似的话： 我们跟在别人后面跑，是很难超越的，别人卡在哪里，我们也得卡在哪里，一定要弯道超车。</p>
-<p>我们要的不是系统，而是速度与智能</p>
-<p>传统方式搭中台，需要：招开发团队、财务分析师、运营助理；建数据仓、连接口、拉报表；一年后才能上线。</p>
-<p>而AI-Native的方式是：用AI自动清洗数据；用Agent生成日报、汇报、洞察；两周就能跑起来。</p>
-<p>这不是在“外包开发”，</p>
-<p>而是在建立我们的AI学习系统——</p>
-<p>一个能自己进化、能越用越聪明的“组织大脑”。</p>
-<p>对Arcus42的长远意义人力成本更轻 —— 每个员工都配一组AI助手，释放时间做判断。运营透明度更高 —— 所有数据自动汇总、追踪、解释。知识可积累 —— AI记得公司所有决策、逻辑与背景，形成“组织记忆”。决策节奏更快 —— 我们可以像量化基金一样运营家族办公室。品牌形象更前沿 —— Arcus42成为“AI时代的家族办公室原型”。</p>
-<p>我们如何启动（建议）阶段一：每个人配备好AI工作栈。阶段二：找到AI切入能够最快得到胜利的小战场，让团队立刻感受到好用、有效。</p>
-<p>阶段三：启动「内部知识中台」的原型，以及其他AI部门岗位</p>
-<p>我们的目标不是“做一家用AI的公司”，</p>
-<p>而是“做一家因AI而发展的公司”。</p>
-<p>AI-Native 不是未来的选项，而是现在的起点。</p>
-<p>这一步，会让 Arcus42 成为第一个真正拥有“组织智能”的家族办公室。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "WgaZFUi9dr/bp7xH", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -127,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

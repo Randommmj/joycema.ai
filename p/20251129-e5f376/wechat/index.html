@@ -16,175 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2025年11月29日" data-url="https://joycema.ai/p/20251129-e5f376/">复制正文到公众号编辑器</button>
 <a href="/p/20251129-e5f376/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2025年11月29日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>原创：家族传承三角FST模型（开篇）</h1><p>Joyce Ma<span>2025-11-29</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>我必须把它写出来 —— </p>
-<p>「接班」或者「传承」这个命题，已伴随我超过25年 —— 从七八岁的幼童希望让父母骄傲，到青春期的存在主义危机，到成年初期对家族给予的资源平台的依赖与排斥，再到学习“借风飞翔”。</p>
-<p>可以说，于我而言，</p>
-<p>对自我的理解 与 对传承的理解，相互缠绕，密不可分。</p>
-<p>可以说这个分享，我是为自己而写。</p>
-<p>写在前面</p>
-<p>FST 家族传承三角模型 Family Succession Triangle Model 这个模型，是我对「家族传承」几十年的思考与学习，总结出来的原创理论和模型。粗一看，它是一个简单的三角形，然而每一个元素向下又连接着不同的子模型。</p>
-<p>把这个理论写出来，一直是我的心愿。</p>
-<p>然而，我太想把它写好了——导致多年迟迟无法动笔。因为我知道，它是不够全面的，无法完美覆盖家族传承的方方面面。传承涉及社会的变迁、组织的创新、科学的发展、人性的延展，甚至有我们对死亡的对抗 —— 家族传承是商业、法律、科技、人文、艺术、奉献与爱、坚持与成全之间，最微妙的拼接。 </p>
-<p>但我仍奢望完成这一工作，虽然可能引发一些误会，或者暴露我的愚蠢，但对于正在思考传承的家族和伙伴，可能多少有些用处。因为他们对于家族传承总希望做些系统的思考：在时间上，穿越一代人的眼光，去看到百年尺度上，这代人能做出什么贡献； 在空间上，横向看到世界上其他文化、和地域的人类如何实现传承这一愿景。</p>
-<p>我希望FST能像我们理解历史时所借助的理论一样，是一个可用的“拐棍儿”。 能够引发一些思考和向往之情，使我们除了追求一代人的成就之外，还能在更长时间维度和更广影响力的范围上，生出一些充满创造力的向往。如果读者对于这个理论有任何进一步的校正，请予以指教，以便我有改进的机会。 什么是「家族传承」</p>
-<p>当我开始认真思考“传承”这件事情时，我发现一个很简单、却容易被人误解的事实——</p>
-<p>传承不是富人的事情，是人的事情。</p>
-<p>它不是发生在亿万家族、跨国企业、信托结构里的那件“复杂的事”，</p>
-<p>而是从我们人类最初拥有剩余食物和工具的那一刻起，就深深嵌在我们基因里的“本能”。</p>
-<p>那时候，没有企业，没有资产配置，也没有律师。</p>
-<p>但有一件事已经悄悄出现了：</p>
-<p>“我希望我努力获得的东西，可以继续滋养我爱的人。”</p>
-<p>某种意义上，</p>
-<p>这是文明最早的火种。</p>
-<p>什么是家族？不是财富，也不是人口规模</p>
-<p>我时常被问到：</p>
-<p>“多少资产算家族？”</p>
-<p>“多少代才叫家族？”</p>
-<p>“是不是要有 10 亿美金才需要传承规划？”</p>
-<p>让我们换个案例：</p>
-<p>一个农村家庭，两兄弟为了价值五万块钱的瓦房，关系彻底决裂。</p>
-<p>这也是传承的案例，他们争的不是一间瓦房，而是：</p>
-<p>谁有资格继承</p>
-<p>谁被家人看见</p>
-<p>谁的贡献被认可</p>
-<p>谁有权决定家族未来</p>
-<p>家族不是一个“规模”概念，而是一个“关系”概念。</p>
-<p>只要一群人共享命运、故事与责任，他们就构成了一个家族。</p>
-<p>FST 家族传承三角模型 Family Succession Triangle Model</p>
-<p>这个模型里，我把注意力从“结构设计”“税务筹划”“企业接班”这些具体的工具和「术」，放回到一个「道」层面的框架中来——</p>
-<p>定义家族传承的三个元素：Family（家族）– Enterprise（事业）– Capital（财富），以及它们三者构成的动态能量系统。</p>
-<p>元素一：家族的成员</p>
-<p>—— 是源头，是火种，也是终极意义。</p>
-<p>一个家族真正的根基，不是账面上的资产，也不是企业规模，而是成员身上积累的 价值观、知识结构、判断能力、品格韧性与彼此之间的信任。</p>
-<p>这些人文资产能跨越国界、文化、制度，随家族流动、迁徙、重建。</p>
-<p>正如那些在历史长河中不断失去一切却又一次次重建未来的族群，只要“人”的火种还亮，家族就永远有重新开始的能力。</p>
-<p>元素二：家族的事业 </p>
-<p>—— 是放大器，也是人历练的道场。</p>
-<p>事业不仅是家族的成果，更是家族精神的放大器，它承载文化、使命，也通过组织、产品与平台，将“人”的能量扩散成稳定而持续的创造力。</p>
-<p>在正确的使命驱动下，事业可以不断迭代、转型、扩张，成为家族与时代对话的最重要平台。</p>
-<p>元素三：家族的财富 </p>
-<p>—— 是蓄水池，是能量的存储与形态切换器。</p>
-<p>资本是风险的缓冲带、创新的燃料以及家族对社会的承诺工具。它可以在有形（资产、股权、现金流）与无形（声誉、知识、公益、社会信任）之间自由转化：</p>
-<p>繁荣时沉淀为资产，动荡时蒸发为无形，复苏时又凝结回新的机会与资源。唯有流动、转换、有方向的资本，才是真正有生命力的资本。</p>
-<p>三者之间相互循环的“能量通道”</p>
-<ol>
-<li>人 ⇄ 事业</li>
-</ol>
-<p>人创造事业，事业历练人。</p>
-<p>当人的价值观和能力注入事业，使它有了韧性和穿越周期的生命力。事业因人而生、因人而变。</p>
-<p>从更高维度看，事业也同样在塑造人。事业不是家族成员的负担，而是他们的修行场：</p>
-<p>在事业里，年轻一代面对真实的市场与竞争，从而形成判断力；</p>
-<p>在事业里，价值观不是写在墙上，而是通过一次次决策被验证；</p>
-<p>在事业里，不同代际的人共同工作，文化被传递，也被迭代；</p>
-<p>在事业里，人文资本不是“背在身上”，而是“被放上场”。</p>
-<p>事业之于人，是一面镜子、一所学校、一间试验室。人的价值在事业中被磨砺得越发清晰。</p>
-<ol start="2">
-<li>事业 ⇄ 财富</li>
-</ol>
-<p>事业会产生现金流、积累品牌，这些是财富的来源。</p>
-<p>财富本也能重塑事业的格局：</p>
-<p>更长的研发周期（没有短期利润压力）</p>
-<p>更好的团队（吸引外部专家）</p>
-<p>更大的战略空间（不需要焦虑下一轮融资）</p>
-<p>更稳的抗风险能力（用现金储备熬过周期）</p>
-<p>财富如果有方向感，就是事业的放大器。</p>
-<ol start="3">
-<li>财富 ⇄ 人</li>
-</ol>
-<p>财富滋养人，人也决定财富的未来形态。</p>
-<p>财富对人的好处显而易见：</p>
-<p>它能提供教育资源、试错空间、国际视野、风险缓冲，能让家族后代不必为了生存压抑好奇心，也能让年轻人有勇气去尝试、去失败、去重新开始。</p>
-<p>但反过来，人也在决定财富的形态。是因为财富受到仇视，还是受到尊重，全在于人对财富的使用：</p>
-<p>价值观强的人，会把资本转化为公益与声誉；</p>
-<p>有智慧的人，会让资本进入正确的行业与资产；</p>
-<p>有责任感的人，会让资本成为社会的正循环，而不是家族内部的纷争源。</p>
-<p>财富给人更多可能性，人决定财富的善恶，</p>
-<p>强者让财富成为祝福，弱者让财富成为诅咒。</p>
-<p>我心目中最理想的家族传承</p>
-<p>真正成熟的家族，不执着于任何一时一地的得失，不会用「家族传承」来约束人 —— 而是完成 FST 模型的完美循环：</p>
-<ol>
-<li>形态转换</li>
-</ol>
-<p>该把火种变成事业的时候毫不犹豫；</p>
-<p>该把事业变成财富的时候从容决策；</p>
-<p>该把财富变成教育、慈善、声誉的时候不惜投入。</p>
-<p>能量永不固化，也未消失，只转换形态。</p>
-<ol start="2">
-<li>节奏调节</li>
-</ol>
-<p>不同经济周期、生命阶段、时代背景下，</p>
-<p>人—事业—财富三者的权重可以动态变化，</p>
-<p>重心可以变，循环不能停。</p>
-<ol start="3">
-<li>跨代延续</li>
-</ol>
-<p>当下一代能够理解传承的系统逻辑，</p>
-<p>而不是继承静态资产，</p>
-<p>家族就获得了真正的可持续性。</p>
-<p>传承的不是一堆资产，</p>
-<p>而是一套不断更新、自我修复的系统。</p>
-<p>让我们回到人的尺度</p>
-<p>传承是必须的吗？首先要有共识 —— 一代要愿意“传”，下一代要准备好“承”</p>
-<p>传承不是单向的动作，是两代人之间的共同工程。</p>
-<p>上一代要愿意放手、愿意表达、愿意拥抱不确定性</p>
-<p>下一代要愿意承担、愿意成长、愿意找到自己的位置</p>
-<p>中间最重要的不是财富的多少，而是一个词：</p>
-<p>共识。</p>
-<p>共识比结构重要，</p>
-<p>理解比方案重要，</p>
-<p>关系比资产重要。</p>
-<p>无论工具如何变化，</p>
-<p>一个家族能不能持续下去，最终取决于：</p>
-<p>家族的人是否在成长</p>
-<p>是否有位置感</p>
-<p>是否继续相信彼此</p>
-<p>是否愿意一起创造</p>
-<p>是否愿意承担更大的责任</p>
-<p>最后，希望我们借着对「传承的思考」</p>
-<p>看到自己：</p>
-<p>你从何处来、要往何处去、愿意守住什么。</p>
-<p>这个系列的未来</p>
-<p>未来我将进一步讨论：</p>
-<ol>
-<li>
-<p>为什么人是家族最核心的资产</p>
-</li>
-<li>
-<p>家族成员的定义</p>
-</li>
-<li>
-<p>家族治理：家族长青的秘诀。</p>
-</li>
-<li>
-<p>家族与企业关系的四个象限。</p>
-</li>
-<li>
-<p>不同时间尺度下的传承：10年、50年、100年……</p>
-</li>
-<li>
-<p>家族传承的文化差异：日本、英国、中国的传承比较</p>
-</li>
-<li>
-<p>家族的有形资产和无形资产</p>
-</li>
-<li>
-<p>家族财富的资产管理：策略与实践。</p>
-</li>
-<li>
-<p>财富的下一步：由富及贵。</p>
-</li>
-<li>
-<p>探索自己的传承策略：不同家族的属性。</p>
-</li>
-</ol>
-<p>等等</p>
-<p>Anyway，这第一篇，先发出来！Yeah～</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "Dgp+/5lrF9pP2Pxl", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -253,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

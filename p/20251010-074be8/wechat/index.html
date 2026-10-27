@@ -16,69 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2025年10月10日" data-url="https://joycema.ai/p/20251010-074be8/">复制正文到公众号编辑器</button>
 <a href="/p/20251010-074be8/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2025年10月10日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>高山笔记｜又是两位诺奖！</h1><p>Joyce Ma<span>2025-10-10</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>虽然有点不敬，但还是想开个玩笑 —— 今年诺贝尔奖最大的赢家，竟然是高山书院！🤣</p>
-<p>2025年诺奖中，有三位在过去3年都给我们上过课 —— 坂口志文教授荣获诺贝尔生理学或医学奖；北川进教授与Omar Yaghi教授也同获诺贝尔化学奖。</p>
-<p>这真是个神仙组织。</p>
-<p>能在“获奖之前”就与教授们相遇，是高山的学术眼光和连接能力给予我们的幸运。</p>
-<p>在这里，聆听诺贝尔奖教授的课，发生了很多次。 每一位教授都能把最前沿的科学讲得深入浅出，让我们看到科学如何真正改变世界。</p>
-<p>每次都很感慨：大师真是不一样，怎么就能把如此复杂的科学讲得我都能明白。</p>
-<p>但讲真——先上课、后获奖的感觉，比直接听诺奖教授的课爽多了！因为那意味着，我们亲眼见证了“伟大正在发生”。</p>
-<p>更荣幸的是，今年四月听完课的当下，我就笃定：Omar Yaghi 教授一定会拿诺奖。</p>
-<p>只是没想到，这个“预言”，竟实现得这么快。</p>
-<p>由衷自豪，尝试把Yaghi教授课堂中那股科学精神，写给每一位喜欢科学的人。</p>
-<p>Yaghi教授的故事：一眼万年的分子热爱</p>
-<p>“十岁那年，我在图书馆随手翻到一本画着分子结构的书——一眼万年。从那时起，我的人生就献给了分子。”</p>
-<p>出身与初心：约旦/巴勒斯坦家庭，自幼缺水；15 岁独自赴美。</p>
-<p>开创领域：网状化学（Reticular Chemistry）——用强键把“分子积木”缝合成晶体化、可编程的二维/三维材料，典型代表是 MOFs（含金属节点）与 COFs（全有机骨架）。</p>
-<p>MOF-5 的震撼：一个硬币大小的样品，因内部孔道巨大，比表面积可达“足球场级”；孔像“停车场”，让 CO₂、H₂O、H₂ 等有序吸附与释放。</p>
-<p>从空气中取水：以 MOF-303为代表的材料，夜间吸水、白天释水；按课堂分享的数据，200 g MOF 可日产 ~5 L 超纯水，可循环 6–7 年；工程化方案从2 kg/120 L/天到1 吨/6 万 L/天均已验证思路。</p>
-<p>捕碳与规模化：COF/MOF 通过“像停车位一样的孔道”高选择性吸附 CO₂，并具备循环再生与可放大潜力。</p>
-<p>材料周期表被“重新发明”：不同金属节点与有机连接体的“组合宇宙”，像一张“网状化学的周期表”，每个格子都值得花一辈子探索。</p>
-<p>分子编织：把“布的韧性”做进材料</p>
-<p>Yaghi 在课堂上用“织布”打了一个绝妙的比方：当分子在角度与拓扑上“经纬交织”，材料就像布一样韧性十足，还能做成3D 互锁结构，在受力下保持稳定。这是“有序网络”的力量——结构一旦被精确设计，性质就能被精确调谐。</p>
-<p>AI × 材料：从 2–3 年到 1 个月</p>
-<p>数据-实验一体化：用文献挖掘 + 反应图像识别 + 机器人合成 + 贝叶斯优化，把“结晶条件”这个传统瓶颈数字化。</p>
-<p>发现率翻倍：在 8,000+ 条 ZIF 反应数据集上，AI 让成功率提升 ~30%；在 2,688 个实验上实现较随机探索高出约 2 倍的发现率与更快的拓扑归类。</p>
-<p>智能研究组：7 个智能体分工协作（规划、检索、模型、机器人、3D 打印、安全、数据分析），把“35 年的路”压缩到“1 个月”。</p>
-<p>“2年前我自己也不相信，直到一个北京来的学生跟我说：为什么我们不试着用AI呢？现在我相信 ——  AI绝对会改变我们的科研。”</p>
-<p>我要求：如果你要加入我们，就必须会用AI。</p>
-<p>人们使用AI的速度很慢的原因缺乏理解：许多人并不完全了解人工智能是如何工作的，也不清楚人工智能如何给他们带来好处，这导致了犹豫。对失业的恐惧：人工智能通常与自动化和取代人类工作联系在一起，这会创造焦虑和抗拒。高成本：实施人工智能可能需要在技术、基础设施和其他方面进行大量投资技术人员——尤其是小型企业的障碍。数据隐私问题：人工智能系统严重依赖数据，人们越来越担心数据被收集、使用和保护。道德和偏见问题：人们担心人工智能做出有偏见或不公平的决定，特别是在敏感领域，如招聘、医疗保健或执法。监管的不确定性：由于没有明确的规则或标准，一些组织在投资前会等待大量使用AI。变革管理：采用人工智能通常意味着重新思考工作流程和公司文化可能是困难和耗时的。</p>
-<p>我们已能看见的未来</p>
-<p>空气取水：昼夜循环、低能耗，帮助干旱与离网地区实现“水自由”。</p>
-<p>碳捕集与利用：从水泥/化工尾气到直接空气捕集（DAC）；吸附-再生-放大路径清晰。</p>
-<p>清洁能源：储氢/储甲烷/储氨的安全性与能效显著提升（室温高密度储氢仍待关键突破）。</p>
-<p>绿色分离：用“孔道-门控-相互作用”代替“加热/蒸馏”，把化工能耗“切大块”。</p>
-<p>医疗与传感：从PSA 等蛋白的低侵入检测到危害气体预警。</p>
-<p>循环材料：可拆解、可再生，向“材料即服务”的新范式迈进。</p>
-<p>Yaghi教授的科学精神与天下情怀</p>
-<ol>
-<li>
-<p>别想太多 —— DO THE EXPERIMENT, FOR GOD’S SAKE! 总会有人说方向不行，做不出来我比较逆反，我是不认可的直接试一试不就好了！我要的人是：“你这个想法很新鲜，没听过， 我们试一试” —— 而不是各种各种原因推脱DO THE EXPERIMENT FOR GOD’S SAKE❗️</p>
-</li>
-<li>
-<p>如果我是一个亿万富翁，我会创造一个机构，让全世界所有人都能自由地聚在一起，不是为了自己的国家，而是为了全人类。</p>
-</li>
-<li>
-<p>我实验室的每一个重大发现都是中国学生做的。合作：从公司层面还是可以的科研：从科研方面就比较难中国学生的创造力来自于 他们身处于非常多元化的环境中想想我从哪里了 —— 我来自约旦这是非常不同的思考方式</p>
-</li>
-</ol>
-<p>不论我们做什么，一定要让不同文化、不同思考方式的人在一起！</p>
-<ol start="4">
-<li>AI for science —— 这是见证变革的时代。省钱省时间让学生没有那么挫败 —— 做不出实验的挫败</li>
-</ol>
-<p>写在最后，当无序化为有序——从分子到文明的路径贯穿三位大师的主线：把“无序”变“有序”</p>
-<p>生命科学的秩序化（坂口志文）：生命体系中免疫调控的有序性，决定着健康与疾病的边界。</p>
-<p>材料科学的秩序化（Yaghi &amp; Kitagawa）：把原子/分子像“经纬线”一样可设计、可编织，从而让材料的孔道、有序度与稳定性按需生成，最终服务于捕碳、储能、从空气取水、精准分离与传感等现实难题。</p>
-<p>这条主线不仅是科学方法，也是一种组织方法：当我们能把无序的资源、关系与信息，结构化成“可验证、可复用、可扩展”的体系，文明就会前进一小步。</p>
-<p>别想太多，去做实验吧！有了第一步，后面的路，才会自己显现。</p>
-<p>—— 写在高山书院的“诺奖大年”</p>
-<p>献给每一位仍对世界保持好奇、谦卑与行动力的你。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "0WtMalZuISTYdcBG", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -147,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

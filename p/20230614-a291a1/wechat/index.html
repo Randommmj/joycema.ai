@@ -16,25 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2023年6月14日" data-url="https://joycema.ai/p/20230614-a291a1/">复制正文到公众号编辑器</button>
 <a href="/p/20230614-a291a1/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2023年6月14日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>今天，负伤搞定了一条难度线</h1><p>Joyce Ma<span>2023-06-14</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>最近爱上攀岩。</p>
-<p>由于都是忙里偷闲地爬，所以时间很不固定，不好约教练训练，导致动作很不标准。</p>
-<p>咱就主打一个硬上。</p>
-<p>这确实是个有一点点危险性的运动。</p>
-<p>可是，如果只差一步就成功，你是不可能不去尝试的。</p>
-<p>今天只有半小时的时间，又来磕这条13号难度线。‍‍‍‍‍‍‍‍</p>
-<p>因为上一次已经把所有的难点都突破了，只是体力和时间都不支持重新走一遍。 所以这次热完身就开爬，信心满满地想要一次性搞定！</p>
-<p>结果……上来就负伤……血滴答了一地。</p>
-<p>不过，带着伤，还是想要再试一次！</p>
-<p>站在墙的前面，闭上眼深呼吸10次，让因为紧张而升高的心跳平复，保持冷静，才不会手心一直出汗。</p>
-<p>开爬，中间每一步都停下休息，让胳膊始终保持战斗力，最后一个休息点，大口呼吸，调整心态。‍‍‍</p>
-<p>到最后一步：之前每次起跳都够不到，不要想太多，专注于自己的身体控制——重心转移，深呼吸——起跳！搞定！ ！</p>
-<p>踹个铃铛🔔皮一下，开心一整天～～‍‍‍‍‍‍‍‍‍</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "i9iQ/U9C3gWsm5NI", "c": "tVRTby//rqJGMe4QBGXyxVm44FQVo14bPzYj+enydEtBty9RGsYP2szKxGhj7t49CJxLgXpsLfN1HeKqGdh71iOTFvZMa8mqMe2GjFLTOhB4SMGkdCMAXSCSjW7BVub9dzenE9kgNM4q1QERoRn8Wt26zLSWHdygJnzE4qtKIlFEmbyxITQ5RM8doCQw76nPbH4jcek7vf9F5rJLZymeyTuMLMk0twf3YD36ty56uENQAnKjtmUCRiJPlLCjpuDR9X03JVOPVuwql1yVbyduCL8+fmnG8nZCbRXP0VVMm5QV/zHYM4M16fCQ+l1CRdasqAugkTvFWBOEtnuVSJ/sk3VvRKVsTHHWFcLNpyvDXeQf9UDJYx9todUwy+Y4xu/0gb+xME2HAZmQbSW8vNSr4hZDddoHZiPb2pM+fBtYMSXdPy6CTWVrEZdFtqhhVD+qhu2xI88sHBbRhkpZVwZkkBAhQJ7BT9Xc8w+7jwRbmEJht1omjc9EmvmChrks8KrBl8c4xmZbBPzQ4iBQ5O99hXw8MxUIw5/HaLBXcXImewyY0MfDGdwKOhgbOW7KkP4G2Ls4cnGpCH02tRSYn9axjeBuS0k7Q1wEMWqb5eampZim5DgUugfZqbssxAl3VAWEGSFJSGbfEhyXfjTgYZ8gTMIl9Nz2gq5Nbrp2Cfqf89nfr0hNoDuCDmA9ytxT/fPBg/Sv616ryAtfuMtZfrrvMVvJE8vC6lBH7JGBCP8I4V++4w/7c8unkb4v+Jt+Pr9XTihrTFJ6DaCIv4IVVsA6XemaKLqSM2mPH8px5xYcCRdUrcVgNE5cDhf+7fTtTIb85sLkMyDVhbZ7I9OeXPmnezasj4GhaLtFl2Xx3kM5s+6JMdunlzQhG1Y+g5JQgKOGcx40GEyCQ+9rXxKPiLZ5ZFMNawEvMqOxybUKvSZKKHG7hUTC+YP316aL2Brj3pOzLOjYk+iViJLTgy5KXCBnQGxS/NTWF9CMZyaeUgFAT+Vfhgp+rX42zB1eGu0AamA8ZIPMqVQIxloYlREFj71WnF6JNXKBFIbFWlq5pDst/s7wUnzeLJiLbATJeYRKAomBrEE+tLm+sR4XrMjoaSBKgatitp84y/YK7DfYlDqs/Jig4IkYoi9mVSrqKhuBnqcLgXbvkCzSdEztta2DFqsAg+fvCYVRKBx50/dUvzjXtkFzbhl7Cq1zRKHtmgiguQKU8KpoPj5zlh+d9mXBqrTIZ9obA9Jbr2YzIDBYzbs5yxoRfPYZuFVQdL9qFD7ymxGSW9PTRTkWq4XTMs8Ywg0yoPxkI25GPP05SyLgKQl/8C2RvrtpK3MZrxuQW6RXYgri1ltuFBBJRPalyMlwKCDSb+Q9jfPIG/CAsaD0A6TUV8arjdQOTw3I/f/pG2NDvpktGgCTKw7N0lPGnh3gpVcIiJNjK9ZAdSiIWw+P7YczoTO6tbjfqGFkDV8PSpZE8DGsFziuBvXqkGsOLmS5GWceHPbTC+wpWQDsXf262hqh1DYTi3qriCW3rYIOReoHLT8T8+yADgGGZNa1uEHhM3u62x+7b5Q0bfpI9vcce/QQ4majxARi0kSXT5RKTEh+0ECjb8mE5dslNcExY9ymcqAV9jIRs5Nb0o8KCFRc7QZH2mmiaBXkYvirJN+epMqxwd0Ywa+63Rg7MfAdWUQ85rH0puZo0fFTyrNRj9Ci7WGo+dc6KCRKRy2x1S2wpBhnpZW34A=="}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -103,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

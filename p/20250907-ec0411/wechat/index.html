@@ -16,59 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2025年9月7日" data-url="https://joycema.ai/p/20250907-ec0411/">复制正文到公众号编辑器</button>
 <a href="/p/20250907-ec0411/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2025年9月7日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>哈佛笔记｜危机管理 Operational Leadership - FedEx Cyberattack</h1><p>Joyce Ma<span>2025-09-07</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>这堂课我最大的take away是，要有很多专业人士做供应商，要有预案。</p>
-<p>故事梗概</p>
-<p>2017 年 6 月 27 日，破坏型蠕虫（自我传播的病毒，worm）NotPetya把 FedEx 刚收购的 TNT Express 的数字系统几乎全灭。FedEx 立即启动危机手册（BCDR），一边“切断+自保”，一边“手工接力+逐步重建”，把“技术灾难”变成“运营韧性”的一次实战。</p>
-<p>早上，美洲总部收到欧洲告警。TNT 的电脑与服务器像多米诺一样“黑屏+赎金界面”。最初像勒索软件，但很快确认是抹盘型恶意软件（wiper malware），目的是“破坏”，不是“要钱”。传播极快，几分钟“瘫一馆”，几十分钟“瘫全球客户端”。TNT 约 4 万台电脑 + 1 万台服务器报废。</p>
-<p>FedEx 迅速成立网络事件应对小组（CIRT），切断 TNT 与 FedEx 的连接（“按下大红钮”），保护“母舰”。当晚决定向 SEC 报告重大事件（8-K），并短暂停牌说明。股价基本稳。次日发布新闻稿：其他业务正常，TNT 受影响，财务影响“可能重大”。</p>
-<p>技术上，在英国 Atherstone 建立战情室（war room）。TNT 只剩零星纸质网络图与少量未联网笔记本文件。电话系统挂了，靠 WhatsApp 通讯。团队先重建<strong>账号/目录服务（Active Directory）</strong>与“能活下去的五件事”（通讯、应付/应收等）。</p>
-<p>运营上，不关门。沿用主备三层（P-S-T）：能切到 FedEx 的系统就切，切不了就“全手工”。车照发、路由靠“肌肉记忆”。同时由“FedEx 银行”注入营运资金，先保证 TNT 活着。</p>
-<p>备份体系是痛点。TNT 主要用磁带冷备，无法并行快速恢复。FedEx 紧急采购硬盘，把磁带拷到盘上并行恢复，上云、盘、离线“三份”新备份；特权账号从“几千人有权”降到“像 FedEx 一样仅 8 人”。同时把应用减负 900 个。</p>
-<p>客户侧，CIO 团队“一对一”安抚 40 家大客户。仍出现周级延误，媒体报道仓库“包裹堆到天花板”，竞争者趁机挖客。FedEx 当时没有网络险（cyber insurance），损失以业务流失为主。</p>
-<p>溯源后确认：这是一场供应链攻击（supply-chain attack），从乌克兰财务软件的合法更新入口渗透，全球多家巨头中招，总损失估 ≥100 亿美元。股价并没有受到太大冲击。</p>
-<p>课堂笔记</p>
-<ol>
-<li>
-<p>当危机来临时， 你在Plan模式还是Responding模式？</p>
-</li>
-<li>
-<p>Crisis management company可以先成为供应商，并且给公司做危机预演。让风险管理方去「钓鱼执法」， check who is the weak point如果发现了，那需要接受一个周末2天的额外培训。</p>
-</li>
-<li>
-<p>Take Blame and Failure out of the discussion — Focus on MissionCEO NOT emotional很重要</p>
-</li>
-<li>
-<p>Before bring a new company to your car, you need to understand the materials of this new company.</p>
-</li>
-<li>
-<p>What is the last time you ask your people to put the company above them.</p>
-</li>
-<li>
-<p>Are your people BURN OUT？</p>
-</li>
-</ol>
-<p>所有危机应对建议</p>
-<p>先稳住局面</p>
-<p>确认危机的真实范围和影响，避免过度恐慌或小题大做。</p>
-<p>立即设立一个临时危机小组，集中沟通与决策。</p>
-<p>保护核心</p>
-<p>先确保现金流、关键客户、核心员工和品牌声誉。</p>
-<p>如果是公关危机，迅速统一口径，避免信息混乱。</p>
-<p>透明沟通</p>
-<p>对内：让员工知道情况，避免谣言和恐慌。</p>
-<p>对外：与客户、合作伙伴和媒体保持适度透明，承认问题、传递解决方案。</p>
-<p>制定短期行动计划</p>
-<p>72小时内明确优先事项（如止损、稳定关系、合规应对）。</p>
-<p>把问题拆解成几个可执行的小步骤，逐一落实。</p>
-<p>长期修复与预防</p>
-<p>危机过后进行复盘：为什么会发生、内部哪些机制失效了？</p>
-<p>建立“预警系统”和演练机制，把危机转化为组织升级的机会。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "fyc2FEhYr2dl1otf", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -137,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

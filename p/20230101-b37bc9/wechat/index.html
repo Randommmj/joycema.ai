@@ -16,19 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2023年1月1日" data-url="https://joycema.ai/p/20230101-b37bc9/">复制正文到公众号编辑器</button>
 <a href="/p/20230101-b37bc9/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2023年1月1日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>美国游记｜高山开学典礼</h1><p>Joyce Ma<span>2023-01-01</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>这次都美国的行程之一是「高山书院」的硅谷站课程。有幸成为这次硅谷行开课典礼的主持人，</p>
-<p>在一个特别棒的地方，计算机历史博物馆。</p>
-<p>吴军老师的课很有启发，希望元旦期间，我能把自己的感悟都整理出来。‍</p>
-<p>博物馆里有几句话，在那一刻，对我有很深的触动。</p>
-<p>其实在没有开始课程之前，我对应该期待什么是不确定的。对于两年半以来的第一次美国行，也有些莫名的心绪。在一个朋友的启发和指导下，我终于找到了那个感觉——久违的对自由的呼吸，刚开始竟有点"醉氧"。‍‍‍‍‍‍‍</p>
-<p>最后，我们选定了用鲍勃.迪伦的这首歌词作为开场，作为礼物送给一同开启探索的朋友们。‍‍‍‍‍‍‍一个人要走多少路才能被称之为人一只白鸽要飞越几重大海才能在沙滩上安眠</p>
-<p>站在2022年的结尾，突然觉得这首歌也很合适。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "yS81w/X6zx6wovbf", "c": "kcOTOsaQYVsZ9qoXrE+kQRgfHWSFf3omf3iaMPQ3D0Kq0dHGckWgd+E9FaPsmFZcaXg3g6AxFIaa0Sh5UXfIVKR+0u5Mc2EEmlPPuDahHYa7Wz6C8aLOnH+M3jb+Jhxa++tfW71M8GAN/ZdKwjxu57dQr81fsUJ69wRS7kTvI1Kc2AxZjEkquiglWPRjkCCCUAy2CbJkJ1MLRlAZW2riDY8lCuBp3Y1UaMqbtpAFPI0qW///UiBrL27BrP5BDNx2DV2IqmMfRSScWt9p2E/pAzrl5M7MGkYcBmKeb1FSV4r/K5HCT2B5WVj4n4deRB2986GSHGmn2/pzprtnANeMKM6j2o0U4BLVjECpsmNqq1oV9SkqECh87LLgXnSvk/hGWtEzeT4dWPjh1K9Uk8AC18irr0vBr8PfsexSZv+kdEMgSA3wFB5HKnSMu++PyN1ffhjI0WhhfsGuQJW4KXqItRCP8aCp578LqAScf7mX0gxEppdxllhwn+gQpQlINbMa9kX/x2TP+VeZRhZNNbOeZyTTjQiuC9KXw4GkTNmBbPrQAVVJYiwgFKUmOQOE9U3Msgrs/W5oRa0oIji9L1HefxvnRxASccgfN6mPBMjcaEOCB9sXYuVNT4bO7pmx7CVmCkQrNon1pNqmOpLoEk/rhXCa/wLScShxfwkZ/I35GUwtKje2RSBJyS9eBuWTqPVXIk9SFdv+okJllLa9KWlfApK6vxk7Z54QB/EubLgQLDPskUbdkZG5sJv05glfZoNaCqvXb7oPWjCTSG0JqFwYHc7onaQbjO0RwknCWlKQKKZbRv1O1AwT+scwLeWy1WeeRVXaJ3749VLWFE4posdgeg60m2Lka+OVDDM3OtZ5BpWKO7wxMIaWvDhk7Gb8Tq1Gp8wqfCGmMeQ4/QW1abUII/8oV6Bkq/6CjR7gO9Dk82qu9IFoBbcAVP7Zxt7qbqUAnLZcyMRHYPDxVJCT8N1lBNxzfcD9YEA3MFNbctgcdpTB2sJOLMCclq/pmJjpcSmJX48K1aF9JzhQNYngvvy/M1fbbQuZBkC/ihgU87Yy5pxaj+LlIOwIGcT7EUknzByJViCX9ds0a7SQCO8GumGC1BgSTKnFcG7H9/A8WKNUn1PNmO2qKQ5A5NE2g8sjYFmx6ousc/nBBHQ1GJ/O3y9nWhqQoxSmH0M7jHdLMvvh6PhFIYxCu39wS/6DbWtb9/Jtxuis1/IyOT+qaJ4OFmKhZ5A98fk0dxFlIbvrwCngD/hKTBDD0G56YIVNBfxf3QLEjTcs2wgC3m5QdRtdjL52n8xqBum5yiBclBWsi5g+FFN8CBHysCmkAGY3xSanfoNPJuGag07fOupl4V+p/kqXjrpouGrbaw0DGcLOr4vrwpSghKBKD2E9ZiQF2VefHPazHA=="}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -97,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

@@ -16,90 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2025年10月14日" data-url="https://joycema.ai/p/20251014-87fc33/">复制正文到公众号编辑器</button>
 <a href="/p/20251014-87fc33/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2025年10月14日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>Arcus42 · 浅谈｜AI时代，孩子该怎么长大？</h1><p>Joyce Ma<span>2025-10-14</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>在AI的浪潮里，</p>
-<p>我们不是在寻找确定的答案，</p>
-<p>而是在学习与孩子一起成长——</p>
-<p>带着好奇、勇气与温度。</p>
-<p>Arcus42 · 浅谈 系列</p>
-<p>「浅谈」是Arcus42新推出的开放对谈系列，</p>
-<p>与「深谈」共同构成我们新的学习体系。</p>
-<p>深谈，探索本质与思想；</p>
-<p>浅谈，连接现实与实践。</p>
-<p>本期嘉宾 </p>
-<p>肖盾｜Ainia 创始人 &amp; CEO</p>
-<p>剑桥大学圣三一学院、麻省理工学院双学位</p>
-<p>纳斯达克上市公司“一起作业网”联合创始人</p>
-<p>时间｜2025年10月15日 2:30 - 3:30PM</p>
-<p>方式｜线上视频会议（邀请制）</p>
-<p>关于嘉宾</p>
-<p>“AI中最懂教育的，在教育中最懂AI的。”这句话，用来形容肖盾，再合适不过。他是一个典型的“别人家的孩子”，却从未被成就定义。</p>
-<p>从剑桥到AI宇宙</p>
-<p>曾就读于人大附中，是学校里最活跃的寄宿生之一。他的小号吹得极好——曾获得国际管乐大赛银奖，并代表中国参加瑞士洛桑国际管乐节，那时的他，已经是一个能用音乐沟通世界的少年。</p>
-<p>2001年，他凭借出众的成绩和品格，</p>
-<p>获得雷瑞德教育基金会奖学金，</p>
-<p>赴英国米尔菲尔德中学就读；</p>
-<p>随后获留学生金奖，</p>
-<p>考入牛顿曾经就读的剑桥大学圣三一学院。</p>
-<p>之后前往麻省理工学院（MIT）进修，</p>
-<p>以剑桥与MIT的双本科学位毕业，</p>
-<p>从剑桥大学毕业时，他才22岁。</p>
-<p>他是铁人三项选手，也是公益行动者。</p>
-<p>他相信，教育的意义在于让人成为完整的人，</p>
-<p>既能逻辑思考，也能感受世界。</p>
-<p>随后，他回到中国，</p>
-<p>2011年联合创立“一起作业网”，</p>
-<p>让几千万中国孩子第一次在网上“边玩边学”。</p>
-<p>2020年12月4日，</p>
-<p>一起教育科技在纳斯达克挂牌上市，</p>
-<p>市值达到 19.83 亿美元。</p>
-<p>这是一场从“教育者”到“教育系统创新者”的长跑。</p>
-<p>再出发：Ainia，一个通过故事学习的宇宙</p>
-<p>如今，他的事业重新回到初心。</p>
-<p>他创立了 Ainia——</p>
-<p>一个“通过故事来学习的宇宙”（A Universe of Story Learning）。</p>
-<p>Ainia的理念是“一个滋养孩子心灵的地方（A Place Where Young Minds Flourish）。”</p>
-<p>它相信，</p>
-<p>同理心、适应力与善良</p>
-<p>是AI时代最核心的“人类技能”。</p>
-<p>通过身临其境的故事讲述与互动体验，</p>
-<p>Ainia帮助孩子与家人、朋友、世界建立深厚的情感链接。</p>
-<p>这一次，我们想聊的，不只是AI</p>
-<p>AI正在以惊人的速度改写教育、劳动与认知的边界。</p>
-<p>家长、教师与企业家都在问——</p>
-<p>未来的孩子，究竟该如何学习、工作与生活？</p>
-<p>Arcus42 的「浅谈」系列，一直关注这些跨代议题。</p>
-<p>本次，我们将与肖盾一起，</p>
-<p>展开一场“面向未来的家长谈”：</p>
-<p>AI的冲击下，家长该如何培养孩子？</p>
-<p>——知识是否还重要？教育的终极目标是否正在被重写？</p>
-<p>AI时代，孩子该如何使用AI？</p>
-<p>——当AI能帮他们写作业，我们究竟该担心什么，又该如何引导？</p>
-<p>AI对教育产业的影响？</p>
-<p>——学校、平台与家庭教育的边界是否会被重新划分？</p>
-<p>AI对未来劳动市场的影响？</p>
-<p>——当AI能取代许多“聪明的工作”，孩子的第一份工作该怎么找？</p>
-<p>“真正的教育，不是为了适应工具，而是为了让人类继续提出更好的问题。”</p>
-<p>在AI的浪潮里，</p>
-<p>我们不是在寻找确定的答案，</p>
-<p>而是在学习与孩子一起成长——</p>
-<p>带着好奇、勇气与温度。</p>
-<p>AI改变了“答案”，但提问依然是人类的特权。</p>
-<p>在代际传承的维度上，教育从来不是“怎样教”，</p>
-<p>而是“我们希望下一代成为什么样的人”。</p>
-<p>如果你也在思考传承，或者，对AI时代的教育感兴趣，</p>
-<p>欢迎扫码，或通过您的联系人，</p>
-<p>获取线上会议方式。</p>
-<p>免责声明</p>
-<p>本文所载资料仅供参考，不构成 Arcus42 及其关联公司对任何证券、金融工具或其他投资产品的买卖要约、邀约邀请，或任何投资、会计、法律、税务方面的建议。任何人士不应单纯依赖本文内容做出投资或其他决策，相关决策应基于独立判断并咨询适当的专业顾问。过往业绩并不代表未来表现，市场有风险，投资需谨慎，投资者可能无法收回全部投资。</p>
-<p>本文所载观点、判断及信息均基于发布当日可得资料及分析，仅供说明之用。Arcus42 已合理努力确保信息来源的可靠性，但不对内容的准确性、完整性或适用性作出任何明示或暗示的陈述或保证，亦不对因使用本文或依赖其内容而可能导致的任何直接或间接损失承担责任。本文所含观点和信息可能会随市场或其他条件变化而调整，Arcus42 无义务对其进行更新或另行通知。</p>
-<p>若本文引用或转载第三方资料，相关内容仅代表该第三方观点，并不代表 Arcus42 的立场。除非事先获得 Arcus42 的书面同意，任何机构或个人不得以任何形式复制、转载或传播本文内容。</p>
-<p>©2025 Arcus42保留所有权利。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "8NP40PdBT5qytHET", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -168,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

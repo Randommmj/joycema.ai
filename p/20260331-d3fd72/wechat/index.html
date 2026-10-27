@@ -16,37 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2026年3月31日" data-url="https://joycema.ai/p/20260331-d3fd72/">复制正文到公众号编辑器</button>
 <a href="/p/20260331-d3fd72/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2026年3月31日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>Tracy老师，走了。</h1><p>Joyce Ma<span>2026-03-31</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>我必须为她写点什么</p>
-<p>今晨，我的人生挚友——哈佛商学院中国区主任Tracy离开我们了。因为她，我们这些天南海北的同学们得以相聚在一起，建立友谊、分享经历、互相支持。Tracy用她的热情、细心和智慧，将不同的人联系在一起，搭建起一个充满温暖与信任的社区。她的离去让人无比悲痛，愿Tracy在另一段旅程中快乐安宁。</p>
-<p>Tracy离开了，很突然。</p>
-<p>我希望她没有痛苦。</p>
-<p>很难过，写下这篇文章，是对她郑重的告别。</p>
-<p>也是纪念她的坚强乐观，以及，爱。 </p>
-<p>她的最后一条朋友圈还停留在招生</p>
-<p>她说自己是把哈佛当成个体户来做的老师，她真的是。</p>
-<p>最初的相识</p>
-<p>2018年3月，第一次在英国认识庞老师。 她的第一句介绍，就是自己讲在哈佛商学院作为主任欢迎大家，希望大家享受学习，紧接着就是哈佛宿舍的六七张照片。</p>
-<p>此后是逢年过节的相互问候，我寄橙子和大米给她，她寄《Harvard Business Review》；我送她鞋子，她送我哈佛学院风小外套。</p>
-<p>我把它们放在A书房，希望路过的客人会随手翻看。</p>
-<p>直到疫情解封前，我们一起做公益。</p>
-<p>我刚好有药，而Tracy则是把它们拆成一小包一小包的，送给周围的老人家。</p>
-<p>她一直在夸身边的人是天使， 那是因为 —— 天使的眼中能看到天使。</p>
-<p>在一段留给我们的视频中，她说：</p>
-<p>“我最爱最爱最爱最爱，最爱最爱最爱的SELP同学们，庞老师先拿了一个车票，先早下车。</p>
-<p>很幸运能够在这个欢乐的车厢里，HBS的SELP的车厢里和大家相遇。我们每个人都以最大的爱上了车，然后，各种车次来来往往，我们也频频繁繁的从这个欢乐小中巴去了那个爱的高铁。</p>
-<p>但是庞老师先提早下了个车，但是会带着所有给大家的爱和希望，以及牵挂，继续护送大家。 让哈一代、哈二代、哈三代……哈十代继续延续。</p>
-<p>这一路，没有任何的遗憾。我现在非常的期待去迎接我的下一个征程。</p>
-<p>因为爱是永恒的。</p>
-<p>所以我们大家把这个爱，延续下去，让爱放大，放大。无限大！”</p>
-<p>Tracy，我们会想你的。</p>
-<p>愿下一段旅程，你还做天使，</p>
-<p>遇到很多很多的天使。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "Hyc0vXzyGo+S0QPn", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -115,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

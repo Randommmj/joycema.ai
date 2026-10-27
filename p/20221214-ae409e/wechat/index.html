@@ -16,18 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2022年12月14日" data-url="https://joycema.ai/p/20221214-ae409e/">复制正文到公众号编辑器</button>
 <a href="/p/20221214-ae409e/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2022年12月14日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>⾛出疫情，我们都有光明的未来。</h1><p>Joyce Ma<span>2022-12-14</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>我们知道「终点」终于要到来了，只是，在黎明之前，我们还要经历⼀段的⿊夜。 这个时候最重要的是保护⾃⼰、保护家⼈，⾛出疫情，我们都有光明的未来。</p>
-<p>分享张文宏医生团队的发文，并提炼出要点给大家。以下：1. 新冠症状与流感、感冒等呼吸道病毒性疾病很类似，不要恐慌。2.免疫功能正常的人，吃退烧药、睡一觉、多喝水、吃点维生素C就可以扛过去3.目前奥密克戎珠未造成特异性的人体器官长期损伤（后遗症），人类可以应对与接受。4.结合海外经验，Omicron第一波流行感染高峰人数较多，后期第二波、第三波的疫情反弹，将显著弱于第一波。5.儿童及60岁以下成年人的重症率已显著下降，老年人（年龄≥60岁）是新冠感染的高危人群，老年人是保护的重中之重。年龄大于80岁、同时伴有多种基础疾病、肿瘤、接受免疫抑制剂等高危因素中的几种，会进一步增加重症率。6.接种疫苗是最好的手段！接种疫苗是最好的手段！接种疫苗是最好的手段！接种疫苗可以降低老年人新冠感染后的重症率，降幅高达76-98%。尚未接种的老年人，应抓紧时间，在第一波疫情高峰期来临之前尽快接种。7.较多人群最近一次疫苗接种超过半年，抗体水平有所下降，3针优于2针优于1针。8.延缓老年群体的感染时间，争取第一波流行高峰免于感染。若能延缓老年群体的整体感染时间曲线，哪怕仅仅延后1-2个月，整个社会的疫苗免疫屏障会更加坚固，医疗资源度过第一波疫情高峰期，也会更充足与从容。‍‍‍‍‍‍‍‍9.疫情上升和高峰期，尽量减少外出、戴口罩、勤洗手、勤通风、保持室内空气流通；保持充足的睡眠和均衡的营养，增强抵抗力，调整心情。‍‍‍‍‍‍‍10.有慢性病的老年人，若病情控制稳定，非必要不去医院，多储备长期使用的基础疾病药物（如高血压药、糖尿病药等）。11.老年人尤其年龄大于80岁的老人，服用解热镇痛药应慎重，大量服用容易造成肝功能损害，也可能大量出汗导致低血压休克。12.家中成员，应该自觉保护好老年人，减少非必要的外出和聚集，一旦疑似感染，减少和老人的接触。</p>
-<p>最后，张文宏医生的团队说：新冠病毒一定会逐渐被纳入常态化的呼吸道病毒，从大流行向地方性流行/季节流行转化，也许一夜醒来，就会发现，我们已经艰难度过了大流行。</p>
-<p>以下为原文截图：</p>
-<p>《保护家人，走出疫情》华山感染</p>
-<p>原文链接：《保护家人，走出疫情》</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "ivrtY68/nAl4uI8q", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -96,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){

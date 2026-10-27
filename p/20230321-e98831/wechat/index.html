@@ -16,58 +16,22 @@
   .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
   .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
   .article{padding:16px}
+  .bar,.note,.phone{display:none} body.open .bar{display:flex} body.open .note,body.open .phone{display:block}
+  #lock{max-width:320px;margin:18vh auto 0;padding:28px 24px;background:#fff;border-radius:14px;box-shadow:0 12px 40px rgba(20,24,40,.12);text-align:center}
+  #lock h1{margin:0 0 6px;font-size:17px;color:#1a1a1a} #lock p{margin:0 0 16px;color:#8a8f99;font-size:13px}
+  #lock input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 12px;border:1px solid #cfd3da;border-radius:6px;margin-bottom:12px}
+  #lock button{width:100%;font:inherit;font-size:15px;padding:10px;border:0;background:#385EA1;color:#fff;border-radius:6px;cursor:pointer}
+  #err{color:#c0392b;margin:10px 0 0 !important}
 </style></head><body>
+<form id="lock"><h1>公众号版预览</h1><p>仅供作者使用，请输入密码</p>
+<input name="pw" type="password" autocomplete="current-password" aria-label="密码"><button type="submit">打开</button>
+<p id="err" hidden>密码不对，再试一次</p></form>
 <div class="bar"><button id="copy" type="button" data-date="2023年3月21日" data-url="https://joycema.ai/p/20230321-e98831/">复制正文到公众号编辑器</button>
 <a href="/p/20230321-e98831/">← 回到网页版</a></div>
 <p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2023年3月21日」和本文网址。</p>
 <div class="phone"><div class="wxhead"><h1>众筹一场音乐会</h1><p>Joyce Ma<span>2023-03-21</span></p></div>
 <div class="article" id="light"></div></div>
-<template id="src"><div class="prose"><p>如果要说，</p>
-<p>2022年有哪一天，我人生的轨迹被往某个方向推移了一点点，以至于它将在后面的年月中不断不断地叠加，形成巨大不同的话，那么，高山书院的「星空音乐会」—— 那一场英仙座流星雨下的集体心流，必须是其中最美妙的一天。</p>
-<p>由高山顾问前中央音乐学院副院长周海宏教授亲自导览，从「音乐何须懂」开始，一直到音乐的情绪、技法、结构……体验之美妙无以言表。只能说：在那一天的之前和之后，音乐之于我，是完全不同的存在。这种感动行程的涟漪久久无法平息。因此，在高山同学的带动下，我们决定一起行动，让美好再现。让这份感动和收获，不止步于我们。</p>
-<p>此次主角之一当然还是周海宏教授，他不仅仅是位音乐美学家，还是一位音乐心理学、教育学家，对哲学、美学、人格与动机心理学有深入的研究，是教育部全国中小学美育教学指导委员会副主任委员。此外，我们也有幸邀请到阵容强大的音乐家们：</p>
-<p>上海爱乐乐团首席大提琴家</p>
-<p>——吴敏喆老师；</p>
-<p>二胡演奏家、上海音乐学院教授——王莉莉老师；</p>
-<p>琵琶演奏家——徐贺老师；‍‍‍</p>
-<p>扬琴演奏家、国乐系教授——于海英老师；</p>
-<p>中央音乐学院附中的天才钢琴家——杜沛达老师；</p>
-<p>上海音乐学院的天才小提琴家——包申诺老师；</p>
-<p>虽然其中一位只有14岁，但达者为先，统称「老师」。而且，我们还安排了一个很～～特别的场地👇</p>
-<p>原新天安堂</p>
-<p>这栋哥特复兴式的建筑，是外滩四号历史保护建筑，由威廉.道达尔所设计。它位于外滩源区域，是“万国建筑博览会”的源头，也是上海现代城市的源头。</p>
-<p>1886年竣工时，成为南苏州河岸的制高点，也是中国近代史上诸多重要事件的发生地。</p>
-<p>1920年，英国哲学家罗素曾在此发表过演讲。（待考证）</p>
-<p>我们将在这所百年教堂中，一起感受音乐之美妙。然而相信我，这不只是一场音乐会，它更像一场美学教育和哲学的思考。</p>
-<p>如果你也曾经为「听不懂音乐」而苦恼，它能解放你的思想；</p>
-<p>“音乐是听觉的艺术，感受纯听觉之美是音乐艺术最重要的欣赏价值。正如美术是视觉的艺术……美食是味觉的艺术，没有人会问，一盘东坡肘子里有什么深刻的思想内涵和人文底蕴。” </p>
-<p>如果你是位资深音乐爱好者，它能让你与专业的音乐鉴赏者一起，抽丝剥茧地感受音乐的细腻和微妙；</p>
-<p>“中国民族乐器不能只听音，还要听技法。古筝，要注意听它后三分之一的音。”</p>
-<p>如果你有孩子，那么请一定一定一定带ta们来，在人生的早期阶段打开享受音乐的大门，那将无比幸福。（小学以上就可以了哦～）‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍‍</p>
-<p>“一个人的品性若想趋于完善，不仅要拥有获得幸福条件的素质，还要拥有体验幸福感受的素质。”</p>
-<p>“人的感性素质，培养的关键期在童年，审美偏好、习惯和标准都在童年形成观念。……在艺术之美中培养起来的人会拥有良好的感性素质，哪怕今后遇到各种负面影响，也能在高雅的文化艺术生活中将其排解掉，这就是艺术教育在社会生活中的重大意义。”</p>
-<p>AGAIN‍‍‍‍‍‍‍‍‍‍‍‍‍时间：2023年4月1日，19:30-21:00</p>
-<p>地点：上海外滩南苏州路103号 原新天安堂（又名「不知空间」）音乐会已经敲定，但还在紧张的筹备中。作为一个非盈利项目，为了其可持续性，也为了让更多小伙伴可以一起玩儿，这将会是一个众筹+共创的活动。 众筹和共创的方式可以是</p>
-<p>—— 出钱｜出力｜出资源。</p>
-<p>众筹共创席位</p>
-<p>123个席位。‍‍‍‍‍‍</p>
-<p>出钱</p>
-<p>根据场地、乐器等费用测算，每位听众1234元（正好是音符do re mi fa😁）报名方式一，请联系我。‍‍‍‍报名方式二：使用快团团二维码链接，付款并留下姓名、电话，最好也同步给我。</p>
-<p>出力1）现场的摄影及宣传片剪辑</p>
-<p>2）摄像及云端实时分享</p>
-<p>报名，还是请联系我‍‍‍‍</p>
-<p>出资源1）现场鲜花布置2）给演奏家们的现场鲜花及礼物3）4月1日演奏家的欢迎午餐4）音乐会间歇期间的茶歇5）基于本次音乐会的伴手纪念品设计及提供</p>
-<p>6）现场志愿者统一服装的设计、制作与提供</p>
-<p>报名，还还是联系我😄‍‍</p>
-<p>所有筹备小组的成员承诺：本次活动若有盈余，将以公益的心态，妥善使用，做好更多的事情，并遵循「过程透明、决策透明、财务透明」三个原则。</p>
-<p>未来，我们希望这样的美好，继续生长；让音乐感召更多人，欣赏生命之美；让音乐启蒙惠及更多人，川流不息。</p>
-<p>最后，再quote一段卡内蒂的话：</p>
-<p>“音乐是最好的疗愈，因为音乐不产生话语。即使将话语加之于音乐，他自身的魔力也足够将话语的危险消解掉。</p>
-<p>世界上的人口越多，生命的形态就越像机器，音乐就越重要。我们即将来到一个时代，只有音乐能够溜出功能的密网，未来的学者们最重要的任务就是守护音乐，这世上最后一片稳定而独立的自由的栖息地。</p>
-<p>音乐是人类最鲜活的历史，除此以外，所有东西都已经死了。人们不需要创作音乐，因为它一直在那里等我们，我们只需要静静聆听，别的都是多余。”</p>
-<p>——《人的疆域：卡内蒂笔记（1942-1985）》</p>
-<p>鉴赏&amp;导赏：周海宏教授统筹：解路军教授（同济大学中德音乐中心主任）主持：蒋昌建教授 发起人：高山书院 王雨豪 萨其马 林子 马懿</p>
-<p>特别鸣谢：感谢虹口区政府相关领导的盛情邀约和鼎力支持；本次音乐会将可能成为更多音乐与美学系列活动的起点，并移步虹口区。</p></div></template>
+<script type="application/json" id="enc">{"s": "YerfkxPYtQCNkymbKB9TYg==", "n": 200000, "i": "Qxph1TyiYV1psxlC", "c": "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"}</script>
 <script>
 
 function wxConvert(root, heroSrc, date, url){
@@ -136,11 +100,29 @@ function wxConvert(root, heroSrc, date, url){
 }
 
 (function(){
-  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
-  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
-  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
-  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
-  box.innerHTML=html;
+  var btn=document.getElementById('copy'), box=document.getElementById('light'), form=document.getElementById('lock');
+  var enc=JSON.parse(document.getElementById('enc').textContent), html='';
+  function b(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); }
+  async function decrypt(pw){
+    var base=await crypto.subtle.importKey('raw', new TextEncoder().encode(pw), 'PBKDF2', false, ['deriveKey']);
+    var key=await crypto.subtle.deriveKey({name:'PBKDF2', salt:b(enc.s), iterations:enc.n, hash:'SHA-256'},
+                                          base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+    var pt=await crypto.subtle.decrypt({name:'AES-GCM', iv:b(enc.i)}, key, b(enc.c));
+    return new TextDecoder().decode(pt);
+  }
+  function show(src){
+    var d=document.createElement('div'); d.innerHTML=src;
+    var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+    html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+    box.innerHTML=html; form.hidden=true; document.body.classList.add('open');
+  }
+  async function tryPw(pw, quiet){
+    try{ show(await decrypt(pw)); try{ localStorage.setItem('jm_wx_pw', pw); }catch(_){} return true; }
+    catch(_){ if(!quiet){ var e=document.getElementById('err'); e.hidden=false; } return false; }
+  }
+  form.addEventListener('submit', function(e){ e.preventDefault(); tryPw(form.pw.value, false); });
+  var saved=null; try{ saved=localStorage.getItem('jm_wx_pw'); }catch(_){}
+  if(saved) tryPw(saved, true); else form.pw.focus();
   function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
     setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
   function viaSelection(){
