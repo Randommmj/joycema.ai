@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>创业手记｜超越实习期的实习项目 · 公众号版</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<style>
+  body{margin:0;background:#e9ebef;font:14px/1.6 -apple-system,"PingFang SC",sans-serif;color:#26272d}
+  .bar{padding:18px 16px 10px;display:flex;gap:12px;justify-content:center;align-items:center;flex-wrap:wrap}
+  .bar button{font:inherit;font-size:15px;padding:9px 20px;border:1px solid #385EA1;background:#385EA1;color:#fff;border-radius:4px;cursor:pointer}
+  .bar button.ok{background:#fff;color:#385EA1}
+  .bar a{color:#5f6470;text-decoration:none} .bar a:hover{color:#26272d;text-decoration:underline}
+  .note{max-width:640px;margin:0 auto 18px;padding:0 16px;color:#5f6470;font-size:13px;text-align:center}
+  .phone{width:390px;max-width:calc(100% - 32px);margin:0 auto 48px;background:#fff;border-radius:28px;box-shadow:0 12px 40px rgba(20,24,40,.18);overflow:hidden}
+  .wxhead{padding:22px 16px 0}
+  .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
+  .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
+  .article{padding:16px}
+</style></head><body>
+<div class="bar"><button id="copy" type="button" data-date="2025年9月16日" data-url="https://joycema.ai/p/20250916-0f3b81/">复制正文到公众号编辑器</button>
+<a href="/p/20250916-0f3b81/">← 回到网页版</a></div>
+<p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2025年9月16日」和本文网址。</p>
+<div class="phone"><div class="wxhead"><h1>创业手记｜超越实习期的实习项目</h1><p>Joyce Ma<span>2025-09-16</span></p></div>
+<div class="article" id="light"></div></div>
+<template id="src"><div class="prose"><p>哈佛同学Dan的一篇博客启发了我： </p>
+<p>Internship可以非常酷！可以非常有产出，尤其在他们擅长的地方！</p>
+<p>我需要年轻人，需要有激情且愿意做出一点cool stuff年轻人！</p>
+<p>Lesson Learnt：</p>
+<p>实习生 = Project-based contributor</p>
+<p>短期聚焦，快速出成果</p>
+<p>实习生不需要承担复杂的长期战略任务，只要在 2–3 个月内解决一个明确的功能性问题，就能留下实际成果。</p>
+<p>作者的两个项目（播客工作流、Slack 导出器）都是这样：功能聚焦 → 痛点解决 → 立刻见效。</p>
+<p>成就感驱动</p>
+<p>实习生往往缺乏组织影响力，但如果项目可以“被全公司使用”，他们能获得极大的心理满足感与归属感。</p>
+<p>这种体验远比“做调研、写备忘录”更能留住人才，甚至让实习生成为长期拥护者。</p>
+<p>双赢模式</p>
+<p>对公司：以很低的成本解决了一个被忽视但耗时耗力的痛点。</p>
+<p>对实习生：在短期内看到真实落地的成果，甚至能写进履历或博客，长期增值。</p>
+<p>可以在Arcus42实践的内容：- 把实习设计成“解一个功能问题”：比如 Arcus42 可以让实习生负责一个“客户资料自动整理器”或“家办知识问答小工具”。- 范围要小但要能落地：目标不是“战略大方案”，而是一个有清晰交付物的 project。</p>
+<ul>
+<li>
+<p>给舞台和曝光：一旦做成，就让团队使用并给予认可，让实习生获得成就感，形成正向循环。</p>
+</li>
+<li>
+<p>潜在的人才筛选机制：能在短时间内交付有价值工具的实习生，未来更可能成为核心成员。</p>
+</li>
+</ul>
+<p>下一篇文章就要招实习生！</p>
+<p>以下为博客原文：</p>
+<h2 id="实习项目机器学习trailofbits工作体验">实习项目、##机器学习、##TrailofBits工作体验</h2>
+<p>大多数时候，你的暑期实习一结束，你的项目也就被遗弃了。我以前也有过这样的经历。但 Trail of Bits 不一样。作为今夏 Dan Guido 和 Sam Sharps 手下的一名业务运营实习生，我用 Claude（Anthropic 的 AI 模型）构建了两个自动化工具：一个是能每年节省 1,250 小时的播客工作流（podcast workflow），另一个是让员工能用一次查询就找到关键公司知识的 Slack 导出器（Slack Exporter）。这两个工具在我实习结束后，依然会在公司范围内被持续使用。</p>
+<p>播客工作流（Podcast workflow）</p>
+<p>Trail of Bits 拥有多个领域的专家团队，很多成员都有博士背景，涵盖 AppSec（应用安全）、AI/ML、区块链和密码学。他们希望能更多参与相关播客节目，向外界分享我们在推动网络安全边界上的探索（同时也鼓励其他人效仿）。为了对社区作出贡献，他们专注于填补一些极度细分、几乎只有他们才能解答的知识空白。但如果要靠人工逐一筛选这些关键词播客，每周要花上几百小时的收听与研究。</p>
+<p>为了确保能在海量信息中找到“针”，而且能规模化做到，我们需要一个自动化工作流。它的运行方式是这样的：</p>
+<p>用户可以手动运行，或设定在某天某时自动执行。</p>
+<p>系统会检测某集是否包含合适的关键词，Claude 随即生成各种关键信息：节目的总结、嘉宾观点、带时间戳的引述、外发邮件草稿等等。</p>
+<p>所有输出会通过 Replit 前端展示。</p>
+<p>在构建过程中，我发现 Claude 有一些局限性。例如，它会虚构不存在的员工来匹配某个播客嘉宾。为解决这个问题，用户可以上传一份 Excel 文件到 Replit 前端，将 Trail of Bits 员工与其擅长的关键词对应起来。Claude 也无法直接找到主持人的联系方式。不过它能提取主持人的姓名和网站，再通过外部 API 获取联系方式。以下是 Claude 及其他辅助工具（比如 Excel 文件）生成的洞察示例。</p>
+<p>这个工具每周能监测 50 个以上的播客，一年就是 2,500 集！即便低估，每集 30 分钟，这套流程一年就能节省 1,250 小时的收听时间。更不用说额外节省的查找主持人联系方式、匹配合适员工、撰写外发邮件的时间。</p>
+<p>Slack 导出器（Slack exporter）</p>
+<p>Trail of Bits 的 Slack 有数百个频道，每个频道可能包含数百甚至上千条消息，搜索和分析历史信息非常耗时。为此，公司之前实现过一个基于终端（terminal）的 Slack 导出工具，可以把频道导出为 JSON 或 Markdown 文件，再上传到 Claude 获取总结与洞察。</p>
+<p>然而，这个方案有两大局限：</p>
+<p>所有员工都需要用 Slack 导出器，但由于它只能在终端运行，只有工程师能用。</p>
+<p>用户必须提前知道哪个 Slack 频道包含所需信息，因为 Claude 只能理解被导出的频道内容。</p>
+<p>为解决第一个问题，我发布了 Slack 导出器的 Electron 桌面应用。用户只需启动应用，就能导出频道，无需输入任何终端命令，人人可用。</p>
+<p>此外，UI 也更高效：用户可以搜索频道，甚至一次性选择所有频道：</p>
+<p>一旦选择了一个或多个频道，用户会看到多种导出选项（JSON、Markdown 等）。</p>
+<p>为解决第二个问题，我使用 Claude 的 MCP（model context protocol，模型上下文协议），直接把我们的 Slack 工作区暴露给 Claude。这样，通过 Claude 的桌面应用或代码接口，用户可以跨所有公共频道以及他们加入的私有频道进行搜索，无需再导出。想知道公司每个项目的进展？只需一次查询。要为新员工做入职培训，但团队成员都太忙？还是一次查询。</p>
+<p>凭借这个工具的广泛应用，我们团队能把精力放在推动网络安全前沿，而不是在 Slack 频道里翻找信息。</p>
+<p>激发兴奋感（Generating excitement）</p>
+<p>人人都在谈 AI 应用，但简单地复制粘贴进聊天机器人只是冰山一角。这些项目展示了 AI 应用可以走得多远。要构建这样的应用，你必须理解用户的问题，并持续让他们参与进来。我的测试过程大概是这样的：发现 bug → 紧急现场修复 → 收到新功能需求 → 当天测试新功能。</p>
+<p>与大多数实习项目一结束就“夭折”不同，我的工具之所以存活下来，是因为通过测试，员工把这些工具应用到自己的挑战中，真实体验到效率提升，然后将其融入日常工作。同样重要的是，他们把这种兴奋感分享给其他员工，从而让这些工具成为公司范围的基础设施。</p>
+<p>通过这些项目，Dan、Sam 和我希望让大家看到，AI 并不是取代员工，而是增强他们的能力。每个团队都有等待被发现的 AI 使用场景。在 Trail of Bits，我们正努力去发现并落实它们，而每个人都能贡献力量，哪怕是实习生。</p>
+<p>编译：ChatGPT</p>
+<p>内容来源：https://blog.trailofbits.com/2025/08/28/intern-projects-that-outlived-the-internship</p></div></template>
+<script>
+
+function wxConvert(root, heroSrc, date, url){
+  var C='#333333', B='#385EA1';
+  var P='margin:0 0 22px 0;font-size:16px;line-height:1.9;letter-spacing:0.5px;color:'+C+';';
+  var H2='margin:44px 0 18px 0;font-size:20px;line-height:1.5;letter-spacing:1px;font-weight:700;color:'+B+';';
+  var H3='margin:32px 0 14px 0;font-size:16px;line-height:1.9;letter-spacing:0.5px;color:'+C+';font-weight:700;';
+  var LI='margin:0 0 10px 0;font-size:16px;line-height:1.9;letter-spacing:0.5px;color:'+C+';';
+  var TD='border:1px solid #e3e3e3;padding:6px 8px;font-size:14px;line-height:1.6;color:'+C+';text-align:left;vertical-align:top;';
+  var HR='<section style="margin:36px 0;text-align:center;"><span style="display:inline-block;width:28px;height:1px;background-color:'+B+';vertical-align:middle;">&#8203;</span></section>';
+  function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+  function abs(s){ try{ return new URL(s, location.href).href; }catch(_){ return s; } }
+  function img(src){ return '<section style="margin:8px 0 22px 0;"><img src="'+abs(src)+'" alt="" style="display:block;width:100%;height:auto;"></section>'; }
+  function inl(n){
+    var h='';
+    n.childNodes.forEach(function(c){
+      if(c.nodeType===3){ h+=esc(c.textContent); return; }
+      if(c.nodeType!==1) return;
+      var t=c.tagName;
+      if(t==='STRONG'||t==='B') h+='<strong style="font-weight:700;color:'+B+';">'+inl(c)+'</strong>';
+      else if(t==='EM'||t==='I') h+='<em>'+inl(c)+'</em>';
+      else if(t==='CODE') h+='<span style="font-family:Menlo,Consolas,monospace;font-size:14px;background-color:#f5f5f3;padding:0 3px;">'+inl(c)+'</span>';
+      else if(t==='BR') h+='<br>';
+      else if(t==='IMG') h+='<img src="'+abs(c.getAttribute('src'))+'" alt="" style="max-width:100%;height:auto;">';
+      else h+=inl(c);   // 公众号不允许外链：链接只保留文字
+    });
+    return h;
+  }
+  function blocks(root, ps){
+    var h='';
+    root.childNodes.forEach(function(c){
+      if(c.nodeType===3){ if(c.textContent.trim()) h+='<p style="'+ps+'">'+esc(c.textContent.trim())+'</p>'; return; }
+      if(c.nodeType!==1) return;
+      var t=c.tagName, imgs=c.querySelectorAll('img');
+      if(t==='IMG'){ h+=img(c.getAttribute('src')); return; }
+      if((t==='P'||t==='FIGURE') && imgs.length && !c.textContent.trim()){ imgs.forEach(function(i){ h+=img(i.getAttribute('src')); }); return; }
+      if(t==='P') h+='<p style="'+ps+'">'+inl(c)+'</p>';
+      else if(t==='H1'||t==='H2') h+='<p style="'+H2+'">'+inl(c)+'</p>';
+      else if(/^H[3-6]$/.test(t)) h+='<p style="'+H3+'">'+inl(c)+'</p>';
+      else if(t==='UL'||t==='OL'){
+        var tg=t.toLowerCase(); h+='<'+tg+' style="margin:0 0 22px 0;padding-left:1.6em;">';
+        Array.prototype.forEach.call(c.children,function(li){ h+='<li style="'+LI+'">'+inl(li)+'</li>'; });
+        h+='</'+tg+'>';
+      }
+      else if(t==='BLOCKQUOTE') h+='<section style="margin:0 0 22px 0;padding:2px 0 2px 14px;border-left:3px solid '+B+';">'
+          +blocks(c,'margin:0 0 12px 0;font-size:15px;line-height:1.9;letter-spacing:0.5px;color:#666666;')+'</section>';
+      else if(t==='HR') h+=HR;
+      else if(t==='TABLE'){
+        h+='<table style="width:100%;border-collapse:collapse;margin:0 0 22px 0;">';
+        c.querySelectorAll('tr').forEach(function(tr){
+          h+='<tr>'; tr.querySelectorAll('th,td').forEach(function(td){
+            h+='<td style="'+TD+(td.tagName==='TH'?'font-weight:700;background-color:#f7f7f5;':'')+'">'+inl(td)+'</td>'; });
+          h+='</tr>'; });
+        h+='</table>';
+      }
+      else if(t==='PRE') h+='<section style="margin:0 0 22px 0;padding:12px 14px;background-color:#f7f7f5;font-family:Menlo,Consolas,monospace;font-size:13px;line-height:1.7;white-space:pre-wrap;color:'+C+';">'+esc(c.textContent)+'</section>';
+      else h+=blocks(c,ps);
+    });
+    return h;
+  }
+  var h='<section style="font-size:16px;line-height:1.9;letter-spacing:0.5px;color:'+C+';">';
+  if(heroSrc) h+='<section style="margin:0 0 28px 0;"><img src="'+abs(heroSrc)+'" alt="" style="display:block;width:100%;height:auto;"></section>';
+  h+=blocks(root,P)+HR;
+  h+='<p style="margin:0 0 10px 0;font-size:13px;line-height:1.8;letter-spacing:0.3px;color:#8a8f99;">本文首发于 joycema.ai · '+esc(date)+'<br>'+esc(url)+'</p>';
+  return h+'</section>';
+}
+
+(function(){
+  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
+  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
+  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+  box.innerHTML=html;
+  function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
+    setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
+  function viaSelection(){
+    var r=document.createRange(); r.selectNodeContents(box);
+    var s=window.getSelection(); s.removeAllRanges(); s.addRange(r);
+    var ok=false; try{ ok=document.execCommand('copy'); }catch(_){}
+    s.removeAllRanges(); return ok;
+  }
+  btn.addEventListener('click', function(){
+    if(window.ClipboardItem && navigator.clipboard && navigator.clipboard.write && window.isSecureContext){
+      navigator.clipboard.write([new ClipboardItem({'text/html':new Blob([html],{type:'text/html'}),
+                                                    'text/plain':new Blob([box.innerText],{type:'text/plain'})})])
+        .then(function(){ done(true); }, function(){ done(viaSelection()); });
+    } else done(viaSelection());
+  });
+})();
+</script>
+</body></html>

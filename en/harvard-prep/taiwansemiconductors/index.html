@@ -310,6 +310,12 @@
       if(navigator.clipboard && window.isSecureContext){ navigator.clipboard.writeText(u).then(done, fallback); } else fallback();
     });
   });
+  // 「公众号版」入口只给 Joyce 自己：任意页面加 ?wx 打开一次即开启，?wx=off 关闭
+  try{
+    var wq=new URLSearchParams(location.search).get('wx');
+    if(wq!==null) localStorage.setItem('jm_wx', wq==='off'?'':'1');
+    var wa=document.querySelector('[data-wx]'); if(wa && localStorage.getItem('jm_wx')) wa.hidden=false;
+  }catch(_){}
   // 按 / 键去搜索
   document.addEventListener('keydown', function(e){
     var t=e.target.tagName;

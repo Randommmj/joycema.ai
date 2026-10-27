@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>哈佛笔记｜危机管理 Operational Leadership - FedEx Cyberattack · 公众号版</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<style>
+  body{margin:0;background:#e9ebef;font:14px/1.6 -apple-system,"PingFang SC",sans-serif;color:#26272d}
+  .bar{padding:18px 16px 10px;display:flex;gap:12px;justify-content:center;align-items:center;flex-wrap:wrap}
+  .bar button{font:inherit;font-size:15px;padding:9px 20px;border:1px solid #385EA1;background:#385EA1;color:#fff;border-radius:4px;cursor:pointer}
+  .bar button.ok{background:#fff;color:#385EA1}
+  .bar a{color:#5f6470;text-decoration:none} .bar a:hover{color:#26272d;text-decoration:underline}
+  .note{max-width:640px;margin:0 auto 18px;padding:0 16px;color:#5f6470;font-size:13px;text-align:center}
+  .phone{width:390px;max-width:calc(100% - 32px);margin:0 auto 48px;background:#fff;border-radius:28px;box-shadow:0 12px 40px rgba(20,24,40,.18);overflow:hidden}
+  .wxhead{padding:22px 16px 0}
+  .wxhead h1{margin:0 0 12px;font-size:22px;line-height:1.4;font-weight:600;color:#1a1a1a}
+  .wxhead p{margin:0;font-size:15px;color:#576b95} .wxhead span{color:#999;margin-left:8px}
+  .article{padding:16px}
+</style></head><body>
+<div class="bar"><button id="copy" type="button" data-date="2025年9月7日" data-url="https://joycema.ai/p/20250907-ec0411/">复制正文到公众号编辑器</button>
+<a href="/p/20250907-ec0411/">← 回到网页版</a></div>
+<p class="note">点按钮复制正文，到公众号编辑器里直接粘贴。标题、作者、封面在公众号后台单独填。图片会在粘贴时由公众号自动转存；正文链接只保留文字。文末附「本文首发于 joycema.ai · 2025年9月7日」和本文网址。</p>
+<div class="phone"><div class="wxhead"><h1>哈佛笔记｜危机管理 Operational Leadership - FedEx Cyberattack</h1><p>Joyce Ma<span>2025-09-07</span></p></div>
+<div class="article" id="light"></div></div>
+<template id="src"><div class="prose"><p>这堂课我最大的take away是，要有很多专业人士做供应商，要有预案。</p>
+<p>故事梗概</p>
+<p>2017 年 6 月 27 日，破坏型蠕虫（自我传播的病毒，worm）NotPetya把 FedEx 刚收购的 TNT Express 的数字系统几乎全灭。FedEx 立即启动危机手册（BCDR），一边“切断+自保”，一边“手工接力+逐步重建”，把“技术灾难”变成“运营韧性”的一次实战。</p>
+<p>早上，美洲总部收到欧洲告警。TNT 的电脑与服务器像多米诺一样“黑屏+赎金界面”。最初像勒索软件，但很快确认是抹盘型恶意软件（wiper malware），目的是“破坏”，不是“要钱”。传播极快，几分钟“瘫一馆”，几十分钟“瘫全球客户端”。TNT 约 4 万台电脑 + 1 万台服务器报废。</p>
+<p>FedEx 迅速成立网络事件应对小组（CIRT），切断 TNT 与 FedEx 的连接（“按下大红钮”），保护“母舰”。当晚决定向 SEC 报告重大事件（8-K），并短暂停牌说明。股价基本稳。次日发布新闻稿：其他业务正常，TNT 受影响，财务影响“可能重大”。</p>
+<p>技术上，在英国 Atherstone 建立战情室（war room）。TNT 只剩零星纸质网络图与少量未联网笔记本文件。电话系统挂了，靠 WhatsApp 通讯。团队先重建<strong>账号/目录服务（Active Directory）</strong>与“能活下去的五件事”（通讯、应付/应收等）。</p>
+<p>运营上，不关门。沿用主备三层（P-S-T）：能切到 FedEx 的系统就切，切不了就“全手工”。车照发、路由靠“肌肉记忆”。同时由“FedEx 银行”注入营运资金，先保证 TNT 活着。</p>
+<p>备份体系是痛点。TNT 主要用磁带冷备，无法并行快速恢复。FedEx 紧急采购硬盘，把磁带拷到盘上并行恢复，上云、盘、离线“三份”新备份；特权账号从“几千人有权”降到“像 FedEx 一样仅 8 人”。同时把应用减负 900 个。</p>
+<p>客户侧，CIO 团队“一对一”安抚 40 家大客户。仍出现周级延误，媒体报道仓库“包裹堆到天花板”，竞争者趁机挖客。FedEx 当时没有网络险（cyber insurance），损失以业务流失为主。</p>
+<p>溯源后确认：这是一场供应链攻击（supply-chain attack），从乌克兰财务软件的合法更新入口渗透，全球多家巨头中招，总损失估 ≥100 亿美元。股价并没有受到太大冲击。</p>
+<p>课堂笔记</p>
+<ol>
+<li>
+<p>当危机来临时， 你在Plan模式还是Responding模式？</p>
+</li>
+<li>
+<p>Crisis management company可以先成为供应商，并且给公司做危机预演。让风险管理方去「钓鱼执法」， check who is the weak point如果发现了，那需要接受一个周末2天的额外培训。</p>
+</li>
+<li>
+<p>Take Blame and Failure out of the discussion — Focus on MissionCEO NOT emotional很重要</p>
+</li>
+<li>
+<p>Before bring a new company to your car, you need to understand the materials of this new company.</p>
+</li>
+<li>
+<p>What is the last time you ask your people to put the company above them.</p>
+</li>
+<li>
+<p>Are your people BURN OUT？</p>
+</li>
+</ol>
+<p>所有危机应对建议</p>
+<p>先稳住局面</p>
+<p>确认危机的真实范围和影响，避免过度恐慌或小题大做。</p>
+<p>立即设立一个临时危机小组，集中沟通与决策。</p>
+<p>保护核心</p>
+<p>先确保现金流、关键客户、核心员工和品牌声誉。</p>
+<p>如果是公关危机，迅速统一口径，避免信息混乱。</p>
+<p>透明沟通</p>
+<p>对内：让员工知道情况，避免谣言和恐慌。</p>
+<p>对外：与客户、合作伙伴和媒体保持适度透明，承认问题、传递解决方案。</p>
+<p>制定短期行动计划</p>
+<p>72小时内明确优先事项（如止损、稳定关系、合规应对）。</p>
+<p>把问题拆解成几个可执行的小步骤，逐一落实。</p>
+<p>长期修复与预防</p>
+<p>危机过后进行复盘：为什么会发生、内部哪些机制失效了？</p>
+<p>建立“预警系统”和演练机制，把危机转化为组织升级的机会。</p></div></template>
+<script>
+
+function wxConvert(root, heroSrc, date, url){
+  var C='#333333', B='#385EA1';
+  var P='margin:0 0 22px 0;font-size:16px;line-height:1.9;letter-spacing:0.5px;color:'+C+';';
+  var H2='margin:44px 0 18px 0;font-size:20px;line-height:1.5;letter-spacing:1px;font-weight:700;color:'+B+';';
+  var H3='margin:32px 0 14px 0;font-size:16px;line-height:1.9;letter-spacing:0.5px;color:'+C+';font-weight:700;';
+  var LI='margin:0 0 10px 0;font-size:16px;line-height:1.9;letter-spacing:0.5px;color:'+C+';';
+  var TD='border:1px solid #e3e3e3;padding:6px 8px;font-size:14px;line-height:1.6;color:'+C+';text-align:left;vertical-align:top;';
+  var HR='<section style="margin:36px 0;text-align:center;"><span style="display:inline-block;width:28px;height:1px;background-color:'+B+';vertical-align:middle;">&#8203;</span></section>';
+  function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+  function abs(s){ try{ return new URL(s, location.href).href; }catch(_){ return s; } }
+  function img(src){ return '<section style="margin:8px 0 22px 0;"><img src="'+abs(src)+'" alt="" style="display:block;width:100%;height:auto;"></section>'; }
+  function inl(n){
+    var h='';
+    n.childNodes.forEach(function(c){
+      if(c.nodeType===3){ h+=esc(c.textContent); return; }
+      if(c.nodeType!==1) return;
+      var t=c.tagName;
+      if(t==='STRONG'||t==='B') h+='<strong style="font-weight:700;color:'+B+';">'+inl(c)+'</strong>';
+      else if(t==='EM'||t==='I') h+='<em>'+inl(c)+'</em>';
+      else if(t==='CODE') h+='<span style="font-family:Menlo,Consolas,monospace;font-size:14px;background-color:#f5f5f3;padding:0 3px;">'+inl(c)+'</span>';
+      else if(t==='BR') h+='<br>';
+      else if(t==='IMG') h+='<img src="'+abs(c.getAttribute('src'))+'" alt="" style="max-width:100%;height:auto;">';
+      else h+=inl(c);   // 公众号不允许外链：链接只保留文字
+    });
+    return h;
+  }
+  function blocks(root, ps){
+    var h='';
+    root.childNodes.forEach(function(c){
+      if(c.nodeType===3){ if(c.textContent.trim()) h+='<p style="'+ps+'">'+esc(c.textContent.trim())+'</p>'; return; }
+      if(c.nodeType!==1) return;
+      var t=c.tagName, imgs=c.querySelectorAll('img');
+      if(t==='IMG'){ h+=img(c.getAttribute('src')); return; }
+      if((t==='P'||t==='FIGURE') && imgs.length && !c.textContent.trim()){ imgs.forEach(function(i){ h+=img(i.getAttribute('src')); }); return; }
+      if(t==='P') h+='<p style="'+ps+'">'+inl(c)+'</p>';
+      else if(t==='H1'||t==='H2') h+='<p style="'+H2+'">'+inl(c)+'</p>';
+      else if(/^H[3-6]$/.test(t)) h+='<p style="'+H3+'">'+inl(c)+'</p>';
+      else if(t==='UL'||t==='OL'){
+        var tg=t.toLowerCase(); h+='<'+tg+' style="margin:0 0 22px 0;padding-left:1.6em;">';
+        Array.prototype.forEach.call(c.children,function(li){ h+='<li style="'+LI+'">'+inl(li)+'</li>'; });
+        h+='</'+tg+'>';
+      }
+      else if(t==='BLOCKQUOTE') h+='<section style="margin:0 0 22px 0;padding:2px 0 2px 14px;border-left:3px solid '+B+';">'
+          +blocks(c,'margin:0 0 12px 0;font-size:15px;line-height:1.9;letter-spacing:0.5px;color:#666666;')+'</section>';
+      else if(t==='HR') h+=HR;
+      else if(t==='TABLE'){
+        h+='<table style="width:100%;border-collapse:collapse;margin:0 0 22px 0;">';
+        c.querySelectorAll('tr').forEach(function(tr){
+          h+='<tr>'; tr.querySelectorAll('th,td').forEach(function(td){
+            h+='<td style="'+TD+(td.tagName==='TH'?'font-weight:700;background-color:#f7f7f5;':'')+'">'+inl(td)+'</td>'; });
+          h+='</tr>'; });
+        h+='</table>';
+      }
+      else if(t==='PRE') h+='<section style="margin:0 0 22px 0;padding:12px 14px;background-color:#f7f7f5;font-family:Menlo,Consolas,monospace;font-size:13px;line-height:1.7;white-space:pre-wrap;color:'+C+';">'+esc(c.textContent)+'</section>';
+      else h+=blocks(c,ps);
+    });
+    return h;
+  }
+  var h='<section style="font-size:16px;line-height:1.9;letter-spacing:0.5px;color:'+C+';">';
+  if(heroSrc) h+='<section style="margin:0 0 28px 0;"><img src="'+abs(heroSrc)+'" alt="" style="display:block;width:100%;height:auto;"></section>';
+  h+=blocks(root,P)+HR;
+  h+='<p style="margin:0 0 10px 0;font-size:13px;line-height:1.8;letter-spacing:0.3px;color:#8a8f99;">本文首发于 joycema.ai · '+esc(date)+'<br>'+esc(url)+'</p>';
+  return h+'</section>';
+}
+
+(function(){
+  var src=document.getElementById('src').content, box=document.getElementById('light'), btn=document.getElementById('copy');
+  var d=document.createElement('div'); d.appendChild(src.cloneNode(true));
+  var hero=d.querySelector('.hero img'); if(hero) hero.parentNode.parentNode.removeChild(hero.parentNode);
+  var html=wxConvert(d.querySelector('.prose')||d, hero?hero.getAttribute('src'):'', btn.getAttribute('data-date'), btn.getAttribute('data-url'));
+  box.innerHTML=html;
+  function done(ok){ btn.textContent=ok?'已复制 ✓ 去公众号编辑器粘贴':'复制失败，请再点一次'; btn.className=ok?'ok':'';
+    setTimeout(function(){ btn.textContent='复制正文到公众号编辑器'; btn.className=''; }, 3000); }
+  function viaSelection(){
+    var r=document.createRange(); r.selectNodeContents(box);
+    var s=window.getSelection(); s.removeAllRanges(); s.addRange(r);
+    var ok=false; try{ ok=document.execCommand('copy'); }catch(_){}
+    s.removeAllRanges(); return ok;
+  }
+  btn.addEventListener('click', function(){
+    if(window.ClipboardItem && navigator.clipboard && navigator.clipboard.write && window.isSecureContext){
+      navigator.clipboard.write([new ClipboardItem({'text/html':new Blob([html],{type:'text/html'}),
+                                                    'text/plain':new Blob([box.innerText],{type:'text/plain'})})])
+        .then(function(){ done(true); }, function(){ done(viaSelection()); });
+    } else done(viaSelection());
+  });
+})();
+</script>
+</body></html>

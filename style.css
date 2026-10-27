@@ -345,5 +345,5 @@ html { scroll-behavior: smooth; }
 
 /* 复制到公众号 */
 .share.wx { margin-left: 8px; }
-@media (max-width: 760px) { .share.wx { display: none; } }
 .share[hidden] { display: none !important; }
+a.share { text-decoration: none; }
